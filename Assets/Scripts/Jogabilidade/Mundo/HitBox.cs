@@ -6,24 +6,15 @@ namespace Assets.Scripts.Jogabilidade.Mundo
     public class HitBox : MonoBehaviour, ICausamDano
     {
         public Personagem origem;
-        Personagem alvoGuardado;
-        private BoxCollider2D boxColl;
-
-        //variaveis de controle       
-        bool jaResolveu;
-        bool podeDarDano = false;
-        bool detectouAtaque = false;
-       
-
-        //variaveis de jogabilidade
         public int dano { get; set; }
         public float direcao { get; set; }
 
+        //variaveis de controle       
+        private BoxCollider2D boxColl;
 
         private void Awake()
         {
             boxColl = GetComponent<BoxCollider2D>();
-            boxColl.enabled = false;
         }
 
         public void Inicializar(Personagem dono, int dano, float direcao)
@@ -41,47 +32,16 @@ namespace Assets.Scripts.Jogabilidade.Mundo
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-            if (!boxColl.enabled) return;
+            HitBox outraHitBoox = other.GetComponent<HitBox>(); 
 
-            HitBox outroAtq = other.GetComponentInParent<HitBox>();
-            Personagem alvo = other.GetComponentInParent<Personagem>();
-
-            if (outroAtq != null && outroAtq.origem != origem)
+            if (outraHitBoox != null && outraHitBoox.origem != origem)
             {
-                detectouAtaque = true;
-            }
-            if (alvo != null && alvo != origem)
-            {
-                podeDarDano = true;
-                alvoGuardado = alvo;
+                Debug.Log("Choque entre ataques");
+                Destroy(outraHitBoox.gameObject);
+                Destroy(gameObject);
             }
         }
-        void LateUpdate()
-        {
-            if (jaResolveu) return;
-
-            if (detectouAtaque)
-            {
-                jaResolveu = true;                
-                ColisaoEntreAtaques();
-                Resetar();
-                return;
-            }
-
-            if (podeDarDano && alvoGuardado != null)
-            {
-                jaResolveu = true;
-                alvoGuardado.SofrerAtaque(this);// !!!
-                Resetar();                
-            }
-        }
-
-        void Resetar()
-        {
-            detectouAtaque = false;
-            podeDarDano = false;
-            alvoGuardado = null;
-        }
+        
 
         //Evento de Controle para Frame De Dano
         public void AtivarHitbox()
@@ -92,16 +52,6 @@ namespace Assets.Scripts.Jogabilidade.Mundo
         {
             boxColl.enabled = false;
         }
-
-
-        private void ColisaoEntreAtaques()
-        {
-            Debug.Log("Choque Entre Ataques");
-
-            Destroy(gameObject);
-            //mudar para choque entre ataques 
-        }
-
 
         //EVENTOS
         public void DestroirObj()

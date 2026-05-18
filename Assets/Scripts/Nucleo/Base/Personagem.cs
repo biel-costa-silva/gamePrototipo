@@ -34,7 +34,8 @@ public abstract class Personagem : MonoBehaviour
     protected float velocidadeBase { get; set; }
 
     
-    public void Awake() // -------------------------------------------------------------------------------- 0
+    //Métodos do fluxo de vida
+    public void Awake() 
     {
         offsetXBase = -0.01f;
 
@@ -49,20 +50,36 @@ public abstract class Personagem : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        HitBox golpe = other.GetComponent<HitBox>();
+        if (golpe != null && golpe.origem != this)
+        {
+            SofrerAtaque(golpe);
+        }
+    }
 
-    //Métodos de correcao/sincronizacao - [Sprite - BoxCollider]
-    //Flipar o BoxCollider junto com o Sprite por frame --> chamar no método update
+    private void LateUpdate()
+    {
+        CorrigirColliderFlip();
+    }
+
+
+    //Métodos de correcao/sincronizacao - [Sprite - BoxCollider]    
     public void CorrigirColliderFlip()
     {
         if (sprite.flipX) boxCollider.offset = new Vector2(-offsetXBase, boxCollider.offset.y);
         else boxCollider.offset = new Vector2(offsetXBase, boxCollider.offset.y);
     }
 
-    //Mudar BoxCollider em animacoes especificas - chamar por AnimationEvent
+   
     public void TrocarOffsetX(float novoValor)
     {
         offsetXBase = novoValor;
     }
+
+
+    
 
     //Métodos da classe - Personagem
     public virtual void Locomover(float direcao)
@@ -72,7 +89,7 @@ public abstract class Personagem : MonoBehaviour
         else sprite.flipX = false;
     }
 
-    //--------------------------------------------------------------------------------
+    
     public virtual void Atacar(int forca)
     {
         float direcao = sprite.flipX ? -1f : 1f;
@@ -94,11 +111,10 @@ public abstract class Personagem : MonoBehaviour
         hitbox.Inicializar(this, dano, direcao);
 
         Debug.Log("Aplicou: " + hitbox.dano + " de dano");
-    }
-    //-------------------------------------------------------------------------------    
+    }      
 
 
-    public virtual void SofrerAtaque(HitBox golpe) //Se "is Trigger" (componente Collider) acontece, retorne true e faça;
+    public virtual void SofrerAtaque(HitBox golpe) 
     {
         sofreuAtaque = true;
 
@@ -118,12 +134,7 @@ public abstract class Personagem : MonoBehaviour
     }
 
 
-
-
-    private void LateUpdate()// -------------------------------------------------------------------------------- 3
-    {
-        CorrigirColliderFlip();
-    }
+   
 
 
 }

@@ -291,6 +291,8 @@ public class Jogador : Personagem
 
     public void OnTriggerEnter2D(Collider2D other) //aciona se colidiu com algo
     {
+        base.OnTriggerEnter2D (other);
+
         IInteracoes interagivel = other.GetComponent<IInteracoes>();
         if (interagivel != null)
         {
