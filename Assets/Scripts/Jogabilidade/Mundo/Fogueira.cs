@@ -17,15 +17,15 @@ namespace Assets.Scripts.Jogabilidade.Mundo
         {
             animacao = GetComponent<AnimFogueira>();
 
-            if(animacao == null)
-            {
-                animacao = gameObject.AddComponent<AnimFogueira>();
-            }
+            if(animacao == null) animacao = gameObject.AddComponent<AnimFogueira>();
         }
 
         public void SofrerInteracao(Jogador jogador)
         {           
             animacao.animacaoAcendendo();
         }
+        //Curar()
+
+        //SalvarJogo()
     }
 }

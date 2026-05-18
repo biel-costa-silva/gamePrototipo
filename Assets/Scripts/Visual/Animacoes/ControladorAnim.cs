@@ -18,6 +18,21 @@ namespace Assets.Scripts.Visoes.Animacoes
         {
             animator = GetComponent<Animator>();
         }
+
+        public void ResetarTriggers()
+        {
+            animator.ResetTrigger("sacarArma");
+            animator.ResetTrigger("guardarArma");
+            animator.ResetTrigger("interagir");
+            animator.ResetTrigger("atacar");
+            animator.ResetTrigger("sofrerAtqArm");
+            animator.ResetTrigger("sofrerAtqDesarm");
+            animator.ResetTrigger("defender");
+            animator.ResetTrigger("repelir");
+            animator.ResetTrigger("sofrerAtqDefendendo");      
+        }
+
+        //Parâmetros
         public void AnimacaoParado()
         {
             animator.SetBool("isAndando", false);
@@ -89,8 +104,9 @@ namespace Assets.Scripts.Visoes.Animacoes
 
 
         // Animation Event no último frame
-        public void OnAnimacaoTerminou() 
+        public virtual void OnAnimacaoTerminou() 
         {
+            ResetarTriggers();  
             animacaoTerminou = true;
         }
 

@@ -97,11 +97,10 @@ public abstract class Personagem : MonoBehaviour
     }
 
 
-    public void AplicarGolpe(int indice)
+    public void AplicarGolpe(int indice)//animationEvent
     {
-        GameObject atk = Instantiate(ataques[indice], posicaoPersonagem.position, posicaoPersonagem.rotation);
-
-        float direcao = sprite.flipX ? -1f : 1f;       
+        float direcao = sprite.flipX ? -1f : 1f;
+        GameObject atk = Instantiate(ataques[indice], posicaoPersonagem.position, posicaoPersonagem.rotation);            
 
         Vector3 scale = atk.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * direcao;

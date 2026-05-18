@@ -116,6 +116,8 @@ namespace Assets.Scripts.Personagens.Guerreiro
         {
             if (animacaoGuerreiro.estaRepelindo)
             {
+                sofreuAtaque = true;
+
                 Destroy(golpe.gameObject);
                 Debug.Log("Repeliu");
 
@@ -129,6 +131,8 @@ namespace Assets.Scripts.Personagens.Guerreiro
             }
             else if (animacaoGuerreiro.estaDefendendo)
             {
+                sofreuAtaque = true;
+
                 golpe.dano -= defesa;
                 base.SofrerAtaque(golpe);               
                 Debug.Log("Defendeu");
@@ -139,6 +143,8 @@ namespace Assets.Scripts.Personagens.Guerreiro
                 Vector3 scale = VFXdefesa.transform.localScale;
                 scale.x = Mathf.Abs(scale.x) * direcao;
                 VFXdefesa.transform.localScale = scale;
+
+                rb.AddForce(new Vector2(50, 0), ForceMode2D.Impulse);
             }
             else
             {

@@ -23,17 +23,19 @@ namespace Assets.Scripts.Visual.Animacoes.Personagens
         // ----------------------- Método de animações especificas do guerreiro -------------------- #
 
         public void AnimacaoDefendendo()
-        {
+        {        
             animacaoTerminou = false;
             animator.SetTrigger("defender");
         }
         public void AnimacaoSofrendoAtqDef()
         {
+           
             animacaoTerminou = false;
             animator.SetTrigger("sofrerAtqDefendendo");
         }
         public void AnimacaoRepelindo()
         {
+            
             animacaoTerminou = false;
             animator.SetTrigger("repelir");
         }
@@ -41,7 +43,7 @@ namespace Assets.Scripts.Visual.Animacoes.Personagens
         // ------------------------------------------------------------------------------------ #
 
         // EVENTOS ESPECIFICOS DO GUERREIRO!! --------------------------------------------------
-
+        
         public void EventoRepelir()
         {
             estaRepelindo = true;
@@ -55,7 +57,13 @@ namespace Assets.Scripts.Visual.Animacoes.Personagens
         {
             estaDefendendo = false;
         }
-        
+        public override void OnAnimacaoTerminou()
+        {
+            base.OnAnimacaoTerminou();
+            estaDefendendo = false;
+            estaRepelindo = false;
+        }
+
 
     }
 }
