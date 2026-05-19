@@ -114,12 +114,12 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
         public override void SofrerAtaque(HitBox golpe)
         {
+            sofreuAtaque = true;
+           
             if (animacaoGuerreiro.estaRepelindo)
             {
-                sofreuAtaque = true;
-
-                Destroy(golpe.gameObject);
-                Debug.Log("Repeliu");
+                golpe.dano = 0;
+                Debug.Log("repeliu");                         
 
                 GameObject VFXrepelir = Instantiate(prefabsVFX[0], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
                 float direcao = sprite.flipX ? -1f : 1f;
@@ -127,15 +127,16 @@ namespace Assets.Scripts.Personagens.Guerreiro
                 Vector3 scale = VFXrepelir.transform.localScale;
                 scale.x = Mathf.Abs(scale.x) * direcao;
                 VFXrepelir.transform.localScale = scale;
-                //mudanças futuras
-            }
-            else if (animacaoGuerreiro.estaDefendendo)
-            {
-                sofreuAtaque = true;
 
+                rb.AddForce(new Vector2(10, 0), ForceMode2D.Impulse);
+            }
+
+            else if (animacaoGuerreiro.estaDefendendo)
+            {         
                 golpe.dano -= defesa;
-                base.SofrerAtaque(golpe);               
-                Debug.Log("Defendeu");
+                Debug.Log("defendenu");
+                base.SofrerAtaque(golpe);                
+                
 
                 GameObject VFXdefesa = Instantiate(prefabsVFX[1], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
                 float direcao = sprite.flipX ? -1f : 1f;
@@ -148,6 +149,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
             }
             else
             {
+                Debug.Log("dano padrão");
                 base.SofrerAtaque(golpe);
             }
         }

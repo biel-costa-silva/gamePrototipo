@@ -3,6 +3,7 @@ using Assets.Scripts.Jogabilidade.Mundo;
 using Assets.Scripts.Nucleo.Interfaces;
 using Assets.Scripts.Visoes.Animacoes;
 using System.Collections;
+using System.Collections.Generic;
 using Unity;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -23,7 +24,8 @@ public abstract class Personagem : MonoBehaviour
 
     //variaveis de controle
     protected bool sofreuAtaque;
-    protected float offsetXBase;    
+    protected float offsetXBase;
+    private int _hitCount = 0;
 
     //atributos da classe
     protected string nome { get; set; }
@@ -50,12 +52,23 @@ public abstract class Personagem : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    private HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
         HitBox golpe = other.GetComponent<HitBox>();
-        if (golpe != null && golpe.origem != this)
+        if (golpe != null && golpe.origem != this && golpesRecebidos.Add(golpe))
         {
+            _hitCount++;
+            Debug.Log("colidiu com ataque: " + _hitCount);
             SofrerAtaque(golpe);
+        }
+    }
+    public virtual void OnTriggerExit2D(Collider2D other)
+    {
+        HitBox golpe = other.GetComponent<HitBox>();
+        if (golpe != null)
+        {
+            golpesRecebidos.Remove(golpe);
         }
     }
 

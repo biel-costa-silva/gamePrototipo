@@ -289,7 +289,7 @@ public class Jogador : Personagem
     // #-------------------------------------------------------------------------------------------------------------------#
 
 
-    public void OnTriggerEnter2D(Collider2D other) //aciona se colidiu com algo
+    public override void OnTriggerEnter2D(Collider2D other) //aciona se colidiu com algo
     {
         base.OnTriggerEnter2D (other);
 
