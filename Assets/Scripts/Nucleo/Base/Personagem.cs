@@ -26,6 +26,7 @@ public abstract class Personagem : MonoBehaviour
     protected bool sofreuAtaque;
     protected float offsetXBase;
     private int _hitCount = 0;
+    protected bool deCostas;
 
     //atributos da classe
     protected string nome { get; set; }
@@ -52,7 +53,7 @@ public abstract class Personagem : MonoBehaviour
         
     }
 
-    private HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
+    protected HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
         HitBox golpe = other.GetComponent<HitBox>();

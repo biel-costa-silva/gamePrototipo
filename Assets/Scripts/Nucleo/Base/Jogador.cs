@@ -308,6 +308,7 @@ public class Jogador : Personagem
 
     public void OnTriggerExit2D(Collider2D other)//aciona quando saiu da colisao com algo
     {
+        
         IInteracoes interagivel = other.GetComponent<IInteracoes>();
         if (interagivel != null)
         {

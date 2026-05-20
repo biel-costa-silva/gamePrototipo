@@ -71,7 +71,14 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
             while (!animacaoGuerreiro.animacaoTerminou)
             {
-                if (sofreuAtaque)
+                if (sofreuAtaque && deCostas)
+                {
+                    sofreuAtaque = false;
+
+                    yield return StartCoroutine(RotinaSofrendoAtaqueArm());
+                    yield break;
+                }
+                else if (sofreuAtaque)
                 {
                     sofreuAtaque = false;
 
@@ -97,10 +104,11 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
         IEnumerator RotinaRepelindo()
         {
-            animacaoGuerreiro.AnimacaoRepelindo();
+            animacaoGuerreiro.AnimacaoRepelindo();           
             yield return StartCoroutine(animacaoGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
+
         IEnumerator RotinaSofrendoAtqDefendendo()
         {
             animacaoGuerreiro.AnimacaoSofrendoAtqDef();
@@ -119,14 +127,17 @@ namespace Assets.Scripts.Personagens.Guerreiro
         public override void SofrerAtaque(HitBox golpe)
         {
             sofreuAtaque = true;
-           
-            if (animacaoGuerreiro.estaRepelindo)
+            float direcao = sprite.flipX ? -1f : 1f;
+            deCostas = (direcao == golpe.direcao);
+            
+
+            if (animacaoGuerreiro.estaRepelindo && !deCostas)
             {
                 golpe.dano = 0;
-                Debug.Log("repeliu");                         
+                Debug.Log("repeliu");
 
                 GameObject VFXrepelir = Instantiate(prefabsVFX[0], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
-                float direcao = sprite.flipX ? -1f : 1f;
+                direcao = sprite.flipX ? -1f : 1f;
 
                 Vector3 scale = VFXrepelir.transform.localScale;
                 scale.x = Mathf.Abs(scale.x) * direcao;
@@ -135,7 +146,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
                 rb.AddForce(new Vector2(10, 0), ForceMode2D.Impulse);
             }
 
-            else if (animacaoGuerreiro.estaDefendendo)
+            else if (animacaoGuerreiro.estaDefendendo && !deCostas)
             {         
                 golpe.dano -= defesa;
                 Debug.Log("defendenu");
@@ -143,7 +154,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
                 
 
                 GameObject VFXdefesa = Instantiate(prefabsVFX[1], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
-                float direcao = sprite.flipX ? -1f : 1f;
+                direcao = sprite.flipX ? -1f : 1f;
 
                 Vector3 scale = VFXdefesa.transform.localScale;
                 scale.x = Mathf.Abs(scale.x) * direcao;
