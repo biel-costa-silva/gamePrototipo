@@ -1,12 +1,13 @@
-using UnityEngine;
+using Assets.Scripts.Entidades.Enums;
+using Assets.Scripts.Nucleo.Interfaces;
+using Assets.Scripts.Visoes.Animacoes;
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
-using Assets.Scripts.Visoes.Animacoes;
-using System.Collections;
-using Assets.Scripts.Entidades.Enums;
+using UnityEngine;
 using UnityEngine.UIElements;
-using Assets.Scripts.Nucleo.Interfaces;
+using Unity;
 
 public class Jogador : Personagem
 {
@@ -184,7 +185,7 @@ public class Jogador : Personagem
 
     // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
 
-    IEnumerator RotinaSacanadoArma()
+    protected IEnumerator RotinaSacanadoArma()
     {
         animacao.AnimacaoSacandoArma();
 
@@ -193,7 +194,7 @@ public class Jogador : Personagem
         estadoAtual = EstadoJogador.ModoAtaque;
     }
     //
-    IEnumerator RotinaGuardandoArma()
+    protected IEnumerator RotinaGuardandoArma()
     {
         animacao.AnimacaoGuardandoArma();
         yield return StartCoroutine(animacao.EsperarAnimacao());
@@ -201,7 +202,7 @@ public class Jogador : Personagem
         estadoAtual = EstadoJogador.Parado;
     }
     //
-    IEnumerator RotinaInteracao()
+    protected IEnumerator RotinaInteracao()
     {
         Interagir();
 
@@ -210,7 +211,7 @@ public class Jogador : Personagem
         estadoAtual = EstadoJogador.Parado;
     }
     //
-    IEnumerator RotinaAtacando()
+    protected IEnumerator RotinaAtacando()
     {
         bool comboRegistrado = false;
         int forcaAtq = controle.ComandoAtaque();
@@ -269,17 +270,21 @@ public class Jogador : Personagem
     }
 
     //------------------- Sofrendo Ataques: possibilidades --------------------
-    IEnumerator RotinaSofrendoAtaqueDesarm()
+    protected IEnumerator RotinaSofrendoAtaqueDesarm()
     {
         animacao.AnimacaoSofrendoAtqDesarm();
         yield return StartCoroutine(animacao.EsperarAnimacao());
         estadoAtual = EstadoJogador.Parado;
     }
-    IEnumerator RotinaSofrendoAtaqueArm()
-    {
+    protected IEnumerator RotinaSofrendoAtaqueArm()
+    {       
+        Debug.Log("Entrou RotinaSofrendoAtaqueArm");
         animacao.AnimacaoSofrendoAtqArm();
+        Debug.Log("animacaoTerminou antes de esperar: " + animacao.animacaoTerminou);
         yield return StartCoroutine(animacao.EsperarAnimacao());
+        Debug.Log("Saiu do EsperarAnimacao");
         estadoAtual = EstadoJogador.ModoAtaque;
+        Debug.Log("Estado setado para ModoAtaque");
     }
     //-------------------------------------------------------------------------
 

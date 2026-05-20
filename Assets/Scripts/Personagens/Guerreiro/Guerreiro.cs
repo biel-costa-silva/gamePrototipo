@@ -71,21 +71,25 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
             while (!animacaoGuerreiro.animacaoTerminou)
             {
-                if (animacaoGuerreiro.estaRepelindo && sofreuAtaque)//janela para parry
+                if (sofreuAtaque)
                 {
                     sofreuAtaque = false;
-                    yield return StartCoroutine(RotinaRepelindo());
-                    yield break;
-                }
 
-                else if (animacaoGuerreiro.estaDefendendo && sofreuAtaque)//janela para defesas
-                {
-                    sofreuAtaque = false;
-                    yield return StartCoroutine(RotinaSofrendoAtqDefendendo());
+                    if (animacaoGuerreiro.estaRepelindo)
+                    {
+                        yield return StartCoroutine(RotinaRepelindo());
+                    }
+                    else if (animacaoGuerreiro.estaDefendendo)
+                    {
+                        yield return StartCoroutine(RotinaSofrendoAtqDefendendo());
+                    }
+                    else
+                    {                        
+                        yield return StartCoroutine(RotinaSofrendoAtaqueArm());
+                    }
                     yield break;
                 }
                 yield return null;
-
             }
             yield return StartCoroutine(animacaoGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
