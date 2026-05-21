@@ -10,7 +10,7 @@ namespace Assets.Scripts.Jogabilidade.Mundo
         public float direcao { get; set; }
 
         //variaveis de controle       
-        private BoxCollider2D boxColl;
+        private BoxCollider2D boxColl;      
 
         private void Awake()
         {
@@ -32,16 +32,19 @@ namespace Assets.Scripts.Jogabilidade.Mundo
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-            HitBox outraHitBoox = other.GetComponent<HitBox>(); 
+           HitBox outraHitBoox = other.GetComponent<HitBox>(); 
 
             if (outraHitBoox != null && outraHitBoox.origem != origem)
             {
+               
                 Debug.Log("Choque entre ataques");
+                origem.sofreuChoque = true;
+                outraHitBoox.origem.sofreuChoque = true;
+
                 Destroy(outraHitBoox.gameObject);
                 Destroy(gameObject);
-            }
+            }            
         }
-        
 
         //Evento de Controle para Frame De Dano
         public void AtivarHitbox()

@@ -30,7 +30,7 @@ public class Jogador : Personagem
 
         if (estadoAtual == EstadoJogador.Parado)
         {
-            velocidade = velocidadeBase;            
+            velocidade = velocidadeBase;
             animacao.AnimacaoParado();// looping fixo, sem inputs 
 
             if (sofreuAtaque)
@@ -179,7 +179,7 @@ public class Jogador : Personagem
         // --------------------------------------------------------------------------------------------- //
 
 
-    }   
+    }
 
 
 
@@ -211,28 +211,28 @@ public class Jogador : Personagem
         estadoAtual = EstadoJogador.Parado;
     }
     //
-    protected IEnumerator RotinaAtacando()
+    protected virtual IEnumerator RotinaAtacando()
     {
         bool comboRegistrado = false;
         int forcaAtq = controle.ComandoAtaque();
         int contadorCombo = 0;
         animacao.indiceAtaque = 0;
-        
+
         animacao.ResetarAnimacao();
         Atacar(forcaAtq);
         animacao.AnimacaoAtacando();
 
         yield return null;
 
-        
-        while (true)
-        {
+
+        while (!animacao.animacaoTerminou)
+        {            
             if (animacao.novoAtaque)//janela aberta
             {
                 if (contadorCombo <= 2 && controle.ComandoAtaque() > 0)//dano igual 0 significa que não atacou
                 {
                     comboRegistrado = true;
-                    
+
                 }
 
                 //pode sofrer dano durante o ataque (quem acerta outro antes)
@@ -249,7 +249,7 @@ public class Jogador : Personagem
                 if (comboRegistrado)
                 {
                     comboRegistrado = false;
-                    
+
                     contadorCombo++;
                     animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
 
@@ -263,7 +263,7 @@ public class Jogador : Personagem
                     break;
                 }
             }
-        }      
+        }
 
         yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
         estadoAtual = EstadoJogador.ModoAtaque;
@@ -277,7 +277,7 @@ public class Jogador : Personagem
         estadoAtual = EstadoJogador.Parado;
     }
     protected IEnumerator RotinaSofrendoAtaqueArm()
-    {       
+    {
         Debug.Log("Entrou RotinaSofrendoAtaqueArm");
         animacao.AnimacaoSofrendoAtqArm();
         Debug.Log("animacaoTerminou antes de esperar: " + animacao.animacaoTerminou);
@@ -296,7 +296,7 @@ public class Jogador : Personagem
 
     public override void OnTriggerEnter2D(Collider2D other) //aciona se colidiu com algo
     {
-        base.OnTriggerEnter2D (other);
+        base.OnTriggerEnter2D(other);
 
         IInteracoes interagivel = other.GetComponent<IInteracoes>();
         if (interagivel != null)
@@ -308,7 +308,7 @@ public class Jogador : Personagem
 
     public void OnTriggerExit2D(Collider2D other)//aciona quando saiu da colisao com algo
     {
-        
+
         IInteracoes interagivel = other.GetComponent<IInteracoes>();
         if (interagivel != null)
         {

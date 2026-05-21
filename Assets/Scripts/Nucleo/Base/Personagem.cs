@@ -24,8 +24,9 @@ public abstract class Personagem : MonoBehaviour
 
     //variaveis de controle
     protected bool sofreuAtaque;
+    public bool sofreuChoque { get; set; }
     protected float offsetXBase;
-    private int _hitCount = 0;
+    private int _hitCount = 0;//tirar no futuro
     protected bool deCostas;
 
     //atributos da classe
@@ -56,13 +57,29 @@ public abstract class Personagem : MonoBehaviour
     protected HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        HitBox golpe = other.GetComponent<HitBox>();
+        HitBox golpe = other.GetComponent<HitBox>();       
+
         if (golpe != null && golpe.origem != this && golpesRecebidos.Add(golpe))
         {
-            _hitCount++;
-            Debug.Log("colidiu com ataque: " + _hitCount);
-            SofrerAtaque(golpe);
+            StartCoroutine(ProcessarGolpe(golpe));
+            if (sofreuChoque) return;    
         }
+    }
+    private IEnumerator ProcessarGolpe(HitBox golpe)
+    {
+        Debug.Log("ProcessarGolpe - antes do frame - sofreuChoque: " + sofreuChoque);
+        yield return null;
+        Debug.Log("ProcessarGolpe - depois do frame - sofreuChoque: " + sofreuChoque);
+
+        if (golpe == null || golpe.origem.sofreuChoque)
+        {
+            golpe.origem.sofreuChoque = false; 
+            yield break;
+        }
+
+        _hitCount++;
+        Debug.Log("colidiu com ataque: " + _hitCount);
+        SofrerAtaque(golpe);
     }
     public virtual void OnTriggerExit2D(Collider2D other)
     {
@@ -125,8 +142,7 @@ public abstract class Personagem : MonoBehaviour
 
         Debug.Log("Aplicou: " + hitbox.dano + " de dano");
     }      
-
-
+   
     public virtual void SofrerAtaque(HitBox golpe) 
     {
         sofreuAtaque = true;

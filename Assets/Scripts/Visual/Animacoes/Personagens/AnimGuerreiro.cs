@@ -18,32 +18,37 @@ namespace Assets.Scripts.Visual.Animacoes.Personagens
         public bool estaRepelindo = false;
 
         // ----------------  Métodos de acionamento ------------------
-              
+
 
         // ----------------------- Método de animações especificas do guerreiro -------------------- #
 
         public void AnimacaoDefendendo()
-        {        
+        {
             animacaoTerminou = false;
             animator.SetTrigger("defender");
         }
         public void AnimacaoSofrendoAtqDef()
         {
-           
+
             animacaoTerminou = false;
             animator.SetTrigger("sofrerAtqDefendendo");
         }
         public void AnimacaoRepelindo()
         {
-            
+
             animacaoTerminou = false;
             animator.SetTrigger("repelir");
+        }
+        public void AnimacaoRecebeChoqueAtqs()
+        {
+            animacaoTerminou = false;
+            animator.SetTrigger("receberChoque");
         }
 
         // ------------------------------------------------------------------------------------ #
 
         // EVENTOS ESPECIFICOS DO GUERREIRO!! --------------------------------------------------
-        
+
         public void EventoRepelir()
         {
             estaRepelindo = true;

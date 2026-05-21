@@ -37,7 +37,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
             velocidade = 5;
             velocidadeBase = velocidade;
         }
-       
+
         void Update()
         {
             base.Update();
@@ -63,7 +63,66 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
         }
 
+        protected override IEnumerator RotinaAtacando()
+        {
+            bool comboRegistrado = false;
+            int forcaAtq = controle.ComandoAtaque();
+            int contadorCombo = 0;
+            animacao.indiceAtaque = 0;
 
+            animacao.ResetarAnimacao();
+            Atacar(forcaAtq);
+            animacao.AnimacaoAtacando();
+
+            yield return null;
+
+
+            while (!animacao.animacaoTerminou)
+            {               
+                if (animacao.novoAtaque)//janela aberta
+                {
+                    if (contadorCombo <= 2 && controle.ComandoAtaque() > 0)//dano igual 0 significa que não atacou
+                    {
+                        comboRegistrado = true;
+                    }
+                    if (sofreuChoque)
+                    {
+                        sofreuChoque = false;
+                        yield return StartCoroutine(RotinaRecebeChoqueAtqs());
+                        yield break;
+                    }
+                    //pode sofrer dano durante o ataque (quem acerta outro antes)
+                    if (sofreuAtaque)
+                    {
+                        sofreuAtaque = false;
+                        yield return StartCoroutine(RotinaSofrendoAtaqueArm());
+                        yield break;
+                    }
+                    yield return null;
+                }
+                else//janela fechada
+                {
+                    if (comboRegistrado)
+                    {
+                        comboRegistrado = false;
+
+                        contadorCombo++;
+                        animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
+
+                        animacao.ResetarAnimacao();
+                        Atacar(forcaAtq);
+                        animacao.AnimacaoAtacando();
+                        yield return null;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+            estadoAtual = EstadoJogador.ModoAtaque;
+        }
 
         IEnumerator RotinaDefendendo()
         {
@@ -91,7 +150,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
                         yield return StartCoroutine(RotinaSofrendoAtqDefendendo());
                     }
                     else
-                    {                        
+                    {
                         yield return StartCoroutine(RotinaSofrendoAtaqueArm());
                     }
                     yield break;
@@ -104,7 +163,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
 
         IEnumerator RotinaRepelindo()
         {
-            animacaoGuerreiro.AnimacaoRepelindo();           
+            animacaoGuerreiro.AnimacaoRepelindo();
             yield return StartCoroutine(animacaoGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
@@ -112,6 +171,12 @@ namespace Assets.Scripts.Personagens.Guerreiro
         IEnumerator RotinaSofrendoAtqDefendendo()
         {
             animacaoGuerreiro.AnimacaoSofrendoAtqDef();
+            yield return StartCoroutine(animacaoGuerreiro.EsperarAnimacao());
+            estadoAtual = EstadoJogador.ModoAtaque;
+        }
+        IEnumerator RotinaRecebeChoqueAtqs()
+        {
+            animacaoGuerreiro.AnimacaoRecebeChoqueAtqs();
             yield return StartCoroutine(animacaoGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
@@ -129,7 +194,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
             sofreuAtaque = true;
             float direcao = sprite.flipX ? -1f : 1f;
             deCostas = (direcao == golpe.direcao);
-            
+
 
             if (animacaoGuerreiro.estaRepelindo && !deCostas)
             {
@@ -147,11 +212,11 @@ namespace Assets.Scripts.Personagens.Guerreiro
             }
 
             else if (animacaoGuerreiro.estaDefendendo && !deCostas)
-            {         
+            {
                 golpe.dano -= defesa;
                 Debug.Log("defendenu");
-                base.SofrerAtaque(golpe);                
-                
+                base.SofrerAtaque(golpe);
+
 
                 GameObject VFXdefesa = Instantiate(prefabsVFX[1], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
                 direcao = sprite.flipX ? -1f : 1f;
@@ -167,6 +232,17 @@ namespace Assets.Scripts.Personagens.Guerreiro
                 Debug.Log("dano padrão");
                 base.SofrerAtaque(golpe);
             }
+        }
+        public void ReceberChoque()
+        {
+            GameObject VFXchoque = Instantiate(prefabsVFX[2], posicaoGuerreiro.position, posicaoGuerreiro.rotation);
+            float direcao = sprite.flipX ? -1f : 1f;
+
+            Vector3 scale = VFXchoque.transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * direcao;
+            VFXchoque.transform.localScale = scale;
+
+            rb.AddForce(new Vector2(10, 0), ForceMode2D.Impulse);
         }
     }
 }
