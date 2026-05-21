@@ -1,5 +1,7 @@
 ﻿using Assets.Scripts.Nucleo.Interfaces;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Assets.Scripts.Jogabilidade.Mundo
 {
@@ -10,7 +12,11 @@ namespace Assets.Scripts.Jogabilidade.Mundo
         public float direcao { get; set; }
 
         //variaveis de controle       
-        private BoxCollider2D boxColl;      
+        private BoxCollider2D boxColl;
+        private HitBox outraHitBoxColidida;
+        private Personagem outroPersonagemColidido;
+        public bool consumida = false;
+        private bool processando = false;
 
         private void Awake()
         {
@@ -32,20 +38,36 @@ namespace Assets.Scripts.Jogabilidade.Mundo
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-           HitBox outraHitBoox = other.GetComponent<HitBox>(); 
+            HitBox outraHitBox = other.GetComponent<HitBox>();
 
-            if (outraHitBoox != null && outraHitBoox.origem != origem)
-            {
-               
+            if (outraHitBox != null && outraHitBox.origem != origem)
+            {                
                 Debug.Log("Choque entre ataques");
+                consumida = true;
+                outraHitBox.consumida = true;
+
                 origem.sofreuChoque = true;
-                outraHitBoox.origem.sofreuChoque = true;
+                outraHitBox.origem.sofreuChoque = true;
 
-                Destroy(outraHitBoox.gameObject);
+                Destroy(outraHitBox.gameObject);
                 Destroy(gameObject);
-            }            
-        }
+                return;
+            }
+            Personagem personagem = other.GetComponent<Personagem>();
+            if (personagem != null && personagem != origem)
+            {
+                StartCoroutine(ProcessarColisoes());
+            }          
+            
+        }        
+        private IEnumerator ProcessarColisoes()
+        {
+            if (processando) yield break;
+            processando = true;
 
+            yield return null;
+            
+        }
         //Evento de Controle para Frame De Dano
         public void AtivarHitbox()
         {

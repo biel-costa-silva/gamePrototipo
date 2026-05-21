@@ -12,10 +12,10 @@ public abstract class Personagem : MonoBehaviour
 {
     //variaveis componentes (do unity)------------
     protected Rigidbody2D rb;
-    protected SpriteRenderer sprite;   
+    protected SpriteRenderer sprite;
     public BoxCollider2D boxCollider;
     [SerializeField] protected Transform posicaoPersonagem;
-    
+
 
     //variaveis objetos/classes    
     [SerializeField] private GameObject[] ataques;
@@ -37,9 +37,9 @@ public abstract class Personagem : MonoBehaviour
     protected float velocidade { get; set; }
     protected float velocidadeBase { get; set; }
 
-    
+
     //Métodos do fluxo de vida
-    public void Awake() 
+    public void Awake()
     {
         offsetXBase = -0.01f;
 
@@ -51,31 +51,24 @@ public abstract class Personagem : MonoBehaviour
 
         animacao = GetComponent<ControladorAnim>(); // procura componente que herda ControleAnim     
         controle = GetComponent<IComandosGerais>(); // procura componente que implementa IComandosGerais      
-        
+
     }
 
     protected HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        HitBox golpe = other.GetComponent<HitBox>();       
+        HitBox golpe = other.GetComponent<HitBox>();
 
         if (golpe != null && golpe.origem != this && golpesRecebidos.Add(golpe))
         {
             StartCoroutine(ProcessarGolpe(golpe));
-            if (sofreuChoque) return;    
         }
     }
     private IEnumerator ProcessarGolpe(HitBox golpe)
     {
-        Debug.Log("ProcessarGolpe - antes do frame - sofreuChoque: " + sofreuChoque);
         yield return null;
-        Debug.Log("ProcessarGolpe - depois do frame - sofreuChoque: " + sofreuChoque);
 
-        if (golpe == null || golpe.origem.sofreuChoque)
-        {
-            golpe.origem.sofreuChoque = false; 
-            yield break;
-        }
+        if (golpe == null || golpe.consumida) yield break;
 
         _hitCount++;
         Debug.Log("colidiu com ataque: " + _hitCount);
@@ -103,14 +96,14 @@ public abstract class Personagem : MonoBehaviour
         else boxCollider.offset = new Vector2(offsetXBase, boxCollider.offset.y);
     }
 
-   
+
     public void TrocarOffsetX(float novoValor)
     {
         offsetXBase = novoValor;
     }
 
 
-    
+
 
     //Métodos da classe - Personagem
     public virtual void Locomover(float direcao)
@@ -120,7 +113,7 @@ public abstract class Personagem : MonoBehaviour
         else sprite.flipX = false;
     }
 
-    
+
     public virtual void Atacar(int forca)
     {
         float direcao = sprite.flipX ? -1f : 1f;
@@ -131,19 +124,19 @@ public abstract class Personagem : MonoBehaviour
     public void AplicarGolpe(int indice)//animationEvent
     {
         float direcao = sprite.flipX ? -1f : 1f;
-        GameObject atk = Instantiate(ataques[indice], posicaoPersonagem.position, posicaoPersonagem.rotation);            
+        GameObject atk = Instantiate(ataques[indice], posicaoPersonagem.position, posicaoPersonagem.rotation);
 
         Vector3 scale = atk.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * direcao;
         atk.transform.localScale = scale;
 
-        HitBox hitbox = atk.GetComponent<HitBox>();        
+        HitBox hitbox = atk.GetComponent<HitBox>();
         hitbox.Inicializar(this, dano, direcao);
 
         Debug.Log("Aplicou: " + hitbox.dano + " de dano");
-    }      
-   
-    public virtual void SofrerAtaque(HitBox golpe) 
+    }
+
+    public virtual void SofrerAtaque(HitBox golpe)
     {
         sofreuAtaque = true;
 
@@ -163,7 +156,7 @@ public abstract class Personagem : MonoBehaviour
     }
 
 
-   
+
 
 
 }

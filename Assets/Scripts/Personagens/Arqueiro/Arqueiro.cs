@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Personagens.Guerreiro;
+﻿using Assets.Scripts.Entidades.Enums;
+using Assets.Scripts.Personagens.Guerreiro;
 using Assets.Scripts.Visual.Animacoes.Personagens;
 using System.Collections;
 using UnityEngine;
@@ -36,5 +37,62 @@ namespace Assets.Scripts.Personagens.Arqueiro
 		{
 			base.Update();
 		}
-	}
+
+        protected override IEnumerator RotinaAtacando()
+        {
+            bool comboRegistrado = false;
+            int forcaAtq = controle.ComandoAtaque();
+            int contadorCombo = 0;
+            animacao.indiceAtaque = 0;
+
+            animacao.ResetarAnimacao();
+            Atacar(forcaAtq);
+            animacao.AnimacaoAtacando();
+
+            yield return null;
+
+            while (!animacao.animacaoTerminou)
+            {
+                if (animacao.novoAtaque)//janela aberta
+                {
+                    if (contadorCombo <= 1 && controle.ComandoAtaque() > 0)//dano igual 0 significa que não atacou
+                    {
+                        comboRegistrado = true;
+                    }
+                    
+                    //pode sofrer dano durante o ataque (quem acerta outro antes)
+                    if (sofreuAtaque)
+                    {
+                        sofreuAtaque = false;
+                        yield return StartCoroutine(RotinaSofrendoAtaqueArm());
+                        yield break;
+                    }
+                    yield return null;
+                }
+                else//janela fechada
+                {
+                    if (comboRegistrado)
+                    {
+                        comboRegistrado = false;
+
+                        contadorCombo++;
+                        animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
+
+                        animacao.ResetarAnimacao();
+                        Atacar(forcaAtq);
+                        animacao.AnimacaoAtacando();
+                        yield return null;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+
+            yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
+            estadoAtual = EstadoJogador.ModoAtaque;
+        }
+       
+    }
 }

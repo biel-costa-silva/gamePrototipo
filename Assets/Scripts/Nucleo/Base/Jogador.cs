@@ -212,58 +212,12 @@ public class Jogador : Personagem
     }
     //
     protected virtual IEnumerator RotinaAtacando()
-    {
-        bool comboRegistrado = false;
+    {        
         int forcaAtq = controle.ComandoAtaque();
-        int contadorCombo = 0;
-        animacao.indiceAtaque = 0;
-
         animacao.ResetarAnimacao();
         Atacar(forcaAtq);
-        animacao.AnimacaoAtacando();
 
-        yield return null;
-
-
-        while (!animacao.animacaoTerminou)
-        {            
-            if (animacao.novoAtaque)//janela aberta
-            {
-                if (contadorCombo <= 2 && controle.ComandoAtaque() > 0)//dano igual 0 significa que não atacou
-                {
-                    comboRegistrado = true;
-
-                }
-
-                //pode sofrer dano durante o ataque (quem acerta outro antes)
-                if (sofreuAtaque)
-                {
-                    sofreuAtaque = false;
-                    yield return StartCoroutine(RotinaSofrendoAtaqueArm());
-                    yield break;
-                }
-                yield return null;
-            }
-            else//janela fechada
-            {
-                if (comboRegistrado)
-                {
-                    comboRegistrado = false;
-
-                    contadorCombo++;
-                    animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
-
-                    animacao.ResetarAnimacao();
-                    Atacar(forcaAtq);
-                    animacao.AnimacaoAtacando();
-                    yield return null;
-                }
-                else
-                {
-                    break;
-                }
-            }
-        }
+        animacao.AnimacaoAtacando();       
 
         yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
         estadoAtual = EstadoJogador.ModoAtaque;

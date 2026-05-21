@@ -14,14 +14,12 @@ namespace Assets.Scripts.Visual.Animacoes.Personagens
     {
         // ----------------  Métodos de acionamento ------------------
         
-
-
         // ----------------------- Método de controle de tempo de animação -------------------- #
-        
+
         // ------------------------------------------------------------------------------------ #
 
         // EVENTOS ESPECIFICOS DO ARQUEIRO!! --------------------------------------------------
-        
+
 
     }
 }

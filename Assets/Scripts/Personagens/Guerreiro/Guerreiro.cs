@@ -66,6 +66,7 @@ namespace Assets.Scripts.Personagens.Guerreiro
         protected override IEnumerator RotinaAtacando()
         {
             bool comboRegistrado = false;
+            sofreuChoque = false;
             int forcaAtq = controle.ComandoAtaque();
             int contadorCombo = 0;
             animacao.indiceAtaque = 0;
