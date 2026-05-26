@@ -1058,7 +1058,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1289048058
+--- !u!114 &1289048069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289048042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff952d6561c86ef438b5e52ddc83a590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.Funcionalidades.ControlesGuerreiro
+--- !u!114 &1289048070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1069,13 +1081,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4713b63bb64ca9543b6c98f88400bb7c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Visual.Animacoes.Personagens.AnimGuerreiro
-  personagem: {fileID: 1289048060}
-  animacaoTerminou: 1
-  novoAtaque: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.View.AnimacaoPeoes.AnimGuerreiro
+  controller: {fileID: 0}
+  animacaoTerminou: 0
+  novoAtaque: 1
   estaDefendendo: 0
   estaRepelindo: 0
---- !u!114 &1289048059
+--- !u!114 &1289048071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1084,10 +1096,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289048042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79557dcb01e324e42bd46ccde4040c7e, type: 3}
+  m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Personagens.Guerreiro.ComandosGuerreiro
---- !u!114 &1289048060
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorGuerreiro
+--- !u!114 &1289048075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1096,27 +1108,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289048042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45f8abeca64ca664d89b251acd5a672c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0637109ba7b7cf3458922770e9f7f2f4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Personagens.Guerreiro.Guerreiro
-  boxCollider: {fileID: 1289048062}
-  posicaoPersonagem: {fileID: 82766153}
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosGuerreiro
   ataques:
   - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
   - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}
   - {fileID: 508356192094315985, guid: ac6566c8616753343aed663624fbc6b7, type: 3}
-  animacao: {fileID: 0}
-  cameraController: {fileID: 0}
+  posicaoPersonagem: {fileID: 82766153}
   prefabsVFX:
   - {fileID: 1796444060775287699, guid: 3a3031ee26cbb624ea99ef06b0a6cffb, type: 3}
   - {fileID: 8680067936824478869, guid: e13bbcf0a5f800e4a9caa068da1be4f2, type: 3}
   - {fileID: 8235985266007744663, guid: cc7d72a9062c6284cb4d49e07d943dd4, type: 3}
-  posicaoGuerreiro: {fileID: 458771439}
---- !u!61 &1289048062 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
-  m_PrefabInstance: {fileID: 4867627773071352426}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1398831388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,66 +1375,22 @@ PrefabInstance:
       addedObject: {fileID: 1580722396}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580722382}
+      addedObject: {fileID: 1580722403}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580722387}
+      addedObject: {fileID: 1580722402}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580722391}
+      addedObject: {fileID: 1580722401}
+    - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1580722407}
   m_SourcePrefab: {fileID: 100100000, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
 --- !u!4 &1580722381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8407182189506776677, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
   m_PrefabInstance: {fileID: 1580722380}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1580722382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441674806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bf773eac91fac4d8efabb6463ac3c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Entidades.Arqueiro
-  boxCollider: {fileID: 1580722398}
-  posicaoPersonagem: {fileID: 2076201250}
-  ataques:
-  - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
-  - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}
-  - {fileID: 508356192094315985, guid: ac6566c8616753343aed663624fbc6b7, type: 3}
-  animacao: {fileID: 0}
-  cameraController: {fileID: 0}
---- !u!114 &1580722387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441674806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controles.ControlesArqueiro
---- !u!114 &1580722391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441674806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ea49c9e3a0375b4993a6077a7c2d3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Animacoes.AnimArqueiro
-  personagem: {fileID: 1580722382}
-  animacaoTerminou: 0
-  novoAtaque: 0
 --- !u!95 &1580722396
 Animator:
   serializedVersion: 7
@@ -1454,11 +1413,60 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &1580722398 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
-  m_PrefabInstance: {fileID: 1580722380}
+--- !u!114 &1580722401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441674806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorArqueiro
+--- !u!114 &1580722402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441674806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea49c9e3a0375b4993a6077a7c2d3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.View.AnimacaoPeoes.AnimArqueiro
+  controller: {fileID: 0}
+  animacaoTerminou: 0
+  novoAtaque: 1
+--- !u!114 &1580722403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441674806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.Funcionalidades.ControlesArqueiro
+--- !u!114 &1580722407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441674806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49ce60575093ba419d135d4e42f20e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosArqueiro
+  ataques:
+  - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
+  posicaoPersonagem: {fileID: 2076201250}
 --- !u!1 &1709343968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,13 +1834,16 @@ PrefabInstance:
       addedObject: {fileID: 1289048057}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289048060}
+      addedObject: {fileID: 1289048070}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289048059}
+      addedObject: {fileID: 1289048069}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289048058}
+      addedObject: {fileID: 1289048071}
+    - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289048075}
   m_SourcePrefab: {fileID: 100100000, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
