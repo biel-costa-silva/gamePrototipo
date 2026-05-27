@@ -34,6 +34,7 @@ namespace Assets.Scripts.Controller
         {
             base.Update();
 
+            // --- MODO ATAQUE ---
             if (estadoAtual == EstadoJogador.ModoAtaque || estadoAtual == EstadoJogador.AndandoArmado)
             {
                 if (controleGuerreiro.Defender())
@@ -41,6 +42,33 @@ namespace Assets.Scripts.Controller
                     estadoAtual = EstadoJogador.Ocupado;
                     StartCoroutine(RotinaDefendendo());
                     return;
+                }
+                if (controleGuerreiro.ComandoAgachar())
+                {
+                    estadoAtual = EstadoJogador.Agachado;
+                    return;
+                }
+            }            
+
+            // --- AGACHADO ---
+            if(estadoAtual == EstadoJogador.Agachado)
+            {
+                if (guerreiro.sofreuAtaque)
+                {
+                    guerreiro.LimparFlagAtaque();
+                    animGuerreiro.AnimacaoAgachado(false);
+                    estadoAtual = EstadoJogador.Ocupado;
+                    StartCoroutine(RotinaSofrendoAtaqueArm());
+                    return;
+                }
+                if (controleGuerreiro.ComandoAgachar())
+                {
+                    animGuerreiro.AnimacaoAgachado(true);
+                }
+                else
+                {
+                    animGuerreiro.AnimacaoAgachado(false);
+                    estadoAtual = EstadoJogador.ModoAtaque;
                 }
             }
         }
@@ -179,7 +207,14 @@ namespace Assets.Scripts.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
-
+        /*
+        IEnumerator RotinaAgachando()
+        {
+            animGuerreiro.AnimacaoAgachando();
+            yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
+            estadoAtual = EstadoJogador.ModoAtaque;
+        }
+        */
         IEnumerator RotinaRepelindo()
         {
             animGuerreiro.AnimacaoRepelindo();

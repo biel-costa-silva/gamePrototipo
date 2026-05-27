@@ -29,6 +29,11 @@ namespace Assets.Scripts.View.EntradaDados
             if (Input.GetKeyDown(KeyCode.Q)) return true;
             return false;
         }
+        public bool ComandoAgachar()
+        {
+            if (Input.GetKey(KeyCode.S)) return true;
+            return false;
+        }
         public bool Defender()
         {
             if (Input.GetKeyDown(KeyCode.L)) return true;

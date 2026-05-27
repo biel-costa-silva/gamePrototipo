@@ -16,5 +16,6 @@ namespace Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes
         ModoAtaque,
         Atacando,
         AndandoArmado,
+        Agachado,
     }
 }

@@ -44,6 +44,9 @@ namespace Assets.Scripts.View.AnimacaoPeoes
             animator.SetTrigger("receberChoque");
         }
 
+        public void AnimacaoAgachado(bool parametro) => animator.SetBool("isAgachado", parametro);
+       
+
         // ------------------------------------------------------------------------------------ #
 
         // EVENTOS ESPECIFICOS DO GUERREIRO!! --------------------------------------------------
