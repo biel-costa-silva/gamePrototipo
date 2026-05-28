@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Model.Entidades.Peoes;
+﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Model.Entidades.Peoes;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using Assets.Scripts.View.AnimacaoPeoes;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;
@@ -48,7 +48,7 @@ namespace Assets.Scripts.Controller
             animacao.indiceAtaque = 0;
 
             animacao.ResetarAnimacao();
-            oficio.AplicarImpulsoAtaque(forcaAtq);
+            oficio.AplicarImpulsoAtaque(-forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return null;
@@ -80,7 +80,7 @@ namespace Assets.Scripts.Controller
                         animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
 
                         animacao.ResetarAnimacao();
-                        oficio.AplicarImpulsoAtaque(forcaAtq);
+                        oficio.AplicarImpulsoAtaque(-forcaAtq);
                         animacao.AnimacaoAtacando();
                         yield return null;
                     }

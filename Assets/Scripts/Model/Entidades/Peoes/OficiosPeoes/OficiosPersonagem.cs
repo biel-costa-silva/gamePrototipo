@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

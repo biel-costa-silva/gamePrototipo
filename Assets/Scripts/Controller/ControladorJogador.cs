@@ -1,7 +1,6 @@
 ﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using Assets.Scripts.View;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;

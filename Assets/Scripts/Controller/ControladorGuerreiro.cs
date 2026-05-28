@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Model.Entidades.Peoes;
+﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Model.Entidades.Peoes;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using Assets.Scripts.View.AnimacaoPeoes;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;
@@ -207,14 +207,7 @@ namespace Assets.Scripts.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
-        /*
-        IEnumerator RotinaAgachando()
-        {
-            animGuerreiro.AnimacaoAgachando();
-            yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
-            estadoAtual = EstadoJogador.ModoAtaque;
-        }
-        */
+        
         IEnumerator RotinaRepelindo()
         {
             animGuerreiro.AnimacaoRepelindo();

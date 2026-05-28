@@ -682,7 +682,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0065918975, y: -0.10107581}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -692,7 +692,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23, y: 0.41}
+  m_Size: {x: 0.13331878, y: 0.124350965}
   m_EdgeRadius: 0
 --- !u!1 &934451909
 GameObject:
@@ -1465,7 +1465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosArqueiro
   ataques:
-  - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
+  - {fileID: 2959560683888490588, guid: 98affec6f30a36f498428c89072b279b, type: 3}
+  - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
 --- !u!1 &1709343968
 GameObject:

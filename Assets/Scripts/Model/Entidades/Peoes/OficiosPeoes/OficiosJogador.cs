@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
+using Assets.Scripts.Model.Entidades.Objetos;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
@@ -22,6 +23,12 @@ namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
 
             HitBox hitbox = atk.GetComponent<HitBox>();
             hitbox.Inicializar(dono, dano, direcao);
+
+            AtaqueADistancia ataqueADistancia = atk.GetComponent<AtaqueADistancia>();
+            if (ataqueADistancia != null)
+            {
+                ataqueADistancia.Inicializar(direcao);
+            }
         }
     }
 }

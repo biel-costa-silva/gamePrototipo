@@ -1,9 +1,10 @@
 ﻿using Assets.Scripts.Controller;
+using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes
+namespace Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos
 {
     public class HitBox : MonoBehaviour, ICausamDano
     {
