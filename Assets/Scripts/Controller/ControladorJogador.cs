@@ -40,7 +40,7 @@ namespace Assets.Scripts.Controller
         protected virtual void Update()
         {
             HitBox golpe = oficio.ConsumirGolpePendente();
-            if (golpe != null && !golpe.consumida)
+            if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {
                 Debug.Log($"Controller processando golpe. Consumida: {golpe.consumida}");
                 ProcessarDano(golpe);

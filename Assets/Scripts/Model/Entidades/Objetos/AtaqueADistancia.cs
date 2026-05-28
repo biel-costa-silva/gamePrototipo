@@ -25,16 +25,20 @@ namespace Assets.Scripts.Model.Entidades.Objetos
         }
 
         private void OnBecameInvisible()
-        {            
+        {           
             Destroy(gameObject);
             Debug.Log("Destruido por estar fora de cena");
         }
-
         private void OnTriggerEnter2D(Collider2D other)
-        {           
+        {
             if (other.GetComponent<HitBox>() != null) return;
-            Destroy (gameObject);
-            Debug.Log("Destruido por bater em algo");
+            StartCoroutine(DestruirNoProximoFrame());
+        }
+
+        private IEnumerator DestruirNoProximoFrame()
+        {
+            yield return null;
+            Destroy(gameObject);
         }
     }
 }
