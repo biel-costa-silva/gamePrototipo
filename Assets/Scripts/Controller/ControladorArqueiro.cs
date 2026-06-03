@@ -48,7 +48,7 @@ namespace Assets.Scripts.Controller
             animacao.indiceAtaque = 0;
 
             animacao.ResetarAnimacao();
-            oficio.AplicarImpulsoAtaque(-forcaAtq);
+            oficio.AplicarImpulsoAtaque(forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return null;

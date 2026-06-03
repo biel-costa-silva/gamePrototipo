@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Controller;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.U2D;
 
 namespace Assets.Scripts.View
 {
@@ -90,7 +91,6 @@ namespace Assets.Scripts.View
             novoAtaque = true;
         }
 
-        // Animation Event no último frame
         public virtual void OnAnimacaoTerminou()
         {
             ResetarTriggers();
@@ -103,7 +103,6 @@ namespace Assets.Scripts.View
             novoAtaque = false;
         }
 
-        //Define e spawna ataque na cena
         public void EventoAtaque()//frame do ataque
         {
             controller.AplicarGolpe(indiceAtaque);

@@ -41,7 +41,7 @@ namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
         }
 
         //impulsos
-        public void AplicarImpulsoAtaque(int forca)
+        public virtual void AplicarImpulsoAtaque(int forca)
         {
             float direcao = sprite.flipX ? -1f : 1f;
             rb.AddForce(new Vector2(direcao * (forca + 8) * 2, 0), ForceMode2D.Impulse);
