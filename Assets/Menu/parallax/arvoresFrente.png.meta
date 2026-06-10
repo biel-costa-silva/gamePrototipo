@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ef548fc06ad796444b1da0c4b1d4a52e
+guid: cfb4d6eb117efe942bbcb93566f5e8c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5617826420838613757
-    second: telaMenu800_400_0
+      213: -5906496284322118170
+    second: arvoresFrente_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: telaMenu800_400_0
+      name: arvoresFrente_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 854
-        height: 480
+        x: 236
+        y: 25
+        width: 404
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30d3c1082a87902b0800000000000000
-      internalID: -5617826420838613757
+      spriteID: 6e5c0d16ce8e70ea0800000000000000
+      internalID: -5906496284322118170
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      telaMenu800_400_0: -5617826420838613757
+      arvoresFrente_0: -5906496284322118170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
