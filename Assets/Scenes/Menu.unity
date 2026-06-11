@@ -188,12 +188,12 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
-  m_colorMode: 2
+  m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 1}
-    bottomRight: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 1}
+    topRight: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+    bottomLeft: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
+    bottomRight: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 5.77
+  m_characterSpacing: 6
   m_characterHorizontalScale: 0.8
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -537,12 +537,12 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
-  m_colorMode: 2
+  m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 0, g: 0, b: 0, a: 1}
-    bottomRight: {r: 0, g: 0, b: 0, a: 1}
+    topRight: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+    bottomLeft: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
+    bottomRight: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 5.77
+  m_characterSpacing: 6
   m_characterHorizontalScale: 0.8
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1080,11 +1080,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+    m_NormalColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_PressedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1359668906}
+  m_TargetGraphic: {fileID: 192987111}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1219,12 +1219,12 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
-  m_colorMode: 2
+  m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 0, g: 0, b: 0, a: 1}
-    bottomRight: {r: 0, g: 0, b: 0, a: 1}
+    topRight: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+    bottomLeft: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
+    bottomRight: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 5.77
+  m_characterSpacing: 6
   m_characterHorizontalScale: 0.8
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.33400002}
   m_AnchorMax: {x: 0.72034425, y: 0.48771012}
-  m_AnchoredPosition: {x: 0.9829407, y: -0.19999695}
+  m_AnchoredPosition: {x: 0.98291016, y: -0.19999695}
   m_SizeDelta: {x: 1.4100037, y: 0.94621277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &931714110
@@ -1452,9 +1452,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+    m_NormalColor: {r: 0.85882354, g: 0.85882354, b: 0.85882354, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    m_PressedColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1359668906}
+  m_TargetGraphic: {fileID: 755381663}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06daa439e598c640b40facffd025c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
-  multiplicadorDesl: -0.06
+  multiplicadorDesl: -0.04
   tempoSuavizacao: 0.3
 --- !u!1 &1292239063
 GameObject:
@@ -2074,12 +2074,12 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
-  m_colorMode: 2
+  m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 0, g: 0, b: 0, a: 1}
-    bottomRight: {r: 0, g: 0, b: 0, a: 1}
+    topRight: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
+    bottomLeft: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
+    bottomRight: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 5.77
+  m_characterSpacing: 6
   m_characterHorizontalScale: 0.8
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2201,10 +2201,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+    m_NormalColor: {r: 0.85882354, g: 0.85882354, b: 0.85882354, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2220,7 +2220,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1359668906}
+  m_TargetGraphic: {fileID: 1505931651}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -2336,7 +2336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06daa439e598c640b40facffd025c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
-  multiplicadorDesl: -0.08
+  multiplicadorDesl: -0.02
   tempoSuavizacao: 0.3
 --- !u!1 &1805433081
 GameObject:
@@ -2476,7 +2476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.68100005}
   m_AnchorMax: {x: 0.72034425, y: 0.83244085}
-  m_AnchoredPosition: {x: 0.95199585, y: 0}
+  m_AnchoredPosition: {x: 0.95202637, y: 0}
   m_SizeDelta: {x: 1.3480988, y: 1.2552099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967210119
@@ -2500,11 +2500,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+    m_NormalColor: {r: 0.85882354, g: 0.85882354, b: 0.85882354, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_PressedColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2519,7 +2519,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1359668906}
+  m_TargetGraphic: {fileID: 68756240}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -2558,8 +2558,8 @@ Transform:
   m_GameObject: {fileID: 1986310740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.64, y: -1.33, z: 0}
-  m_LocalScale: {x: 2.1700053, y: 2.1700053, z: 2.1700053}
+  m_LocalPosition: {x: -1.69, y: -1.32, z: 0}
+  m_LocalScale: {x: 2.20308, y: 2.20308, z: 2.20308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562269789}
@@ -2635,7 +2635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06daa439e598c640b40facffd025c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
-  multiplicadorDesl: 0.1
+  multiplicadorDesl: 0.18
   tempoSuavizacao: 0.3
 --- !u!1 &2007896371
 GameObject:
