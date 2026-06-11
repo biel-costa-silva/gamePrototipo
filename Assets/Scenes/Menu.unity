@@ -711,7 +711,7 @@ Transform:
   m_GameObject: {fileID: 251624878}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.78, y: 2.42, z: 0}
+  m_LocalPosition: {x: -2.46, y: 2.62, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1032,6 +1032,7 @@ GameObject:
   - component: {fileID: 639935548}
   - component: {fileID: 639935550}
   - component: {fileID: 639935549}
+  - component: {fileID: 639935551}
   m_Layer: 5
   m_Name: Bjogar
   m_TagString: Untagged
@@ -1111,6 +1112,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639935547}
   m_CullTransparentMesh: 1
+--- !u!114 &639935551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639935547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hover
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: click
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &750916080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1450,7 @@ GameObject:
   - component: {fileID: 931714109}
   - component: {fileID: 931714111}
   - component: {fileID: 931714110}
+  - component: {fileID: 931714112}
   m_Layer: 5
   m_Name: BSair
   m_TagString: Untagged
@@ -1483,6 +1530,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931714108}
   m_CullTransparentMesh: 1
+--- !u!114 &931714112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931714108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hover
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: click
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &951576362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1818,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
   multiplicadorDesl: -0.04
   tempoSuavizacao: 0.3
+--- !u!114 &1125776853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2179412288240499033, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+  m_PrefabInstance: {fileID: 3931475526749784246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849026abc7ad3804f9659238f4a18ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.GerenciadorAudio
 --- !u!1 &1292239063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,15 +1998,15 @@ RectTransform:
   m_GameObject: {fileID: 1359668904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.82125, y: 1.541953, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1292239064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.101}
-  m_AnchorMax: {x: 0.90000004, y: 0.76743704}
-  m_AnchoredPosition: {x: 0.64404297, y: 0.6669464}
-  m_SizeDelta: {x: 1.2881, y: 0.6661205}
+  m_AnchorMin: {x: 0.031000001, y: 0.047411926}
+  m_AnchorMax: {x: 0.73, y: 0.8706472}
+  m_AnchoredPosition: {x: 1.0112915, y: 0.3593979}
+  m_SizeDelta: {x: 147.9155, y: -68.7174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359668906
 MonoBehaviour:
@@ -1991,7 +2094,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1.9586488, w: 0}
+  m_margin: {x: 0, y: -0.35470197, z: 0.106964126, w: -0.09189604}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2153,6 +2256,7 @@ GameObject:
   - component: {fileID: 1696459099}
   - component: {fileID: 1696459101}
   - component: {fileID: 1696459100}
+  - component: {fileID: 1696459102}
   m_Layer: 5
   m_Name: BOpcoes
   m_TagString: Untagged
@@ -2232,6 +2336,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696459098}
   m_CullTransparentMesh: 1
+--- !u!114 &1696459102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696459098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hover
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: click
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1789551897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,6 +2601,7 @@ GameObject:
   - component: {fileID: 1967210118}
   - component: {fileID: 1967210120}
   - component: {fileID: 1967210119}
+  - component: {fileID: 1967210121}
   m_Layer: 5
   m_Name: BContinuar
   m_TagString: Untagged
@@ -2531,6 +2681,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967210117}
   m_CullTransparentMesh: 1
+--- !u!114 &1967210121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967210117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: hover
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1125776853}
+          m_TargetAssemblyTypeName: Assets.Scripts.Geral.GerenciadorAudio, Assembly-CSharp
+          m_MethodName: TocarAudio2D
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: click
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1986310740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,6 +2938,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
   multiplicadorDesl: -0.02
   tempoSuavizacao: 0.8
+--- !u!1001 &3931475526749784246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1823174425956987492, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_Name
+      value: GerenciadorAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: efeitosSonoros.Array.data[0].clips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: efeitosSonoros.Array.data[1].clips.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[1].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2770b490a4e1d68429a694e023024eee, type: 3}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[1].clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e773690648804094e835f0f678418369, type: 3}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[1].clips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ac97d0605d75df241ba2e4aea099ccac, type: 3}
+    - target: {fileID: 5514999514316079153, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[1].clips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ac97d0605d75df241ba2e4aea099ccac, type: 3}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 336.41843
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 185.4024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6574655924639578323, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d03cfadf68a96fe4290aa5192fe6c6ba, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2752,3 +3028,4 @@ SceneRoots:
   - {fileID: 297985107}
   - {fileID: 562269789}
   - {fileID: 1805433085}
+  - {fileID: 3931475526749784246}
