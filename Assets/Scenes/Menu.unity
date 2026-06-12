@@ -283,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 79890884}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.27, y: -3.5, z: 0}
+  m_LocalPosition: {x: -2.25, y: -3.26, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -901,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 394123938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 0.49, z: 0}
+  m_LocalPosition: {x: -2.16, y: 0.69, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1193,7 +1193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.020000001, y: 0.0050000004}
   m_AnchorMax: {x: 0.33400002, y: 0.38337126}
-  m_AnchoredPosition: {x: 1, y: 1.2542114}
+  m_AnchoredPosition: {x: 1, y: 1.2542725}
   m_SizeDelta: {x: 1.1724014, y: -1.4916}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &755381661
@@ -1739,7 +1739,7 @@ Transform:
   m_GameObject: {fileID: 965707374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9229999, y: -3.27, z: 0}
+  m_LocalPosition: {x: -2.54, y: -2.96, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2005,7 +2005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.031000001, y: 0.047411926}
   m_AnchorMax: {x: 0.73, y: 0.8706472}
-  m_AnchoredPosition: {x: 1.0112915, y: 0.3593979}
+  m_AnchoredPosition: {x: 1.0112915, y: 0.35939026}
   m_SizeDelta: {x: 147.9155, y: -68.7174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359668906
@@ -2753,8 +2753,8 @@ Transform:
   m_GameObject: {fileID: 1986310740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: -1.32, z: 0}
-  m_LocalScale: {x: 2.20308, y: 2.20308, z: 2.20308}
+  m_LocalPosition: {x: -1.88, y: -1.26, z: 0}
+  m_LocalScale: {x: 2.3175204, y: 2.3175204, z: 2.3175204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562269789}
@@ -2830,7 +2830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06daa439e598c640b40facffd025c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuParallax
-  multiplicadorDesl: 0.18
+  multiplicadorDesl: 0.1
   tempoSuavizacao: 0.3
 --- !u!1 &2007896371
 GameObject:
