@@ -1,8 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class MainMenu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private FadeCanvas menuPrincipal;
+    [SerializeField] private FadeCanvas menuOpcoes;
+
     private void Start()
     {
         GerenciadorMusicas.instancia.TocarMusica("Menu");
@@ -10,11 +13,21 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        //GerenciadorMusicas.instancia.TocarMusica("Menu");
         SceneManager.LoadScene("jogo");
-    }    
+    }
+
     public void Quit()
     {
-        Application.Quit(); 
+        Application.Quit();
+    }
+
+    public void AbrirOpcoes()
+    {
+        menuPrincipal.Esconder(() => menuOpcoes.Mostrar());
+    }
+
+    public void VoltarDoOpcoes()
+    {
+        menuOpcoes.Esconder(() => menuPrincipal.Mostrar());
     }
 }
