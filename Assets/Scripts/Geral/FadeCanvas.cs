@@ -7,10 +7,37 @@ public class FadeCanvas : MonoBehaviour
 {
     [SerializeField] private float duracao = 0.25f;
     private CanvasGroup canvasGroup;
+    private Animator[] animatorsDosBotoes;
 
     private void Awake()
     {
-        canvasGroup = GetComponent<CanvasGroup>();
+        canvasGroup = GetComponent<CanvasGroup>();       
+        animatorsDosBotoes = GetComponentsInChildren<Animator>(true);
+    }
+
+    private IEnumerator EsperarBotoesChegaremEmNormal()
+    {
+        bool aindaTransicionando = true;
+
+        while (aindaTransicionando)
+        {
+            aindaTransicionando = false;
+
+            foreach (Animator anim in animatorsDosBotoes)
+            {
+                bool estaEmTransicao = anim.IsInTransition(0);
+                var estadoAtual = anim.GetCurrentAnimatorStateInfo(0);
+                bool estaEstavel = estadoAtual.IsName("Normal") || estadoAtual.IsName("Selected");
+
+                if (estaEmTransicao || !estaEstavel)
+                {
+                    aindaTransicionando = true;
+                }
+            }
+
+            if (aindaTransicionando)
+                yield return null; // espera o próximo frame e checa de novo
+        }
     }
 
     // aoTerminar é opcional: usado quando alguém precisa SABER que o fade acabou
@@ -25,14 +52,17 @@ public class FadeCanvas : MonoBehaviour
     public void Esconder(Action aoTerminar = null)
     {
         StopAllCoroutines();
-        StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
+        StartCoroutine(EsconderSequencial(aoTerminar));
+    }
+
+    private IEnumerator EsconderSequencial(Action aoTerminar)
+    {
+        yield return StartCoroutine(EsperarBotoesChegaremEmNormal());
+        yield return StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
     }
 
     private IEnumerator Fade(float de, float para, bool ativarInteracaoAoFinal, Action aoTerminar)
-    {
-        // Desliga interação IMEDIATAMENTE, antes mesmo do fade visual começar.
-        // É essa linha que resolve o bug do highlight: o botão "sabe" na hora
-        // que não deve mais receber eventos de mouse.
+    {       
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
 
