@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5442549608898630486}
   - component: {fileID: 4476886484051105165}
   - component: {fileID: 819284269566469165}
-  - component: {fileID: 7451615867885961149}
+  - component: {fileID: 4831474566905041620}
   m_Layer: 5
   m_Name: Botao
   m_TagString: Untagged
@@ -160,7 +160,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7451615867885961149
+--- !u!114 &4831474566905041620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,9 +169,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1653575324461282974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc7675727e4bc9418d1f5a412989f61, type: 3}
+  m_Script: {fileID: 11500000, guid: 08e4317ba0000fc49aa8fb6c9685a2bc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClickSeguro
+  m_EditorClassIdentifier: Assembly-CSharp::BotaoAnimado
 --- !u!1 &5836529484671713102
 GameObject:
   m_ObjectHideFlags: 0
