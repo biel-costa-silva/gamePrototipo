@@ -6,6 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private FadeCanvas menuPrincipal;
     [SerializeField] private FadeCanvas menuOpcoes;
+    [SerializeField] private FadeCanvas menuVolume;
+    [SerializeField] private FadeCanvas menuControle;
     [SerializeField] private FundoEscuroController fundoEscuro;
 
     private void Start()
@@ -25,15 +27,27 @@ public class MainMenu : MonoBehaviour
 
     // botaoClicado: arraste, no Inspector do OnClick(), o próprio botão que
     // está sendo clicado (o mesmo objeto que tem o BotaoAnimado).
-    public void AbrirOpcoes(BotaoAnimado botaoClicado)
+
+    // ------------------- OPCOES ------------------------
+    public void IrParaOpcoes(BotaoAnimado botaoClicado)
     {
         StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuPrincipal, menuOpcoes, fundoEscuro.IrParaOpcoes));
     }
 
-    public void VoltarDoOpcoes(BotaoAnimado botaoClicado)
+    public void IrParaVolume(BotaoAnimado botaoClicado)
+    {
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuControle, menuVolume, fundoEscuro.IrParaOpcoes));
+    }
+    public void IrParaControles(BotaoAnimado botaoClicado)
+    {
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuVolume, menuControle, fundoEscuro.IrParaOpcoes));
+    }
+
+    public void VoltarDoOpcoes(BotaoAnimado botaoClicado)//volume
     {
         StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuOpcoes, menuPrincipal, fundoEscuro.IrParaPrincipal));
     }
+    // --------------------------------------------------
 
     private IEnumerator TrocarTelaAposAnimacao(BotaoAnimado botaoClicado, FadeCanvas esconder, FadeCanvas mostrar, System.Action moverFundo)
     {
