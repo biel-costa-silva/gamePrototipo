@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
     // ------------------- OPCOES ------------------------
     public void IrParaOpcoes(BotaoAnimado botaoClicado)
     {
-        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuPrincipal, menuOpcoes, fundoEscuro.IrParaOpcoes));
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuPrincipal, menuOpcoes, fundoEscuro.IrParaOpcoes));        
     }
 
     public void IrParaVolume(BotaoAnimado botaoClicado)

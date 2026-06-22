@@ -18,13 +18,12 @@ public class FadeCanvas : MonoBehaviour
         gameObject.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 1f, true, aoTerminar));
+        
     }
 
     public void Esconder(Action aoTerminar = null)
-    {
-        
+    {        
         canvasGroup.blocksRaycasts = false;
-
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
     }
