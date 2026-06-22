@@ -36,14 +36,14 @@ public class MainMenu : MonoBehaviour
 
     public void IrParaVolume(BotaoAnimado botaoClicado)
     {
-        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuControle, menuVolume, fundoEscuro.IrParaOpcoes));
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuControle, menuVolume, null));
     }
     public void IrParaControles(BotaoAnimado botaoClicado)
     {
-        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuVolume, menuControle, fundoEscuro.IrParaOpcoes));
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuVolume, menuControle, null));        
     }
 
-    public void VoltarDoOpcoes(BotaoAnimado botaoClicado)//volume
+    public void VoltarDoOpcoes(BotaoAnimado botaoClicado)
     {
         StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuOpcoes, menuPrincipal, fundoEscuro.IrParaPrincipal));
     }
@@ -64,7 +64,8 @@ public class MainMenu : MonoBehaviour
 
         // Dispara os dois ao mesmo tempo: o fade dos textos e o deslizar
         // do fundo escuro acontecem simultaneamente.
-        moverFundo();
+        if (moverFundo != null) moverFundo();
+
         esconder.Esconder(() => mostrar.Mostrar());
     }
 }
