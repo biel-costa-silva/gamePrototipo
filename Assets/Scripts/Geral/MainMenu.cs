@@ -8,13 +8,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private FadeCanvas menuOpcoes;
     [SerializeField] private FadeCanvas menuVolume;
     [SerializeField] private FadeCanvas menuControle;
+    [SerializeField] private FadeCanvas telaCarregamento;
     [SerializeField] private FundoEscuroController fundoEscuro;
 
+    // ------------------- START -------------------------
     private void Start()
     {
-        GerenciadorMusicas.instancia.TocarMusica("Menu");
+        StartCoroutine(Transicao(telaCarregamento, menuPrincipal, fundoEscuro.IrParaPrincipal));     
     }
 
+    // -------------------- MENU -------------------------
     public void Play()
     {
         SceneManager.LoadScene("jogo");
@@ -25,13 +28,10 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    // botaoClicado: arraste, no Inspector do OnClick(), o próprio botão que
-    // está sendo clicado (o mesmo objeto que tem o BotaoAnimado).
-
     // ------------------- OPCOES ------------------------
     public void IrParaOpcoes(BotaoAnimado botaoClicado)
     {
-        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuPrincipal, menuOpcoes, fundoEscuro.IrParaOpcoes));        
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuPrincipal, menuOpcoes, fundoEscuro.IrParaOpcoes));
     }
 
     public void IrParaVolume(BotaoAnimado botaoClicado)
@@ -40,7 +40,7 @@ public class MainMenu : MonoBehaviour
     }
     public void IrParaControles(BotaoAnimado botaoClicado)
     {
-        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuVolume, menuControle, null));        
+        StartCoroutine(TrocarTelaAposAnimacao(botaoClicado, menuVolume, menuControle, null));
     }
 
     public void VoltarDoOpcoes(BotaoAnimado botaoClicado)
@@ -63,9 +63,22 @@ public class MainMenu : MonoBehaviour
         }
 
         // Dispara os dois ao mesmo tempo: o fade dos textos e o deslizar
-        // do fundo escuro acontecem simultaneamente.
-        if (moverFundo != null) moverFundo();
+        // do fundo escuro acontecem simultaneamente.        
 
         esconder.Esconder(() => mostrar.Mostrar());
+        if (moverFundo != null) moverFundo();
+    }
+    private IEnumerator Transicao(FadeCanvas de, FadeCanvas para, System.Action moverFundo)
+    {        
+        if (de == null || para == null) yield break;
+
+        yield return new WaitForSeconds(8f);
+
+        de.Esconder(() => para.Mostrar());
+        if (moverFundo != null) moverFundo();
+
+        yield return null;
+        GerenciadorMusicas.instancia.TocarMusica("Menu");
+
     }
 }

@@ -30,6 +30,7 @@ public class FadeCanvas : MonoBehaviour
 
     private IEnumerator Fade(float de, float para, bool ativarInteracaoAoFinal, Action aoTerminar)
     {
+        Debug.Log($"Alpha no início do Fade: {de}");
         canvasGroup.blocksRaycasts = false;
 
         float tempoPassado = 0f;
