@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
+namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
-    public abstract class OficiosPersonagem : MonoBehaviour
+    public abstract class FisicaPersonagem : MonoBehaviour
     {
         //componentes
         protected Rigidbody2D rb;
@@ -30,8 +30,6 @@ namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
         {
             CorrigirColliderFlip();
         }
-
-
 
         //movimentos
         public void Locomover(float direcao, float velocidade)

@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
 using Assets.Scripts.View.AnimacaoPeoes;
 using System.Collections;
 using UnityEngine;

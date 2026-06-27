@@ -1,6 +1,6 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
 using Assets.Scripts.View;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;
@@ -14,7 +14,7 @@ namespace Assets.Scripts.Controller
         //model
         public Jogador jogador;
         //oficios do model
-        protected OficiosJogador oficio;
+        protected FisicaJogador fisica;
         //view       
         protected ControladorAnim animacao;
         //controle
@@ -25,7 +25,7 @@ namespace Assets.Scripts.Controller
      
         public void Awake()
         {
-            oficio = GetComponent<OficiosJogador>();            
+            fisica = GetComponent<FisicaJogador>();            
             animacao = GetComponent<ControladorAnim>();
             controle = GetComponent<IControles>();
 
@@ -39,14 +39,14 @@ namespace Assets.Scripts.Controller
 
         protected virtual void Update()
         {
-            HitBox golpe = oficio.ConsumirGolpePendente();
+            HitBox golpe = fisica.ConsumirGolpePendente();
             if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {
                 Debug.Log($"Controller processando golpe. Consumida: {golpe.consumida}");
                 ProcessarDano(golpe);
             }
               
-            interagivelAtual = oficio.GetInteragivelPendente();
+            interagivelAtual = fisica.GetInteragivelPendente();
 
             if (estadoAtual == EstadoJogador.Ocupado) return;
 
@@ -95,7 +95,7 @@ namespace Assets.Scripts.Controller
                 }
                 if (controle.ComandoMovimento() != 0)
                 {
-                    oficio.Locomover(controle.ComandoMovimento(), jogador.GetVelocidade());
+                    fisica.Locomover(controle.ComandoMovimento(), jogador.GetVelocidade());
                     animacao.AnimacaoAndando(true);
                 }
                 else
@@ -154,7 +154,7 @@ namespace Assets.Scripts.Controller
                 }
                 if (controle.ComandoMovimento() != 0)
                 {
-                    oficio.Locomover(controle.ComandoMovimento(), jogador.GetVelocidade());
+                    fisica.Locomover(controle.ComandoMovimento(), jogador.GetVelocidade());
                     animacao.AnimacaoAndandoArmado(true);
                 }
                 else
@@ -184,13 +184,13 @@ namespace Assets.Scripts.Controller
         protected virtual void ProcessarDano(HitBox golpe)
         {
             jogador.ReceberDano(golpe.dano);
-            oficio.AplicarImpulsoGolpeRecebido(golpe);
+            fisica.AplicarImpulsoGolpeRecebido(golpe);
             Debug.Log("Recebeu dano:" + golpe.dano);
         }      
 
         public void AplicarGolpe(int indice)
         {
-            oficio.AplicarGolpe(this, jogador.GetDano(), indice);
+            fisica.AplicarGolpe(this, jogador.GetDano(), indice);
         }
 
 
@@ -224,7 +224,7 @@ namespace Assets.Scripts.Controller
             int forcaAtq = controle.ComandoAtaque();
 
             animacao.ResetarAnimacao();
-            oficio.AplicarImpulsoAtaque(forcaAtq);
+            fisica.AplicarImpulsoAtaque(forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame

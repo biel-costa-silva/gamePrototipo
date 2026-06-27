@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes
+namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
     public class VFXController : MonoBehaviour
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
+namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
-    public class OficiosGuerreiro : OficiosJogador
+    public class FisicaGuerreiro : FisicaJogador
     {
 
         [SerializeField] private GameObject[] prefabsVFX;

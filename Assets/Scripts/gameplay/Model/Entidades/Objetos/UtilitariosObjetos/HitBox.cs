@@ -1,5 +1,5 @@
 ﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;

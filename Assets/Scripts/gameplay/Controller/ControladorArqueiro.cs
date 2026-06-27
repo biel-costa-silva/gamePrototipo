@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
 using Assets.Scripts.View.AnimacaoPeoes;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;
@@ -12,7 +12,7 @@ namespace Assets.Scripts.Controller
     public class ControladorArqueiro : ControladorJogador
     {
         private Arqueiro arqueiro;
-        private OficiosArqueiro oficioArqueiro;
+        private FisicaArqueiro fisicaArqueiro;
         private AnimArqueiro animArqueiro;
         private ControlesArqueiro controleArqueiro;
 
@@ -21,7 +21,7 @@ namespace Assets.Scripts.Controller
             base.Awake();
 
             arqueiro = jogador as Arqueiro;
-            oficioArqueiro = oficio as OficiosArqueiro; 
+            fisicaArqueiro = fisica as FisicaArqueiro; 
             animArqueiro = animacao as AnimArqueiro;
             controleArqueiro = controle as ControlesArqueiro;
         }
@@ -48,7 +48,7 @@ namespace Assets.Scripts.Controller
             animacao.indiceAtaque = 0;
 
             animacao.ResetarAnimacao();
-            oficio.AplicarImpulsoAtaque(forcaAtq);
+            fisica.AplicarImpulsoAtaque(forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return null;
@@ -80,7 +80,7 @@ namespace Assets.Scripts.Controller
                         animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
 
                         animacao.ResetarAnimacao();
-                        oficio.AplicarImpulsoAtaque(-forcaAtq);
+                        fisica.AplicarImpulsoAtaque(-forcaAtq);
                         animacao.AnimacaoAtacando();
                         yield return null;
                     }

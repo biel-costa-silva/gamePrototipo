@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
-using Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes;
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 
 namespace Assets.Scripts.View.EntradaDados
 {

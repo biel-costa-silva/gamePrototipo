@@ -4,9 +4,9 @@ using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes
+namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
-    public class OficiosJogador : OficiosPersonagem
+    public class FisicaJogador : FisicaPersonagem
     {
 
         [SerializeField] protected GameObject[] ataques;

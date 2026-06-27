@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes;
 using Assets.Scripts.View.AnimacaoPeoes;
 using Assets.Scripts.View.EntradaDados;
 using System.Collections;
@@ -12,7 +12,7 @@ namespace Assets.Scripts.Controller
     public class ControladorGuerreiro : ControladorJogador
     {
         private Guerreiro guerreiro;
-        private OficiosGuerreiro oficioGuerreiro;
+        private FisicaGuerreiro fisicaGuerreiro;
         private AnimGuerreiro animGuerreiro;
         private ControlesGuerreiro controleGuerreiro;
         
@@ -21,7 +21,7 @@ namespace Assets.Scripts.Controller
             base.Awake();
 
             guerreiro = jogador as Guerreiro;
-            oficioGuerreiro = oficio as OficiosGuerreiro;
+            fisicaGuerreiro = fisica as FisicaGuerreiro;
             animGuerreiro = animacao as AnimGuerreiro;
             controleGuerreiro = controle as ControlesGuerreiro;
         }
@@ -77,15 +77,15 @@ namespace Assets.Scripts.Controller
         {
             bool repelindo = animGuerreiro.estaRepelindo;
             bool defendendo = animGuerreiro.estaDefendendo;
-            bool deCostas = oficio.EstaDeCostas(golpe.direcao);
+            bool deCostas = fisica.EstaDeCostas(golpe.direcao);
                                  
             guerreiro.deCostas = deCostas;
 
             if (deCostas)
             {
-                oficio.VirarParaLadoDoGolpe(golpe.direcao);
+                fisica.VirarParaLadoDoGolpe(golpe.direcao);
                 jogador.ReceberDano(golpe.dano);
-                oficio.AplicarImpulsoGolpeRecebido(golpe);
+                fisica.AplicarImpulsoGolpeRecebido(golpe);
                 Debug.Log("Recebeu dano" + golpe.dano);
                 return;
             }
@@ -95,21 +95,21 @@ namespace Assets.Scripts.Controller
             if (repelindo)
             {
                 guerreiro.SetSofreuAtaque();
-                oficioGuerreiro.SpawnarVFX(0);
-                oficioGuerreiro.AplicarImpulsoCustom(10f);
+                fisicaGuerreiro.SpawnarVFX(0);
+                fisicaGuerreiro.AplicarImpulsoCustom(10f);
             }
             else if (defendendo)
             {               
                 jogador.ReceberDano(danoFinal);
-                oficio.AplicarImpulsoGolpeRecebido(golpe);
-                oficioGuerreiro.SpawnarVFX(1);
-                oficioGuerreiro.AplicarImpulsoCustom(50f);
+                fisica.AplicarImpulsoGolpeRecebido(golpe);
+                fisicaGuerreiro.SpawnarVFX(1);
+                fisicaGuerreiro.AplicarImpulsoCustom(50f);
                 Debug.Log("Recebeu dano" + danoFinal);                
             }
             else
             {
                 jogador.ReceberDano(danoFinal);
-                oficio.AplicarImpulsoGolpeRecebido(golpe);
+                fisica.AplicarImpulsoGolpeRecebido(golpe);
                 Debug.Log("Recebeu dano" + danoFinal);
             }
         }
@@ -123,7 +123,7 @@ namespace Assets.Scripts.Controller
             animacao.indiceAtaque = 0;
 
             animacao.ResetarAnimacao();
-            oficio.AplicarImpulsoAtaque(forcaAtq);
+            fisica.AplicarImpulsoAtaque(forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return null;
@@ -161,7 +161,7 @@ namespace Assets.Scripts.Controller
                         animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
 
                         animacao.ResetarAnimacao();
-                        oficio.AplicarImpulsoAtaque(forcaAtq);
+                        fisica.AplicarImpulsoAtaque(forcaAtq);
                         animacao.AnimacaoAtacando();
                         yield return null;
                     }
@@ -223,7 +223,7 @@ namespace Assets.Scripts.Controller
         }
         IEnumerator RotinaRecebeChoqueAtqs()
         {
-            oficioGuerreiro.ReceberChoque();
+            fisicaGuerreiro.ReceberChoque();
             animGuerreiro.AnimacaoRecebeChoqueAtqs();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
