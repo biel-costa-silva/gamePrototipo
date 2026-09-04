@@ -8,7 +8,8 @@ public class Camera : MonoBehaviour
     public Transform player1;
     public Transform player2;
 
-    public float minX, minY;
+    [Header("Limtes do mapa")]
+    public float minX, maxX;
 
     public float suavidade = 2f;
     internal static object main;
@@ -37,6 +38,8 @@ public class Camera : MonoBehaviour
 
         //para onde a câmera se dirige 
         Vector3 destino = new Vector3(centro.x, centro.y, transform.position.z);
+
+        destino.x = Mathf.Clamp(destino.x, minX, maxX);
 
         transform.position = Vector3.Lerp(transform.position, destino, suavidade * Time.deltaTime);        
     }
