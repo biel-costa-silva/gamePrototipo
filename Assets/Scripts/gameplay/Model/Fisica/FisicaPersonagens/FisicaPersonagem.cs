@@ -11,6 +11,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         protected Rigidbody2D rb;
         protected SpriteRenderer sprite;
         protected BoxCollider2D boxCollider;
+        public Camera camera;
 
         //variaveis de controle
         private float offsetXBase = -0.01f;
@@ -29,6 +30,11 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         private void LateUpdate()
         {
             CorrigirColliderFlip();
+
+            //personagens não ultrapassam a camera
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Clamp(pos.x, camera.GetLimiteEsquerdo(), camera.GetLimiteDireito());
+            transform.position = pos;
         }
 
         //movimentos
@@ -73,6 +79,8 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             if (sprite.flipX) boxCollider.offset = new Vector2(-offsetXBase, boxCollider.offset.y);
             else boxCollider.offset = new Vector2(offsetXBase, boxCollider.offset.y);
         }
+
+
 
         //Detectados
         public virtual void OnTriggerEnter2D(Collider2D other)

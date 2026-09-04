@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 public class Camera : MonoBehaviour
 {
     // Atributos da câmera
@@ -8,6 +7,8 @@ public class Camera : MonoBehaviour
 
     public Transform player1;
     public Transform player2;
+
+    public float minX, minY;
 
     public float suavidade = 2f;
     internal static object main;
