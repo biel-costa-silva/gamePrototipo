@@ -14,7 +14,7 @@ namespace Assets.Scripts.Model.Entidades.Peoes
             vida = 6;
             dano = 2;
             defesa = 2;
-            velocidade = 5;
+            velocidade = 4f;
             velocidadeBase = velocidade;
         }
 

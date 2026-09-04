@@ -44,16 +44,18 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             sprite.flipX = direcao < 0;
         }
 
+
         //impulsos
         public virtual void AplicarImpulsoAtaque(int forca)
         {
             float direcao = sprite.flipX ? -1f : 1f;
-            rb.AddForce(new Vector2(direcao * (forca + 8) * 2, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(direcao * (forca + 4) * 2, 0), ForceMode2D.Impulse);
         }
         public void AplicarImpulsoGolpeRecebido(HitBox golpe)
         {
             rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 12, 0), ForceMode2D.Impulse);
         }
+
 
         //direcao
         public float GetDirecao()
@@ -68,6 +70,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             sprite.flipX = direcaoGolpe > 0;
         }
+
 
         //correcao de colliders
         public void TrocarOffsetX(float novoValor)
