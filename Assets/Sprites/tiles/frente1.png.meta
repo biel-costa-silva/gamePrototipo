@@ -8,6 +8,51 @@ TextureImporter:
   - first:
       213: -1534621457396366362
     second: frente1_1
+  - first:
+      213: -9065499585785750285
+    second: frente1_2
+  - first:
+      213: -3804089239009048261
+    second: frente1_3
+  - first:
+      213: -9195844774984612368
+    second: frente1_4
+  - first:
+      213: 1796698666829033489
+    second: frente1_5
+  - first:
+      213: -2207159534633145710
+    second: frente1_6
+  - first:
+      213: -1127356243519636133
+    second: frente1_7
+  - first:
+      213: -1254795350051711884
+    second: frente1_8
+  - first:
+      213: 970547751666010233
+    second: frente1_9
+  - first:
+      213: -7221003253406638702
+    second: frente1_10
+  - first:
+      213: 6942825367385006851
+    second: frente1_11
+  - first:
+      213: -4086740339867925030
+    second: frente1_12
+  - first:
+      213: 7236988118573356692
+    second: frente1_13
+  - first:
+      213: 541939410419564590
+    second: frente1_14
+  - first:
+      213: 3868606901270325244
+    second: frente1_15
+  - first:
+      213: 3935863180568189772
+    second: frente1_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,7 +179,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1680
+        width: 2032
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -154,7 +199,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 39c8c471144ee0b4083b4fc5e083a502
+    spriteID: 97b2a418b2f333e4882d6765cf4260c0
     internalID: 0
     vertices: []
     indices: 
@@ -164,7 +209,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1680.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2032.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       frente1_0: 7138009157527518937
   mipmapLimitGroupName: 
