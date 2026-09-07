@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: d574a24d9e057964bb6373b7dca6c655
+guid: 15b61034ef7bfa241a92cb2663396a70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2093949651946735650
-    second: agua 1_0
-  - first:
-      213: -4135990197901995417
-    second: agua 1_1
-  - first:
-      213: 27192767594292491
-    second: agua 1_2
-  - first:
-      213: 4253005114847324607
-    second: agua 1_3
-  - first:
-      213: -1738658330560236953
-    second: agua 1_4
-  - first:
-      213: 6224835236986919077
-    second: agua 1_5
-  - first:
-      213: -4535450627682139455
-    second: agua 1_6
-  - first:
-      213: 7470460003093693389
-    second: agua 1_7
-  - first:
-      213: -4820943825501684445
-    second: agua 1_8
+      213: -3177767390465135256
+    second: aguaR1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: agua 1_0
+      name: aguaR1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -158,15 +134,15 @@ TextureImporter:
         width: 1808
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22886dd3d143f0d10800000000000000
-      internalID: 2093949651946735650
+      spriteID: 86d6188156d46e3d0800000000000000
+      internalID: -3177767390465135256
       vertices: []
       indices: 
       edges: []
@@ -175,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9ec70b9d0928aa347828537424a6b67c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -183,11 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1808.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      agua 1_0: 2093949651946735650
+      aguaR1_0: -3177767390465135256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

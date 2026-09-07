@@ -1,34 +1,157 @@
 fileFormatVersion: 2
-guid: d574a24d9e057964bb6373b7dca6c655
+guid: 7a2ef80c34deb9a47afdab7ee5779106
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2093949651946735650
-    second: agua 1_0
+      213: 8423067245582994208
+    second: aguaR2_0
   - first:
-      213: -4135990197901995417
-    second: agua 1_1
+      213: -5544145372270867783
+    second: aguaR2_1
   - first:
-      213: 27192767594292491
-    second: agua 1_2
+      213: -6874092060967840931
+    second: aguaR2_2
   - first:
-      213: 4253005114847324607
-    second: agua 1_3
+      213: -7121381244338047183
+    second: aguaR2_3
   - first:
-      213: -1738658330560236953
-    second: agua 1_4
+      213: -1712629668928720151
+    second: aguaR2_4
   - first:
-      213: 6224835236986919077
-    second: agua 1_5
+      213: -245383673874956856
+    second: aguaR2_5
   - first:
-      213: -4535450627682139455
-    second: agua 1_6
+      213: 6206981568587506536
+    second: aguaR2_6
   - first:
-      213: 7470460003093693389
-    second: agua 1_7
+      213: 3194001799233073898
+    second: aguaR2_7
   - first:
-      213: -4820943825501684445
-    second: agua 1_8
+      213: 8605171613454741402
+    second: aguaR2_8
+  - first:
+      213: 1176625071953183807
+    second: aguaR2_9
+  - first:
+      213: -8105310704275428837
+    second: aguaR2_10
+  - first:
+      213: -5814161546301714700
+    second: aguaR2_11
+  - first:
+      213: 3830574852068766060
+    second: aguaR2_12
+  - first:
+      213: -7123702909679292112
+    second: aguaR2_13
+  - first:
+      213: 8697114093285389064
+    second: aguaR2_14
+  - first:
+      213: -8330798200452207500
+    second: aguaR2_15
+  - first:
+      213: -256717937370200900
+    second: aguaR2_16
+  - first:
+      213: -3678028564466339106
+    second: aguaR2_17
+  - first:
+      213: 3043857701650720130
+    second: aguaR2_18
+  - first:
+      213: 1905788699971438750
+    second: aguaR2_19
+  - first:
+      213: -150394948006586796
+    second: aguaR2_20
+  - first:
+      213: 2971833827402040795
+    second: aguaR2_21
+  - first:
+      213: 6268635421884441038
+    second: aguaR2_22
+  - first:
+      213: -7940337176273740553
+    second: aguaR2_23
+  - first:
+      213: -8393937725469015113
+    second: aguaR2_24
+  - first:
+      213: -266340266351755387
+    second: aguaR2_25
+  - first:
+      213: 7543518944605727117
+    second: aguaR2_26
+  - first:
+      213: 8610592077939586264
+    second: aguaR2_27
+  - first:
+      213: -5837651324555353283
+    second: aguaR2_28
+  - first:
+      213: -7758568385267667951
+    second: aguaR2_29
+  - first:
+      213: -3636317945234148737
+    second: aguaR2_30
+  - first:
+      213: 1323749509564103581
+    second: aguaR2_31
+  - first:
+      213: 1463202099508661247
+    second: aguaR2_32
+  - first:
+      213: 194035718330077933
+    second: aguaR2_33
+  - first:
+      213: 1325909550397382907
+    second: aguaR2_34
+  - first:
+      213: -3273276998405599102
+    second: aguaR2_35
+  - first:
+      213: 8635700994918920538
+    second: aguaR2_36
+  - first:
+      213: 8079268955205666241
+    second: aguaR2_37
+  - first:
+      213: -1602060793235651889
+    second: aguaR2_38
+  - first:
+      213: -6935493351456111818
+    second: aguaR2_39
+  - first:
+      213: -7501975981988687328
+    second: aguaR2_40
+  - first:
+      213: 4507792942719334391
+    second: aguaR2_41
+  - first:
+      213: 9177984401029855477
+    second: aguaR2_42
+  - first:
+      213: 8567249090059674114
+    second: aguaR2_43
+  - first:
+      213: -7451453548544100508
+    second: aguaR2_44
+  - first:
+      213: 4126617486513155117
+    second: aguaR2_45
+  - first:
+      213: 6874329822400567866
+    second: aguaR2_46
+  - first:
+      213: 7364814438349525586
+    second: aguaR2_47
+  - first:
+      213: -3665731170894790813
+    second: aguaR2_48
+  - first:
+      213: 8041879484302032763
+    second: aguaR2_49
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,7 +273,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: agua 1_0
+      name: aguaR2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22886dd3d143f0d10800000000000000
-      internalID: 2093949651946735650
+      spriteID: 02bc334580fb4e470800000000000000
+      internalID: 8423067245582994208
       vertices: []
       indices: 
       edges: []
@@ -175,7 +298,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9ec70b9d0928aa347828537424a6b67c
+    spriteID: e328d6375dd6d0a418840418aeac58ad
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +310,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1808.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      agua 1_0: 2093949651946735650
+      aguaR2_0: 8423067245582994208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
