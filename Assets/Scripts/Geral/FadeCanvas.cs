@@ -15,6 +15,12 @@ public class FadeCanvas : MonoBehaviour
 
     public void Mostrar(Action aoTerminar = null)
     {
+        if (gameObject.activeInHierarchy && canvasGroup.interactable)
+        {
+            // já está visível e interagível, não precisa fazer nada
+            aoTerminar?.Invoke();
+            return;
+        }
         gameObject.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 1f, true, aoTerminar));
@@ -22,7 +28,13 @@ public class FadeCanvas : MonoBehaviour
     }
 
     public void Esconder(Action aoTerminar = null)
-    {        
+    {
+        if (!gameObject.activeInHierarchy)
+        {
+            // já está escondido, não precisa fazer nada
+            aoTerminar?.Invoke();
+            return;
+        }
         canvasGroup.blocksRaycasts = false;
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
