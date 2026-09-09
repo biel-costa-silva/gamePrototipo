@@ -7120,8 +7120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.38337126}
   m_AnchorMax: {x: 0.48800004, y: 0.6082228}
-  m_AnchoredPosition: {x: 282.93268, y: 325.82407}
-  m_SizeDelta: {x: 639.493, y: 151.40863}
+  m_AnchoredPosition: {x: 136.23, y: 325.8241}
+  m_SizeDelta: {x: 346.09, y: 151.4086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1296926658
 GameObject:
@@ -7728,7 +7728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VIAJANTES
+  m_text: ATTUNE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 849d077425809d144b95c1af391aa92f, type: 2}
   m_sharedMaterial: {fileID: -3814341801277171588, guid: 849d077425809d144b95c1af391aa92f, type: 2}
