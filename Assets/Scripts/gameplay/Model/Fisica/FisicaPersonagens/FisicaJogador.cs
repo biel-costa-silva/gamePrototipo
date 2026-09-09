@@ -6,11 +6,17 @@ using UnityEngine;
 
 namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
-    public class FisicaJogador : FisicaPersonagem
+    public class FisicaJogador : FisicaPersonagem   
     {
 
         [SerializeField] protected GameObject[] ataques;
         [SerializeField] protected Transform posicaoPersonagem;
+        public BoxCollider2D boxColliderP2;
+
+        private void Start()
+        {
+            Physics2D.IgnoreCollision(boxColliderP1, boxColliderP2, true);
+        }
 
         public void AplicarGolpe(ControladorJogador dono, int dano, int indice)
         {

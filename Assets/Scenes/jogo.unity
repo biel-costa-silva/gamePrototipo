@@ -29440,7 +29440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259.1, y: 195.9}
+  m_AnchoredPosition: {x: -284.2, y: 206}
   m_SizeDelta: {x: 284.07, y: 60.08}
   m_Pivot: {x: 0.49999997, y: 0.5250496}
 --- !u!114 &838097166
@@ -32392,7 +32392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230.4, y: 156.3}
+  m_AnchoredPosition: {x: -257.1, y: 166.5}
   m_SizeDelta: {x: 283.29, y: 60.08}
   m_Pivot: {x: 0.52792436, y: 0.6074041}
 --- !u!212 &1028368354
@@ -38272,11 +38272,17 @@ MonoBehaviour:
   - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}
   - {fileID: 508356192094315985, guid: ac6566c8616753343aed663624fbc6b7, type: 3}
   posicaoPersonagem: {fileID: 82766153}
+  boxColliderP2: {fileID: 1580722413}
   prefabsVFX:
   - {fileID: 1796444060775287699, guid: 3a3031ee26cbb624ea99ef06b0a6cffb, type: 3}
   - {fileID: 8680067936824478869, guid: e13bbcf0a5f800e4a9caa068da1be4f2, type: 3}
   - {fileID: 8235985266007744663, guid: cc7d72a9062c6284cb4d49e07d943dd4, type: 3}
---- !u!114 &1289048079
+--- !u!61 &1289048081 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+  m_PrefabInstance: {fileID: 4867627773071352426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289048083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38285,7 +38291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289048042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4acb7fb299795b94d8affea426db64a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 54a42f9e90dcae845bcc8d29ffa6375a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaUIController
   vida: 6
@@ -47188,7 +47194,7 @@ PrefabInstance:
       addedObject: {fileID: 1580722407}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580722411}
+      addedObject: {fileID: 1580722415}
   m_SourcePrefab: {fileID: 100100000, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
 --- !u!4 &1580722381 stripped
 Transform:
@@ -47273,7 +47279,13 @@ MonoBehaviour:
   - {fileID: 2959560683888490588, guid: 98affec6f30a36f498428c89072b279b, type: 3}
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
---- !u!114 &1580722411
+  boxColliderP2: {fileID: 1289048081}
+--- !u!61 &1580722413 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+  m_PrefabInstance: {fileID: 1580722380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1580722415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47282,7 +47294,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 441674806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4acb7fb299795b94d8affea426db64a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 54a42f9e90dcae845bcc8d29ffa6375a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaUIController
   vida: 4
@@ -47730,7 +47742,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4842145481527610077, guid: 1b6d96dd019517e4b985eec891c408e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -62640,6 +62652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guerreiro
       objectReference: {fileID: 0}
+    - target: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       propertyPath: m_Size.x
       value: 0.115434945
@@ -62816,7 +62832,7 @@ PrefabInstance:
       addedObject: {fileID: 1289048075}
     - targetCorrespondingSourceObject: {fileID: 290375056759297450, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1289048079}
+      addedObject: {fileID: 1289048083}
   m_SourcePrefab: {fileID: 100100000, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

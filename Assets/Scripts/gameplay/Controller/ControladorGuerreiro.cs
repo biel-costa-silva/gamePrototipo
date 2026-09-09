@@ -85,6 +85,7 @@ namespace Assets.Scripts.Controller
             {
                 fisica.VirarParaLadoDoGolpe(golpe.direcao);
                 jogador.ReceberDano(golpe.dano);
+                vidaUI.Decrementar(golpe.dano);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
                 Debug.Log("Recebeu dano" + golpe.dano);
                 return;
@@ -101,14 +102,16 @@ namespace Assets.Scripts.Controller
             else if (defendendo)
             {               
                 jogador.ReceberDano(danoFinal);
+                vidaUI.Decrementar(danoFinal);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
                 fisicaGuerreiro.SpawnarVFX(1);
-                fisicaGuerreiro.AplicarImpulsoCustom(50f);
+                fisicaGuerreiro.AplicarImpulsoCustom(7f);
                 Debug.Log("Recebeu dano" + danoFinal);                
             }
             else
             {
                 jogador.ReceberDano(danoFinal);
+                vidaUI.Decrementar(danoFinal);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
                 Debug.Log("Recebeu dano" + danoFinal);
             }

@@ -1,16 +1,19 @@
 ﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
     public abstract class FisicaPersonagem : MonoBehaviour
     {
         //componentes
+        //public VidaUIController vida;
         protected Rigidbody2D rb;
         protected SpriteRenderer sprite;
-        protected BoxCollider2D boxCollider;
+        protected BoxCollider2D boxColliderP1;        
         public Camera camera;
 
         //variaveis de controle
@@ -24,7 +27,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             rb = GetComponent<Rigidbody2D>();
             sprite = GetComponent<SpriteRenderer>();
-            boxCollider = GetComponent<BoxCollider2D>();
+            boxColliderP1 = GetComponent<BoxCollider2D>();            
         }
 
         private void LateUpdate()
@@ -53,7 +56,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         }
         public void AplicarImpulsoGolpeRecebido(HitBox golpe)
         {
-            rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 12, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 7, 0), ForceMode2D.Impulse);
         }
 
 
@@ -79,8 +82,8 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         }
         private void CorrigirColliderFlip()
         {
-            if (sprite.flipX) boxCollider.offset = new Vector2(-offsetXBase, boxCollider.offset.y);
-            else boxCollider.offset = new Vector2(offsetXBase, boxCollider.offset.y);
+            if (sprite.flipX) boxColliderP1.offset = new Vector2(-offsetXBase, boxColliderP1.offset.y);
+            else boxColliderP1.offset = new Vector2(offsetXBase, boxColliderP1.offset.y);
         }
 
 
@@ -117,6 +120,16 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             if (interagivel != null)
                 interagivelPendente = null;
         }
+
+        /*
+        public virtual void OnCollisionEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "Player")
+            {
+                vida.vida--;
+            }
+        }
+        */
 
         public HitBox ConsumirGolpePendente()
         {

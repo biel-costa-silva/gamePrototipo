@@ -17,6 +17,7 @@ namespace Assets.Scripts.Controller
         protected FisicaJogador fisica;
         //view       
         protected ControladorAnim animacao;
+        protected VidaUIController vidaUI;
         //controle
         protected IControles controle;
         //variaveis de controle
@@ -28,6 +29,7 @@ namespace Assets.Scripts.Controller
             fisica = GetComponent<FisicaJogador>();            
             animacao = GetComponent<ControladorAnim>();
             controle = GetComponent<IControles>();
+            vidaUI = GetComponent<VidaUIController>();
 
             //cria o model
             jogador = CriarJogador();  
@@ -180,10 +182,12 @@ namespace Assets.Scripts.Controller
             if (golpe == null || golpe.consumida) return;            
             ProcessarDano(golpe);
         }
+
         // Virtual — cada subclasse sobrescreve se tiver regra especial 
         protected virtual void ProcessarDano(HitBox golpe)
         {
             jogador.ReceberDano(golpe.dano);
+            vidaUI.Decrementar(golpe.dano);
             fisica.AplicarImpulsoGolpeRecebido(golpe);
             Debug.Log("Recebeu dano:" + golpe.dano);
         }      

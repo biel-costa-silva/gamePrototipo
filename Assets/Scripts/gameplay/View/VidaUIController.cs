@@ -6,21 +6,22 @@ public class VidaUIController : MonoBehaviour
 {
 
     public int vida;
+    
     public int vidaMax;
 
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
 
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
         LogicaCoracao();
+    }
+    public void Decrementar(int dano)
+    {
+        vida = vida - dano;
     }
 
     void LogicaCoracao()
