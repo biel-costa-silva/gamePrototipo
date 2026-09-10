@@ -78,6 +78,12 @@ namespace Assets.Scripts.View
             animator.SetTrigger("sofrerAtqDesarm");
         }
 
+        public void AnimacaoMorrendo()
+        {
+            animacaoTerminou = false;
+            animator.Play("JogadorMorrendo", 0, 0f);
+        }
+
 
         //Controle de EVENTOS
         public IEnumerator EsperarAnimacao()

@@ -3,6 +3,7 @@ using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using Assets.Scripts.View;
 using Assets.Scripts.View.EntradaDados;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,7 +51,7 @@ namespace Assets.Scripts.Controller
               
             interagivelAtual = fisica.GetInteragivelPendente();
 
-            if (estadoAtual == EstadoJogador.Ocupado) return;
+            if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.morto) return;
 
             // --- PARADO ---
             if (estadoAtual == EstadoJogador.Parado)
@@ -175,7 +176,7 @@ namespace Assets.Scripts.Controller
                     StartCoroutine(RotinaAtacando());
                     return;
                 }
-            }
+            }            
         }       
         public void ReceberGolpe(HitBox golpe)
         {
@@ -197,9 +198,14 @@ namespace Assets.Scripts.Controller
             fisica.AplicarGolpe(this, jogador.GetDano(), indice);
         }
 
+        public event Action<ControladorJogador> OnMorreu;
 
-
-
+        public void MorrerForcado()
+        {
+            vidaUI.Decrementar(10);//gambiarra
+            StopAllCoroutines();  // cancela qualquer rotina em andamento (ex: rotinaSofrendoAtq)
+            StartCoroutine(RotinaMorrendo());
+        }
         // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
 
         protected IEnumerator RotinaSacanadoArma()
@@ -235,6 +241,13 @@ namespace Assets.Scripts.Controller
             estadoAtual = EstadoJogador.ModoAtaque;
         }
 
+        protected IEnumerator RotinaMorrendo()
+        {
+            animacao.AnimacaoMorrendo();            
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+            estadoAtual = EstadoJogador.morto;
+        }
+
         //------------------- Sofrendo Ataques: possibilidades --------------------
         protected IEnumerator RotinaSofrendoAtaqueDesarm()
         {
@@ -244,9 +257,17 @@ namespace Assets.Scripts.Controller
         }
         protected IEnumerator RotinaSofrendoAtaqueArm()
         {           
-            animacao.AnimacaoSofrendoAtqArm();            
-            yield return StartCoroutine(animacao.EsperarAnimacao());           
-            estadoAtual = EstadoJogador.ModoAtaque;
+            animacao.AnimacaoSofrendoAtqArm();
+            if (jogador.EstaMorto())
+            {
+                OnMorreu?.Invoke(this);
+                StartCoroutine(RotinaMorrendo());
+            }
+            else
+            {
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                estadoAtual = EstadoJogador.ModoAtaque;
+            }            
         }
         //-------------------------------------------------------------------------
 

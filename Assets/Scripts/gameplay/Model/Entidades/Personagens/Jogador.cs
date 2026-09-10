@@ -14,9 +14,5 @@ public class Jogador : Personagem
     public virtual void Reviver(bool podeReviver) // Se Morrer(método herdado) acontece recebe true e faça
     {
 
-    }
-    public virtual void SubirNivel(bool podeSubir)// Se troca acontece, retorne true e faça
-    {
-
-    }
+    }   
 }

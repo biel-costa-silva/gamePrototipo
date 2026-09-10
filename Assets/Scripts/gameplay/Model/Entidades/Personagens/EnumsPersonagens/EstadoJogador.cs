@@ -17,5 +17,7 @@ namespace Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes
         Atacando,
         AndandoArmado,
         Agachado,
+
+        morto,
     }
 }

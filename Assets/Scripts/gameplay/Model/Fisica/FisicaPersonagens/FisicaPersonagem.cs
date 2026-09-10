@@ -121,16 +121,6 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
                 interagivelPendente = null;
         }
 
-        /*
-        public virtual void OnCollisionEnter2D(Collider2D collision)
-        {
-            if (collision.gameObject.tag == "Player")
-            {
-                vida.vida--;
-            }
-        }
-        */
-
         public HitBox ConsumirGolpePendente()
         {
             if (golpesPendentes.Count > 0) return golpesPendentes.Dequeue();
