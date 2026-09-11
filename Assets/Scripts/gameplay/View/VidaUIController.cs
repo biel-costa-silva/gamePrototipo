@@ -1,3 +1,4 @@
+using Assets.Scripts.Geral;
 using Assets.Scripts.Model.Entidades.Peoes;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class VidaUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GerenciadorPausa.JogoPausado) return;
         LogicaCoracao();
     }
     public void Decrementar(int dano)

@@ -48,7 +48,7 @@ public class FadeCanvas : MonoBehaviour
         float tempoPassado = 0f;
         while (tempoPassado < duracao)
         {
-            tempoPassado += Time.deltaTime;
+            tempoPassado += Time.unscaledDeltaTime;
             canvasGroup.alpha = Mathf.Lerp(de, para, tempoPassado / duracao);
             yield return null;
         }

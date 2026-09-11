@@ -33,7 +33,7 @@ namespace Assets.Scripts.Model.Entidades.Objetos
 
             jaAtivado = true;
 
-            animacao.animacaoAtivando();
+            animacao.AnimacaoAtivando();
             OnAtivado?.Invoke();
         }
 
@@ -54,8 +54,11 @@ namespace Assets.Scripts.Model.Entidades.Objetos
             return !jaAtivado && jogadoresPresentes.Count >= 2;
         }
 
-        //travar camera()
-
-        //sinal de spawnar inimigos()
+        public void Resetar()
+        {
+            jaAtivado = false;
+            jogadoresPresentes.Clear();
+            animacao.AnimacaoDesativado();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Geral;
 using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using Assets.Scripts.View;
@@ -84,6 +85,8 @@ namespace Assets.Scripts.Controller
 
         protected virtual void Update()
         {
+            if (GerenciadorPausa.JogoPausado) return;
+
             HitBox golpe = fisica.ConsumirGolpePendente();
             if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {

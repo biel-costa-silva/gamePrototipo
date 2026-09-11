@@ -11,9 +11,13 @@ namespace Assets.Scripts.Gameplay.View.AnimacaoObjetos
         {
             animator = GetComponent<Animator>();
         }
-        public void animacaoAtivando()
+        public void AnimacaoAtivando()
         {
             animator.SetTrigger("ativar");
+        }
+        public void AnimacaoDesativado()
+        {
+            animator.Play("totemDesativado", 0, 0f);
         }
     }
 }

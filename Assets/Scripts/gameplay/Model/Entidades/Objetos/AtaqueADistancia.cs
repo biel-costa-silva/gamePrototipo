@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Geral;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
@@ -21,6 +22,8 @@ namespace Assets.Scripts.Model.Entidades.Objetos
 
         private void Update()
         {
+            if (GerenciadorPausa.JogoPausado) return;
+
             rb.AddForce(new Vector2(velocidadeProjetil * direcao, 0), ForceMode2D.Impulse);
         }
 

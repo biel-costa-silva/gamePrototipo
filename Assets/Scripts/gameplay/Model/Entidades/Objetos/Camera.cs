@@ -14,6 +14,10 @@ public class Camera : MonoBehaviour
     public float suavidade = 2f;
     internal static object main;
 
+    private bool travada = false;
+    private Vector3 destinoTravado;
+
+
     public void Awake()
     {
         cam = UnityEngine.Camera.main;        
@@ -29,19 +33,43 @@ public class Camera : MonoBehaviour
     
     void LateUpdate()
     {
-        //pega a posição dos jogadores e converte para vetor(x,y)
+        Vector3 destino;
+
+        if (travada)
+        {
+            destino = destinoTravado;
+        }
+        else
+        {
+            Vector2 p1 = player1.position;
+            Vector2 p2 = player2.position;
+           
+            Vector2 centro = (p1 + p2) / 2f;
+
+            //para onde a câmera se dirige 
+            destino = new Vector3(centro.x, centro.y, transform.position.z);
+            destino.x = Mathf.Clamp(destino.x, minX, maxX);
+        }
+        
+        transform.position = Vector3.Lerp(transform.position, destino, suavidade * Time.deltaTime);        
+    }
+    public void TravarCamera()
+    {
         Vector2 p1 = player1.position;
         Vector2 p2 = player2.position;
 
-        //centralização entre os jogadores
         Vector2 centro = (p1 + p2) / 2f;
 
-        //para onde a câmera se dirige 
         Vector3 destino = new Vector3(centro.x, centro.y, transform.position.z);
+        destino.x = Mathf.Clamp(destino.x, minX, maxX);       
 
-        destino.x = Mathf.Clamp(destino.x, minX, maxX);
+        destinoTravado = destino;
+        travada = true;
+    }
 
-        transform.position = Vector3.Lerp(transform.position, destino, suavidade * Time.deltaTime);        
+    public void DestravarCamera()
+    {
+        travada = false;
     }
 
     public float GetLimiteEsquerdo()

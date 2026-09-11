@@ -11,8 +11,12 @@ namespace Assets.Scripts.Geral
 
         [SerializeField] private ControladorJogador player1;
         [SerializeField] private ControladorJogador player2;
-        [SerializeField] private Totem totem;
+        [SerializeField] private Totem totem;   
         [SerializeField] private GameObject telaGameOver;
+        [SerializeField] private Camera cameraController;
+        [SerializeField] private TMPro.TextMeshProUGUI textoTempoSobrevivido; // ajuste se usar Text legado
+
+        private float tempoInicioCombate;
 
         private bool jogoAcabou = false;
 
@@ -41,6 +45,8 @@ namespace Assets.Scripts.Geral
         private void AoTotemAtivado()
         {
             SalvarCheckpoint();
+            cameraController.TravarCamera();
+            tempoInicioCombate = Time.time;
         }
 
         public void SalvarCheckpoint()
@@ -57,10 +63,21 @@ namespace Assets.Scripts.Geral
             ControladorJogador outroJogador = (quemMorreu == player1) ? player2 : player1;
             outroJogador.MorrerForcado();
 
-            if(telaGameOver != null)
+            float tempoSobrevivido = Time.time - tempoInicioCombate;
+            ExibirTempoNaTelaGameOver(tempoSobrevivido);
+
+            if (telaGameOver != null)
             {
                 telaGameOver.SetActive(true);
             }
+        }
+
+        private void ExibirTempoNaTelaGameOver(float segundos)
+        {
+            int minutos = Mathf.FloorToInt(segundos / 60f);
+            int segundosRestantes = Mathf.FloorToInt(segundos % 60f);
+
+            textoTempoSobrevivido.text = $"tempo de sincronização {minutos:00}:{segundosRestantes:00}";
         }
 
         public void ReiniciarAposGameOver()
@@ -73,6 +90,9 @@ namespace Assets.Scripts.Geral
 
             player1.Reviver();
             player2.Reviver();
+
+            cameraController.DestravarCamera();
+            totem.Resetar();
         }
     }
 }
