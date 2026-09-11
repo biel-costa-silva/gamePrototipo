@@ -11,8 +11,8 @@ using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 public class Jogador : Personagem
 {
    
-    public virtual void Reviver(bool podeReviver) // Se Morrer(método herdado) acontece recebe true e faça
+    public virtual void RestaurarVida() // Se Morrer(método herdado) acontece recebe true e faça
     {
-
+        vida = vidaMax;
     }   
 }

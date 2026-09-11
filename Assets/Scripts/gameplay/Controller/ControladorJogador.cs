@@ -40,6 +40,47 @@ namespace Assets.Scripts.Controller
             return new Jogador();
         }
 
+        // --------------------------------------------------------------
+        public void ReceberGolpe(HitBox golpe)
+        {
+            if (golpe == null || golpe.consumida) return;
+            ProcessarDano(golpe);
+        }
+
+        // Virtual — cada subclasse sobrescreve se tiver regra especial 
+        protected virtual void ProcessarDano(HitBox golpe)
+        {
+            jogador.ReceberDano(golpe.dano);
+            vidaUI.Decrementar(golpe.dano);
+            fisica.AplicarImpulsoGolpeRecebido(golpe);
+            Debug.Log("Recebeu dano:" + golpe.dano);
+        }
+
+        public void AplicarGolpe(int indice)
+        {
+            fisica.AplicarGolpe(this, jogador.GetDano(), indice);
+        }
+
+        public event Action<ControladorJogador> OnMorreu;
+
+        public void MorrerForcado()
+        {
+            vidaUI.Decrementar(10);//gambiarra
+            StopAllCoroutines();  // cancela qualquer rotina em andamento (ex: rotinaSofrendoAtq)
+            StartCoroutine(RotinaMorrendo());
+        }
+
+        public void Reviver()
+        {
+            jogador.RestaurarVida();
+            vidaUI.RestaurarCheia();
+            StopAllCoroutines();
+            animacao.AnimacaoPosTP();
+            animacao.OnAnimacaoTerminou();
+        }
+
+        // --------------------------------------------------------------
+
         protected virtual void Update()
         {
             HitBox golpe = fisica.ConsumirGolpePendente();
@@ -178,34 +219,7 @@ namespace Assets.Scripts.Controller
                 }
             }            
         }       
-        public void ReceberGolpe(HitBox golpe)
-        {
-            if (golpe == null || golpe.consumida) return;            
-            ProcessarDano(golpe);
-        }
-
-        // Virtual — cada subclasse sobrescreve se tiver regra especial 
-        protected virtual void ProcessarDano(HitBox golpe)
-        {
-            jogador.ReceberDano(golpe.dano);
-            vidaUI.Decrementar(golpe.dano);
-            fisica.AplicarImpulsoGolpeRecebido(golpe);
-            Debug.Log("Recebeu dano:" + golpe.dano);
-        }      
-
-        public void AplicarGolpe(int indice)
-        {
-            fisica.AplicarGolpe(this, jogador.GetDano(), indice);
-        }
-
-        public event Action<ControladorJogador> OnMorreu;
-
-        public void MorrerForcado()
-        {
-            vidaUI.Decrementar(10);//gambiarra
-            StopAllCoroutines();  // cancela qualquer rotina em andamento (ex: rotinaSofrendoAtq)
-            StartCoroutine(RotinaMorrendo());
-        }
+        
         // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
 
         protected IEnumerator RotinaSacanadoArma()

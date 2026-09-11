@@ -23,6 +23,10 @@ public class VidaUIController : MonoBehaviour
     {
         vida = vida - dano;
     }
+    public void RestaurarCheia()
+    {
+        vida = vidaMax;
+    }
 
     void LogicaCoracao()
     {

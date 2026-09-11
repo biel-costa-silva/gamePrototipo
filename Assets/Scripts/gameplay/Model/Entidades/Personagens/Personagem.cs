@@ -9,6 +9,7 @@ public abstract class Personagem
     //atributos da classe
     protected string nome;
     protected int vida;
+    protected int vidaMax;
     protected int dano;
     protected int defesa;
     protected float velocidade;
@@ -22,6 +23,8 @@ public abstract class Personagem
     //getters
     public string GetNome() => nome;    
     public int GetVida() => vida;
+
+    public int GetVidaMax() => vidaMax;
     public int GetDano() => dano;    
     public int GetDefesa() => defesa;
     public float GetVelocidade() => velocidade;
