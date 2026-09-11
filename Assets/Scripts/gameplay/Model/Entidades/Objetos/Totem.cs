@@ -49,6 +49,11 @@ namespace Assets.Scripts.Model.Entidades.Objetos
             if (contJogador != null) jogadoresPresentes.Remove(contJogador.jogador);
         }
 
+        public bool PodeSofrerInteracao()
+        {
+            return !jaAtivado && jogadoresPresentes.Count >= 2;
+        }
+
         //travar camera()
 
         //sinal de spawnar inimigos()

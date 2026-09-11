@@ -75,6 +75,7 @@ namespace Assets.Scripts.Controller
             jogador.RestaurarVida();
             vidaUI.RestaurarCheia();
             StopAllCoroutines();
+            estadoAtual = EstadoJogador.Parado;
             animacao.AnimacaoPosTP();
             animacao.OnAnimacaoTerminou();
         }
@@ -118,7 +119,7 @@ namespace Assets.Scripts.Controller
                     StartCoroutine(RotinaSacanadoArma());
                     return;
                 }
-                if (controle.ComandoInteracao() && interagivelAtual != null)
+                if (controle.ComandoInteracao() && interagivelAtual != null && interagivelAtual.PodeSofrerInteracao())
                 {
                     estadoAtual = EstadoJogador.Ocupado;
                     StartCoroutine(RotinaInteracao());

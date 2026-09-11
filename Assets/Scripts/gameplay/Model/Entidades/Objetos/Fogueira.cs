@@ -24,6 +24,11 @@ namespace Assets.Scripts.Model.Entidades.Objetos
         {           
             animacao.animacaoAcendendo();
         }
+
+        public bool PodeSofrerInteracao()
+        {
+            throw new System.NotImplementedException();
+        }
         //Curar()
 
         //SalvarJogo()

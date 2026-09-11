@@ -69,7 +69,7 @@ namespace Assets.Scripts.Geral
             telaGameOver.SetActive(false);
 
             player1.transform.position = checkpoint1;
-            player1.transform.position = checkpoint2;
+            player2.transform.position = checkpoint2;
 
             player1.Reviver();
             player2.Reviver();
