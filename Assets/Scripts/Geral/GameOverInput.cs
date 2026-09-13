@@ -5,7 +5,7 @@ namespace Assets.Scripts.Geral
 {
     public class GameOverInput : MonoBehaviour
     {
-        private float tempoDeEspera = 4f;
+        private float tempoDeEspera = 3f;
         private float tempoAtivo;
 
         private void OnEnable()

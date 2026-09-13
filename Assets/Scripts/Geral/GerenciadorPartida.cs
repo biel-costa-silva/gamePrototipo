@@ -11,10 +11,11 @@ namespace Assets.Scripts.Geral
 
         [SerializeField] private ControladorJogador player1;
         [SerializeField] private ControladorJogador player2;
-        [SerializeField] private Totem totem;   
-        [SerializeField] private GameObject telaGameOver;
+        [SerializeField] private Totem totem;           
         [SerializeField] private Camera cameraController;
-        [SerializeField] private TMPro.TextMeshProUGUI textoTempoSobrevivido; // ajuste se usar Text legado
+        [SerializeField] private TMPro.TextMeshProUGUI textoTempoSobrevivido;
+
+        [SerializeField] private GameObject telaGameOver;       
 
         private float tempoInicioCombate;
 
@@ -68,7 +69,7 @@ namespace Assets.Scripts.Geral
 
             if (telaGameOver != null)
             {
-                telaGameOver.SetActive(true);
+                telaGameOver.SetActive(true);                
             }
         }
 
@@ -83,6 +84,7 @@ namespace Assets.Scripts.Geral
         public void ReiniciarAposGameOver()
         {
             jogoAcabou = false;
+
             telaGameOver.SetActive(false);
 
             player1.transform.position = checkpoint1;

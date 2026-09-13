@@ -37,7 +37,7 @@ namespace Assets.Scripts.Geral
         {
             JogoPausado = false; // reseta o flag antes de trocar de cena
             Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("menu");
         }
     }
 }

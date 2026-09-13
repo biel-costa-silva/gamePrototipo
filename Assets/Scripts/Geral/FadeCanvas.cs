@@ -39,6 +39,24 @@ public class FadeCanvas : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
     }
+    public void MostrarImediato()
+    {
+        StopAllCoroutines();
+        gameObject.SetActive(true);
+        canvasGroup.alpha = 1f;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+    }
+
+    public void EsconderImediato()
+    {
+        StopAllCoroutines();
+        canvasGroup.alpha = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+        gameObject.SetActive(false);
+    }
+
 
     private IEnumerator Fade(float de, float para, bool ativarInteracaoAoFinal, Action aoTerminar)
     {
