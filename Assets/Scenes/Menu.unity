@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 226718933}
   - component: {fileID: 226718932}
   m_Layer: 5
-  m_Name: Image
+  m_Name: clip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9540,6 +9540,7 @@ MonoBehaviour:
   menuVolume: {fileID: 1918648497}
   menuControle: {fileID: 65112786}
   telaCarregamento: {fileID: 1034801278}
+  clipIntro: {fileID: 226718930}
   fundoEscuro: {fileID: 2041563722}
 --- !u!1 &1893121502
 GameObject:

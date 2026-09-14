@@ -19,7 +19,7 @@ namespace Assets.Scripts.Geral
 
         private float tempoInicioCombate;
 
-        private bool jogoAcabou = false;
+        public static bool jogoAcabou { get; private set; } = false;
 
         private Vector3 checkpoint1;
         private Vector3 checkpoint2;

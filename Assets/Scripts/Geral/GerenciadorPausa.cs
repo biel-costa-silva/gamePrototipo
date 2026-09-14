@@ -12,6 +12,9 @@ namespace Assets.Scripts.Geral
 
         private void Update()
         {
+            if (GerenciadorPartida.jogoAcabou) return;
+
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (JogoPausado) Retomar();
