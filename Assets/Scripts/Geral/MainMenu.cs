@@ -9,12 +9,28 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private FadeCanvas menuVolume;
     [SerializeField] private FadeCanvas menuControle;
     [SerializeField] private FadeCanvas telaCarregamento;
+    [SerializeField] private GameObject clipIntro;
     [SerializeField] private FundoEscuroController fundoEscuro;
+
+    private static bool introJaExibida = false;
 
     // ------------------- START -------------------------
     private void Start()
     {
-        StartCoroutine(Transicao(telaCarregamento, menuPrincipal, fundoEscuro.IrParaPrincipal));     
+        if (!introJaExibida)
+        {
+            introJaExibida = true;
+            StartCoroutine(Transicao(telaCarregamento, menuPrincipal, fundoEscuro.IrParaPrincipal));
+        }
+        else
+        {
+            // já mostrou a logo antes nesta execução do jogo: desativa o clip antes de qualquer coisa renderizar
+            clipIntro.SetActive(false);
+
+            telaCarregamento.Esconder(() => menuPrincipal.Mostrar());
+            fundoEscuro.IrParaPrincipal();
+            GerenciadorMusicas.instancia.TocarMusica("Menu");
+        }
     }
 
     // -------------------- MENU -------------------------
