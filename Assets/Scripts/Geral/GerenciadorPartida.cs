@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Controller;
 using Assets.Scripts.Model.Entidades.Objetos;
+using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using System.Collections;
 using UnityEngine;
 
@@ -24,6 +25,9 @@ namespace Assets.Scripts.Geral
         private Vector3 checkpoint1;
         private Vector3 checkpoint2;
 
+        [SerializeField] private VidaUIController hud1;
+        [SerializeField] private VidaUIController hud2;
+
         private void Awake()
         {
             instancia = this;
@@ -34,6 +38,9 @@ namespace Assets.Scripts.Geral
             player1.OnMorreu += TratarMorte;
             player2.OnMorreu += TratarMorte;
             totem.OnAtivado += AoTotemAtivado;
+
+            player1.OnEstadoAlterado += TratarMudancaEstado;
+            player2.OnEstadoAlterado += TratarMudancaEstado;
         }
 
         private void OnDisable()
@@ -41,6 +48,27 @@ namespace Assets.Scripts.Geral
             player1.OnMorreu -= TratarMorte;
             player2.OnMorreu -= TratarMorte;
             totem.OnAtivado -= AoTotemAtivado;
+
+            player1.OnEstadoAlterado -= TratarMudancaEstado;
+            player2.OnEstadoAlterado -= TratarMudancaEstado;
+        }
+
+        private void TratarMudancaEstado(ControladorJogador quemMudou, EstadoJogador novoEstado)
+        {
+            ControladorJogador outro = (quemMudou == player1) ? player2 : player1;
+
+            if (novoEstado == EstadoJogador.ModoAtaque)
+            {
+                outro.AlertarEntrarEmModoAtaque();
+                hud1.DefinirVisivel(true);
+                hud2.DefinirVisivel(true);
+
+            }else if (novoEstado == EstadoJogador.Parado || novoEstado == EstadoJogador.Andando)
+            {
+                outro.AlertarEDesarmar();
+                hud1.DefinirVisivel(false);
+                hud2.DefinirVisivel(false);
+            }            
         }
 
         private void AoTotemAtivado()

@@ -15,40 +15,54 @@ namespace Assets.Scripts.Controller
     {
         //model
         public Jogador jogador;
-        //oficios do model
+        //fisica do model
         protected FisicaJogador fisica;
-        //view       
+        //views      
         protected ControladorAnim animacao;
-        protected VidaUIController vidaUI;
-        //controle
+        [SerializeField] protected VidaUIController vidaUI;
+        //controles
         protected IControles controle;
-        //variaveis de controle
-        protected EstadoJogador estadoAtual = EstadoJogador.Parado;
         protected IInteracoes interagivelAtual;
-     
+        //variaveis de controle
+        private bool estaSendoAlertado = false;
+        private bool estaSendoDesarmado = false;
+        private EstadoJogador _estadoAtual = EstadoJogador.Parado;
+        public EstadoJogador estadoAtual
+        {
+            get => _estadoAtual;
+            protected set
+            {
+                if (_estadoAtual == value) return;
+                _estadoAtual = value;
+                OnEstadoAlterado?.Invoke(this, _estadoAtual);
+            }
+        }
+        public event Action<ControladorJogador, EstadoJogador> OnEstadoAlterado;
+        public event Action<ControladorJogador> OnMorreu;
+
+
+
+        // --------------------------------------------------------------
         public void Awake()
         {
-            fisica = GetComponent<FisicaJogador>();            
+            fisica = GetComponent<FisicaJogador>();
             animacao = GetComponent<ControladorAnim>();
             controle = GetComponent<IControles>();
-            vidaUI = GetComponent<VidaUIController>();
 
             //cria o model
-            jogador = CriarJogador();  
+            jogador = CriarJogador();
         }
         protected virtual Jogador CriarJogador()
         {
             return new Jogador();
         }
 
-        // --------------------------------------------------------------
+        // ----------------------------- Métodos de controle ---------------------------------
         public void ReceberGolpe(HitBox golpe)
         {
             if (golpe == null || golpe.consumida) return;
             ProcessarDano(golpe);
         }
-
-        // Virtual — cada subclasse sobrescreve se tiver regra especial 
         protected virtual void ProcessarDano(HitBox golpe)
         {
             jogador.ReceberDano(golpe.dano);
@@ -62,12 +76,10 @@ namespace Assets.Scripts.Controller
             fisica.AplicarGolpe(this, jogador.GetDano(), indice);
         }
 
-        public event Action<ControladorJogador> OnMorreu;
-
         public void MorrerForcado()
         {
             vidaUI.Decrementar(10);//gambiarra
-            StopAllCoroutines();  // cancela qualquer rotina em andamento (ex: rotinaSofrendoAtq)
+            StopAllCoroutines();  
             StartCoroutine(RotinaMorrendo());
         }
 
@@ -79,6 +91,22 @@ namespace Assets.Scripts.Controller
             estadoAtual = EstadoJogador.Parado;
             animacao.AnimacaoPosTP();
             animacao.OnAnimacaoTerminou();
+        }
+
+        public void AlertarEntrarEmModoAtaque() { 
+            if (estaSendoAlertado) return;
+            if (estadoAtual != EstadoJogador.Parado && estadoAtual != EstadoJogador.Andando) return;
+
+            estaSendoAlertado = true;
+            StartCoroutine(RotinaAlertaESaque());
+        }
+        public void AlertarEDesarmar()
+        {
+            if (estaSendoDesarmado) return;
+            if (estadoAtual != EstadoJogador.ModoAtaque && estadoAtual != EstadoJogador.AndandoArmado) return; // só desarma se estiver parado e armado
+
+            estaSendoDesarmado = true;
+            StartCoroutine(RotinaDesarmeForcado());
         }
 
         // --------------------------------------------------------------
@@ -93,7 +121,7 @@ namespace Assets.Scripts.Controller
                 Debug.Log($"Controller processando golpe. Consumida: {golpe.consumida}");
                 ProcessarDano(golpe);
             }
-              
+
             interagivelAtual = fisica.GetInteragivelPendente();
 
             if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.morto) return;
@@ -221,10 +249,29 @@ namespace Assets.Scripts.Controller
                     StartCoroutine(RotinaAtacando());
                     return;
                 }
-            }            
-        }       
-        
+            }
+        }
+
         // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
+        protected IEnumerator RotinaAlertaESaque()
+        {
+            estadoAtual = EstadoJogador.Ocupado;
+            animacao.AnimacaoAlerta();
+
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+
+            estaSendoAlertado = false;            
+            StartCoroutine(RotinaSacanadoArma());
+        }
+
+        protected virtual IEnumerator RotinaDesarmeForcado()
+        {
+            estadoAtual = EstadoJogador.Ocupado;
+
+            yield return StartCoroutine(RotinaGuardandoArma()); // reaproveita a rotina existente, que já termina em Parado
+
+            estaSendoDesarmado = false;
+        }
 
         protected IEnumerator RotinaSacanadoArma()
         {
@@ -261,7 +308,7 @@ namespace Assets.Scripts.Controller
 
         protected IEnumerator RotinaMorrendo()
         {
-            animacao.AnimacaoMorrendo();            
+            animacao.AnimacaoMorrendo();
             yield return StartCoroutine(animacao.EsperarAnimacao());
             estadoAtual = EstadoJogador.morto;
         }
@@ -274,7 +321,7 @@ namespace Assets.Scripts.Controller
             estadoAtual = EstadoJogador.Parado;
         }
         protected IEnumerator RotinaSofrendoAtaqueArm()
-        {           
+        {
             animacao.AnimacaoSofrendoAtqArm();
             if (jogador.EstaMorto())
             {
@@ -285,7 +332,7 @@ namespace Assets.Scripts.Controller
             {
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 estadoAtual = EstadoJogador.ModoAtaque;
-            }            
+            }
         }
         //-------------------------------------------------------------------------
 

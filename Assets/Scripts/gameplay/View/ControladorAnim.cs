@@ -84,6 +84,12 @@ namespace Assets.Scripts.View
             animator.Play("JogadorMorrendo", 0, 0f);
         }
 
+        public void AnimacaoAlerta()
+        {
+            animacaoTerminou = false;
+            animator.Play("JogadorAlerta", 0, 0f);
+        }
+
         public void AnimacaoPosTP()
         {
             animacaoTerminou = false;
