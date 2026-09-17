@@ -79,6 +79,7 @@ namespace Assets.Scripts.Controller
 
             bool repelindo = animGuerreiro.estaRepelindo;
             bool defendendo = animGuerreiro.estaDefendendo;
+            //bool atacando = animGuerreiro.estaAtacando;
             bool deCostas = fisica.EstaDeCostas(golpe.direcao);
                                  
             guerreiro.deCostas = deCostas;
@@ -100,7 +101,7 @@ namespace Assets.Scripts.Controller
             {
                 guerreiro.SetSofreuAtaque();
                 fisicaGuerreiro.SpawnarVFX(0);
-                fisicaGuerreiro.AplicarImpulsoCustom(10f);
+                fisicaGuerreiro.AplicarImpulsoCustom(10f, golpe.direcao);
             }
             else if (defendendo)
             {               
@@ -108,9 +109,9 @@ namespace Assets.Scripts.Controller
                 vidaUI.Decrementar(danoFinal);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
                 fisicaGuerreiro.SpawnarVFX(1);
-                fisicaGuerreiro.AplicarImpulsoCustom(7f);
+                fisicaGuerreiro.AplicarImpulsoCustom(7f, golpe.direcao);
                 Debug.Log("Recebeu dano" + danoFinal);                
-            }
+            }            
             else
             {
                 jogador.ReceberDano(danoFinal);
@@ -146,7 +147,7 @@ namespace Assets.Scripts.Controller
                     if (guerreiro.sofreuChoque)
                     {
                         guerreiro.LimparFlagChoque();
-                        yield return StartCoroutine(RotinaRecebeChoqueAtqs());
+                        yield return StartCoroutine(RotinaRecebeChoqueAtqs(forcaAtq));
                         yield break;
                     }
                     //pode sofrer dano durante o ataque (quem acerta outro antes)
@@ -228,9 +229,9 @@ namespace Assets.Scripts.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
-        IEnumerator RotinaRecebeChoqueAtqs()
+        IEnumerator RotinaRecebeChoqueAtqs(float direcao)
         {
-            fisicaGuerreiro.ReceberChoque();
+            fisicaGuerreiro.ReceberChoque(direcao);
             animGuerreiro.AnimacaoRecebeChoqueAtqs();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;

@@ -18,14 +18,14 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             vfx.transform.localScale = scale;
         }
 
-        public void ReceberChoque()
+        public void ReceberChoque(float direcao)
         {
             SpawnarVFX(2);
-            rb.AddForce(new Vector2(10, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(10 * -direcao, 0), ForceMode2D.Impulse);
         }
-        public void AplicarImpulsoCustom(float forca)
+        public void AplicarImpulsoCustom(float forca, float direcao)
         {
-            rb.AddForce(new Vector2(forca, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(forca * direcao, 0), ForceMode2D.Impulse);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Assets.Scripts.View.AnimacaoPeoes
 
         //variaveis de controle
         public bool estaDefendendo = false;
-        public bool estaRepelindo = false;
+        public bool estaRepelindo = false;       
 
         // ----------------  Métodos de acionamento ------------------
 

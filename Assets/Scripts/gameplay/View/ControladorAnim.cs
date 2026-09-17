@@ -13,6 +13,7 @@ namespace Assets.Scripts.View
         //variaveis de controle
         public bool animacaoTerminou = false;
         public bool novoAtaque = true;
+        public bool estaAtacando = false;
         public int indiceAtaque { get; set; }
 
         void Awake()
@@ -113,6 +114,7 @@ namespace Assets.Scripts.View
         {
             ResetarTriggers();
             animacaoTerminou = true;
+            estaAtacando = false;
         }
 
         //COMBOS!
@@ -123,6 +125,7 @@ namespace Assets.Scripts.View
 
         public void EventoAtaque()//frame do ataque
         {
+            estaAtacando = true;
             controller.AplicarGolpe(indiceAtaque);
         }
 
