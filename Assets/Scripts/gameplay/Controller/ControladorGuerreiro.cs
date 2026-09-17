@@ -15,7 +15,7 @@ namespace Assets.Scripts.Controller
         private FisicaGuerreiro fisicaGuerreiro;
         private AnimGuerreiro animGuerreiro;
         private ControlesGuerreiro controleGuerreiro;
-        
+
         private void Awake()
         {
             base.Awake();
@@ -48,10 +48,10 @@ namespace Assets.Scripts.Controller
                     estadoAtual = EstadoJogador.Agachado;
                     return;
                 }
-            }            
+            }
 
             // --- AGACHADO ---
-            if(estadoAtual == EstadoJogador.Agachado)
+            if (estadoAtual == EstadoJogador.Agachado)
             {
                 if (guerreiro.sofreuAtaque)
                 {
@@ -71,8 +71,8 @@ namespace Assets.Scripts.Controller
                     estadoAtual = EstadoJogador.ModoAtaque;
                 }
             }
-        }
-               
+        }        
+
         protected override void ProcessarDano(HitBox golpe)
         {
             if (invulneravel) return;
@@ -81,7 +81,7 @@ namespace Assets.Scripts.Controller
             bool defendendo = animGuerreiro.estaDefendendo;
             //bool atacando = animGuerreiro.estaAtacando;
             bool deCostas = fisica.EstaDeCostas(golpe.direcao);
-                                 
+
             guerreiro.deCostas = deCostas;
 
             if (deCostas)
@@ -104,14 +104,14 @@ namespace Assets.Scripts.Controller
                 fisicaGuerreiro.AplicarImpulsoCustom(10f, golpe.direcao);
             }
             else if (defendendo)
-            {               
+            {
                 jogador.ReceberDano(danoFinal);
                 vidaUI.Decrementar(danoFinal);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
                 fisicaGuerreiro.SpawnarVFX(1);
                 fisicaGuerreiro.AplicarImpulsoCustom(7f, golpe.direcao);
-                Debug.Log("Recebeu dano" + danoFinal);                
-            }            
+                Debug.Log("Recebeu dano" + danoFinal);
+            }
             else
             {
                 jogador.ReceberDano(danoFinal);
@@ -121,7 +121,7 @@ namespace Assets.Scripts.Controller
                 Debug.Log("Recebeu dano" + danoFinal);
             }
         }
-       
+
         protected override IEnumerator RotinaAtacando()
         {
             bool comboRegistrado = false;
@@ -147,7 +147,9 @@ namespace Assets.Scripts.Controller
                     if (guerreiro.sofreuChoque)
                     {
                         guerreiro.LimparFlagChoque();
-                        yield return StartCoroutine(RotinaRecebeChoqueAtqs(forcaAtq));
+                        float direcaoChoque = -fisica.GetDirecao();
+                        fisicaGuerreiro.ReceberChoque(direcaoChoque);
+                        yield return StartCoroutine(RotinaRecebeChoqueAtqs());
                         yield break;
                     }
                     //pode sofrer dano durante o ataque (quem acerta outro antes)
@@ -215,7 +217,7 @@ namespace Assets.Scripts.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
-        
+
         IEnumerator RotinaRepelindo()
         {
             animGuerreiro.AnimacaoRepelindo();
@@ -229,9 +231,8 @@ namespace Assets.Scripts.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
-        IEnumerator RotinaRecebeChoqueAtqs(float direcao)
-        {
-            fisicaGuerreiro.ReceberChoque(direcao);
+        IEnumerator RotinaRecebeChoqueAtqs()
+        {            
             animGuerreiro.AnimacaoRecebeChoqueAtqs();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;

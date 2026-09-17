@@ -21,7 +21,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         public void ReceberChoque(float direcao)
         {
             SpawnarVFX(2);
-            rb.AddForce(new Vector2(10 * -direcao, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(10 * direcao, 0), ForceMode2D.Impulse);
         }
         public void AplicarImpulsoCustom(float forca, float direcao)
         {
