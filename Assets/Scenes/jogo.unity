@@ -41793,6 +41793,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorGuerreiro
   vidaUI: {fileID: 838097168}
+  spriteRenderer: {fileID: 1289048091}
+  duracaoInvulneravel: 1.5
+  intervaloPiscar: 0.2
 --- !u!114 &1289048075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41855,6 +41858,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &1289048091 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5170471029165293974, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+  m_PrefabInstance: {fileID: 4867627773071352426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1294748870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52204,6 +52212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorArqueiro
   vidaUI: {fileID: 1028368356}
+  spriteRenderer: {fileID: 1580722420}
+  duracaoInvulneravel: 1.5
+  intervaloPiscar: 0.2
 --- !u!114 &1580722402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52266,6 +52277,11 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!212 &1580722420 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5170471029165293974, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
+  m_PrefabInstance: {fileID: 1580722380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!213 &1592896333
 Sprite:
   m_ObjectHideFlags: 0

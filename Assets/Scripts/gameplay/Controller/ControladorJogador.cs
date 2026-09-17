@@ -26,6 +26,12 @@ namespace Assets.Scripts.Controller
         //variaveis de controle
         private bool estaSendoAlertado = false;
         private bool estaSendoDesarmado = false;
+        protected bool invulneravel = false;
+
+        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private float duracaoInvulneravel = 1f;
+        [SerializeField] private float intervaloPiscar = 0.1f;
+
         private EstadoJogador _estadoAtual = EstadoJogador.Parado;
         public EstadoJogador estadoAtual
         {
@@ -65,11 +71,20 @@ namespace Assets.Scripts.Controller
         }
         protected virtual void ProcessarDano(HitBox golpe)
         {
+            if (invulneravel) return;//ignora golpe enquanto vulneravel
+
             jogador.ReceberDano(golpe.dano);
             vidaUI.Decrementar(golpe.dano);
             fisica.AplicarImpulsoGolpeRecebido(golpe);
             Debug.Log("Recebeu dano:" + golpe.dano);
+
+            IniciarInvulnerabilidade();
         }
+
+        protected void IniciarInvulnerabilidade()
+        {
+            StartCoroutine(RotinaInvulneravel());
+        }       
 
         public void AplicarGolpe(int indice)
         {
@@ -79,7 +94,7 @@ namespace Assets.Scripts.Controller
         public void MorrerForcado()
         {
             vidaUI.Decrementar(10);//gambiarra
-            StopAllCoroutines();  
+            StopAllCoroutines();
             StartCoroutine(RotinaMorrendo());
         }
 
@@ -93,7 +108,8 @@ namespace Assets.Scripts.Controller
             animacao.OnAnimacaoTerminou();
         }
 
-        public void AlertarEntrarEmModoAtaque() { 
+        public void AlertarEntrarEmModoAtaque()
+        {
             if (estaSendoAlertado) return;
             if (estadoAtual != EstadoJogador.Parado && estadoAtual != EstadoJogador.Andando) return;
 
@@ -253,6 +269,21 @@ namespace Assets.Scripts.Controller
         }
 
         // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
+        private IEnumerator RotinaInvulneravel()
+        {
+            invulneravel = true;
+            float tempoPassado = 0f;
+
+            while (tempoPassado < duracaoInvulneravel)
+            {
+                spriteRenderer.enabled = !spriteRenderer.enabled;
+                yield return new WaitForSeconds(intervaloPiscar);
+                tempoPassado += intervaloPiscar;
+            }
+            spriteRenderer.enabled = true;
+            invulneravel = false;
+        }
+
         protected IEnumerator RotinaAlertaESaque()
         {
             estadoAtual = EstadoJogador.Ocupado;
@@ -260,7 +291,7 @@ namespace Assets.Scripts.Controller
 
             yield return StartCoroutine(animacao.EsperarAnimacao());
 
-            estaSendoAlertado = false;            
+            estaSendoAlertado = false;
             StartCoroutine(RotinaSacanadoArma());
         }
 

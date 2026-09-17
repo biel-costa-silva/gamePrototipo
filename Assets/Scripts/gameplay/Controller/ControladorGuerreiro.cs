@@ -75,6 +75,8 @@ namespace Assets.Scripts.Controller
                
         protected override void ProcessarDano(HitBox golpe)
         {
+            if (invulneravel) return;
+
             bool repelindo = animGuerreiro.estaRepelindo;
             bool defendendo = animGuerreiro.estaDefendendo;
             bool deCostas = fisica.EstaDeCostas(golpe.direcao);
@@ -87,6 +89,7 @@ namespace Assets.Scripts.Controller
                 jogador.ReceberDano(golpe.dano);
                 vidaUI.Decrementar(golpe.dano);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
+                IniciarInvulnerabilidade();
                 Debug.Log("Recebeu dano" + golpe.dano);
                 return;
             }
@@ -113,6 +116,7 @@ namespace Assets.Scripts.Controller
                 jogador.ReceberDano(danoFinal);
                 vidaUI.Decrementar(danoFinal);
                 fisica.AplicarImpulsoGolpeRecebido(golpe);
+                IniciarInvulnerabilidade();
                 Debug.Log("Recebeu dano" + danoFinal);
             }
         }
