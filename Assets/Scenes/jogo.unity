@@ -52215,6 +52215,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1580722420}
   duracaoInvulneravel: 1.5
   intervaloPiscar: 0.2
+  duracaoRolagem: 0.5
 --- !u!114 &1580722402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52261,6 +52262,40 @@ MonoBehaviour:
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
   boxColliderP2: {fileID: 1289048081}
+  multiplicadorRolagem: 1.35
+  curvaRolagem:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!61 &1580722413 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 2350678800038056570, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}

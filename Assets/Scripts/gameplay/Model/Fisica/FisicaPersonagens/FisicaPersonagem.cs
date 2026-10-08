@@ -54,6 +54,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             float direcao = sprite.flipX ? -1f : 1f;
             rb.AddForce(new Vector2(direcao * (forca + 4) * 2, 0), ForceMode2D.Impulse);
         }
+
         public void AplicarImpulsoGolpeRecebido(HitBox golpe)
         {
             rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 7, 0), ForceMode2D.Impulse);
@@ -65,10 +66,12 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             return sprite.flipX ? -1f : 1f;
         }
+
         public bool EstaDeCostas(float direcaoGolpe)
         {
             return GetDirecao() == direcaoGolpe;
         }
+
         public void VirarParaLadoDoGolpe(float direcaoGolpe)
         {
             sprite.flipX = direcaoGolpe > 0;

@@ -14,7 +14,7 @@ namespace Assets.Scripts.View.EntradaDados
         }
         public int ComandoAtaque()
         {
-            if(Input.GetKeyDown(KeyCode.Mouse0)) return 1;
+            if(Input.GetKeyDown(KeyCode.Mouse0)) return 1;//botao esquerdo mouse
             return 0;
         }
        
@@ -25,6 +25,13 @@ namespace Assets.Scripts.View.EntradaDados
         }
 
         public bool ComandoSaqueArma()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1)) return true;//botao direito mouse
+            return false;
+        }
+
+        //------------
+        public bool ComandoRolar()
         {
             if (Input.GetKeyDown(KeyCode.DownArrow)) return true;
             return false;

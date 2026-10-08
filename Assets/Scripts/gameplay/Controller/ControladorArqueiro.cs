@@ -16,6 +16,9 @@ namespace Assets.Scripts.Controller
         private AnimArqueiro animArqueiro;
         private ControlesArqueiro controleArqueiro;
 
+        //variaveis de controle
+        [SerializeField] private float duracaoRolagem = 0.5f;
+
         private void Awake()
         {
             base.Awake();
@@ -33,6 +36,18 @@ namespace Assets.Scripts.Controller
         void Update()
         {
             base.Update();
+
+            // --- MODO DE ATAQUE ----
+            if (estadoAtual == EstadoJogador.ModoAtaque || estadoAtual == EstadoJogador.AndandoArmado)
+            {
+                if (controleArqueiro.ComandoRolar())
+                {
+                    estadoAtual = EstadoJogador.Ocupado;
+                    StartCoroutine(RotinaRolando());
+                    return;
+                }
+
+            }
         }
 
         protected override void ProcessarDano(HitBox golpe)
@@ -48,7 +63,7 @@ namespace Assets.Scripts.Controller
             animacao.indiceAtaque = 0;
 
             animacao.ResetarAnimacao();
-            fisica.AplicarImpulsoAtaque(forcaAtq);
+            fisicaArqueiro.AplicarImpulsoAtaque(forcaAtq);
             animacao.AnimacaoAtacando();
 
             yield return null;
@@ -80,7 +95,7 @@ namespace Assets.Scripts.Controller
                         animacao.indiceAtaque = contadorCombo;//muda na classe ControladorAnim.
 
                         animacao.ResetarAnimacao();
-                        fisica.AplicarImpulsoAtaque(-forcaAtq);
+                        fisicaArqueiro.AplicarImpulsoAtaque(forcaAtq);
                         animacao.AnimacaoAtacando();
                         yield return null;
                     }
@@ -90,6 +105,28 @@ namespace Assets.Scripts.Controller
             }
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
+            estadoAtual = EstadoJogador.ModoAtaque;
+        }
+
+        IEnumerator RotinaRolando()
+        {
+            invulneravel = true;
+            animArqueiro.AnimacaoRolando();
+
+            float velocidade = arqueiro.GetVelocidade();
+            float tempo = 0f;
+
+            while (tempo < duracaoRolagem)
+            {
+                fisicaArqueiro.AplicarVelocidadeRolagem(velocidade, tempo / duracaoRolagem);
+                tempo += Time.fixedDeltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+
+            fisicaArqueiro.PararRolagem();
+            invulneravel = false;
+
+            yield return StartCoroutine(animArqueiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
         }
     }

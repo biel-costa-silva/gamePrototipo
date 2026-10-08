@@ -12,6 +12,11 @@ namespace Assets.Scripts.View.AnimacaoPeoes
     public class AnimArqueiro : ControladorAnim
     {
         // ----------------  Métodos de acionamento ------------------
+        public void AnimacaoRolando()
+        {
+            animacaoTerminou = false;
+            animator.SetTrigger("rolar");
+        }
         
         // ----------------------- Método de controle de tempo de animação -------------------- #
 
