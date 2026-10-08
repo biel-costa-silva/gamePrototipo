@@ -90,6 +90,12 @@ namespace Assets.Scripts.View
             animator.Play("JogadorAlerta", 0, 0f);
         }
 
+        public void AnimacaoInterrogado()
+        {
+            animacaoTerminou = false;
+            animator.Play("JogadorInterrogado", 0, 0f);
+        }
+
         public void AnimacaoPosTP()
         {
             animacaoTerminou = false;

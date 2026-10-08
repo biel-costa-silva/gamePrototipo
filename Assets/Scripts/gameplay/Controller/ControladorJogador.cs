@@ -298,10 +298,12 @@ namespace Assets.Scripts.Controller
         protected virtual IEnumerator RotinaDesarmeForcado()
         {
             estadoAtual = EstadoJogador.Ocupado;
+            animacao.AnimacaoInterrogado();
 
-            yield return StartCoroutine(RotinaGuardandoArma()); // reaproveita a rotina existente, que já termina em Parado
+            yield return StartCoroutine(animacao.EsperarAnimacao()); // reaproveita a rotina existente, que já termina em Parado
 
             estaSendoDesarmado = false;
+            StartCoroutine (RotinaGuardandoArma());
         }
 
         protected IEnumerator RotinaSacanadoArma()
