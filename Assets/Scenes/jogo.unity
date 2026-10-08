@@ -52041,7 +52041,7 @@ PrefabInstance:
     - target: {fileID: 5170471029165293974, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -3592814690901215313, guid: 1d537da9fb3e8814884a570bd9ddab2e, type: 3}
+      objectReference: {fileID: 6642814461191988220, guid: bf5ee6fc5acd5c841bd4fbcf15f3ec6c, type: 3}
     - target: {fileID: 5170471029165293974, guid: e3274234862a1474f8b6b9b8b40b8b9f, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -52257,6 +52257,7 @@ MonoBehaviour:
   camera: {fileID: 519420033}
   ataques:
   - {fileID: 2959560683888490588, guid: 98affec6f30a36f498428c89072b279b, type: 3}
+  - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
   boxColliderP2: {fileID: 1289048081}

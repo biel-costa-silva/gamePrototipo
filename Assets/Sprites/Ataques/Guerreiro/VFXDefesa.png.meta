@@ -3,17 +3,17 @@ guid: e947ee6c4314c40458d36e8f85a88d11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5403885229322384609
-    second: VFXDefendendo_0
+      213: 4126793277042988152
+    second: VFXDefesa_0
   - first:
-      213: -4744412488022990031
-    second: VFXDefendendo_1
+      213: 8300548275969359744
+    second: VFXDefesa_1
   - first:
-      213: -4129464300940245124
-    second: VFXDefendendo_2
+      213: 716555617069485375
+    second: VFXDefesa_2
   - first:
-      213: -7363926178004613541
-    second: VFXDefendendo_3
+      213: 8230802514916286783
+    second: VFXDefesa_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VFXDefendendo_0
+      name: VFXDefesa_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1b4243d30b8105b0800000000000000
-      internalID: -5403885229322384609
+      spriteID: 8741e9bee90554930800000000000000
+      internalID: 4126793277042988152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXDefendendo_1
+      name: VFXDefesa_1
       rect:
         serializedVersion: 2
         x: 64
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1336677aaf5782eb0800000000000000
-      internalID: -4744412488022990031
+      spriteID: 08f7226cda8713370800000000000000
+      internalID: 8300548275969359744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXDefendendo_2
+      name: VFXDefesa_2
       rect:
         serializedVersion: 2
         x: 128
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c77cccdd81231b6c0800000000000000
-      internalID: -4129464300940245124
+      spriteID: f3dcc398987b1f900800000000000000
+      internalID: 716555617069485375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXDefendendo_3
+      name: VFXDefesa_3
       rect:
         serializedVersion: 2
         x: 192
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b56c5d728241ec990800000000000000
-      internalID: -7363926178004613541
+      spriteID: f312af5574fa93270800000000000000
+      internalID: 8230802514916286783
       vertices: []
       indices: 
       edges: []
@@ -226,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 58ec104575d646b459dabf0fe4652919
+    spriteID: d9170becd6df56243a3f58650f6095a6
     internalID: 0
     vertices: []
     indices: 
@@ -238,10 +238,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      VFXDefendendo_0: -5403885229322384609
-      VFXDefendendo_1: -4744412488022990031
-      VFXDefendendo_2: -4129464300940245124
-      VFXDefendendo_3: -7363926178004613541
+      VFXDefesa_0: 4126793277042988152
+      VFXDefesa_1: 8300548275969359744
+      VFXDefesa_2: 716555617069485375
+      VFXDefesa_3: 8230802514916286783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

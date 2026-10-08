@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 005797dba7d0d4d4ea88ce3c5adafae9
+guid: 29a58da336f0c4343b4dab056804c635
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4645370339108053434
-    second: guerreiroAgachando_0
+      213: 4181791335002444475
+    second: guerreiroErguendo_0
   - first:
-      213: -7640751749611980087
-    second: guerreiroAgachando_1
+      213: -8573684824703315952
+    second: guerreiroErguendo_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroAgachando_0
+      name: guerreiroErguendo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab1eba016bba77040800000000000000
-      internalID: 4645370339108053434
+      spriteID: bb290a72015b80a30800000000000000
+      internalID: 4181791335002444475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAgachando_1
+      name: guerreiroErguendo_1
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cafe6324c896f590800000000000000
-      internalID: -7640751749611980087
+      spriteID: 010d667c317240980800000000000000
+      internalID: -8573684824703315952
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e77566481a6b9584285b5e3fb3a614c2
+    spriteID: 2256125dae80d6b4fafa902ea6a13734
     internalID: 0
     vertices: []
     indices: 
@@ -188,8 +188,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroAgachando_0: 4645370339108053434
-      guerreiroAgachando_1: -7640751749611980087
+      guerreiroErguendo_0: 4181791335002444475
+      guerreiroErguendo_1: -8573684824703315952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

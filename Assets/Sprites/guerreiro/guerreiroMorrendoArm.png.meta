@@ -56,27 +56,6 @@ TextureImporter:
   - first:
       213: 9138703948674560938
     second: guerreiroMorrendoArm_17
-  - first:
-      213: 5160675496431363026
-    second: guerreiroMorrendoArm_18
-  - first:
-      213: 3717308572450963344
-    second: guerreiroMorrendoArm_19
-  - first:
-      213: -6495695969646239061
-    second: guerreiroMorrendoArm_20
-  - first:
-      213: -8264069662352533384
-    second: guerreiroMorrendoArm_21
-  - first:
-      213: 962571527594957417
-    second: guerreiroMorrendoArm_22
-  - first:
-      213: 7901946481209389371
-    second: guerreiroMorrendoArm_23
-  - first:
-      213: -658774832556486973
-    second: guerreiroMorrendoArm_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -597,7 +576,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4569c703df39cde4783cc3a038557945
+    spriteID: 9dcb2e2699467404d900698a0ed64df9
     internalID: 0
     vertices: []
     indices: 

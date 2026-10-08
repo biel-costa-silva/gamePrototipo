@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: guerreiroLevantando
+  m_Name: guerreiroErguendo
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -102,9 +102,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -8266596530556927730, guid: 2ed562bf8adf24442a40ff677ff609cc, type: 3}
+      value: {fileID: 4181791335002444475, guid: 29a58da336f0c4343b4dab056804c635, type: 3}
     - time: 0.083333336
-      value: {fileID: -4855794266461049423, guid: 2ed562bf8adf24442a40ff677ff609cc, type: 3}
+      value: {fileID: -8573684824703315952, guid: 29a58da336f0c4343b4dab056804c635, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -154,8 +154,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -8266596530556927730, guid: 2ed562bf8adf24442a40ff677ff609cc, type: 3}
-    - {fileID: -4855794266461049423, guid: 2ed562bf8adf24442a40ff677ff609cc, type: 3}
+    - {fileID: 4181791335002444475, guid: 29a58da336f0c4343b4dab056804c635, type: 3}
+    - {fileID: -8573684824703315952, guid: 29a58da336f0c4343b4dab056804c635, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

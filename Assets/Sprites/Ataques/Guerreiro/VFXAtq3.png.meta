@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 005797dba7d0d4d4ea88ce3c5adafae9
+guid: c6aa6da9ce066074cb6d51528a53c1b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4645370339108053434
-    second: guerreiroAgachando_0
+      213: -2740134349227602956
+    second: VFXAtq3_0
   - first:
-      213: -7640751749611980087
-    second: guerreiroAgachando_1
+      213: 2044627974513376813
+    second: VFXAtq3_1
+  - first:
+      213: -4411655442326926514
+    second: VFXAtq3_2
+  - first:
+      213: 910709057999149045
+    second: VFXAtq3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,10 +135,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroAgachando_0
+      name: VFXAtq3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -144,17 +150,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab1eba016bba77040800000000000000
-      internalID: 4645370339108053434
+      spriteID: 4fb4175c35619f9d0800000000000000
+      internalID: -2740134349227602956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAgachando_1
+      name: VFXAtq3_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 192
         y: 0
         width: 64
         height: 64
@@ -166,8 +172,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cafe6324c896f590800000000000000
-      internalID: -7640751749611980087
+      spriteID: d2e32b65f4aff5c10800000000000000
+      internalID: 2044627974513376813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq3_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b4fa8cfb6a6c2c0800000000000000
+      internalID: -4411655442326926514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq3_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f715c7201d73ac00800000000000000
+      internalID: 910709057999149045
       vertices: []
       indices: 
       edges: []
@@ -176,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e77566481a6b9584285b5e3fb3a614c2
+    spriteID: 27b2e4abfc3cc4049964e1b5469d13fb
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroAgachando_0: 4645370339108053434
-      guerreiroAgachando_1: -7640751749611980087
+      VFXAtq3_0: -2740134349227602956
+      VFXAtq3_1: 2044627974513376813
+      VFXAtq3_2: -4411655442326926514
+      VFXAtq3_3: 910709057999149045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

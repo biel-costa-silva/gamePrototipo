@@ -14,18 +14,6 @@ TextureImporter:
   - first:
       213: 372412609315183395
     second: guerreiroAlerta_3
-  - first:
-      213: 5792413978504907440
-    second: guerreiroAlerta_4
-  - first:
-      213: 5323515472856383570
-    second: guerreiroAlerta_5
-  - first:
-      213: -7802479129034891267
-    second: guerreiroAlerta_6
-  - first:
-      213: -7498655790376613667
-    second: guerreiroAlerta_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -234,99 +222,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: guerreiroAlerta_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bacacce2d9c26050800000000000000
-      internalID: 5792413978504907440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroAlerta_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25086eb0e1de0e940800000000000000
-      internalID: 5323515472856383570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroAlerta_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dffd97a429608b390800000000000000
-      internalID: -7802479129034891267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroAlerta_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd80da9c94c6fe790800000000000000
-      internalID: -7498655790376613667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: caa9eae893767404485aac438d2f268a
+    spriteID: f186aca6caf46aa44bfbcf051f0befde
     internalID: 0
     vertices: []
     indices: 
@@ -336,16 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       guerreiroAlerta_0: 7869047269439487757
       guerreiroAlerta_1: 6522226304515323053
       guerreiroAlerta_2: -5547516427146580357
       guerreiroAlerta_3: 372412609315183395
-      guerreiroAlerta_4: 5792413978504907440
-      guerreiroAlerta_5: 5323515472856383570
-      guerreiroAlerta_6: -7802479129034891267
-      guerreiroAlerta_7: -7498655790376613667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

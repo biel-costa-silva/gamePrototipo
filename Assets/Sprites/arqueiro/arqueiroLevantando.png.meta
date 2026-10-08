@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: 005797dba7d0d4d4ea88ce3c5adafae9
+guid: d9eb319c4aab19d44a29295a8050f918
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4645370339108053434
-    second: guerreiroAgachando_0
+      213: 4775782586712799371
+    second: arqueiroLevantando_0
   - first:
-      213: -7640751749611980087
-    second: guerreiroAgachando_1
+      213: 944736259411553585
+    second: arqueiroLevantando_1
+  - first:
+      213: 1272476010101145331
+    second: arqueiroLevantando_2
+  - first:
+      213: 1487788232198090000
+    second: arqueiroLevantando_3
+  - first:
+      213: 8309352950650727731
+    second: arqueiroLevantando_4
+  - first:
+      213: 8188978199520783712
+    second: arqueiroLevantando_5
+  - first:
+      213: -4377247289733809058
+    second: arqueiroLevantando_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,7 +144,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroAgachando_0
+      name: arqueiroLevantando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab1eba016bba77040800000000000000
-      internalID: 4645370339108053434
+      spriteID: b88338d95fcf64240800000000000000
+      internalID: 4775782586712799371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAgachando_1
+      name: arqueiroLevantando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +181,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cafe6324c896f590800000000000000
-      internalID: -7640751749611980087
+      spriteID: 13d28ac5f906c1d00800000000000000
+      internalID: 944736259411553585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroLevantando_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fef847703eb8a110800000000000000
+      internalID: 1272476010101145331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroLevantando_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d6c29b38fa5a410800000000000000
+      internalID: 1487788232198090000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroLevantando_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d61e8db70c05370800000000000000
+      internalID: 8309352950650727731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroLevantando_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06daadf094815a170800000000000000
+      internalID: 8188978199520783712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroLevantando_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cff5918c4e043c0800000000000000
+      internalID: -4377247289733809058
       vertices: []
       indices: 
       edges: []
@@ -176,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e77566481a6b9584285b5e3fb3a614c2
+    spriteID: 01f21e0fb243ea541aa4ca90dcb21dc1
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +311,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroAgachando_0: 4645370339108053434
-      guerreiroAgachando_1: -7640751749611980087
+      arqueiroLevantando_0: 4775782586712799371
+      arqueiroLevantando_1: 944736259411553585
+      arqueiroLevantando_2: 1272476010101145331
+      arqueiroLevantando_3: 1487788232198090000
+      arqueiroLevantando_4: 8309352950650727731
+      arqueiroLevantando_5: 8188978199520783712
+      arqueiroLevantando_6: -4377247289733809058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

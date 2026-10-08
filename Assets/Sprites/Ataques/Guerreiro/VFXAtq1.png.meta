@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 92145f0a26d76d745adb3ba0e0edc5f7
+guid: 2ad39876a43485d46ac2cd0fbce2a5ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5181575905390034490
-    second: VFXAtaqueGuerreiro_0
+      213: 3358629569782730444
+    second: VFXAtq1_0
   - first:
-      213: -1380509760551196346
-    second: VFXAtaqueGuerreiro_1
+      213: -1287621771318297204
+    second: VFXAtq1_1
   - first:
-      213: -5247109695559124618
-    second: VFXAtaqueGuerreiro_2
+      213: -8814679552757828783
+    second: VFXAtq1_2
   - first:
-      213: -6733863403818688688
-    second: VFXAtaqueGuerreiro_3
-  - first:
-      213: 1039002470581456597
-    second: VFXAtaqueGuerreiro_4
+      213: -6076120374658522925
+    second: VFXAtq1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,7 +135,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VFXAtaqueGuerreiro_0
+      name: VFXAtq1_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccec5078ccf3c9e20800000000000000
+      internalID: 3358629569782730444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq1_1
       rect:
         serializedVersion: 2
         x: 192
@@ -153,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3efe7135d7a8e740800000000000000
-      internalID: 5181575905390034490
+      spriteID: c8d738332d2712ee0800000000000000
+      internalID: -1287621771318297204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXAtaqueGuerreiro_1
+      name: VFXAtq1_2
       rect:
         serializedVersion: 2
         x: 256
@@ -175,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 649e261efa177dce0800000000000000
-      internalID: -1380509760551196346
+      spriteID: 15378f026a7fba580800000000000000
+      internalID: -8814679552757828783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXAtaqueGuerreiro_2
+      name: VFXAtq1_3
       rect:
         serializedVersion: 2
         x: 320
@@ -195,32 +214,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 679b0b248858e27b0800000000000000
-      internalID: -5247109695559124618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VFXAtaqueGuerreiro_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05f526969e28c82a0800000000000000
-      internalID: -6733863403818688688
+      spriteID: 32f461c626583c34e812d28b2738aa25
+      internalID: -6076120374658522925
       vertices: []
       indices: 
       edges: []
@@ -229,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 40a0210ad981164419867acd8c79dfa4
+    spriteID: a61e96ea5bcc51a468687f9e60c8a945
     internalID: 0
     vertices: []
     indices: 
@@ -239,12 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      VFXAtaqueGuerreiro_0: 5181575905390034490
-      VFXAtaqueGuerreiro_1: -1380509760551196346
-      VFXAtaqueGuerreiro_2: -5247109695559124618
-      VFXAtaqueGuerreiro_3: -6733863403818688688
+      VFXAtq1_0: 3358629569782730444
+      VFXAtq1_1: -1287621771318297204
+      VFXAtq1_2: -8814679552757828783
+      VFXAtq1_3: -6076120374658522925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

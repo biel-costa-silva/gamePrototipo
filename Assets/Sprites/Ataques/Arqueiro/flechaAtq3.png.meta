@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 287c92122d832a4419aad043611dab9d
+guid: 9bb3cb5c2cef39346a43795fbf00d432
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2494423311615421545
-    second: flechaPerfuroCritico_0
+      213: -766884602261395865
+    second: flechaAtq3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,10 +126,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flechaPerfuroCritico_0
+      name: flechaAtq3_0
       rect:
         serializedVersion: 2
-        x: 320
+        x: 0
         y: 0
         width: 64
         height: 64
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96c6a4039c8fd9220800000000000000
-      internalID: 2494423311615421545
+      spriteID: 7662e72748a7b55f0800000000000000
+      internalID: -766884602261395865
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e688a63fcb39a054db7eb7e32e1a4ee6
+    spriteID: 9cf662d1a86a841489cfcb41ff90f5bc
     internalID: 0
     vertices: []
     indices: 
@@ -161,9 +161,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      flechaPerfuroCritico_0: 2494423311615421545
+      flechaAtq3_0: -766884602261395865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

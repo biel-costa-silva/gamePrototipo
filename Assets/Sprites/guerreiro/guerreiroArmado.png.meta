@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 5c65681dfa4a0f84897062463db03633
+guid: 020ecf72efa0992409b1fbecfce0687b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 330961974314999928
-    second: guerreiroParadoArmado_0
+      213: -8976591706390141419
+    second: guerreiroArmado_0
   - first:
-      213: -4112062288814102487
-    second: guerreiroParadoArmado_1
+      213: 4094334299523573942
+    second: guerreiroArmado_1
   - first:
-      213: 6070007979962839279
-    second: guerreiroParadoArmado_2
+      213: 4706329459911675529
+    second: guerreiroArmado_2
   - first:
-      213: -2503959961066577185
-    second: guerreiroParadoArmado_3
+      213: -5060650975600301285
+    second: guerreiroArmado_3
   - first:
-      213: -4276340987270664240
-    second: guerreiroParadoArmado_4
+      213: 3841857943237680916
+    second: guerreiroArmado_4
   - first:
-      213: -1544636663574033524
-    second: guerreiroParadoArmado_5
+      213: -2818370583853555904
+    second: guerreiroArmado_5
   - first:
-      213: 7297154361367404644
-    second: guerreiroParadoArmado_6
+      213: 4612136868748673421
+    second: guerreiroArmado_6
   - first:
-      213: 4468048952222715624
-    second: guerreiroParadoArmado_7
+      213: -9070318578921223712
+    second: guerreiroArmado_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroParadoArmado_0
+      name: guerreiroArmado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87025318920d79400800000000000000
-      internalID: 330961974314999928
+      spriteID: 516e5ee276dbc6380800000000000000
+      internalID: -8976591706390141419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_1
+      name: guerreiroArmado_1
       rect:
         serializedVersion: 2
         x: 64
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 928a4fc82250fe6c0800000000000000
-      internalID: -4112062288814102487
+      spriteID: 6b8ecca4a5ff1d830800000000000000
+      internalID: 4094334299523573942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_2
+      name: guerreiroArmado_2
       rect:
         serializedVersion: 2
         x: 128
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe0b875f8100d3450800000000000000
-      internalID: 6070007979962839279
+      spriteID: 98ecdf565bd305140800000000000000
+      internalID: 4706329459911675529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_3
+      name: guerreiroArmado_3
       rect:
         serializedVersion: 2
         x: 192
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd263d49ea5204dd0800000000000000
-      internalID: -2503959961066577185
+      spriteID: b1b2c1b00c4f4c9b0800000000000000
+      internalID: -5060650975600301285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_4
+      name: guerreiroArmado_4
       rect:
         serializedVersion: 2
         x: 256
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dfe943778267a4c0800000000000000
-      internalID: -4276340987270664240
+      spriteID: 41fd130c175015530800000000000000
+      internalID: 3841857943237680916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_5
+      name: guerreiroArmado_5
       rect:
         serializedVersion: 2
         x: 320
@@ -272,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8b00a86329509ae0800000000000000
-      internalID: -1544636663574033524
+      spriteID: 04f9ff7e2e223e8d0800000000000000
+      internalID: -2818370583853555904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_6
+      name: guerreiroArmado_6
       rect:
         serializedVersion: 2
         x: 384
@@ -294,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4602f7cca33b44560800000000000000
-      internalID: 7297154361367404644
+      spriteID: d814f35cb0a910040800000000000000
+      internalID: 4612136868748673421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroParadoArmado_7
+      name: guerreiroArmado_7
       rect:
         serializedVersion: 2
         x: 448
@@ -316,8 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ee8a4c69d2b10e30800000000000000
-      internalID: 4468048952222715624
+      spriteID: 0e946cf1f41cf1280800000000000000
+      internalID: -9070318578921223712
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 001b15e55f38af246905b49fd4708496
+    spriteID: 3939062e28649e54194d2e133abc2556
     internalID: 0
     vertices: []
     indices: 
@@ -338,14 +338,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroParadoArmado_0: 330961974314999928
-      guerreiroParadoArmado_1: -4112062288814102487
-      guerreiroParadoArmado_2: 6070007979962839279
-      guerreiroParadoArmado_3: -2503959961066577185
-      guerreiroParadoArmado_4: -4276340987270664240
-      guerreiroParadoArmado_5: -1544636663574033524
-      guerreiroParadoArmado_6: 7297154361367404644
-      guerreiroParadoArmado_7: 4468048952222715624
+      guerreiroArmado_0: -8976591706390141419
+      guerreiroArmado_1: 4094334299523573942
+      guerreiroArmado_2: 4706329459911675529
+      guerreiroArmado_3: -5060650975600301285
+      guerreiroArmado_4: 3841857943237680916
+      guerreiroArmado_5: -2818370583853555904
+      guerreiroArmado_6: 4612136868748673421
+      guerreiroArmado_7: -9070318578921223712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

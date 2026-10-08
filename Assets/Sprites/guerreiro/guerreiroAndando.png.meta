@@ -3,44 +3,23 @@ guid: e8d95153ae4679d4b92fe17117c5e360
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5135533414341700597
-    second: guerreiroAndando 1_0
+      213: 5879812303454910605
+    second: guerreiroAndando_0
   - first:
-      213: -2178819081991027455
-    second: guerreiroAndando 1_1
+      213: -7524818112133308137
+    second: guerreiroAndando_1
   - first:
-      213: 182424998910852346
-    second: guerreiroAndando 1_2
+      213: 571308988239766034
+    second: guerreiroAndando_2
   - first:
-      213: 3387358272626805643
-    second: guerreiroAndando 1_3
+      213: 8098969508393129244
+    second: guerreiroAndando_3
   - first:
-      213: -4158313593545420583
-    second: guerreiroAndando 1_4
+      213: -2689758850449465945
+    second: guerreiroAndando_4
   - first:
-      213: 2932460445486385405
-    second: guerreiroAndando 1_5
-  - first:
-      213: 2280828096794309164
-    second: guerreiroAndando 1_6
-  - first:
-      213: -3497059341508603380
-    second: guerreiroAndando 1_7
-  - first:
-      213: 6585834791094587874
-    second: guerreiroAndando 1_8
-  - first:
-      213: 304436949758360454
-    second: guerreiroAndando 1_9
-  - first:
-      213: 8800707296950958480
-    second: guerreiroAndando 1_10
-  - first:
-      213: -6657807938323193792
-    second: guerreiroAndando 1_11
-  - first:
-      213: -908320053515505751
-    second: guerreiroAndando 1_12
+      213: -6990861053950075269
+    second: guerreiroAndando_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,11 +124,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroAndando 1_0
+      name: guerreiroAndando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -164,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fb6cfd5e64154740800000000000000
-      internalID: 5135533414341700597
+      spriteID: d88b66d232a499150800000000000000
+      internalID: 5879812303454910605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAndando 1_1
+      name: guerreiroAndando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -186,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 105051cb69743c1e0800000000000000
-      internalID: -2178819081991027455
+      spriteID: 7116ed29bc9729790800000000000000
+      internalID: -7524818112133308137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAndando 1_2
+      name: guerreiroAndando_2
       rect:
         serializedVersion: 2
         x: 128
@@ -208,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afc7b3ae19a188200800000000000000
-      internalID: 182424998910852346
+      spriteID: 212e4057f72bde700800000000000000
+      internalID: 571308988239766034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAndando 1_3
+      name: guerreiroAndando_3
       rect:
         serializedVersion: 2
         x: 192
@@ -230,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8bc6e6e660520f20800000000000000
-      internalID: 3387358272626805643
+      spriteID: c151e729bd1556070800000000000000
+      internalID: 8098969508393129244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAndando 1_4
+      name: guerreiroAndando_4
       rect:
         serializedVersion: 2
         x: 256
@@ -252,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d01c0081d3ba46c0800000000000000
-      internalID: -4158313593545420583
+      spriteID: 7ad1f73939e0caad0800000000000000
+      internalID: -2689758850449465945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAndando 1_5
+      name: guerreiroAndando_5
       rect:
         serializedVersion: 2
         x: 320
@@ -274,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df889130d3132b820800000000000000
-      internalID: 2932460445486385405
+      spriteID: b7e513d19e87bfe90800000000000000
+      internalID: -6990861053950075269
       vertices: []
       indices: 
       edges: []
@@ -284,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 305e5c90f46c0544d8c390ce791f9a3f
+    spriteID: 9bd5d0855c178414183ecfebe82993de
     internalID: 0
     vertices: []
     indices: 
@@ -296,12 +288,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroAndando 1_0: 5135533414341700597
-      guerreiroAndando 1_1: -2178819081991027455
-      guerreiroAndando 1_2: 182424998910852346
-      guerreiroAndando 1_3: 3387358272626805643
-      guerreiroAndando 1_4: -4158313593545420583
-      guerreiroAndando 1_5: 2932460445486385405
+      guerreiroAndando_0: 5879812303454910605
+      guerreiroAndando_1: -7524818112133308137
+      guerreiroAndando_2: 571308988239766034
+      guerreiroAndando_3: 8098969508393129244
+      guerreiroAndando_4: -2689758850449465945
+      guerreiroAndando_5: -6990861053950075269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

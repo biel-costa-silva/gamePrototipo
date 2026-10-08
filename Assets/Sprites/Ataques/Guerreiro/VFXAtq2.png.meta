@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 2ed562bf8adf24442a40ff677ff609cc
+guid: bdca79f57c2a60f4a9a3efd8a0ade039
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8266596530556927730
-    second: guerreiroLevantando_0
+      213: 3896015532434436106
+    second: VFXAtq2_0
   - first:
-      213: -4855794266461049423
-    second: guerreiroLevantando_1
+      213: -7325453111675689135
+    second: VFXAtq2_1
+  - first:
+      213: -83255697438510691
+    second: VFXAtq2_2
+  - first:
+      213: -4850264928974617267
+    second: VFXAtq2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,29 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroLevantando_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e018da6f046274d80800000000000000
-      internalID: -8266596530556927730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroLevantando_1
+      name: VFXAtq2_0
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bde53d77d0cc9cb0800000000000000
-      internalID: -4855794266461049423
+      spriteID: a00b82a1c7d611630800000000000000
+      internalID: 3896015532434436106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq2_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1576ac3f433c65a90800000000000000
+      internalID: -7325453111675689135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq2_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9176a0626738def0800000000000000
+      internalID: -83255697438510691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXAtq2_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45cee1beb560bcb0800000000000000
+      internalID: -4850264928974617267
       vertices: []
       indices: 
       edges: []
@@ -176,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 319a7493b29c577448fb6a5154836db0
+    spriteID: 78571d2ecb3c3784e98f2c6aab25dc8e
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroLevantando_0: -8266596530556927730
-      guerreiroLevantando_1: -4855794266461049423
+      VFXAtq2_0: 3896015532434436106
+      VFXAtq2_1: -7325453111675689135
+      VFXAtq2_2: -83255697438510691
+      VFXAtq2_3: -4850264928974617267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

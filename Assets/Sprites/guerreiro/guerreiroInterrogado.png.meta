@@ -1,37 +1,19 @@
 fileFormatVersion: 2
-guid: ea21ddf7d29fc434f9455a628d08ff97
+guid: 9bd29db1c9fd2f94e9580e2541decce1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 28734281056750200
-    second: guerreiroSofreAtqArm_0
+      213: -6937306576556909546
+    second: guerreiroInterrogado_0
   - first:
-      213: -8972064390777320840
-    second: guerreiroSofreAtqArm_1
+      213: 7001233726661673991
+    second: guerreiroInterrogado_1
   - first:
-      213: -7341784367194899438
-    second: guerreiroSofreAtqArm_2
+      213: -1799826740679605269
+    second: guerreiroInterrogado_2
   - first:
-      213: -193207693006736822
-    second: guerreiroSofreAtqArm_3
-  - first:
-      213: 6306937750040536573
-    second: guerreiroSofreAtqArm_4
-  - first:
-      213: 4137178940307712905
-    second: guerreiroSofreAtqArm_5
-  - first:
-      213: 2132625001146547001
-    second: guerreiroSofreAtqArm_6
-  - first:
-      213: -4927038645432331392
-    second: guerreiroSofreAtqArm_7
-  - first:
-      213: -6262676890236787305
-    second: guerreiroSofreAtqArm_8
-  - first:
-      213: -578938183208060854
-    second: guerreiroSofreAtqArm_9
+      213: -8312018633218030180
+    second: guerreiroInterrogado_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,11 +118,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroSofreAtqArm_0
+      name: guerreiroInterrogado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87a83472da5166000800000000000000
-      internalID: 28734281056750200
+      spriteID: 61c185e8c6cb9bf90800000000000000
+      internalID: -6937306576556909546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqArm_1
+      name: guerreiroInterrogado_1
       rect:
         serializedVersion: 2
         x: 64
@@ -177,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87a49cdf8f2dc7380800000000000000
-      internalID: -8972064390777320840
+      spriteID: 7044723faf0692160800000000000000
+      internalID: 7001233726661673991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqArm_2
+      name: guerreiroInterrogado_2
       rect:
         serializedVersion: 2
         x: 128
@@ -199,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21cf4d7340ebc1a90800000000000000
-      internalID: -7341784367194899438
+      spriteID: be30b808d1bb507e0800000000000000
+      internalID: -1799826740679605269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqArm_3
+      name: guerreiroInterrogado_3
       rect:
         serializedVersion: 2
         x: 192
@@ -221,74 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a42f57a70a6915df0800000000000000
-      internalID: -193207693006736822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroSofreAtqArm_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df5eaa3d77eb68750800000000000000
-      internalID: 6306937750040536573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroSofreAtqArm_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98ba44593563a6930800000000000000
-      internalID: 4137178940307712905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroSofreAtqArm_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93bf470b32b989d10800000000000000
-      internalID: 2132625001146547001
+      spriteID: c958c909717c5ac80800000000000000
+      internalID: -8312018633218030180
       vertices: []
       indices: 
       edges: []
@@ -297,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 424ed798ad788e849b467bb62aae99e2
+    spriteID: 93f9dfe94b33ccb49b845323f77173bc
     internalID: 0
     vertices: []
     indices: 
@@ -307,15 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroSofreAtqArm_0: 28734281056750200
-      guerreiroSofreAtqArm_1: -8972064390777320840
-      guerreiroSofreAtqArm_2: -7341784367194899438
-      guerreiroSofreAtqArm_3: -193207693006736822
-      guerreiroSofreAtqArm_4: 6306937750040536573
-      guerreiroSofreAtqArm_5: 4137178940307712905
-      guerreiroSofreAtqArm_6: 2132625001146547001
+      guerreiroInterrogado_0: -6937306576556909546
+      guerreiroInterrogado_1: 7001233726661673991
+      guerreiroInterrogado_2: -1799826740679605269
+      guerreiroInterrogado_3: -8312018633218030180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

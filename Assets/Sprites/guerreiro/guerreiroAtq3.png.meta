@@ -1,37 +1,28 @@
 fileFormatVersion: 2
-guid: 9acfe1371fd0c8044ac840fc7329a03e
+guid: ed26d305cdb75804e8c2b9df71caf12c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1250564031528036020
-    second: guerreiroAtaque2_0
+      213: -2426291896030360401
+    second: guerreiroAtq3_0
   - first:
-      213: -532897645157012821
-    second: guerreiroAtaque2_1
+      213: -9016531230189491914
+    second: guerreiroAtq3_1
   - first:
-      213: -7362348813501520674
-    second: guerreiroAtaque2_2
+      213: 5693069620050166279
+    second: guerreiroAtq3_2
   - first:
-      213: -51717372749074756
-    second: guerreiroAtaque2_3
+      213: -5414481119999967835
+    second: guerreiroAtq3_3
   - first:
-      213: -3209105445873374097
-    second: guerreiroAtaque2_4
+      213: -356901609261637186
+    second: guerreiroAtq3_4
   - first:
-      213: 4751711561670273704
-    second: guerreiroAtaque2_5
+      213: -3014186642072556280
+    second: guerreiroAtq3_5
   - first:
-      213: -3984080805933641710
-    second: guerreiroAtaque2_6
-  - first:
-      213: 7085039904461732610
-    second: guerreiroAtaque2_7
-  - first:
-      213: -7580056994731154977
-    second: guerreiroAtaque2_8
-  - first:
-      213: 4123071131967229617
-    second: guerreiroAtaque2_9
+      213: -1086829837898910115
+    second: guerreiroAtq3_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,7 +144,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroAtaque2_0
+      name: guerreiroAtq3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -168,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4914eb93aa15aee0800000000000000
-      internalID: -1250564031528036020
+      spriteID: fac83b72064145ed0800000000000000
+      internalID: -2426291896030360401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_1
+      name: guerreiroAtq3_1
       rect:
         serializedVersion: 2
         x: 64
@@ -190,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: baa26c64a64ca98f0800000000000000
-      internalID: -532897645157012821
+      spriteID: 639e6562e98ded280800000000000000
+      internalID: -9016531230189491914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_2
+      name: guerreiroAtq3_2
       rect:
         serializedVersion: 2
         x: 128
@@ -212,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed429b2f2cea3d990800000000000000
-      internalID: -7362348813501520674
+      spriteID: 70288a008a8d10f40800000000000000
+      internalID: 5693069620050166279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_3
+      name: guerreiroAtq3_3
       rect:
         serializedVersion: 2
         x: 192
@@ -234,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbe2390d253484ff0800000000000000
-      internalID: -51717372749074756
+      spriteID: 5adb757cb16ebd4b0800000000000000
+      internalID: -5414481119999967835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_4
+      name: guerreiroAtq3_4
       rect:
         serializedVersion: 2
         x: 256
@@ -256,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6c22fb7997f673d0800000000000000
-      internalID: -3209105445873374097
+      spriteID: eb1e13890e70c0bf0800000000000000
+      internalID: -356901609261637186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_5
+      name: guerreiroAtq3_5
       rect:
         serializedVersion: 2
         x: 320
@@ -278,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aa297c5d7871f140800000000000000
-      internalID: 4751711561670273704
+      spriteID: 80da98808357b26d0800000000000000
+      internalID: -3014186642072556280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroAtaque2_6
+      name: guerreiroAtq3_6
       rect:
         serializedVersion: 2
         x: 384
@@ -300,30 +291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2109fd59d93b5b8c0800000000000000
-      internalID: -3984080805933641710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroAtaque2_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20bb8e4414e135260800000000000000
-      internalID: 7085039904461732610
+      spriteID: d567dbc450ecae0f0800000000000000
+      internalID: -1086829837898910115
       vertices: []
       indices: 
       edges: []
@@ -332,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 85f6dbdc810e3434d950aff68e1790a4
+    spriteID: 1479aac6493befc41a56ded1ad907ae5
     internalID: 0
     vertices: []
     indices: 
@@ -342,16 +311,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroAtaque2_0: -1250564031528036020
-      guerreiroAtaque2_1: -532897645157012821
-      guerreiroAtaque2_2: -7362348813501520674
-      guerreiroAtaque2_3: -51717372749074756
-      guerreiroAtaque2_4: -3209105445873374097
-      guerreiroAtaque2_5: 4751711561670273704
-      guerreiroAtaque2_6: -3984080805933641710
-      guerreiroAtaque2_7: 7085039904461732610
+      guerreiroAtq3_0: -2426291896030360401
+      guerreiroAtq3_1: -9016531230189491914
+      guerreiroAtq3_2: 5693069620050166279
+      guerreiroAtq3_3: -5414481119999967835
+      guerreiroAtq3_4: -356901609261637186
+      guerreiroAtq3_5: -3014186642072556280
+      guerreiroAtq3_6: -1086829837898910115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

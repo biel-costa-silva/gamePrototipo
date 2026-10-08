@@ -32,9 +32,6 @@ TextureImporter:
   - first:
       213: -75000495543903953
     second: guerreiroDefendendo_9
-  - first:
-      213: -159075569547719449
-    second: guerreiroDefendendo_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -379,7 +376,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5f805163e290ca04c8231fb89678a277
+    spriteID: e4d833801859c5d4b8bed88521cf82c4
     internalID: 0
     vertices: []
     indices: 

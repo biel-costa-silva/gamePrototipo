@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: bb61ead0a0f9ae241947d29e02445297
+guid: c2dcb9eb6f6304147802ff50f661b361
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6611179922267477239
-    second: guerreiroSofreAtqDef_0
+      213: -4070524973353307696
+    second: guerreiroDanoDesarm_0
   - first:
-      213: -2512885296226185232
-    second: guerreiroSofreAtqDef_1
+      213: 1256682688070011502
+    second: guerreiroDanoDesarm_1
   - first:
-      213: 1449242438080863379
-    second: guerreiroSofreAtqDef_2
+      213: -9100937983523658394
+    second: guerreiroDanoDesarm_2
   - first:
-      213: 5707740293804803466
-    second: guerreiroSofreAtqDef_3
+      213: 3755503703401437276
+    second: guerreiroDanoDesarm_3
   - first:
-      213: 7398588508839670638
-    second: guerreiroSofreAtqDef_4
-  - first:
-      213: -698814699102269573
-    second: guerreiroSofreAtqDef_5
-  - first:
-      213: -5057915770114767231
-    second: guerreiroSofreAtqDef_6
+      213: 758188699936123119
+    second: guerreiroDanoDesarm_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,7 +138,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroSofreAtqDef_0
+      name: guerreiroDanoDesarm_0
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90b6d0363ee5044a0800000000000000
-      internalID: -6611179922267477239
+      spriteID: 0d17be17a179287c0800000000000000
+      internalID: -4070524973353307696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDef_1
+      name: guerreiroDanoDesarm_1
       rect:
         serializedVersion: 2
         x: 64
@@ -181,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ffc22d0320702dd0800000000000000
-      internalID: -2512885296226185232
+      spriteID: e6acbc12f32a07110800000000000000
+      internalID: 1256682688070011502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDef_2
+      name: guerreiroDanoDesarm_2
       rect:
         serializedVersion: 2
         x: 128
@@ -203,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39c1b3ba15ebc1410800000000000000
-      internalID: 1449242438080863379
+      spriteID: 66566317f19f2b180800000000000000
+      internalID: -9100937983523658394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDef_3
+      name: guerreiroDanoDesarm_3
       rect:
         serializedVersion: 2
         x: 192
@@ -225,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a854b6a6e87f53f40800000000000000
-      internalID: 5707740293804803466
+      spriteID: c5818e188ba3e1430800000000000000
+      internalID: 3755503703401437276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDef_4
+      name: guerreiroDanoDesarm_4
       rect:
         serializedVersion: 2
         x: 256
@@ -247,52 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e63fca4ac011da660800000000000000
-      internalID: 7398588508839670638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroSofreAtqDef_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7f0030dbbf4d46f0800000000000000
-      internalID: -698814699102269573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroSofreAtqDef_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1868672b76caec9b0800000000000000
-      internalID: -5057915770114767231
+      spriteID: fe868640b90a58a00800000000000000
+      internalID: 758188699936123119
       vertices: []
       indices: 
       edges: []
@@ -301,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 352e91a8e3a8f664da08fd9b0a07b13a
+    spriteID: 8d7eca7b1409b2146a9833ffa077a8e9
     internalID: 0
     vertices: []
     indices: 
@@ -311,15 +261,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroSofreAtqDef_0: -6611179922267477239
-      guerreiroSofreAtqDef_1: -2512885296226185232
-      guerreiroSofreAtqDef_2: 1449242438080863379
-      guerreiroSofreAtqDef_3: 5707740293804803466
-      guerreiroSofreAtqDef_4: 7398588508839670638
-      guerreiroSofreAtqDef_5: -698814699102269573
-      guerreiroSofreAtqDef_6: -5057915770114767231
+      guerreiroDanoDesarm_0: -4070524973353307696
+      guerreiroDanoDesarm_1: 1256682688070011502
+      guerreiroDanoDesarm_2: -9100937983523658394
+      guerreiroDanoDesarm_3: 3755503703401437276
+      guerreiroDanoDesarm_4: 758188699936123119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 66a56b1b17f46d04493abf50ec26c2f5
+guid: bb8a010482b87c546b5386f3b76002e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3986397610812168528
-    second: VFXAtaque3Guerreiro_0
+      213: -4630168532112109448
+    second: guerreiroDanoArm_0
   - first:
-      213: -2880671276299529051
-    second: VFXAtaque3Guerreiro_1
+      213: 3449988146854825510
+    second: guerreiroDanoArm_1
   - first:
-      213: -4007671067339876351
-    second: VFXAtaque3Guerreiro_2
+      213: 4749398927955767994
+    second: guerreiroDanoArm_2
   - first:
-      213: -2942082848117209214
-    second: VFXAtaque3Guerreiro_3
+      213: -7382036230866174204
+    second: guerreiroDanoArm_3
   - first:
-      213: -9142302215887335281
-    second: VFXAtaque3Guerreiro_4
+      213: -5793836961094752525
+    second: guerreiroDanoArm_4
+  - first:
+      213: 9164437280371858924
+    second: guerreiroDanoArm_5
+  - first:
+      213: -966863096721029927
+    second: guerreiroDanoArm_6
+  - first:
+      213: -5915295716719079134
+    second: guerreiroDanoArm_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,7 +147,51 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VFXAtaque3Guerreiro_0
+      name: guerreiroDanoArm_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870144170465ebfb0800000000000000
+      internalID: -4630168532112109448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroDanoArm_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e0794d0f1d0ef20800000000000000
+      internalID: 3449988146854825510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroDanoArm_2
       rect:
         serializedVersion: 2
         x: 128
@@ -153,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b6231a6e787da8c0800000000000000
-      internalID: -3986397610812168528
+      spriteID: ab2bc6d592149e140800000000000000
+      internalID: 4749398927955767994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXAtaque3Guerreiro_1
+      name: guerreiroDanoArm_3
       rect:
         serializedVersion: 2
         x: 192
@@ -175,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a4de759cbcc508d0800000000000000
-      internalID: -2880671276299529051
+      spriteID: 40f7824e82dbd8990800000000000000
+      internalID: -7382036230866174204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXAtaque3Guerreiro_2
+      name: guerreiroDanoArm_4
       rect:
         serializedVersion: 2
         x: 256
@@ -197,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1089896d564e168c0800000000000000
-      internalID: -4007671067339876351
+      spriteID: 3f62b6f1bf7289fa0800000000000000
+      internalID: -5793836961094752525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFXAtaque3Guerreiro_3
+      name: guerreiroDanoArm_5
       rect:
         serializedVersion: 2
         x: 320
@@ -219,8 +272,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 287443acc3f9b27d0800000000000000
-      internalID: -2942082848117209214
+      spriteID: ced59e6b62f9e2f70800000000000000
+      internalID: 9164437280371858924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroDanoArm_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4428dd2230592f0800000000000000
+      internalID: -966863096721029927
       vertices: []
       indices: 
       edges: []
@@ -229,7 +304,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a1746a954f118cb4983351ebfe63071c
+    spriteID: 4ba67bdc7a010cc4d8addffe86bde73b
     internalID: 0
     vertices: []
     indices: 
@@ -241,10 +316,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      VFXAtaque3Guerreiro_0: -3986397610812168528
-      VFXAtaque3Guerreiro_1: -2880671276299529051
-      VFXAtaque3Guerreiro_2: -4007671067339876351
-      VFXAtaque3Guerreiro_3: -2942082848117209214
+      guerreiroDanoArm_0: -4630168532112109448
+      guerreiroDanoArm_1: 3449988146854825510
+      guerreiroDanoArm_2: 4749398927955767994
+      guerreiroDanoArm_3: -7382036230866174204
+      guerreiroDanoArm_4: -5793836961094752525
+      guerreiroDanoArm_5: 9164437280371858924
+      guerreiroDanoArm_6: -966863096721029927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

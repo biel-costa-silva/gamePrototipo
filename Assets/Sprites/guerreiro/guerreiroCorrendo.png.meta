@@ -20,18 +20,6 @@ TextureImporter:
   - first:
       213: -8775882513868369507
     second: guerreiroCorrendo_5
-  - first:
-      213: 4561509608464849180
-    second: guerreiroCorrendo_6
-  - first:
-      213: 8013431083739430118
-    second: guerreiroCorrendo_7
-  - first:
-      213: 7871083676241936125
-    second: guerreiroCorrendo_8
-  - first:
-      213: -798860509731445412
-    second: guerreiroCorrendo_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -288,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db3c26a87086aa246ad486b73a6fa62f
+    spriteID: 579d0c5a9bac1c744be5f779224971fc
     internalID: 0
     vertices: []
     indices: 

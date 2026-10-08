@@ -23,21 +23,6 @@ TextureImporter:
   - first:
       213: 7407883486776814250
     second: guerreiroRepelindo_6
-  - first:
-      213: -4407788167924961646
-    second: guerreiroRepelindo_7
-  - first:
-      213: -2200896123201349293
-    second: guerreiroRepelindo_8
-  - first:
-      213: -3262775429575571416
-    second: guerreiroRepelindo_9
-  - first:
-      213: -4061751376068093154
-    second: guerreiroRepelindo_10
-  - first:
-      213: 9069241921163438
-    second: guerreiroRepelindo_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -316,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cd0e322d41a8f4a4c8a6b2830e828623
+    spriteID: 845227bca24e34f41857dc14360545a8
     internalID: 0
     vertices: []
     indices: 

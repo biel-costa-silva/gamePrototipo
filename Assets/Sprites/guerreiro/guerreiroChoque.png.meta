@@ -23,33 +23,6 @@ TextureImporter:
   - first:
       213: 940279147645894853
     second: guerreiroChoque_6
-  - first:
-      213: -6579555863410588808
-    second: guerreiroChoque_7
-  - first:
-      213: -4047166519636442599
-    second: guerreiroChoque_8
-  - first:
-      213: -5620802518353007693
-    second: guerreiroChoque_9
-  - first:
-      213: 6830153047896168951
-    second: guerreiroChoque_10
-  - first:
-      213: 2923704066422953736
-    second: guerreiroChoque_11
-  - first:
-      213: 2455178787737187527
-    second: guerreiroChoque_12
-  - first:
-      213: 8805795641400547119
-    second: guerreiroChoque_13
-  - first:
-      213: 5751706270735451031
-    second: guerreiroChoque_14
-  - first:
-      213: -3373389503903934654
-    second: guerreiroChoque_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -328,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a0bc7e5cd02b08744a9cc17ac218647b
+    spriteID: 9b2ad946e510148498af687ce1afc112
     internalID: 0
     vertices: []
     indices: 
