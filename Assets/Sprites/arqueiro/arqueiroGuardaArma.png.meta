@@ -35,9 +35,6 @@ TextureImporter:
   - first:
       213: 8376145302876472289
     second: arqueiroGuardaArma_10
-  - first:
-      213: 7845017121167889809
-    second: arqueiroGuardaArma_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,6 +115,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -356,7 +379,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6421e2316a178e646bfdd74f20f8569f
+    spriteID: 8936a56023bc65f42abe430331e5fe61
     internalID: 0
     vertices: []
     indices: 

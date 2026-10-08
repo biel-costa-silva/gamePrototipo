@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 9ce7312efdfa5ce4584bae61b7d58a06
+guid: 0da9280c21c1d7f4b94caaf113c64948
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6073781933176577485
-    second: arqueiroSacaArma_0
+      213: 8664479128109324324
+    second: arqueiroSegurando_0
   - first:
-      213: 3238090899385216384
-    second: arqueiroSacaArma_1
+      213: 4365927890262566888
+    second: arqueiroSegurando_1
   - first:
-      213: -3421590825125043927
-    second: arqueiroSacaArma_2
+      213: -5845899674111275835
+    second: arqueiroSegurando_2
   - first:
-      213: -2115377243854703220
-    second: arqueiroSacaArma_3
+      213: -1473293661309558400
+    second: arqueiroSegurando_3
   - first:
-      213: 5079005282305863347
-    second: arqueiroSacaArma_4
+      213: 4105279330061689963
+    second: arqueiroSegurando_4
   - first:
-      213: 221921575669298698
-    second: arqueiroSacaArma_5
+      213: -4979897828597405300
+    second: arqueiroSegurando_5
   - first:
-      213: 5063175003472512421
-    second: arqueiroSacaArma_6
+      213: -8119923415548249489
+    second: arqueiroSegurando_6
   - first:
-      213: 991403346111452743
-    second: arqueiroSacaArma_7
+      213: 3482677834704869320
+    second: arqueiroSegurando_7
   - first:
-      213: -549655229789893991
-    second: arqueiroSacaArma_8
-  - first:
-      213: -5701236932776931732
-    second: arqueiroSacaArma_9
+      213: -2974969145392855640
+    second: arqueiroSegurando_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroSacaArma_0
+      name: arqueiroSegurando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -168,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33223d5138795bba0800000000000000
-      internalID: -6073781933176577485
+      spriteID: 4281eb25cd96e3870800000000000000
+      internalID: 8664479128109324324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_1
+      name: arqueiroSegurando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -190,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08de740548200fc20800000000000000
-      internalID: 3238090899385216384
+      spriteID: 8e72216d844e69c30800000000000000
+      internalID: 4365927890262566888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_2
+      name: arqueiroSegurando_2
       rect:
         serializedVersion: 2
         x: 128
@@ -212,14 +209,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 921afadd5411480d0800000000000000
-      internalID: -3421590825125043927
+      spriteID: 5cc860428313fdea0800000000000000
+      internalID: -5845899674111275835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_3
+      name: arqueiroSegurando_3
       rect:
         serializedVersion: 2
         x: 192
@@ -234,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c85781eba9ba4a2e0800000000000000
-      internalID: -2115377243854703220
+      spriteID: 0812fcb883fcd8be0800000000000000
+      internalID: -1473293661309558400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_4
+      name: arqueiroSegurando_4
       rect:
         serializedVersion: 2
         x: 256
@@ -256,14 +253,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3be6c2005604c7640800000000000000
-      internalID: 5079005282305863347
+      spriteID: b64a41cccc1e8f830800000000000000
+      internalID: 4105279330061689963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_5
+      name: arqueiroSegurando_5
       rect:
         serializedVersion: 2
         x: 320
@@ -278,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0673cd4f7c641300800000000000000
-      internalID: 221921575669298698
+      spriteID: c8966bc3f49d3eab0800000000000000
+      internalID: -4979897828597405300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_6
+      name: arqueiroSegurando_6
       rect:
         serializedVersion: 2
         x: 384
@@ -300,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a5cd9df6d2044640800000000000000
-      internalID: 5063175003472512421
+      spriteID: f6abedcbcac305f80800000000000000
+      internalID: -8119923415548249489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_7
+      name: arqueiroSegurando_7
       rect:
         serializedVersion: 2
         x: 448
@@ -322,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7465b12371c22cd00800000000000000
-      internalID: 991403346111452743
+      spriteID: 8c7d5b4e905f45030800000000000000
+      internalID: 3482677834704869320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_8
+      name: arqueiroSegurando_8
       rect:
         serializedVersion: 2
         x: 512
@@ -344,30 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99a007f0b7b3f58f0800000000000000
-      internalID: -549655229789893991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroSacaArma_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6e4e71573321e0b0800000000000000
-      internalID: -5701236932776931732
+      spriteID: 8a58c170359c6b6d0800000000000000
+      internalID: -2974969145392855640
       vertices: []
       indices: 
       edges: []
@@ -376,7 +351,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 272738f9c636c1a4f987b2f63a4293e3
+    spriteID: e24868afe0616f24a8aee1031429d680
     internalID: 0
     vertices: []
     indices: 
@@ -386,18 +361,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroSacaArma_0: -6073781933176577485
-      arqueiroSacaArma_1: 3238090899385216384
-      arqueiroSacaArma_2: -3421590825125043927
-      arqueiroSacaArma_3: -2115377243854703220
-      arqueiroSacaArma_4: 5079005282305863347
-      arqueiroSacaArma_5: 221921575669298698
-      arqueiroSacaArma_6: 5063175003472512421
-      arqueiroSacaArma_7: 991403346111452743
-      arqueiroSacaArma_8: -549655229789893991
-      arqueiroSacaArma_9: -5701236932776931732
+      arqueiroSegurando_0: 8664479128109324324
+      arqueiroSegurando_1: 4365927890262566888
+      arqueiroSegurando_2: -5845899674111275835
+      arqueiroSegurando_3: -1473293661309558400
+      arqueiroSegurando_4: 4105279330061689963
+      arqueiroSegurando_5: -4979897828597405300
+      arqueiroSegurando_6: -8119923415548249489
+      arqueiroSegurando_7: 3482677834704869320
+      arqueiroSegurando_8: -2974969145392855640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

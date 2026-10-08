@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 9ce7312efdfa5ce4584bae61b7d58a06
+guid: 2260836660e4081439d2d795bd9e4df0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6073781933176577485
-    second: arqueiroSacaArma_0
+      213: 6850311587120874544
+    second: arqueiroRolando_0
   - first:
-      213: 3238090899385216384
-    second: arqueiroSacaArma_1
+      213: -2653400009413378549
+    second: arqueiroRolando_1
   - first:
-      213: -3421590825125043927
-    second: arqueiroSacaArma_2
+      213: 5607829175211557969
+    second: arqueiroRolando_2
   - first:
-      213: -2115377243854703220
-    second: arqueiroSacaArma_3
+      213: -3061635538113906063
+    second: arqueiroRolando_3
   - first:
-      213: 5079005282305863347
-    second: arqueiroSacaArma_4
+      213: 5055373192567895483
+    second: arqueiroRolando_4
   - first:
-      213: 221921575669298698
-    second: arqueiroSacaArma_5
+      213: 4186616355215391515
+    second: arqueiroRolando_5
   - first:
-      213: 5063175003472512421
-    second: arqueiroSacaArma_6
+      213: 4316783499060549866
+    second: arqueiroRolando_6
   - first:
-      213: 991403346111452743
-    second: arqueiroSacaArma_7
-  - first:
-      213: -549655229789893991
-    second: arqueiroSacaArma_8
-  - first:
-      213: -5701236932776931732
-    second: arqueiroSacaArma_9
+      213: -3824558479431208889
+    second: arqueiroRolando_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroSacaArma_0
+      name: arqueiroRolando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -168,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33223d5138795bba0800000000000000
-      internalID: -6073781933176577485
+      spriteID: 034051f0812311f50800000000000000
+      internalID: 6850311587120874544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_1
+      name: arqueiroRolando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -190,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08de740548200fc20800000000000000
-      internalID: 3238090899385216384
+      spriteID: b0eb5efefba3d2bd0800000000000000
+      internalID: -2653400009413378549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_2
+      name: arqueiroRolando_2
       rect:
         serializedVersion: 2
         x: 128
@@ -212,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 921afadd5411480d0800000000000000
-      internalID: -3421590825125043927
+      spriteID: 1548e8d5ce203dd40800000000000000
+      internalID: 5607829175211557969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_3
+      name: arqueiroRolando_3
       rect:
         serializedVersion: 2
         x: 192
@@ -234,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c85781eba9ba4a2e0800000000000000
-      internalID: -2115377243854703220
+      spriteID: 17a320703b2e285d0800000000000000
+      internalID: -3061635538113906063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_4
+      name: arqueiroRolando_4
       rect:
         serializedVersion: 2
         x: 256
@@ -256,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3be6c2005604c7640800000000000000
-      internalID: 5079005282305863347
+      spriteID: bb5ba06522b482640800000000000000
+      internalID: 5055373192567895483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_5
+      name: arqueiroRolando_5
       rect:
         serializedVersion: 2
         x: 320
@@ -278,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0673cd4f7c641300800000000000000
-      internalID: 221921575669298698
+      spriteID: b1b3477b469d91a30800000000000000
+      internalID: 4186616355215391515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_6
+      name: arqueiroRolando_6
       rect:
         serializedVersion: 2
         x: 384
@@ -300,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a5cd9df6d2044640800000000000000
-      internalID: 5063175003472512421
+      spriteID: ae895c998bb48eb30800000000000000
+      internalID: 4316783499060549866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroSacaArma_7
+      name: arqueiroRolando_7
       rect:
         serializedVersion: 2
         x: 448
@@ -322,52 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7465b12371c22cd00800000000000000
-      internalID: 991403346111452743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroSacaArma_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99a007f0b7b3f58f0800000000000000
-      internalID: -549655229789893991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroSacaArma_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6e4e71573321e0b0800000000000000
-      internalID: -5701236932776931732
+      spriteID: 7407bca83507ceac0800000000000000
+      internalID: -3824558479431208889
       vertices: []
       indices: 
       edges: []
@@ -376,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 272738f9c636c1a4f987b2f63a4293e3
+    spriteID: bc2e41c01948cf54c9a6f6a08900776f
     internalID: 0
     vertices: []
     indices: 
@@ -386,18 +336,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroSacaArma_0: -6073781933176577485
-      arqueiroSacaArma_1: 3238090899385216384
-      arqueiroSacaArma_2: -3421590825125043927
-      arqueiroSacaArma_3: -2115377243854703220
-      arqueiroSacaArma_4: 5079005282305863347
-      arqueiroSacaArma_5: 221921575669298698
-      arqueiroSacaArma_6: 5063175003472512421
-      arqueiroSacaArma_7: 991403346111452743
-      arqueiroSacaArma_8: -549655229789893991
-      arqueiroSacaArma_9: -5701236932776931732
+      arqueiroRolando_0: 6850311587120874544
+      arqueiroRolando_1: -2653400009413378549
+      arqueiroRolando_2: 5607829175211557969
+      arqueiroRolando_3: -3061635538113906063
+      arqueiroRolando_4: 5055373192567895483
+      arqueiroRolando_5: 4186616355215391515
+      arqueiroRolando_6: 4316783499060549866
+      arqueiroRolando_7: -3824558479431208889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

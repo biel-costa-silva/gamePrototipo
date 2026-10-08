@@ -3,29 +3,17 @@ guid: c1f30bd204659da47870b043f4c9bd21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7869047269439487757
-    second: guerreiroAlerta_0
+      213: 3511490234231729085
+    second: arqueiroAlerta_0
   - first:
-      213: 6522226304515323053
-    second: guerreiroAlerta_1
+      213: 8119577280938009683
+    second: arqueiroAlerta_1
   - first:
-      213: -5547516427146580357
-    second: guerreiroAlerta_2
+      213: -9024161296405487706
+    second: arqueiroAlerta_2
   - first:
-      213: 372412609315183395
-    second: guerreiroAlerta_3
-  - first:
-      213: 5792413978504907440
-    second: guerreiroAlerta_4
-  - first:
-      213: 5323515472856383570
-    second: guerreiroAlerta_5
-  - first:
-      213: -7802479129034891267
-    second: guerreiroAlerta_6
-  - first:
-      213: -7498655790376613667
-    second: guerreiroAlerta_7
+      213: -4236897292364605438
+    second: arqueiroAlerta_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,10 +148,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1e57a63d00721314ea3ee758a7050b19
-      internalID: -390654463
+      spriteID: dbba2ab63c15bb030800000000000000
+      internalID: 3511490234231729085
       vertices: []
       indices: 
       edges: []
@@ -182,10 +170,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 089a230f4fb58d242b68fefb25c02781
-      internalID: 921385484
+      spriteID: 35464a484888ea070800000000000000
+      internalID: 8119577280938009683
       vertices: []
       indices: 
       edges: []
@@ -204,10 +192,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1b7b9f4e27f89db4c908067c0c6666b8
-      internalID: 1349632019
+      spriteID: 6af1cebec1db3c280800000000000000
+      internalID: -9024161296405487706
       vertices: []
       indices: 
       edges: []
@@ -226,98 +214,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 595075f029339144980817ae3bb1a73d
-      internalID: 825799781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAlerta_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8762e07d42e44c543bce69db200064c8
-      internalID: 1512137521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAlerta_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 063cb06bd90ad0a4abbc1b6a077bbee6
-      internalID: 116719607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAlerta_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9049664b899f5a84aa691f55fe8177f2
-      internalID: 1015131944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAlerta_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f74eba403c131e947a2beda4a0e5e562
-      internalID: 350799969
+      spriteID: 2081bc25c548335c0800000000000000
+      internalID: -4236897292364605438
       vertices: []
       indices: 
       edges: []
@@ -326,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c450bc2abc2e9d44a91f657959a8ebf
+    spriteID: e0d3a6a541ced4b4398cdc32b59ca661
     internalID: 0
     vertices: []
     indices: 
@@ -336,16 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroAlerta_0: -390654463
-      arqueiroAlerta_1: 921385484
-      arqueiroAlerta_2: 1349632019
-      arqueiroAlerta_3: 825799781
-      arqueiroAlerta_4: 1512137521
-      arqueiroAlerta_5: 116719607
-      arqueiroAlerta_6: 1015131944
-      arqueiroAlerta_7: 350799969
+      arqueiroAlerta_0: 3511490234231729085
+      arqueiroAlerta_1: 8119577280938009683
+      arqueiroAlerta_2: -9024161296405487706
+      arqueiroAlerta_3: -4236897292364605438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

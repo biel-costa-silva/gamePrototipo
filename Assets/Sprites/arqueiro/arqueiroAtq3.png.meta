@@ -1,70 +1,46 @@
 fileFormatVersion: 2
-guid: 68913e3097f7a0b478cefd21399858ca
+guid: 53c766ebb0e12024aac101a4234ed866
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3110672920857300329
-    second: arqueiroAtaque2_0
+      213: -1626368723178248464
+    second: arqueiroAtq3_0
   - first:
-      213: 3492038136316434888
-    second: arqueiroAtaque2_1
+      213: 1452838283817185621
+    second: arqueiroAtq3_1
   - first:
-      213: -6422959686751041322
-    second: arqueiroAtaque2_2
+      213: -2881111567694822655
+    second: arqueiroAtq3_2
   - first:
-      213: 5685014122826493696
-    second: arqueiroAtaque2_3
+      213: -2140468275281178475
+    second: arqueiroAtq3_3
   - first:
-      213: 3856079568328274925
-    second: arqueiroAtaque2_4
+      213: -3714807181686188333
+    second: arqueiroAtq3_4
   - first:
-      213: 7652249043987737928
-    second: arqueiroAtaque2_5
+      213: 5143836522909002586
+    second: arqueiroAtq3_5
   - first:
-      213: -7243235497848233555
-    second: arqueiroAtaque2_6
+      213: -4693723447458264361
+    second: arqueiroAtq3_6
   - first:
-      213: -467870599854769044
-    second: arqueiroAtaque2_7
+      213: 9018275828196982007
+    second: arqueiroAtq3_7
   - first:
-      213: 1816022285725603229
-    second: arqueiroAtaque2_8
+      213: 2301352199522779574
+    second: arqueiroAtq3_8
   - first:
-      213: -3356345943774069503
-    second: arqueiroAtaque2_9
+      213: -1090707587694855132
+    second: arqueiroAtq3_9
   - first:
-      213: -3536885997307420816
-    second: arqueiroAtaque2_10
+      213: 4263718799180747698
+    second: arqueiroAtq3_10
   - first:
-      213: -8951083350274405012
-    second: arqueiroAtaque2_11
+      213: -2856878037372631815
+    second: arqueiroAtq3_11
   - first:
-      213: 805012083367078257
-    second: arqueiroAtaque2_12
-  - first:
-      213: -6904193775330524148
-    second: arqueiroAtaque2_13
-  - first:
-      213: -6458977144663514356
-    second: arqueiroAtaque2_14
-  - first:
-      213: 5728008710066397508
-    second: arqueiroAtaque2_15
-  - first:
-      213: -1648150935710180030
-    second: arqueiroAtaque2_16
-  - first:
-      213: 3360676111149819890
-    second: arqueiroAtaque2_17
-  - first:
-      213: -2198909701287022314
-    second: arqueiroAtaque2_18
-  - first:
-      213: -5311114064831611683
-    second: arqueiroAtaque2_19
-  - first:
-      213: 5337705015800653483
-    second: arqueiroAtaque2_20
+      213: 3278039915016682987
+    second: arqueiroAtq3_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -156,11 +132,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroAtaque2_0
+      name: arqueiroAtq3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -175,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96d402c5a845b2b20800000000000000
-      internalID: 3110672920857300329
+      spriteID: 0f6a72d534afd69e0800000000000000
+      internalID: -1626368723178248464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_1
+      name: arqueiroAtq3_1
       rect:
         serializedVersion: 2
         x: 64
@@ -197,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c91241fe26367030800000000000000
-      internalID: 3492038136316434888
+      spriteID: 551f20fb8b4892410800000000000000
+      internalID: 1452838283817185621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_2
+      name: arqueiroAtq3_2
       rect:
         serializedVersion: 2
         x: 128
@@ -219,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d8cc88f1301dd6a0800000000000000
-      internalID: -6422959686751041322
+      spriteID: 10308414b4c3408d0800000000000000
+      internalID: -2881111567694822655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_3
+      name: arqueiroAtq3_3
       rect:
         serializedVersion: 2
         x: 192
@@ -241,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00fe626693a35ee40800000000000000
-      internalID: 5685014122826493696
+      spriteID: 5905fdeb1778b42e0800000000000000
+      internalID: -2140468275281178475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_4
+      name: arqueiroAtq3_4
       rect:
         serializedVersion: 2
         x: 256
@@ -263,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de339dfdfeb838530800000000000000
-      internalID: 3856079568328274925
+      spriteID: 3d65686dc8a527cc0800000000000000
+      internalID: -3714807181686188333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_5
+      name: arqueiroAtq3_5
       rect:
         serializedVersion: 2
         x: 320
@@ -285,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84d26bf46ff323a60800000000000000
-      internalID: 7652249043987737928
+      spriteID: a5bebaa7014926740800000000000000
+      internalID: 5143836522909002586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_6
+      name: arqueiroAtq3_6
       rect:
         serializedVersion: 2
         x: 384
@@ -307,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da1a146e0bbda7b90800000000000000
-      internalID: -7243235497848233555
+      spriteID: 7da0458946b8cdeb0800000000000000
+      internalID: -4693723447458264361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_7
+      name: arqueiroAtq3_7
       rect:
         serializedVersion: 2
         x: 448
@@ -329,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6cbec61b2ac189f0800000000000000
-      internalID: -467870599854769044
+      spriteID: 7fc3c2ab51a572d70800000000000000
+      internalID: 9018275828196982007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAtaque2_8
+      name: arqueiroAtq3_8
       rect:
         serializedVersion: 2
         x: 512
@@ -351,96 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d951edca5aec33910800000000000000
-      internalID: 1816022285725603229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAtaque2_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10df506952ddb61d0800000000000000
-      internalID: -3356345943774069503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAtaque2_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07f1077bce47aeec0800000000000000
-      internalID: -3536885997307420816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAtaque2_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6d0bf72e1d57c380800000000000000
-      internalID: -8951083350274405012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroAtaque2_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 179edf4893afb2b00800000000000000
-      internalID: 805012083367078257
+      spriteID: 6b18e93e1ab00ff10800000000000000
+      internalID: 2301352199522779574
       vertices: []
       indices: 
       edges: []
@@ -449,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f1db5172d4a8faf4cb2174b18451f36b
+    spriteID: ebfa05a6e2502d24e8bc0a590d965080
     internalID: 0
     vertices: []
     indices: 
@@ -459,21 +373,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroAtaque2_0: 3110672920857300329
-      arqueiroAtaque2_1: 3492038136316434888
-      arqueiroAtaque2_10: -3536885997307420816
-      arqueiroAtaque2_11: -8951083350274405012
-      arqueiroAtaque2_12: 805012083367078257
-      arqueiroAtaque2_2: -6422959686751041322
-      arqueiroAtaque2_3: 5685014122826493696
-      arqueiroAtaque2_4: 3856079568328274925
-      arqueiroAtaque2_5: 7652249043987737928
-      arqueiroAtaque2_6: -7243235497848233555
-      arqueiroAtaque2_7: -467870599854769044
-      arqueiroAtaque2_8: 1816022285725603229
-      arqueiroAtaque2_9: -3356345943774069503
+      arqueiroAtq3_0: -1626368723178248464
+      arqueiroAtq3_1: 1452838283817185621
+      arqueiroAtq3_2: -2881111567694822655
+      arqueiroAtq3_3: -2140468275281178475
+      arqueiroAtq3_4: -3714807181686188333
+      arqueiroAtq3_5: 5143836522909002586
+      arqueiroAtq3_6: -4693723447458264361
+      arqueiroAtq3_7: 9018275828196982007
+      arqueiroAtq3_8: 2301352199522779574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

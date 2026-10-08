@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 4107190f9f979d848ac1f8d9bcf55399
+guid: 2e46b3415af80ac458d80f8e95c81744
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3020886379826255295
-    second: arqueiroAndando_0
+      213: -1962722172332411341
+    second: arqueiroAndando 1_0
   - first:
-      213: -3777766402805152885
-    second: arqueiroAndando_1
+      213: 976286680756802563
+    second: arqueiroAndando 1_1
   - first:
-      213: -4727200922986897233
-    second: arqueiroAndando_2
+      213: -1161516370317684105
+    second: arqueiroAndando 1_2
   - first:
-      213: -3134732799958377062
-    second: arqueiroAndando_3
+      213: 881326224961690291
+    second: arqueiroAndando 1_3
   - first:
-      213: -4558044364648964323
-    second: arqueiroAndando_4
+      213: -3575935120304716278
+    second: arqueiroAndando 1_4
   - first:
-      213: 3903518443868191789
-    second: arqueiroAndando_5
-  - first:
-      213: 7854302825207030025
-    second: arqueiroAndando_6
+      213: -3260979401349904432
+    second: arqueiroAndando 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,11 +111,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroAndando_0
+      name: arqueiroAndando 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14ae3a7c7d7a316d0800000000000000
-      internalID: -3020886379826255295
+      spriteID: 336f75d459203c4e0800000000000000
+      internalID: -1962722172332411341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAndando_1
+      name: arqueiroAndando 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -155,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b83c46cd87da29bc0800000000000000
-      internalID: -3777766402805152885
+      spriteID: 304547540977c8d00800000000000000
+      internalID: 976286680756802563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAndando_2
+      name: arqueiroAndando 1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -177,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa0a77b6ecb956eb0800000000000000
-      internalID: -4727200922986897233
+      spriteID: 772d962e30771efe0800000000000000
+      internalID: -1161516370317684105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAndando_3
+      name: arqueiroAndando 1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -199,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9d17b080213f74d0800000000000000
-      internalID: -3134732799958377062
+      spriteID: 3bad31a38891b3c00800000000000000
+      internalID: 881326224961690291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAndando_4
+      name: arqueiroAndando 1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -221,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f90a6ccc29eb0c0800000000000000
-      internalID: -4558044364648964323
+      spriteID: a06c46644f9bf5ec0800000000000000
+      internalID: -3575935120304716278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroAndando_5
+      name: arqueiroAndando 1_5
       rect:
         serializedVersion: 2
         x: 320
@@ -243,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2cf2fcc7551c2630800000000000000
-      internalID: 3903518443868191789
+      spriteID: 0d74caa038caeb2d0800000000000000
+      internalID: -3260979401349904432
       vertices: []
       indices: 
       edges: []
@@ -253,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1657ff50e7a93184ab8ccd42dc762fdd
+    spriteID: 56af13d76368bb243887973e1a2b1951
     internalID: 0
     vertices: []
     indices: 
@@ -265,12 +288,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroAndando_0: -3020886379826255295
-      arqueiroAndando_1: -3777766402805152885
-      arqueiroAndando_2: -4727200922986897233
-      arqueiroAndando_3: -3134732799958377062
-      arqueiroAndando_4: -4558044364648964323
-      arqueiroAndando_5: 3903518443868191789
+      arqueiroAndando 1_0: -1962722172332411341
+      arqueiroAndando 1_1: 976286680756802563
+      arqueiroAndando 1_2: -1161516370317684105
+      arqueiroAndando 1_3: 881326224961690291
+      arqueiroAndando 1_4: -3575935120304716278
+      arqueiroAndando 1_5: -3260979401349904432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,79 +1,61 @@
 fileFormatVersion: 2
-guid: 592a00a53cdf48e47a39eb353e0c0de3
+guid: fec5ecc81cc38004997611b761d6ff4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7059594511026223076
-    second: arqueiroMorrendo_0
+      213: 3274939892775631091
+    second: arqueiroMorrendoDes_0
   - first:
-      213: -8176003547161524129
-    second: arqueiroMorrendo_1
+      213: -2339785994477038593
+    second: arqueiroMorrendoDes_1
   - first:
-      213: 2152754385351464537
-    second: arqueiroMorrendo_2
+      213: 6972954598742696169
+    second: arqueiroMorrendoDes_2
   - first:
-      213: 3441332244123844020
-    second: arqueiroMorrendo_3
+      213: 6995162226015986798
+    second: arqueiroMorrendoDes_3
   - first:
-      213: 1151999168539335630
-    second: arqueiroMorrendo_4
+      213: 665494942782861479
+    second: arqueiroMorrendoDes_4
   - first:
-      213: -2464005492331205874
-    second: arqueiroMorrendo_5
+      213: -1994078158219212039
+    second: arqueiroMorrendoDes_5
   - first:
-      213: -5412408415793112936
-    second: arqueiroMorrendo_6
+      213: -6342040616488447273
+    second: arqueiroMorrendoDes_6
   - first:
-      213: 9071004598465388508
-    second: arqueiroMorrendo_7
+      213: 2458149600374889266
+    second: arqueiroMorrendoDes_7
   - first:
-      213: -7364423954084736919
-    second: arqueiroMorrendo_8
+      213: 3917764088188728290
+    second: arqueiroMorrendoDes_8
   - first:
-      213: 4619710355174118501
-    second: arqueiroMorrendo_9
+      213: 5103549694966085139
+    second: arqueiroMorrendoDes_9
   - first:
-      213: 2970759382221918588
-    second: arqueiroMorrendo_10
+      213: -7714882412277136289
+    second: arqueiroMorrendoDes_10
   - first:
-      213: -3156407216527501918
-    second: arqueiroMorrendo_11
+      213: 184285586763235366
+    second: arqueiroMorrendoDes_11
   - first:
-      213: 3039273406626989835
-    second: arqueiroMorrendo_12
+      213: 1114562634391613698
+    second: arqueiroMorrendoDes_12
   - first:
-      213: 7180084227094400942
-    second: arqueiroMorrendo_13
+      213: 4054182325801245442
+    second: arqueiroMorrendoDes_13
   - first:
-      213: 4119501550451178941
-    second: arqueiroMorrendo_14
+      213: -4717311450195798807
+    second: arqueiroMorrendoDes_14
   - first:
-      213: 5568629935690017457
-    second: arqueiroMorrendo_15
+      213: 4545547134951303035
+    second: arqueiroMorrendoDes_15
   - first:
-      213: 376924538685858921
-    second: arqueiroMorrendo_16
+      213: 6058707296482190361
+    second: arqueiroMorrendoDes_16
   - first:
-      213: -1428232881018900294
-    second: arqueiroMorrendo_17
-  - first:
-      213: 6656275402745447881
-    second: arqueiroMorrendo_18
-  - first:
-      213: 3959243544727131111
-    second: arqueiroMorrendo_19
-  - first:
-      213: 5535736010442109273
-    second: arqueiroMorrendo_20
-  - first:
-      213: -6633881530579694665
-    second: arqueiroMorrendo_21
-  - first:
-      213: -728423686732652408
-    second: arqueiroMorrendo_22
-  - first:
-      213: 7790992904838517751
-    second: arqueiroMorrendo_23
+      213: -7356343041390986382
+    second: arqueiroMorrendoDes_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,11 +147,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroMorrendo_0
+      name: arqueiroMorrendoDes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -184,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e7f300fdc7b8f160800000000000000
-      internalID: 7059594511026223076
+      spriteID: 3f8b5a92b7ce27d20800000000000000
+      internalID: 3274939892775631091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_1
+      name: arqueiroMorrendoDes_1
       rect:
         serializedVersion: 2
         x: 64
@@ -206,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f588a199710098e80800000000000000
-      internalID: -8176003547161524129
+      spriteID: ff313c4e809678fd0800000000000000
+      internalID: -2339785994477038593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_2
+      name: arqueiroMorrendoDes_2
       rect:
         serializedVersion: 2
         x: 128
@@ -228,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 956d98b25be10ed10800000000000000
-      internalID: 2152754385351464537
+      spriteID: 9e02cf46349e4c060800000000000000
+      internalID: 6972954598742696169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_3
+      name: arqueiroMorrendoDes_3
       rect:
         serializedVersion: 2
         x: 192
@@ -250,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bd791d617112cf20800000000000000
-      internalID: 3441332244123844020
+      spriteID: e64e9eb8bfec31160800000000000000
+      internalID: 6995162226015986798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_4
+      name: arqueiroMorrendoDes_4
       rect:
         serializedVersion: 2
         x: 256
@@ -272,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecb1556e329bcff00800000000000000
-      internalID: 1151999168539335630
+      spriteID: 7a03460ef105c3900800000000000000
+      internalID: 665494942782861479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_5
+      name: arqueiroMorrendoDes_5
       rect:
         serializedVersion: 2
         x: 320
@@ -294,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0bacf04f081ecdd0800000000000000
-      internalID: -2464005492331205874
+      spriteID: 9fa8afcea7c9354e0800000000000000
+      internalID: -1994078158219212039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_6
+      name: arqueiroMorrendoDes_6
       rect:
         serializedVersion: 2
         x: 384
@@ -316,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8981155d83343e4b0800000000000000
-      internalID: -5412408415793112936
+      spriteID: 7d25b1f29ab8cf7a0800000000000000
+      internalID: -6342040616488447273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_7
+      name: arqueiroMorrendoDes_7
       rect:
         serializedVersion: 2
         x: 448
@@ -338,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdfd67f3f9ea2ed70800000000000000
-      internalID: 9071004598465388508
+      spriteID: 23b1d17a90a1d1220800000000000000
+      internalID: 2458149600374889266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_8
+      name: arqueiroMorrendoDes_8
       rect:
         serializedVersion: 2
         x: 512
@@ -360,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 960d661ae6f4cc990800000000000000
-      internalID: -7364423954084736919
+      spriteID: 2e375465ea1be5630800000000000000
+      internalID: 3917764088188728290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_9
+      name: arqueiroMorrendoDes_9
       rect:
         serializedVersion: 2
         x: 576
@@ -382,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 564d85d77128c1040800000000000000
-      internalID: 4619710355174118501
+      spriteID: 316b106686373d640800000000000000
+      internalID: 5103549694966085139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_10
+      name: arqueiroMorrendoDes_10
       rect:
         serializedVersion: 2
         x: 640
@@ -404,14 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c711f7a1be14a3920800000000000000
-      internalID: 2970759382221918588
+      spriteID: f54005c325b3fe490800000000000000
+      internalID: -7714882412277136289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_11
+      name: arqueiroMorrendoDes_11
       rect:
         serializedVersion: 2
         x: 704
@@ -426,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a516642c503234d0800000000000000
-      internalID: -3156407216527501918
+      spriteID: 6204f38c3c6be8200800000000000000
+      internalID: 184285586763235366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_12
+      name: arqueiroMorrendoDes_12
       rect:
         serializedVersion: 2
         x: 768
@@ -448,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b070b418f0bad2a20800000000000000
-      internalID: 3039273406626989835
+      spriteID: 201f5de8fc8b77f00800000000000000
+      internalID: 1114562634391613698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_13
+      name: arqueiroMorrendoDes_13
       rect:
         serializedVersion: 2
         x: 832
@@ -470,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eafc8551098c4a360800000000000000
-      internalID: 7180084227094400942
+      spriteID: 20bdc086859534830800000000000000
+      internalID: 4054182325801245442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_14
+      name: arqueiroMorrendoDes_14
       rect:
         serializedVersion: 2
         x: 896
@@ -492,14 +500,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbd305685d86b2930800000000000000
-      internalID: 4119501550451178941
+      spriteID: 9e4523cba3eb88eb0800000000000000
+      internalID: -4717311450195798807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_15
+      name: arqueiroMorrendoDes_15
       rect:
         serializedVersion: 2
         x: 960
@@ -514,14 +522,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bae8623c6fb74d40800000000000000
-      internalID: 5568629935690017457
+      spriteID: b7721903907051f30800000000000000
+      internalID: 4545547134951303035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_16
+      name: arqueiroMorrendoDes_16
       rect:
         serializedVersion: 2
         x: 1024
@@ -536,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 964af73feda1b3500800000000000000
-      internalID: 376924538685858921
+      spriteID: 91463ec8f2ad41450800000000000000
+      internalID: 6058707296482190361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroMorrendo_17
+      name: arqueiroMorrendoDes_17
       rect:
         serializedVersion: 2
         x: 1088
@@ -558,8 +566,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab0f55603c5ed2ce0800000000000000
-      internalID: -1428232881018900294
+      spriteID: 27b39fbbaf409e990800000000000000
+      internalID: -7356343041390986382
       vertices: []
       indices: 
       edges: []
@@ -568,7 +576,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ffb0f1110aeb66c4690e241f41e21902
+    spriteID: 81e00d1717bde7848a39d1c6e1bb931f
     internalID: 0
     vertices: []
     indices: 
@@ -580,24 +588,24 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":18.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroMorrendo_0: 7059594511026223076
-      arqueiroMorrendo_1: -8176003547161524129
-      arqueiroMorrendo_10: 2970759382221918588
-      arqueiroMorrendo_11: -3156407216527501918
-      arqueiroMorrendo_12: 3039273406626989835
-      arqueiroMorrendo_13: 7180084227094400942
-      arqueiroMorrendo_14: 4119501550451178941
-      arqueiroMorrendo_15: 5568629935690017457
-      arqueiroMorrendo_16: 376924538685858921
-      arqueiroMorrendo_17: -1428232881018900294
-      arqueiroMorrendo_2: 2152754385351464537
-      arqueiroMorrendo_3: 3441332244123844020
-      arqueiroMorrendo_4: 1151999168539335630
-      arqueiroMorrendo_5: -2464005492331205874
-      arqueiroMorrendo_6: -5412408415793112936
-      arqueiroMorrendo_7: 9071004598465388508
-      arqueiroMorrendo_8: -7364423954084736919
-      arqueiroMorrendo_9: 4619710355174118501
+      arqueiroMorrendoDes_0: 3274939892775631091
+      arqueiroMorrendoDes_1: -2339785994477038593
+      arqueiroMorrendoDes_10: -7714882412277136289
+      arqueiroMorrendoDes_11: 184285586763235366
+      arqueiroMorrendoDes_12: 1114562634391613698
+      arqueiroMorrendoDes_13: 4054182325801245442
+      arqueiroMorrendoDes_14: -4717311450195798807
+      arqueiroMorrendoDes_15: 4545547134951303035
+      arqueiroMorrendoDes_16: 6058707296482190361
+      arqueiroMorrendoDes_17: -7356343041390986382
+      arqueiroMorrendoDes_2: 6972954598742696169
+      arqueiroMorrendoDes_3: 6995162226015986798
+      arqueiroMorrendoDes_4: 665494942782861479
+      arqueiroMorrendoDes_5: -1994078158219212039
+      arqueiroMorrendoDes_6: -6342040616488447273
+      arqueiroMorrendoDes_7: 2458149600374889266
+      arqueiroMorrendoDes_8: 3917764088188728290
+      arqueiroMorrendoDes_9: 5103549694966085139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

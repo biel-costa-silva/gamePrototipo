@@ -26,12 +26,6 @@ TextureImporter:
   - first:
       213: -6294762923024973883
     second: arqueiroParado_7
-  - first:
-      213: -6464164849703326822
-    second: arqueiroParado_8
-  - first:
-      213: 3884790341498310902
-    second: arqueiroParado_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,6 +106,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -306,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e15e94efb8d7b647a139f6f0c271c6b
+    spriteID: 0b46169dd67653a4dbc43ce77ea65848
     internalID: 0
     vertices: []
     indices: 

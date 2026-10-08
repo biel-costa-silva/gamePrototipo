@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: c5a440ba417e41242a16c8d0c5aadce9
+guid: 4ad2d91afa69b814eb37c1272cb098bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1064961159644520233
-    second: arqueiroParadoArmado_0
+      213: 2521165188101001768
+    second: arqueiroInterrogado_0
   - first:
-      213: 4898309631045723320
-    second: arqueiroParadoArmado_1
+      213: 3089550335518822047
+    second: arqueiroInterrogado_1
   - first:
-      213: 2590188279281024251
-    second: arqueiroParadoArmado_2
+      213: 7110394446535311666
+    second: arqueiroInterrogado_2
   - first:
-      213: -7304708893292337303
-    second: arqueiroParadoArmado_3
-  - first:
-      213: -5336686676002369309
-    second: arqueiroParadoArmado_4
-  - first:
-      213: 1626413572520451082
-    second: arqueiroParadoArmado_5
-  - first:
-      213: 9090069749904412433
-    second: arqueiroParadoArmado_6
-  - first:
-      213: -4293251384096951720
-    second: arqueiroParadoArmado_7
+      213: 5205799514162437163
+    second: arqueiroInterrogado_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,11 +105,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroParadoArmado_0
+      name: arqueiroInterrogado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92f1334488087ce00800000000000000
-      internalID: 1064961159644520233
+      spriteID: 82257d0816afcf220800000000000000
+      internalID: 2521165188101001768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroParadoArmado_1
+      name: arqueiroInterrogado_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b4ea5638aa4af340800000000000000
-      internalID: 4898309631045723320
+      spriteID: f9ec94839a940ea20800000000000000
+      internalID: 3089550335518822047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroParadoArmado_2
+      name: arqueiroInterrogado_2
       rect:
         serializedVersion: 2
         x: 128
@@ -180,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfcfcef348232f320800000000000000
-      internalID: 2590188279281024251
+      spriteID: 231c5ae93123da260800000000000000
+      internalID: 7110394446535311666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroParadoArmado_3
+      name: arqueiroInterrogado_3
       rect:
         serializedVersion: 2
         x: 192
@@ -202,96 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9676caba6f570aa90800000000000000
-      internalID: -7304708893292337303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroParadoArmado_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e0915f3eb740f5b0800000000000000
-      internalID: -5336686676002369309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroParadoArmado_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0c94ffe68e229610800000000000000
-      internalID: 1626413572520451082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroParadoArmado_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11f839ab64a662e70800000000000000
-      internalID: 9090069749904412433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroParadoArmado_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 852727fdc9e4b64c0800000000000000
-      internalID: -4293251384096951720
+      spriteID: b2c9d8d9317be3840800000000000000
+      internalID: 5205799514162437163
       vertices: []
       indices: 
       edges: []
@@ -300,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b2134f722d046724cbc889932a94b308
+    spriteID: f6047d13d44820941adaa71b01ad8f8d
     internalID: 0
     vertices: []
     indices: 
@@ -310,16 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroParadoArmado_0: 1064961159644520233
-      arqueiroParadoArmado_1: 4898309631045723320
-      arqueiroParadoArmado_2: 2590188279281024251
-      arqueiroParadoArmado_3: -7304708893292337303
-      arqueiroParadoArmado_4: -5336686676002369309
-      arqueiroParadoArmado_5: 1626413572520451082
-      arqueiroParadoArmado_6: 9090069749904412433
-      arqueiroParadoArmado_7: -4293251384096951720
+      arqueiroInterrogado_0: 2521165188101001768
+      arqueiroInterrogado_1: 3089550335518822047
+      arqueiroInterrogado_2: 7110394446535311666
+      arqueiroInterrogado_3: 5205799514162437163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
