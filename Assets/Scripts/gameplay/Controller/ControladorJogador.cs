@@ -70,8 +70,12 @@ namespace Assets.Scripts.Controller
             ProcessarDano(golpe);
         }
         protected virtual void ProcessarDano(HitBox golpe)
-        {
+        {            
             if (invulneravel) return;//ignora golpe enquanto vulneravel
+
+            bool deCosta = fisica.EstaDeCostas(golpe.direcao);
+
+            if (deCosta) fisica.VirarParaLadoDoGolpe(golpe.direcao);
 
             jogador.ReceberDano(golpe.dano);
             vidaUI.Decrementar(golpe.dano);

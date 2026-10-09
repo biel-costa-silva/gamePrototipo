@@ -36,5 +36,15 @@ namespace Assets.Scripts.View.EntradaDados
             if (Input.GetKeyDown(KeyCode.DownArrow)) return true;
             return false;
         }
+
+        public bool ComandoAtaqueCarregando()
+        {
+            return Input.GetKey(KeyCode.Mouse0);
+        }
+
+        public bool ComandoAtaqueSolto()
+        {
+            return Input.GetKeyUp(KeyCode.Mouse0);
+        }
     }
 }

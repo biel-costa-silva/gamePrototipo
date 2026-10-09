@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: 2260836660e4081439d2d795bd9e4df0
+guid: 39b1173a666c0eb4e96768dfe46abe1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6850311587120874544
-    second: arqueiroRolando_0
-  - first:
-      213: -2653400009413378549
-    second: arqueiroRolando_1
-  - first:
-      213: 5607829175211557969
-    second: arqueiroRolando_2
-  - first:
-      213: -3061635538113906063
-    second: arqueiroRolando_3
-  - first:
-      213: 5055373192567895483
-    second: arqueiroRolando_4
-  - first:
-      213: 4186616355215391515
-    second: arqueiroRolando_5
-  - first:
-      213: 4316783499060549866
-    second: arqueiroRolando_6
-  - first:
-      213: -3824558479431208889
-    second: arqueiroRolando_7
-  - first:
-      213: -8480015681200730781
-    second: arqueiroRolando_8
+      213: -4667062141446278089
+    second: VFXAtqCarregado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroRolando_0
+      name: VFXAtqCarregado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 034051f0812311f50800000000000000
-      internalID: 6850311587120874544
+      spriteID: 734bb62a5b34b3fb0800000000000000
+      internalID: -4667062141446278089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_1
+      name: VFXAtqCarregado_1
       rect:
         serializedVersion: 2
         x: 64
@@ -185,16 +161,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0eb5efefba3d2bd0800000000000000
-      internalID: -2653400009413378549
+      spriteID: aad31182f8ac1674f9068ba07c076763
+      internalID: -1742712679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_2
+      name: VFXAtqCarregado_2
       rect:
         serializedVersion: 2
         x: 128
@@ -207,16 +183,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1548e8d5ce203dd40800000000000000
-      internalID: 5607829175211557969
+      spriteID: a5bc4e3a296d67f4a8589b3b63c3b816
+      internalID: -1874712780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_3
+      name: VFXAtqCarregado_3
       rect:
         serializedVersion: 2
         x: 192
@@ -229,16 +205,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17a320703b2e285d0800000000000000
-      internalID: -3061635538113906063
+      spriteID: fe258f783074381478a4bacc30ac1056
+      internalID: -242322952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_4
+      name: VFXAtqCarregado_4
       rect:
         serializedVersion: 2
         x: 256
@@ -251,16 +227,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb5ba06522b482640800000000000000
-      internalID: 5055373192567895483
+      spriteID: d54dc77c16ea8764ea7c0a40fdb1f209
+      internalID: 956153601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_5
+      name: VFXAtqCarregado_5
       rect:
         serializedVersion: 2
         x: 320
@@ -273,16 +249,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1b3477b469d91a30800000000000000
-      internalID: 4186616355215391515
+      spriteID: 652180776e8192b42b091ee48da93daa
+      internalID: 1099749434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroRolando_6
+      name: VFXAtqCarregado_6
       rect:
         serializedVersion: 2
         x: 384
@@ -295,54 +271,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae895c998bb48eb30800000000000000
-      internalID: 4316783499060549866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroRolando_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7407bca83507ceac0800000000000000
-      internalID: -3824558479431208889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroRolando_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36dc940caaee05a80800000000000000
-      internalID: -8480015681200730781
+      spriteID: 2cdca6edbe7b3374280ee113c19599b0
+      internalID: -1631240977
       vertices: []
       indices: 
       edges: []
@@ -351,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d5b0f19672b99a34fbbaf7fde54c4b63
+    spriteID: 371746bd74064fc49a27d09429a9fdaa
     internalID: 0
     vertices: []
     indices: 
@@ -363,15 +295,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroRolando_0: 6850311587120874544
-      arqueiroRolando_1: -2653400009413378549
-      arqueiroRolando_2: 5607829175211557969
-      arqueiroRolando_3: -3061635538113906063
-      arqueiroRolando_4: 5055373192567895483
-      arqueiroRolando_5: 4186616355215391515
-      arqueiroRolando_6: 4316783499060549866
-      arqueiroRolando_7: -3824558479431208889
-      arqueiroRolando_8: -8480015681200730781
+      VFXAtqCarregado_0: -4667062141446278089
+      VFXAtqCarregado_1: -1742712679
+      VFXAtqCarregado_2: -1874712780
+      VFXAtqCarregado_3: -242322952
+      VFXAtqCarregado_4: 956153601
+      VFXAtqCarregado_5: 1099749434
+      VFXAtqCarregado_6: -1631240977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

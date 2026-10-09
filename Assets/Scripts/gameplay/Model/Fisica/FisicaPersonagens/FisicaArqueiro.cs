@@ -6,6 +6,8 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
     public class FisicaArqueiro : FisicaJogador
     {
+        [SerializeField] private GameObject[] prefabsVFX;
+
         [Header("Rolagem")]
         [SerializeField] private float multiplicadorRolagem = 4f;
         [SerializeField] private AnimationCurve curvaRolagem = new AnimationCurve(
@@ -13,6 +15,15 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             new Keyframe(0.6f, 1f),   // mantém a velocidade em 60% da rolagem
             new Keyframe(1f, 0f)      // desacelera suavemente até parar
         );
+        public void SpawnarVFX(int indice)
+        {
+            float direcao = GetDirecao();
+            GameObject vfx = Instantiate(prefabsVFX[indice], posicaoPersonagem.position, posicaoPersonagem.rotation);
+
+            Vector3 scale = vfx.transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * direcao;
+            vfx.transform.localScale = scale;
+        }
 
         public override void AplicarImpulsoAtaque(int forca)
         {

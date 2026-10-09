@@ -14,9 +14,10 @@ namespace Assets.Scripts.Model.Entidades.Peoes
             vida = 6;
             vidaMax = 6;
             dano = 2;
-            defesa = 2;
+            defesa = 2;            
             velocidade = 3.5f;
             velocidadeBase = velocidade;
+
         }
 
         public int CalcularDanoRecebido(int danoRecebido, bool estaDefendendo, bool estaRepelindo)

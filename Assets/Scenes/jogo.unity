@@ -52215,7 +52215,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1580722420}
   duracaoInvulneravel: 1.5
   intervaloPiscar: 0.2
-  duracaoRolagem: 0.5
+  duracaoRolagem: 0.45
+  tempoParaCarregar: 1.5
+  indiceVfxCarregado: 0
 --- !u!114 &1580722402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52262,13 +52264,15 @@ MonoBehaviour:
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
   boxColliderP2: {fileID: 1289048081}
-  multiplicadorRolagem: 1.35
+  prefabsVFX:
+  - {fileID: 7027304919842976758, guid: c0b9df65f676bce4e96c3e2a1ba14c24, type: 3}
+  multiplicadorRolagem: 1.4
   curvaRolagem:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: -0.01638794
+      value: 0.98454285
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -52285,8 +52289,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0
+      time: 1.0202026
+      value: 0.9711914
       inSlope: 0
       outSlope: 0
       tangentMode: 0

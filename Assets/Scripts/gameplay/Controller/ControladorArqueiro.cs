@@ -19,6 +19,10 @@ namespace Assets.Scripts.Controller
         //variaveis de controle
         [SerializeField] private float duracaoRolagem = 0.5f;
 
+        [Header("Ataque carregado")]
+        [SerializeField] private float tempoParaCarregar = 0.5f;
+        [SerializeField] private int indiceVfxCarregado = 0;
+
         private void Awake()
         {
             base.Awake();
@@ -38,8 +42,11 @@ namespace Assets.Scripts.Controller
             base.Update();
 
             // --- MODO DE ATAQUE ----
+            
             if (estadoAtual == EstadoJogador.ModoAtaque || estadoAtual == EstadoJogador.AndandoArmado)
             {
+                arqueiro.SetVelocidade(arqueiro.GetVelocidadeBase() + 3);
+
                 if (controleArqueiro.ComandoRolar())
                 {
                     estadoAtual = EstadoJogador.Ocupado;
@@ -56,6 +63,49 @@ namespace Assets.Scripts.Controller
         }
 
         protected override IEnumerator RotinaAtacando()
+        {
+            
+            animArqueiro.AnimacaoPuxando();
+            yield return StartCoroutine(animArqueiro.EsperarAnimacao());
+
+            // 2. Soltou durante a animação de puxar (antes mesmo de carregar)? -> ataque padrão
+            if (!controleArqueiro.ComandoAtaqueCarregando())
+            {
+                yield return StartCoroutine(ExecutarAtaquePadrao());
+                yield break;
+            }
+
+            // 3. Já está em "Segurando" (automático). Agora cronometra a carga.
+            float tempoSegurando = 0f;
+            bool cargaPronta = false;
+
+            while (controleArqueiro.ComandoAtaqueCarregando())
+            {
+                tempoSegurando += Time.deltaTime;
+
+                if (!cargaPronta && tempoSegurando >= tempoParaCarregar)
+                {
+                    cargaPronta = true;
+                    fisicaArqueiro.SpawnarVFX(indiceVfxCarregado); // sinal visual de "pronto"
+                }
+
+                yield return null;
+            }
+
+            // 4. Soltou o botão: decide o destino final
+            if (cargaPronta)
+            {
+                animArqueiro.AnimacaoDispararCarregado();
+                yield return StartCoroutine(animArqueiro.EsperarAnimacao());
+                estadoAtual = EstadoJogador.ModoAtaque; // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
+            }
+            else
+            {
+                yield return StartCoroutine(ExecutarAtaquePadrao());
+            }
+        }
+
+        private IEnumerator ExecutarAtaquePadrao()
         {
             bool comboRegistrado = false;
             int forcaAtq = controle.ComandoAtaque();

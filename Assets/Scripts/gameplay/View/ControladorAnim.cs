@@ -24,7 +24,7 @@ namespace Assets.Scripts.View
             }
         }
 
-        public void ResetarTriggers()
+        public virtual void ResetarTriggers()
         {
             animator.ResetTrigger("sacarArma");
             animator.ResetTrigger("guardarArma");
