@@ -96,7 +96,7 @@ namespace Assets.Scripts.Controller
             if (cargaPronta)
             {
                 animArqueiro.AnimacaoDispararCarregado();
-                fisicaArqueiro.AplicarImpulsoAtaque(5);
+                fisicaArqueiro.AplicarImpulsoAtaque(7);
                 yield return StartCoroutine(animArqueiro.EsperarAnimacao());
                 estadoAtual = EstadoJogador.ModoAtaque; // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
             }
