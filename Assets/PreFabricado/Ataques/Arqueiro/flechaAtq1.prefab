@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c035263d13e484f9ef041c1ce59938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Objetos.AtaqueADistancia
-  velocidadeProjetil: 4
+  velocidadeProjetil: 3.5
 --- !u!50 &1935016758317367602
 Rigidbody2D:
   serializedVersion: 5

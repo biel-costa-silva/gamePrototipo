@@ -52261,7 +52261,7 @@ MonoBehaviour:
   ataques:
   - {fileID: 2959560683888490588, guid: 98affec6f30a36f498428c89072b279b, type: 3}
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
-  - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}
+  - {fileID: 6691742900107672594, guid: 7c03ddf8e7e04154786ee1656242ca6d, type: 3}
   posicaoPersonagem: {fileID: 2076201250}
   boxColliderP2: {fileID: 1289048081}
   prefabsVFX:
