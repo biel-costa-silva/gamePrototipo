@@ -126,7 +126,12 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 
         public HitBox ConsumirGolpePendente()
         {
-            if (golpesPendentes.Count > 0) return golpesPendentes.Dequeue();
+            if (golpesPendentes.Count > 0)
+            {
+                HitBox g = golpesPendentes.Dequeue();
+                if (g == null) Debug.Log("Golpe destruído antes de ser processado");
+                return g;
+            }                
             return null;
         }
 

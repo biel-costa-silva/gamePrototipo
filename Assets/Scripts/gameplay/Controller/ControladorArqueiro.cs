@@ -86,7 +86,7 @@ namespace Assets.Scripts.Controller
                 if (!cargaPronta && tempoSegurando >= tempoParaCarregar)
                 {
                     cargaPronta = true;
-                    fisicaArqueiro.SpawnarVFX(indiceVfxCarregado); // sinal visual de "pronto"
+                    fisicaArqueiro.SpawnarVFX(indiceVfxCarregado); // sinal visual de "pronto"                    
                 }
 
                 yield return null;
@@ -96,6 +96,7 @@ namespace Assets.Scripts.Controller
             if (cargaPronta)
             {
                 animArqueiro.AnimacaoDispararCarregado();
+                fisicaArqueiro.AplicarImpulsoAtaque(5);
                 yield return StartCoroutine(animArqueiro.EsperarAnimacao());
                 estadoAtual = EstadoJogador.ModoAtaque; // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
             }

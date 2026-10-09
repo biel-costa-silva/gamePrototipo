@@ -75,7 +75,11 @@ namespace Assets.Scripts.Controller
 
         protected override void ProcessarDano(HitBox golpe)
         {
-            if (invulneravel) return;
+            if (invulneravel)
+            {
+                Debug.Log("Dano ignorado: invulnerável");
+                return;
+            }
 
             bool repelindo = animGuerreiro.estaRepelindo;
             bool defendendo = animGuerreiro.estaDefendendo;

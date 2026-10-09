@@ -18,13 +18,7 @@ namespace Assets.Scripts.Model.Entidades.Objetos
         public void Inicializar(float direcao)
         {
             this.direcao = direcao;
-        }
-
-        private void Update()
-        {
-            if (GerenciadorPausa.JogoPausado) return;
-
-            rb.AddForce(new Vector2(velocidadeProjetil * direcao, 0), ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(velocidadeProjetil * direcao, 0f);
         }
 
         private void OnBecameInvisible()
