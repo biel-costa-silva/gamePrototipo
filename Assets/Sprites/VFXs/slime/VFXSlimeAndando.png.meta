@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: db575d88baafffd449d4b76aa54c9e6f
+guid: 7a19ecf217f6f8e4c9f632c17b76637c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3877591426970946516
-    second: VFX2slimeDanoAr_0
-  - first:
-      213: 981059414167921036
-    second: VFX2slimeDanoAr_1
-  - first:
-      213: -7302985122240235545
-    second: VFX2slimeDanoAr_2
-  - first:
-      213: -671034818619386795
-    second: VFX2slimeDanoAr_3
+      213: 8204418678039327
+    second: VFXSlimeAndando_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,89 +126,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VFX2slimeDanoAr_0
+      name: VFXSlimeAndando_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 25
-        width: 79
-        height: 12
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c24fb4b3427003ac0800000000000000
-      internalID: -3877591426970946516
+      spriteID: f13a4e410e52d1000800000000000000
+      internalID: 8204418678039327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX2slimeDanoAr_1
+      name: VFXSlimeAndando_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 33
-        width: 17
-        height: 15
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c81280dd65c6d9d00800000000000000
-      internalID: 981059414167921036
+      spriteID: 12c647f29ec26654a879b42b8b580803
+      internalID: -2026727970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX2slimeDanoAr_2
+      name: VFXSlimeAndando_2
       rect:
         serializedVersion: 2
-        x: 158
-        y: 29
-        width: 24
-        height: 22
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e778e469b596aa90800000000000000
-      internalID: -7302985122240235545
+      spriteID: 766a318de1a6d494094570993fbe5179
+      internalID: -1790103858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX2slimeDanoAr_3
+      name: VFXSlimeAndando_3
       rect:
         serializedVersion: 2
-        x: 222
-        y: 29
-        width: 157
-        height: 24
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 554d544436100b6f0800000000000000
-      internalID: -671034818619386795
+      spriteID: 0addeafda62cfa342a4faf895ed2bdb6
+      internalID: -700055547
       vertices: []
       indices: 
       edges: []
@@ -226,7 +217,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 140c544dd2c30e34291ca12d899099c9
     internalID: 0
     vertices: []
     indices: 
@@ -234,12 +225,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      VFX2slimeDanoAr_0: -3877591426970946516
-      VFX2slimeDanoAr_1: 981059414167921036
-      VFX2slimeDanoAr_2: -7302985122240235545
-      VFX2slimeDanoAr_3: -671034818619386795
+      VFXSlimeAndando_0: 8204418678039327
+      VFXSlimeAndando_1: -2026727970
+      VFXSlimeAndando_2: -1790103858
+      VFXSlimeAndando_3: -700055547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

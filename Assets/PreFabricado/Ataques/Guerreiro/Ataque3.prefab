@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4804227960168798821}
   - component: {fileID: 4921374137408716026}
   m_Layer: 0
-  m_Name: Ataque3
+  m_Name: ataque3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 7
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3986397610812168528, guid: 66a56b1b17f46d04493abf50ec26c2f5, type: 3}
+  m_Sprite: {fileID: -2740134349227602956, guid: c6aa6da9ce066074cb6d51528a53c1b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!95 &9205325758573720411
 Animator:
