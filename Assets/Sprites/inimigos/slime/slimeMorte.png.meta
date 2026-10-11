@@ -1,55 +1,31 @@
 fileFormatVersion: 2
-guid: fd240390759fc654d9569e3da2229259
+guid: 85cea63308606414aae1a5afe001b28a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5948856806226209351
-    second: arqueiroInterfogueira_0
+      213: 321606291170001918
+    second: slimeMorte_0
   - first:
-      213: 2949414161544676790
-    second: arqueiroInterfogueira_1
+      213: -4205089780736170385
+    second: slimeMorte_1
   - first:
-      213: 298628880888168385
-    second: arqueiroInterfogueira_2
+      213: -6441450837096896328
+    second: slimeMorte_2
   - first:
-      213: 2942866600921855491
-    second: arqueiroInterfogueira_3
+      213: -4716464716822608689
+    second: slimeMorte_3
   - first:
-      213: 7108514200017188927
-    second: arqueiroInterfogueira_4
+      213: -5362015002204452440
+    second: slimeMorte_4
   - first:
-      213: 4991320539664091392
-    second: arqueiroInterfogueira_5
+      213: -1273700979043543348
+    second: slimeMorte_5
   - first:
-      213: -6199061757791875917
-    second: arqueiroInterfogueira_6
+      213: 6954512476903369387
+    second: slimeMorte_6
   - first:
-      213: -6119509546699386625
-    second: arqueiroInterfogueira_7
-  - first:
-      213: 1963451281445018879
-    second: arqueiroInterfogueira_8
-  - first:
-      213: 4570916649938378172
-    second: arqueiroInterfogueira_9
-  - first:
-      213: 6366440562541757567
-    second: arqueiroInterfogueira_10
-  - first:
-      213: 642229064233631538
-    second: arqueiroInterfogueira_11
-  - first:
-      213: 8138713423773157058
-    second: arqueiroInterfogueira_12
-  - first:
-      213: 1128507264090590376
-    second: arqueiroInterfogueira_13
-  - first:
-      213: -5618046432561152225
-    second: arqueiroInterfogueira_14
-  - first:
-      213: -2456406322820163102
-    second: arqueiroInterfogueira_15
+      213: -7415374896830947170
+    second: slimeMorte_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,11 +117,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroInterfogueira_0
+      name: slimeMorte_0
       rect:
         serializedVersion: 2
         x: 0
@@ -160,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b5d83dc04a617da0800000000000000
-      internalID: -5948856806226209351
+      spriteID: ef308b6c733967400800000000000000
+      internalID: 321606291170001918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_1
+      name: slimeMorte_1
       rect:
         serializedVersion: 2
         x: 64
@@ -182,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b58062ad8c6ee820800000000000000
-      internalID: 2949414161544676790
+      spriteID: f66689abf1584a5c0800000000000000
+      internalID: -4205089780736170385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_2
+      name: slimeMorte_2
       rect:
         serializedVersion: 2
         x: 128
@@ -204,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cff20d8261f42400800000000000000
-      internalID: 298628880888168385
+      spriteID: 8b862b8879e5b96a0800000000000000
+      internalID: -6441450837096896328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_3
+      name: slimeMorte_3
       rect:
         serializedVersion: 2
         x: 192
@@ -226,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 306fe41e49927d820800000000000000
-      internalID: 2942866600921855491
+      spriteID: fc400263450cb8eb0800000000000000
+      internalID: -4716464716822608689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_4
+      name: slimeMorte_4
       rect:
         serializedVersion: 2
         x: 256
@@ -248,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3838dc900486a260800000000000000
-      internalID: 7108514200017188927
+      spriteID: 8a9c941c3cb4695b0800000000000000
+      internalID: -5362015002204452440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_5
+      name: slimeMorte_5
       rect:
         serializedVersion: 2
         x: 320
@@ -270,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0090acee59bb44540800000000000000
-      internalID: 4991320539664091392
+      spriteID: cc6da0a35b7e25ee0800000000000000
+      internalID: -1273700979043543348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_6
+      name: slimeMorte_6
       rect:
         serializedVersion: 2
         x: 384
@@ -292,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bc4b12ec2288f9a0800000000000000
-      internalID: -6199061757791875917
+      spriteID: baae8db4044638060800000000000000
+      internalID: 6954512476903369387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_7
+      name: slimeMorte_7
       rect:
         serializedVersion: 2
         x: 448
@@ -314,14 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff01f556d72231ba0800000000000000
-      internalID: -6119509546699386625
+      spriteID: e90ea06d1db471990800000000000000
+      internalID: -7415374896830947170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_8
+      name: slimeMorte_8
       rect:
         serializedVersion: 2
         x: 512
@@ -334,16 +336,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ffcd054a9849f3b10800000000000000
-      internalID: 1963451281445018879
+      spriteID: ecd8fb8a78a288c41964fae5e0bef3cb
+      internalID: -1208298958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_9
+      name: slimeMorte_9
       rect:
         serializedVersion: 2
         x: 576
@@ -356,16 +358,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cbdde71b9782f6f30800000000000000
-      internalID: 4570916649938378172
+      spriteID: 4976d6bcf4aea164c865793fd9287655
+      internalID: -1561949318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_10
+      name: slimeMorte_10
       rect:
         serializedVersion: 2
         x: 640
@@ -378,16 +380,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7480f5f5f32a5850800000000000000
-      internalID: 6366440562541757567
+      spriteID: 0325d54e574be614fa50e85fc4e3b622
+      internalID: -1765164326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterfogueira_11
+      name: slimeMorte_11
       rect:
         serializedVersion: 2
         x: 704
@@ -400,98 +402,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 23fb3166ee7a9e800800000000000000
-      internalID: 642229064233631538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroInterfogueira_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c6c3b8fcb482f070800000000000000
-      internalID: 8138713423773157058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroInterfogueira_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ac419aa06349af00800000000000000
-      internalID: 1128507264090590376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroInterfogueira_14
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1fba870980b802b0800000000000000
-      internalID: -5618046432561152225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arqueiroInterfogueira_15
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e9d748c67719edd0800000000000000
-      internalID: -2456406322820163102
+      spriteID: 2df3699db14db584dbeab0a8d8e5e389
+      internalID: -230566067
       vertices: []
       indices: 
       edges: []
@@ -500,7 +414,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 92fc1b568b349c54fb95a92fcb4ed8c6
+    spriteID: 172e03e3b7255fa4bb3342e15224a2e6
     internalID: 0
     vertices: []
     indices: 
@@ -510,24 +424,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroInterfogueira_0: -5948856806226209351
-      arqueiroInterfogueira_1: 2949414161544676790
-      arqueiroInterfogueira_10: 6366440562541757567
-      arqueiroInterfogueira_11: 642229064233631538
-      arqueiroInterfogueira_12: 8138713423773157058
-      arqueiroInterfogueira_13: 1128507264090590376
-      arqueiroInterfogueira_14: -5618046432561152225
-      arqueiroInterfogueira_15: -2456406322820163102
-      arqueiroInterfogueira_2: 298628880888168385
-      arqueiroInterfogueira_3: 2942866600921855491
-      arqueiroInterfogueira_4: 7108514200017188927
-      arqueiroInterfogueira_5: 4991320539664091392
-      arqueiroInterfogueira_6: -6199061757791875917
-      arqueiroInterfogueira_7: -6119509546699386625
-      arqueiroInterfogueira_8: 1963451281445018879
-      arqueiroInterfogueira_9: 4570916649938378172
+      slimeMorte_0: 321606291170001918
+      slimeMorte_1: -4205089780736170385
+      slimeMorte_10: -1765164326
+      slimeMorte_11: -230566067
+      slimeMorte_2: -6441450837096896328
+      slimeMorte_3: -4716464716822608689
+      slimeMorte_4: -5362015002204452440
+      slimeMorte_5: -1273700979043543348
+      slimeMorte_6: 6954512476903369387
+      slimeMorte_7: -7415374896830947170
+      slimeMorte_8: -1208298958
+      slimeMorte_9: -1561949318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,40 +1,55 @@
 fileFormatVersion: 2
-guid: 116df3e47248dfb47ab32ea4f9d01451
+guid: fd240390759fc654d9569e3da2229259
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3525463688464711731
-    second: arqueiroInterItem_0
+      213: -5948856806226209351
+    second: arqueiroInterfogueira_0
   - first:
-      213: -3276381118040151537
-    second: arqueiroInterItem_1
+      213: 2949414161544676790
+    second: arqueiroInterfogueira_1
   - first:
-      213: 8662094874236617858
-    second: arqueiroInterItem_2
+      213: 298628880888168385
+    second: arqueiroInterfogueira_2
   - first:
-      213: 6190521656980190199
-    second: arqueiroInterItem_3
+      213: 2942866600921855491
+    second: arqueiroInterfogueira_3
   - first:
-      213: 7088364127125599939
-    second: arqueiroInterItem_4
+      213: 7108514200017188927
+    second: arqueiroInterfogueira_4
   - first:
-      213: -2145211128223717365
-    second: arqueiroInterItem_5
+      213: 4991320539664091392
+    second: arqueiroInterfogueira_5
   - first:
-      213: 9156851203997182963
-    second: arqueiroInterItem_6
+      213: -6199061757791875917
+    second: arqueiroInterfogueira_6
   - first:
-      213: -5075261084863054166
-    second: arqueiroInterItem_7
+      213: -6119509546699386625
+    second: arqueiroInterfogueira_7
   - first:
-      213: -2101501970084826129
-    second: arqueiroInterItem_8
+      213: 1963451281445018879
+    second: arqueiroInterfogueira_8
   - first:
-      213: -7206547075906107929
-    second: arqueiroInterItem_9
+      213: 4570916649938378172
+    second: arqueiroInterfogueira_9
   - first:
-      213: 3130627822550592386
-    second: arqueiroInterItem_10
+      213: 6366440562541757567
+    second: arqueiroInterfogueira_10
+  - first:
+      213: 642229064233631538
+    second: arqueiroInterfogueira_11
+  - first:
+      213: 8138713423773157058
+    second: arqueiroInterfogueira_12
+  - first:
+      213: 1128507264090590376
+    second: arqueiroInterfogueira_13
+  - first:
+      213: -5618046432561152225
+    second: arqueiroInterfogueira_14
+  - first:
+      213: -2456406322820163102
+    second: arqueiroInterfogueira_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,11 +141,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arqueiroInterItem_0
+      name: arqueiroInterfogueira_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3304a73cb86fce030800000000000000
-      internalID: 3525463688464711731
+      spriteID: 9b5d83dc04a617da0800000000000000
+      internalID: -5948856806226209351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_1
+      name: arqueiroInterfogueira_1
       rect:
         serializedVersion: 2
         x: 64
@@ -167,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0a6b6e6bb4f782d0800000000000000
-      internalID: -3276381118040151537
+      spriteID: 6b58062ad8c6ee820800000000000000
+      internalID: 2949414161544676790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_2
+      name: arqueiroInterfogueira_2
       rect:
         serializedVersion: 2
         x: 128
@@ -189,14 +230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2840b95f461f53870800000000000000
-      internalID: 8662094874236617858
+      spriteID: 1cff20d8261f42400800000000000000
+      internalID: 298628880888168385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_3
+      name: arqueiroInterfogueira_3
       rect:
         serializedVersion: 2
         x: 192
@@ -211,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f3baa2f5a629e550800000000000000
-      internalID: 6190521656980190199
+      spriteID: 306fe41e49927d820800000000000000
+      internalID: 2942866600921855491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_4
+      name: arqueiroInterfogueira_4
       rect:
         serializedVersion: 2
         x: 256
@@ -233,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c671fb2e9dee5260800000000000000
-      internalID: 7088364127125599939
+      spriteID: f3838dc900486a260800000000000000
+      internalID: 7108514200017188927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_5
+      name: arqueiroInterfogueira_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b08a20e38ddaa32e0800000000000000
-      internalID: -2145211128223717365
+      spriteID: 0090acee59bb44540800000000000000
+      internalID: 4991320539664091392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_6
+      name: arqueiroInterfogueira_6
       rect:
         serializedVersion: 2
         x: 384
@@ -277,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fb2c5ba7aba31f70800000000000000
-      internalID: 9156851203997182963
+      spriteID: 3bc4b12ec2288f9a0800000000000000
+      internalID: -6199061757791875917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_7
+      name: arqueiroInterfogueira_7
       rect:
         serializedVersion: 2
         x: 448
@@ -299,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aaebf56eeec0199b0800000000000000
-      internalID: -5075261084863054166
+      spriteID: ff01f556d72231ba0800000000000000
+      internalID: -6119509546699386625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_8
+      name: arqueiroInterfogueira_8
       rect:
         serializedVersion: 2
         x: 512
@@ -321,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe37f4aa717f5d2e0800000000000000
-      internalID: -2101501970084826129
+      spriteID: ffcd054a9849f3b10800000000000000
+      internalID: 1963451281445018879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_9
+      name: arqueiroInterfogueira_9
       rect:
         serializedVersion: 2
         x: 576
@@ -343,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e58c7bcd933dfb90800000000000000
-      internalID: -7206547075906107929
+      spriteID: cbdde71b9782f6f30800000000000000
+      internalID: 4570916649938378172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arqueiroInterItem_10
+      name: arqueiroInterfogueira_10
       rect:
         serializedVersion: 2
         x: 640
@@ -365,8 +406,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28b2517fa69327b20800000000000000
-      internalID: 3130627822550592386
+      spriteID: f7480f5f5f32a5850800000000000000
+      internalID: 6366440562541757567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroInterfogueira_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fb3166ee7a9e800800000000000000
+      internalID: 642229064233631538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroInterfogueira_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6c3b8fcb482f070800000000000000
+      internalID: 8138713423773157058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroInterfogueira_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac419aa06349af00800000000000000
+      internalID: 1128507264090590376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroInterfogueira_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fba870980b802b0800000000000000
+      internalID: -5618046432561152225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroInterfogueira_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9d748c67719edd0800000000000000
+      internalID: -2456406322820163102
       vertices: []
       indices: 
       edges: []
@@ -375,7 +526,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e7c719e179f466b4f9c49701298a628e
+    spriteID: 92fc1b568b349c54fb95a92fcb4ed8c6
     internalID: 0
     vertices: []
     indices: 
@@ -385,19 +536,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      arqueiroInterItem_0: 3525463688464711731
-      arqueiroInterItem_1: -3276381118040151537
-      arqueiroInterItem_10: 3130627822550592386
-      arqueiroInterItem_2: 8662094874236617858
-      arqueiroInterItem_3: 6190521656980190199
-      arqueiroInterItem_4: 7088364127125599939
-      arqueiroInterItem_5: -2145211128223717365
-      arqueiroInterItem_6: 9156851203997182963
-      arqueiroInterItem_7: -5075261084863054166
-      arqueiroInterItem_8: -2101501970084826129
-      arqueiroInterItem_9: -7206547075906107929
+      arqueiroInterfogueira_0: -5948856806226209351
+      arqueiroInterfogueira_1: 2949414161544676790
+      arqueiroInterfogueira_10: 6366440562541757567
+      arqueiroInterfogueira_11: 642229064233631538
+      arqueiroInterfogueira_12: 8138713423773157058
+      arqueiroInterfogueira_13: 1128507264090590376
+      arqueiroInterfogueira_14: -5618046432561152225
+      arqueiroInterfogueira_15: -2456406322820163102
+      arqueiroInterfogueira_2: 298628880888168385
+      arqueiroInterfogueira_3: 2942866600921855491
+      arqueiroInterfogueira_4: 7108514200017188927
+      arqueiroInterfogueira_5: 4991320539664091392
+      arqueiroInterfogueira_6: -6199061757791875917
+      arqueiroInterfogueira_7: -6119509546699386625
+      arqueiroInterfogueira_8: 1963451281445018879
+      arqueiroInterfogueira_9: 4570916649938378172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

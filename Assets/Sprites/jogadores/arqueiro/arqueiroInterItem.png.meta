@@ -1,61 +1,40 @@
 fileFormatVersion: 2
-guid: a20815d2ebdf9704a9333296f39adc58
+guid: 116df3e47248dfb47ab32ea4f9d01451
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5149883932676111303
-    second: guerreiroInterFog_0
+      213: 3525463688464711731
+    second: arqueiroInterItem_0
   - first:
-      213: -1308345100136911903
-    second: guerreiroInterFog_1
+      213: -3276381118040151537
+    second: arqueiroInterItem_1
   - first:
-      213: -7785650899779821947
-    second: guerreiroInterFog_2
+      213: 8662094874236617858
+    second: arqueiroInterItem_2
   - first:
-      213: 7028622853616846553
-    second: guerreiroInterFog_3
+      213: 6190521656980190199
+    second: arqueiroInterItem_3
   - first:
-      213: 2859440141896502190
-    second: guerreiroInterFog_4
+      213: 7088364127125599939
+    second: arqueiroInterItem_4
   - first:
-      213: -5596454169365740184
-    second: guerreiroInterFog_5
+      213: -2145211128223717365
+    second: arqueiroInterItem_5
   - first:
-      213: -4899234449653698064
-    second: guerreiroInterFog_6
+      213: 9156851203997182963
+    second: arqueiroInterItem_6
   - first:
-      213: -7418933770371608717
-    second: guerreiroInterFog_7
+      213: -5075261084863054166
+    second: arqueiroInterItem_7
   - first:
-      213: 2983652502116701915
-    second: guerreiroInterFog_8
+      213: -2101501970084826129
+    second: arqueiroInterItem_8
   - first:
-      213: -1511269097900136673
-    second: guerreiroInterFog_9
+      213: -7206547075906107929
+    second: arqueiroInterItem_9
   - first:
-      213: 1750472896186546931
-    second: guerreiroInterFog_10
-  - first:
-      213: 4547443024505994903
-    second: guerreiroInterFog_11
-  - first:
-      213: -6469304393846943900
-    second: guerreiroInterFog_12
-  - first:
-      213: 1507982447273223856
-    second: guerreiroInterFog_13
-  - first:
-      213: 3363979122460602598
-    second: guerreiroInterFog_14
-  - first:
-      213: -1170063266076035117
-    second: guerreiroInterFog_15
-  - first:
-      213: 5548711976538888151
-    second: guerreiroInterFog_16
-  - first:
-      213: 808250638632237660
-    second: guerreiroInterFog_17
+      213: 3130627822550592386
+    second: arqueiroInterItem_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,7 +131,20 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,7 +156,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroInterFog_0
+      name: arqueiroInterItem_0
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 934495639dfe788b0800000000000000
-      internalID: -5149883932676111303
+      spriteID: 3304a73cb86fce030800000000000000
+      internalID: 3525463688464711731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_1
+      name: arqueiroInterItem_1
       rect:
         serializedVersion: 2
         x: 64
@@ -201,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1eb67b63013d7dde0800000000000000
-      internalID: -1308345100136911903
+      spriteID: f0a6b6e6bb4f782d0800000000000000
+      internalID: -3276381118040151537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_2
+      name: arqueiroInterItem_2
       rect:
         serializedVersion: 2
         x: 128
@@ -223,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58e5c6db1cfc3f390800000000000000
-      internalID: -7785650899779821947
+      spriteID: 2840b95f461f53870800000000000000
+      internalID: 8662094874236617858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_3
+      name: arqueiroInterItem_3
       rect:
         serializedVersion: 2
         x: 192
@@ -245,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d646020f3faa8160800000000000000
-      internalID: 7028622853616846553
+      spriteID: 7f3baa2f5a629e550800000000000000
+      internalID: 6190521656980190199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_4
+      name: arqueiroInterItem_4
       rect:
         serializedVersion: 2
         x: 256
@@ -267,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eabcb3ab8a5cea720800000000000000
-      internalID: 2859440141896502190
+      spriteID: 3c671fb2e9dee5260800000000000000
+      internalID: 7088364127125599939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_5
+      name: arqueiroInterItem_5
       rect:
         serializedVersion: 2
         x: 320
@@ -289,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 865833195966552b0800000000000000
-      internalID: -5596454169365740184
+      spriteID: b08a20e38ddaa32e0800000000000000
+      internalID: -2145211128223717365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_6
+      name: arqueiroInterItem_6
       rect:
         serializedVersion: 2
         x: 384
@@ -311,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f1f80da93c620cb0800000000000000
-      internalID: -4899234449653698064
+      spriteID: 3fb2c5ba7aba31f70800000000000000
+      internalID: 9156851203997182963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_7
+      name: arqueiroInterItem_7
       rect:
         serializedVersion: 2
         x: 448
@@ -333,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37fc9d40b07aa0990800000000000000
-      internalID: -7418933770371608717
+      spriteID: aaebf56eeec0199b0800000000000000
+      internalID: -5075261084863054166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_8
+      name: arqueiroInterItem_8
       rect:
         serializedVersion: 2
         x: 512
@@ -355,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd61fd18420186920800000000000000
-      internalID: 2983652502116701915
+      spriteID: fe37f4aa717f5d2e0800000000000000
+      internalID: -2101501970084826129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_9
+      name: arqueiroInterItem_9
       rect:
         serializedVersion: 2
         x: 576
@@ -377,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1723a333c4e60be0800000000000000
-      internalID: -1511269097900136673
+      spriteID: 7e58c7bcd933dfb90800000000000000
+      internalID: -7206547075906107929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroInterFog_10
+      name: arqueiroInterItem_10
       rect:
         serializedVersion: 2
         x: 640
@@ -399,118 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3faf52e13ddea4810800000000000000
-      internalID: 1750472896186546931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroInterFog_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79ef1006653cb1f30800000000000000
-      internalID: 4547443024505994903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroInterFog_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46f01ecfde96836a0800000000000000
-      internalID: -6469304393846943900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroInterFog_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b6ae31db0e6de410800000000000000
-      internalID: 1507982447273223856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroInterFog_14
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6e0381250314fae20800000000000000
-      internalID: 3363979122460602598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guerreiroInterFog_15
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d7fdc4a8a913cfe0800000000000000
-      internalID: -1170063266076035117
+      spriteID: 28b2517fa69327b20800000000000000
+      internalID: 3130627822550592386
       vertices: []
       indices: 
       edges: []
@@ -519,7 +401,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 95b30339e3680a146a2ba63fc151d24e
+    spriteID: e7c719e179f466b4f9c49701298a628e
     internalID: 0
     vertices: []
     indices: 
@@ -529,24 +411,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroInterFog_0: -5149883932676111303
-      guerreiroInterFog_1: -1308345100136911903
-      guerreiroInterFog_10: 1750472896186546931
-      guerreiroInterFog_11: 4547443024505994903
-      guerreiroInterFog_12: -6469304393846943900
-      guerreiroInterFog_13: 1507982447273223856
-      guerreiroInterFog_14: 3363979122460602598
-      guerreiroInterFog_15: -1170063266076035117
-      guerreiroInterFog_2: -7785650899779821947
-      guerreiroInterFog_3: 7028622853616846553
-      guerreiroInterFog_4: 2859440141896502190
-      guerreiroInterFog_5: -5596454169365740184
-      guerreiroInterFog_6: -4899234449653698064
-      guerreiroInterFog_7: -7418933770371608717
-      guerreiroInterFog_8: 2983652502116701915
-      guerreiroInterFog_9: -1511269097900136673
+      arqueiroInterItem_0: 3525463688464711731
+      arqueiroInterItem_1: -3276381118040151537
+      arqueiroInterItem_10: 3130627822550592386
+      arqueiroInterItem_2: 8662094874236617858
+      arqueiroInterItem_3: 6190521656980190199
+      arqueiroInterItem_4: 7088364127125599939
+      arqueiroInterItem_5: -2145211128223717365
+      arqueiroInterItem_6: 9156851203997182963
+      arqueiroInterItem_7: -5075261084863054166
+      arqueiroInterItem_8: -2101501970084826129
+      arqueiroInterItem_9: -7206547075906107929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

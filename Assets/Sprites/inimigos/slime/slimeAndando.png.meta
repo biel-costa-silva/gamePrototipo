@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 3cdcc6b2cc201544aba2de028fac7f47
+guid: ad5ac3a0a6408d347a81d0b6d80ac39d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2518451571832026888
-    second: guerreiroSofreAtqDesarm_0
+      213: -6464836366980311355
+    second: slimeAndando_0
   - first:
-      213: -3307219435935130068
-    second: guerreiroSofreAtqDesarm_1
+      213: 5018918585330681447
+    second: slimeAndando_1
   - first:
-      213: -7068338026234423040
-    second: guerreiroSofreAtqDesarm_2
+      213: 7201301798624710259
+    second: slimeAndando_2
   - first:
-      213: -295023160125099274
-    second: guerreiroSofreAtqDesarm_3
+      213: -2760854065482015766
+    second: slimeAndando_3
   - first:
-      213: -5479407113686710830
-    second: guerreiroSofreAtqDesarm_4
+      213: 6980172372825391582
+    second: slimeAndando_4
   - first:
-      213: 4355977645655753285
-    second: guerreiroSofreAtqDesarm_5
+      213: 5808681064365249325
+    second: slimeAndando_5
   - first:
-      213: 6882849676172807190
-    second: guerreiroSofreAtqDesarm_6
+      213: 4995841046707221545
+    second: slimeAndando_6
+  - first:
+      213: 6539434087389707109
+    second: slimeAndando_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,11 +130,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guerreiroSofreAtqDesarm_0
+      name: slimeAndando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -146,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 807721b7c5653f220800000000000000
-      internalID: 2518451571832026888
+      spriteID: 5c69c1f83994846a0800000000000000
+      internalID: -6464836366980311355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDesarm_1
+      name: slimeAndando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -168,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2e91d602756a12d0800000000000000
-      internalID: -3307219435935130068
+      spriteID: 766cd3bacd7c6a540800000000000000
+      internalID: 5018918585330681447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDesarm_2
+      name: slimeAndando_2
       rect:
         serializedVersion: 2
         x: 128
@@ -190,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00959e9c30838ed90800000000000000
-      internalID: -7068338026234423040
+      spriteID: 37e486be4d920f360800000000000000
+      internalID: 7201301798624710259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDesarm_3
+      name: slimeAndando_3
       rect:
         serializedVersion: 2
         x: 192
@@ -212,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f2fa3cbffdd7ebf0800000000000000
-      internalID: -295023160125099274
+      spriteID: aeb5046ead97fa9d0800000000000000
+      internalID: -2760854065482015766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guerreiroSofreAtqDesarm_4
+      name: slimeAndando_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,8 +250,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d584f0e24c35f3b0800000000000000
-      internalID: -5479407113686710830
+      spriteID: ed1c0416acd8ed060800000000000000
+      internalID: 6980172372825391582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeAndando_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23570ff6a49c9050800000000000000
+      internalID: 5808681064365249325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeAndando_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924bc4f76fac45540800000000000000
+      internalID: 4995841046707221545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeAndando_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bb1f2b7acb0ca50800000000000000
+      internalID: 6539434087389707109
       vertices: []
       indices: 
       edges: []
@@ -244,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2ee1b32c6a19bff4483ecee26739d17b
+    spriteID: 3ef5eb91e8e805e42908312af3e0ad74
     internalID: 0
     vertices: []
     indices: 
@@ -254,13 +336,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      guerreiroSofreAtqDesarm_0: 2518451571832026888
-      guerreiroSofreAtqDesarm_1: -3307219435935130068
-      guerreiroSofreAtqDesarm_2: -7068338026234423040
-      guerreiroSofreAtqDesarm_3: -295023160125099274
-      guerreiroSofreAtqDesarm_4: -5479407113686710830
+      slimeAndando_0: -6464836366980311355
+      slimeAndando_1: 5018918585330681447
+      slimeAndando_2: 7201301798624710259
+      slimeAndando_3: -2760854065482015766
+      slimeAndando_4: 6980172372825391582
+      slimeAndando_5: 5808681064365249325
+      slimeAndando_6: 4995841046707221545
+      slimeAndando_7: 6539434087389707109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
