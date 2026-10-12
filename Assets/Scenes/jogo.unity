@@ -37533,6 +37533,7 @@ Transform:
   m_Children:
   - {fileID: 3972462956393049103}
   - {fileID: 8407182187933017769}
+  - {fileID: 2066590547}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1193286246
@@ -68879,7 +68880,7 @@ GameObject:
   - component: {fileID: 2066590544}
   - component: {fileID: 2066590548}
   m_Layer: 0
-  m_Name: slimeParado_0
+  m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69020,12 +69021,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066590543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.86, y: -1.33, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.16, y: -3.2, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1193286245}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2066590548
 Rigidbody2D:
@@ -71204,4 +71205,3 @@ SceneRoots:
   - {fileID: 1899744805}
   - {fileID: 717951458}
   - {fileID: 398985218}
-  - {fileID: 2066590547}
