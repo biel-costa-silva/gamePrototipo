@@ -1,7 +1,8 @@
 ﻿using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsInimigos;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 using Assets.Scripts.Gameplay.View.AnimacaoPersonagens;
-using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsInimigos;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
@@ -37,6 +38,11 @@ namespace Assets.Scripts.Gameplay.Controller
                 fisicaSlime.AplicarGolpeProjetil(this, inimigo.GetDano(), indice, comportamento.PosicaoAlvo());
             else
                 base.AplicarGolpe(indice);
+        }
+        protected override void AoReceberGolpe(HitBox golpe, int variacao)
+        {
+            bool noAr = variacao == 1;
+            fisicaSlime.VfxGolpe(noAr, golpe.direcao);
         }
     }
 }

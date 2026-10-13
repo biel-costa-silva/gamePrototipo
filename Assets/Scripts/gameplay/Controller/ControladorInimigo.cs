@@ -145,6 +145,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
             inimigo.ReceberDano(golpe.dano);
             fisica.AplicarImpulsoGolpeRecebido(golpe);
+            AoReceberGolpe(golpe, variacao);
             Debug.Log("Inimigo recebeu dano: " + golpe.dano);
 
             StopAllCoroutines();          // cancela ataque/qualquer rotina em andamento
@@ -153,6 +154,7 @@ namespace Assets.Scripts.Gameplay.Controller
             if (inimigo.EstaMorto()) StartCoroutine(RotinaMorrendo());
             else StartCoroutine(RotinaSofrendoDano(variacao));
         }
+        protected virtual void AoReceberGolpe(HitBox golpe, int variacao) { }
 
         public virtual void AplicarGolpe(int indice)
         {
