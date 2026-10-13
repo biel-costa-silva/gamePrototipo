@@ -144,7 +144,7 @@ namespace Assets.Scripts.Controller
 
             interagivelAtual = fisica.GetInteragivelPendente();
 
-            if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.morto) return;
+            if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.Morto) return;
 
             // --- PARADO ---
             if (estadoAtual == EstadoJogador.Parado)
@@ -347,7 +347,7 @@ namespace Assets.Scripts.Controller
         {
             animacao.AnimacaoMorrendo();
             yield return StartCoroutine(animacao.EsperarAnimacao());
-            estadoAtual = EstadoJogador.morto;
+            estadoAtual = EstadoJogador.Morto;
         }
 
         //------------------- Sofrendo Ataques: possibilidades --------------------

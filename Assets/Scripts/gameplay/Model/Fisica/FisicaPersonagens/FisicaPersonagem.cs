@@ -13,11 +13,13 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         //public VidaUIController vida;
         protected Rigidbody2D rb;
         protected SpriteRenderer sprite;
-        protected BoxCollider2D boxColliderP1;        
+        protected BoxCollider2D boxColliderP1;
         public Camera camera;
 
         //variaveis de controle
-        private float offsetXBase = -0.01f;
+        [SerializeField] protected bool arteOlhaParaEsquerda = false;
+        protected float offsetXBase = -0.01f;
+
         private HashSet<HitBox> golpesRecebidos = new HashSet<HitBox>();
         private Queue<HitBox> golpesPendentes = new Queue<HitBox>();
         private IInteracoes interagivelPendente = null;
@@ -27,13 +29,17 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             rb = GetComponent<Rigidbody2D>();
             sprite = GetComponent<SpriteRenderer>();
-            boxColliderP1 = GetComponent<BoxCollider2D>();            
+            boxColliderP1 = GetComponent<BoxCollider2D>();
         }
 
         private void LateUpdate()
         {
             CorrigirColliderFlip();
+            LimitarNaCamera();
+        }
 
+        protected virtual void LimitarNaCamera()
+        {
             //personagens não ultrapassam a camera
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(pos.x, camera.GetLimiteEsquerdo(), camera.GetLimiteDireito());
@@ -44,27 +50,31 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         public void Locomover(float direcao, float velocidade)
         {
             rb.linearVelocity = new Vector2(direcao * velocidade, rb.linearVelocity.y);
-            sprite.flipX = direcao < 0;
+            DefinirOlhar(direcao < 0);
         }
-
 
         //impulsos
         public virtual void AplicarImpulsoAtaque(int forca)
         {
-            float direcao = sprite.flipX ? -1f : 1f;
+            float direcao = GetDirecao();
             rb.AddForce(new Vector2(direcao * (forca + 4) * 2, 0), ForceMode2D.Impulse);
         }
 
-        public void AplicarImpulsoGolpeRecebido(HitBox golpe)
+        public virtual void AplicarImpulsoGolpeRecebido(HitBox golpe)
         {
             rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 7, 0), ForceMode2D.Impulse);
         }
 
 
         //direcao
+        protected void DefinirOlhar(bool paraEsquerda)
+        {
+            sprite.flipX = arteOlhaParaEsquerda ? !paraEsquerda : paraEsquerda;
+        }
         public float GetDirecao()
         {
-            return sprite.flipX ? -1f : 1f;
+            bool paraEsquerda = arteOlhaParaEsquerda ? !sprite.flipX : sprite.flipX;
+            return paraEsquerda ? -1f : 1f;
         }
 
         public bool EstaDeCostas(float direcaoGolpe)
@@ -74,7 +84,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 
         public void VirarParaLadoDoGolpe(float direcaoGolpe)
         {
-            sprite.flipX = direcaoGolpe > 0;
+            DefinirOlhar(direcaoGolpe > 0);
         }
 
 
@@ -83,7 +93,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             offsetXBase = novoValor;
         }
-        private void CorrigirColliderFlip()
+        protected virtual void CorrigirColliderFlip()
         {
             if (sprite.flipX) boxColliderP1.offset = new Vector2(-offsetXBase, boxColliderP1.offset.y);
             else boxColliderP1.offset = new Vector2(offsetXBase, boxColliderP1.offset.y);
@@ -131,7 +141,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
                 HitBox g = golpesPendentes.Dequeue();
                 if (g == null) Debug.Log("Golpe destruído antes de ser processado");
                 return g;
-            }                
+            }
             return null;
         }
 

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Gameplay.Controller;
+using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,6 +17,27 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             new Keyframe(0.6f, 1f),   // mantém a velocidade em 60% da rolagem
             new Keyframe(1f, 0f)      // desacelera suavemente até parar
         );
+        private readonly List<(Collider2D meu, Collider2D dele)> pares = new List<(Collider2D, Collider2D)>();
+        public void AtravessarInimigos(bool atravessar)
+        {
+            if (atravessar)
+            {
+                foreach (ControladorInimigo inimigo in ControladorInimigo.Ativos)
+                    foreach (Collider2D dele in inimigo.GetComponents<Collider2D>())
+                        foreach (Collider2D meu in GetComponents<Collider2D>())
+                        {
+                            Physics2D.IgnoreCollision(meu, dele, true);
+                            pares.Add((meu, dele));
+                        }
+            }
+            else
+            {
+                foreach (var par in pares)
+                    if (par.meu != null && par.dele != null)
+                        Physics2D.IgnoreCollision(par.meu, par.dele, false);
+                pares.Clear();
+            }
+        }
         public void SpawnarVFX(int indice)
         {
             float direcao = GetDirecao();

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2134286468074036415}
   - component: {fileID: 2348454972180701004}
   - component: {fileID: -4312443739650779446}
-  - component: {fileID: -2578805755601624589}
   - component: {fileID: 1935016758317367602}
   - component: {fileID: 5465801263925253996}
+  - component: {fileID: 331861348669682725}
   m_Layer: 0
   m_Name: bolaAtaque2
   m_TagString: Untagged
@@ -107,21 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1904e92c6beff8446944a79404730665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes.HitBox
-  origem: {fileID: 0}
   consumida: 0
---- !u!114 &-2578805755601624589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2959560683888490588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c035263d13e484f9ef041c1ce59938, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Objetos.AtaqueADistancia
-  velocidadeProjetil: 35
 --- !u!50 &1935016758317367602
 Rigidbody2D:
   serializedVersion: 5
@@ -137,7 +123,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -183,7 +169,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.044411372, y: -0.06429855}
+  m_Offset: {x: -0.045090236, y: -0.06565632}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -193,5 +179,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.066491075, y: 0.06597082}
+  m_Size: {x: 0.054271176, y: 0.05239313}
   m_EdgeRadius: 0
+--- !u!114 &331861348669682725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959560683888490588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873ac13126aa7994f9c1c52cbd9fc0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjetilParabolico
+  margemDeVida: 5

@@ -17,7 +17,6 @@ namespace Assets.Scripts.Model.Entidades.Peoes
             defesa = 2;            
             velocidade = 3.5f;
             velocidadeBase = velocidade;
-
         }
 
         public int CalcularDanoRecebido(int danoRecebido, bool estaDefendendo, bool estaRepelindo)

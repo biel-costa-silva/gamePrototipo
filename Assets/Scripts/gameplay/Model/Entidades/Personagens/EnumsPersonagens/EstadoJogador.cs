@@ -18,6 +18,6 @@ namespace Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes
         AndandoArmado,
         Agachado,
 
-        morto,
+        Morto,
     }
 }

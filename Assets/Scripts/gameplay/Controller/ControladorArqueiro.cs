@@ -162,6 +162,7 @@ namespace Assets.Scripts.Controller
         IEnumerator RotinaRolando()
         {
             invulneravel = true;
+            fisicaArqueiro.AtravessarInimigos(true);
             animArqueiro.AnimacaoRolando();
 
             float velocidade = arqueiro.GetVelocidade();
@@ -176,6 +177,7 @@ namespace Assets.Scripts.Controller
 
             fisicaArqueiro.PararRolagem();
             invulneravel = false;
+            fisicaArqueiro.AtravessarInimigos(false);
 
             yield return StartCoroutine(animArqueiro.EsperarAnimacao());
             estadoAtual = EstadoJogador.ModoAtaque;
