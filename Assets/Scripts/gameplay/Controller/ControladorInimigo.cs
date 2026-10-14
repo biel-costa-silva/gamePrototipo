@@ -23,9 +23,14 @@ namespace Assets.Scripts.Gameplay.Controller
         protected FisicaInimigo fisica;
         //views      
         protected AnimInimigo animacao;
-        // [SerializeField] protected VidaUIController vidaUI;
         //controles
         protected IComportamento comportamento;
+
+
+        [Header("Dano por toque")]
+        [SerializeField] private int danoContato = 1;
+        [SerializeField] private float intervaloDanoContato = 1f;
+        private readonly Dictionary<ControladorJogador, float> proximoToque = new Dictionary<ControladorJogador, float>();
 
 
         [SerializeField] private float cooldownAtaque = 1.5f;
@@ -50,6 +55,19 @@ namespace Assets.Scripts.Gameplay.Controller
         public event Action<ControladorInimigo> OnMorreu;
 
 
+        private void OnCollisionStay2D(Collision2D col)
+        {
+            if (estadoAtual == EstadoInimigo.Morto) return;
+
+            ControladorJogador jogador = col.collider.GetComponentInParent<ControladorJogador>();
+            if (jogador == null || jogador.estadoAtual == EstadoJogador.Morto) return;
+
+            if (proximoToque.TryGetValue(jogador, out float liberaEm) && Time.time < liberaEm) return;
+            proximoToque[jogador] = Time.time + intervaloDanoContato;
+
+            float direcao = Mathf.Sign(jogador.transform.position.x - transform.position.x);
+            fisica.EnviarGolpeDeContato(this, danoContato, direcao, jogador.GetComponent<FisicaPersonagem>());
+        }
 
         // --------------------------------------------------------------
         protected virtual void Awake()

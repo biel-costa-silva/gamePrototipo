@@ -1,4 +1,7 @@
-﻿using Assets.Scripts.Gameplay.Controller;
+﻿using Assets.Scripts.Controller;
+using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Model.Entidades.Objetos;
+using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -64,6 +67,11 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         public void PararRolagem()
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        }
+
+        protected override int CalcularDanoDoAtaque(int dano, int indice)
+        {
+            return indice == 2 ? dano + 2 : dano;
         }
     }
 }

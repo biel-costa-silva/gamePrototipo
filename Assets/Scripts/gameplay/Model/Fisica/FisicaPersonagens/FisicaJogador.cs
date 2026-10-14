@@ -18,6 +18,8 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             Physics2D.IgnoreCollision(boxColliderP1, boxColliderP2, true);
         }
 
+        protected virtual int CalcularDanoDoAtaque(int dano, int indice) => dano;
+
         public void AplicarGolpe(ControladorJogador dono, int dano, int indice)
         {
             float direcao = GetDirecao();
@@ -28,7 +30,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             atk.transform.localScale = scale;
 
             HitBox hitbox = atk.GetComponent<HitBox>();
-            hitbox.Inicializar(dono, dano, direcao);
+            hitbox.Inicializar(dono, CalcularDanoDoAtaque(dano, indice), direcao);
 
             AtaqueADistancia ataqueADistancia = atk.GetComponent<AtaqueADistancia>();
             if (ataqueADistancia != null)

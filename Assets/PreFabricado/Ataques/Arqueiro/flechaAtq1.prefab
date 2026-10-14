@@ -107,7 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1904e92c6beff8446944a79404730665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.UtilitariosPeoes.HitBox
-  origem: {fileID: 0}
   consumida: 0
 --- !u!114 &-2578805755601624589
 MonoBehaviour:

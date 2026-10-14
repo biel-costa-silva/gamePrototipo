@@ -28,9 +28,12 @@ namespace Assets.Scripts.Controller
         private bool estaSendoDesarmado = false;
         protected bool invulneravel = false;
 
+
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private float duracaoInvulneravel = 1f;
-        [SerializeField] private float intervaloPiscar = 0.1f;
+        [SerializeField] private float intervaloTransicao = 0.15f;
+        [SerializeField] private Color corEscura = new Color(0.35f, 0.35f, 0.35f, 1f);
+
 
         private EstadoJogador _estadoAtual = EstadoJogador.Parado;
         public EstadoJogador estadoAtual
@@ -276,15 +279,23 @@ namespace Assets.Scripts.Controller
         private IEnumerator RotinaInvulneravel()
         {
             invulneravel = true;
-            float tempoPassado = 0f;
 
-            while (tempoPassado < duracaoInvulneravel)
+            Color corOriginal = spriteRenderer.color;
+
+            float periodo = intervaloTransicao * 2f; // ida + volta
+            float duracaoReal = Mathf.Ceil(duracaoInvulneravel / periodo) * periodo;
+            float inicio = Time.time;
+
+            while (Time.time - inicio < duracaoReal)
             {
-                spriteRenderer.enabled = !spriteRenderer.enabled;
-                yield return new WaitForSeconds(intervaloPiscar);
-                tempoPassado += intervaloPiscar;
+                float t = Mathf.PingPong((Time.time - inicio) / intervaloTransicao, 1f);
+                t = Mathf.SmoothStep(0f, 1f, t);
+                spriteRenderer.color = Color.Lerp(corOriginal, corEscura, t);
+                               
+                yield return null;
             }
-            spriteRenderer.enabled = true;
+
+            spriteRenderer.color = corOriginal;
             invulneravel = false;
         }
 

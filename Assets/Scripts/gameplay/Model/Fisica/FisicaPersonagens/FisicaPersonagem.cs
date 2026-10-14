@@ -62,7 +62,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 
         public virtual void AplicarImpulsoGolpeRecebido(HitBox golpe)
         {
-            rb.AddForce(new Vector2(golpe.direcao * golpe.dano * 7, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(golpe.direcao * (golpe.dano + 1) * 6, 0), ForceMode2D.Impulse);
         }
 
 
@@ -132,6 +132,11 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             IInteracoes interagivel = other.GetComponent<IInteracoes>();
             if (interagivel != null)
                 interagivelPendente = null;
+        }
+        public void EnfileirarGolpe(HitBox golpe)
+        {
+            if (golpe != null && golpe.origem != null && golpesRecebidos.Add(golpe))
+                golpesPendentes.Enqueue(golpe);
         }
 
         public HitBox ConsumirGolpePendente()

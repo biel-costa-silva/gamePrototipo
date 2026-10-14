@@ -64,7 +64,7 @@ namespace Assets.Scripts.Controller
 
         protected override IEnumerator RotinaAtacando()
         {
-            
+            animacao.indiceAtaque = 2;
             animArqueiro.AnimacaoPuxando();
             yield return StartCoroutine(animArqueiro.EsperarAnimacao());
 
@@ -95,7 +95,7 @@ namespace Assets.Scripts.Controller
             // 4. Soltou o botão: decide o destino final
             if (cargaPronta)
             {
-                animArqueiro.AnimacaoDispararCarregado();
+                animArqueiro.AnimacaoDispararCarregado();                
                 fisicaArqueiro.AplicarImpulsoAtaque(7);
                 yield return StartCoroutine(animArqueiro.EsperarAnimacao());
                 estadoAtual = EstadoJogador.ModoAtaque; // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#

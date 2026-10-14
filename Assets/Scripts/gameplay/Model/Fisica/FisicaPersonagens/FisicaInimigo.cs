@@ -22,6 +22,21 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             rb.linearVelocity = new Vector2(golpe.direcao * velocidade, rb.linearVelocity.y);
         }
 
+        public void EnviarGolpeDeContato(ControladorInimigo dono, int dano, float direcao, FisicaPersonagem alvo)
+        {
+            GameObject go = new GameObject("HitBoxContato");
+            go.transform.position = transform.position;
+
+            BoxCollider2D col = go.AddComponent<BoxCollider2D>();
+            col.enabled = false;                     // só carrega dados, nunca colide
+
+            HitBox hb = go.AddComponent<HitBox>();   // o Awake dele pega o BoxCollider2D acima
+            hb.Inicializar(dono, dano, direcao);
+
+            alvo.EnfileirarGolpe(hb);
+            Destroy(go, 0.5f);                       // dá tempo do Update do jogador consumir
+        }
+
         public void AplicarGolpe(ControladorInimigo dono, int dano, int indice)
         {
             float direcao = GetDirecao();

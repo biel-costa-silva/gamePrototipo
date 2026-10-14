@@ -27,5 +27,16 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             rb.AddForce(new Vector2(forca * direcao, 0), ForceMode2D.Impulse);
         }
+
+        protected override int CalcularDanoDoAtaque(int dano, int indice)
+        {
+            int danoFinal = dano;
+
+            if (indice == 0) danoFinal = dano - 1;
+            if (indice == 1) danoFinal = dano;
+            if (indice == 2) danoFinal = dano + 1;
+
+            return danoFinal;
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace Assets.Scripts.Model.Entidades.Peoes
             nome = "Arqueiro";
             vida = 4;
             vidaMax = 4;
-            dano = 3;
+            dano = 2;
             defesa = 0; 
             velocidade = 3.5f;
             velocidadeBase = velocidade;
