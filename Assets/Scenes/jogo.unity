@@ -41706,17 +41706,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!114 &1289048071 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-  m_PrefabInstance: {fileID: 2287725985368274279}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorGuerreiro
 --- !u!114 &1294748870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51836,17 +51825,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!114 &1580722401 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-  m_PrefabInstance: {fileID: 7118842511746470945}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorArqueiro
 --- !u!213 &1592896333
 Sprite:
   m_ObjectHideFlags: 0
@@ -52314,8 +52292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b33cfacea6b5f0428328b208defaaf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.GerenciadorPartida
-  player1: {fileID: 1289048071}
-  player2: {fileID: 1580722401}
+  player1: {fileID: 7138768640420163608}
+  player2: {fileID: 8407182187933017777}
   totem: {fileID: 1597556440}
   cameraController: {fileID: 519420033}
   textoTempoSobrevivido: {fileID: 1380610684}
@@ -70857,14 +70835,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1193286245}
     m_Modifications:
-    - target: {fileID: 1894614332122842525, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894614332122842525, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420033}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: boxColliderP2
+      value: 
+      objectReference: {fileID: 2350678801349393078}
     - target: {fileID: 3114379907548003659, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.52
@@ -70905,54 +70883,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3124874436745639230, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 519420033}
-    - target: {fileID: 3124874436745639230, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: boxColliderP2
-      value: 
-      objectReference: {fileID: 2350678801349393078}
     - target: {fileID: 4787097399626619259, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_Name
       value: Guerreiro
       objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+    - target: {fileID: 7084617555371837068, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: vidaUI
       value: 
       objectReference: {fileID: 838097168}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: corEscura.b
-      value: 0.17254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: corEscura.g
-      value: 0.17254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: corEscura.r
-      value: 0.17254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: intervaloTransicao
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: duracaoInvulneravel
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668570390027234579, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: m_Color.b
-      value: 0.8113208
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668570390027234579, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8113208
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668570390027234579, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8113208
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71049,49 +70987,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1193286245}
     m_Modifications:
-    - target: {fileID: 636199802341530527, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 636199802341530527, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1692962146096786279, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420033}
-    - target: {fileID: 1692962146096786279, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: boxColliderP2
       value: 
       objectReference: {fileID: 7138768640420163600}
     - target: {fileID: 3126009905939436823, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_Name
       value: Arqueiro
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: vidaUI
-      value: 
-      objectReference: {fileID: 1028368356}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: corEscura.b
-      value: 0.16981131
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: corEscura.g
-      value: 0.16981131
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: corEscura.r
-      value: 0.16981131
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: intervaloTransicao
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: duracaoInvulneravel
-      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71133,18 +71039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: m_Color.b
-      value: 0.8117647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8117647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8117647
-      objectReference: {fileID: 0}
+    - target: {fileID: 8826681123410267996, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: vidaUI
+      value: 
+      objectReference: {fileID: 1028368356}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71155,11 +71053,33 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7965026739628598369, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
   m_PrefabInstance: {fileID: 2287725985368274279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7138768640420163608 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7084617555371837068, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+  m_PrefabInstance: {fileID: 2287725985368274279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorGuerreiro
 --- !u!4 &8407182187933017769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
   m_PrefabInstance: {fileID: 7118842511746470945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8407182187933017777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8826681123410267996, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+  m_PrefabInstance: {fileID: 7118842511746470945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorArqueiro
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

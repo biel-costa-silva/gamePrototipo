@@ -12,11 +12,7 @@ namespace Assets.Scripts.Gameplay.View
         //variaveis de controle
         public bool animacaoTerminou = false;
         public bool novoAtaque = true;
-        public int indiceAtaque { get; set; }
-
-        public bool morteDesermado = true;
-        public bool morteArmado = false;
-
+        public int indiceAtaque { get; set; }      
 
 
         void Awake()
@@ -139,16 +135,6 @@ namespace Assets.Scripts.Gameplay.View
         public void EventoAtaque()//frame do ataque
         {
             controller.AplicarGolpe(indiceAtaque);
-        }
-        public void EventoSetMorteDesarm()
-        {
-            morteArmado = false;
-            morteDesermado = true;
-        }
-        public void EventoSetMorteArm()
-        {
-            morteArmado = true;
-            morteDesermado = false;
-        }
+        }        
     }
 }

@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5513366047608489112}
   - component: {fileID: 3866619174743863784}
+  - component: {fileID: 6198592607764653138}
   - component: {fileID: 8056795795139508211}
   - component: {fileID: 4004033451021288734}
   - component: {fileID: 636199802341530527}
-  - component: {fileID: 5110454430395144652}
-  - component: {fileID: 6902937366180718715}
-  - component: {fileID: 4667944189069879087}
-  - component: {fileID: 1692962146096786279}
-  - component: {fileID: 6198592607764653138}
+  - component: {fileID: 6328330944929577198}
+  - component: {fileID: 8211192065883485698}
+  - component: {fileID: 2276151647627783177}
+  - component: {fileID: 8826681123410267996}
   m_Layer: 0
   m_Name: Arqueiro
   m_TagString: Player
@@ -63,6 +63,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &6198592607764653138
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126009905939436823}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!212 &8056795795139508211
 SpriteRenderer:
   serializedVersion: 2
@@ -195,19 +207,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5110454430395144652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3126009905939436823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.Funcionalidades.ControlesArqueiro
---- !u!114 &6902937366180718715
+--- !u!114 &6328330944929577198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,9 +222,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   animacaoTerminou: 0
   novoAtaque: 1
-  morteDesermado: 1
-  morteArmado: 0
---- !u!114 &4667944189069879087
+--- !u!114 &8211192065883485698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,18 +231,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3126009905939436823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorArqueiro
-  vidaUI: {fileID: 0}
-  spriteRenderer: {fileID: 8056795795139508211}
-  duracaoInvulneravel: 1.2
-  intervaloTransicao: 0.2
-  corEscura: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
-  duracaoRolagem: 0.45
-  tempoParaCarregar: 1.5
-  indiceVfxCarregado: 0
---- !u!114 &1692962146096786279
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.EntradaDados.ControlesArqueiro
+--- !u!114 &2276151647627783177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,7 +245,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a49ce60575093ba419d135d4e42f20e3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosArqueiro
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens.FisicaArqueiro
   camera: {fileID: 0}
   arteOlhaParaEsquerda: 0
   ataques:
@@ -271,8 +261,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.01638794
-      value: 0.98454285
+      time: -4.290102
+      value: 0.9763052
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -280,8 +270,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.6
-      value: 1
+      time: -1.6650529
+      value: 0.99809265
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -289,8 +279,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1.0202026
-      value: 0.9711914
+      time: 0.62213135
+      value: 0.9598999
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -300,18 +290,27 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!225 &6198592607764653138
-CanvasGroup:
+--- !u!114 &8826681123410267996
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3126009905939436823}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorArqueiro
+  vidaUI: {fileID: 0}
+  spriteRenderer: {fileID: 8056795795139508211}
+  duracaoInvulneravel: 1.2
+  intervaloTransicao: 0.2
+  corEscura: {r: 0.16862746, g: 0.16862746, b: 0.16862746, a: 1}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}
+  duracaoRolagem: 0.45
+  tempoParaCarregar: 1.2
+  indiceVfxCarregado: 0
 --- !u!1 &9138196863620184591
 GameObject:
   m_ObjectHideFlags: 0

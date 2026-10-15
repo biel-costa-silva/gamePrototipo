@@ -871,7 +871,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JogadorMorrend2
+  m_Name: JogadorMorrendo2
   m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions: []

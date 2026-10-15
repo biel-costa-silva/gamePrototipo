@@ -43,12 +43,12 @@ GameObject:
   - component: {fileID: 5668570390027234579}
   - component: {fileID: 7965026739628598369}
   - component: {fileID: 1894614332122842525}
-  - component: {fileID: 5263415038256984763}
-  - component: {fileID: 7990867899360265064}
-  - component: {fileID: 5668153011245708325}
-  - component: {fileID: 3124874436745639230}
-  - component: {fileID: 8455596785189613483}
   - component: {fileID: 4356194737751967613}
+  - component: {fileID: 8455596785189613483}
+  - component: {fileID: 4212777346221828124}
+  - component: {fileID: 6654632623966596378}
+  - component: {fileID: 1364221102708959252}
+  - component: {fileID: 7084617555371837068}
   m_Layer: 0
   m_Name: Guerreiro
   m_TagString: Player
@@ -204,90 +204,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5263415038256984763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4787097399626619259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4713b63bb64ca9543b6c98f88400bb7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.View.AnimacaoPeoes.AnimGuerreiro
-  controller: {fileID: 0}
-  animacaoTerminou: 0
-  novoAtaque: 1
-  morteDesermado: 1
-  morteArmado: 0
-  estaDefendendo: 0
-  estaRepelindo: 0
---- !u!114 &7990867899360265064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4787097399626619259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff952d6561c86ef438b5e52ddc83a590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.Funcionalidades.ControlesGuerreiro
---- !u!114 &5668153011245708325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4787097399626619259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorGuerreiro
-  vidaUI: {fileID: 0}
-  spriteRenderer: {fileID: 5668570390027234579}
-  duracaoInvulneravel: 1.2
-  intervaloTransicao: 0.2
-  corEscura: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
---- !u!114 &3124874436745639230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4787097399626619259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0637109ba7b7cf3458922770e9f7f2f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosGuerreiro
-  camera: {fileID: 0}
-  arteOlhaParaEsquerda: 0
-  ataques:
-  - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
-  - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}
-  - {fileID: 508356192094315985, guid: ac6566c8616753343aed663624fbc6b7, type: 3}
-  posicaoPersonagem: {fileID: 4017493169732662122}
-  boxColliderP2: {fileID: 0}
-  prefabsVFX:
-  - {fileID: 1796444060775287699, guid: 3a3031ee26cbb624ea99ef06b0a6cffb, type: 3}
-  - {fileID: 8680067936824478869, guid: e13bbcf0a5f800e4a9caa068da1be4f2, type: 3}
-  - {fileID: 8235985266007744663, guid: cc7d72a9062c6284cb4d49e07d943dd4, type: 3}
---- !u!225 &8455596785189613483
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4787097399626619259}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!95 &4356194737751967613
 Animator:
   serializedVersion: 7
@@ -310,3 +226,86 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &8455596785189613483
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787097399626619259}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &4212777346221828124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787097399626619259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4713b63bb64ca9543b6c98f88400bb7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.AnimacaoPersonagens.AnimGuerreiro
+  controller: {fileID: 0}
+  animacaoTerminou: 0
+  novoAtaque: 1
+  estaDefendendo: 0
+  estaRepelindo: 0
+--- !u!114 &6654632623966596378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787097399626619259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff952d6561c86ef438b5e52ddc83a590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.EntradaDados.ControlesGuerreiro
+--- !u!114 &1364221102708959252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787097399626619259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0637109ba7b7cf3458922770e9f7f2f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens.FisicaGuerreiro
+  camera: {fileID: 0}
+  arteOlhaParaEsquerda: 0
+  ataques:
+  - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
+  - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}
+  - {fileID: 508356192094315985, guid: ac6566c8616753343aed663624fbc6b7, type: 3}
+  posicaoPersonagem: {fileID: 4017493169732662122}
+  boxColliderP2: {fileID: 0}
+  prefabsVFX:
+  - {fileID: 1796444060775287699, guid: 3a3031ee26cbb624ea99ef06b0a6cffb, type: 3}
+  - {fileID: 8680067936824478869, guid: e13bbcf0a5f800e4a9caa068da1be4f2, type: 3}
+  - {fileID: 8235985266007744663, guid: cc7d72a9062c6284cb4d49e07d943dd4, type: 3}
+--- !u!114 &7084617555371837068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787097399626619259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorGuerreiro
+  vidaUI: {fileID: 0}
+  spriteRenderer: {fileID: 5668570390027234579}
+  duracaoInvulneravel: 1.2
+  intervaloTransicao: 0.2
+  corEscura: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
+  corOriginal: {r: 0, g: 0, b: 0, a: 0}

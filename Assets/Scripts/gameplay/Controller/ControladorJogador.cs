@@ -1,12 +1,13 @@
-﻿using Assets.Scripts.Geral;
-using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 using Assets.Scripts.Gameplay.View;
 using Assets.Scripts.Gameplay.View.EntradaDados;
+using Assets.Scripts.Geral;
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -34,8 +35,10 @@ namespace Assets.Scripts.Gameplay.Controller
         [SerializeField] private float duracaoInvulneravel = 1f;
         [SerializeField] private float intervaloTransicao = 0.15f;
         [SerializeField] private Color corEscura = new Color(0.35f, 0.35f, 0.35f, 1f);
+        private Color corBase;
 
 
+        protected bool estaArmado = false;
         private EstadoJogador _estadoAtual = EstadoJogador.Parado;
         public EstadoJogador estadoAtual
         {
@@ -44,6 +47,7 @@ namespace Assets.Scripts.Gameplay.Controller
             {
                 if (_estadoAtual == value) return;
                 _estadoAtual = value;
+                AtualizarArmado(value);
                 OnEstadoAlterado?.Invoke(this, _estadoAtual);
             }
         }
@@ -61,7 +65,8 @@ namespace Assets.Scripts.Gameplay.Controller
 
             //cria o model
             jogador = CriarJogador();
-            
+            if (spriteRenderer != null) corBase = spriteRenderer.color;
+
         }
         protected virtual Jogador CriarJogador()
         {
@@ -69,6 +74,20 @@ namespace Assets.Scripts.Gameplay.Controller
         }
 
         // ----------------------------- Métodos de controle ---------------------------------
+        private void AtualizarArmado(EstadoJogador estado)
+        {
+            switch (estado)
+            {
+                case EstadoJogador.ModoAtaque:
+                case EstadoJogador.AndandoArmado:
+                case EstadoJogador.Agachado:
+                case EstadoJogador.Atacando:
+                    estaArmado = true; break;
+                case EstadoJogador.Parado:
+                case EstadoJogador.Andando:
+                    estaArmado = false; break;                    
+            }
+        }
         protected void DefinirEstado(EstadoJogador novoEstado)
         {
             estadoAtual = novoEstado;
@@ -109,6 +128,7 @@ namespace Assets.Scripts.Gameplay.Controller
         {
             vidaUI.Decrementar(10);//gambiarra
             StopAllCoroutines();
+            RestaurarEstadoVisualEFlags();           
             StartCoroutine(RotinaMorrendo());
         }
 
@@ -117,9 +137,19 @@ namespace Assets.Scripts.Gameplay.Controller
             jogador.RestaurarVida();
             vidaUI.RestaurarCheia();
             StopAllCoroutines();
+            RestaurarEstadoVisualEFlags();
+            estaArmado = false;
             estadoAtual = EstadoJogador.Parado;
             animacao.AnimacaoPosTP();
             animacao.OnAnimacaoTerminou();
+        }
+
+        private void RestaurarEstadoVisualEFlags()
+        {
+            if (spriteRenderer != null) spriteRenderer.color = corBase;
+            invulneravel = false;
+            estaSendoAlertado = false;
+            estaSendoDesarmado = false;
         }
 
         public void AlertarEntrarEmModoAtaque()
@@ -286,8 +316,7 @@ namespace Assets.Scripts.Gameplay.Controller
         private IEnumerator RotinaInvulneravel()
         {
             invulneravel = true;
-
-            Color corOriginal = spriteRenderer.color;
+            Color corOriginal = corBase;
 
             float periodo = intervaloTransicao * 2f; // ida + volta
             float duracaoReal = Mathf.Ceil(duracaoInvulneravel / periodo) * periodo;
@@ -363,48 +392,46 @@ namespace Assets.Scripts.Gameplay.Controller
 
         protected IEnumerator RotinaMorrendo()
         {
-            if (animacao.morteArmado)
-            {
-                animacao.AnimacaoMorrendo();
-            }
-            else if(animacao.morteDesermado)
-            {
-                animacao.AnimacaoMorrendo2();
-            }
+            DefinirEstado(EstadoJogador.Morto);
+            animacao.ResetarTriggers();
+            animacao.AnimacaoParado();      
+            animacao.AnimacaoParadoArmado();
 
-            yield return StartCoroutine(animacao.EsperarAnimacao());
+            if (estaArmado) animacao.AnimacaoMorrendo();
+            else animacao.AnimacaoMorrendo2();
 
-            estadoAtual = EstadoJogador.Morto;
+            yield break;
         }
 
         //------------------- Sofrendo Ataques: possibilidades --------------------
         protected IEnumerator RotinaSofrendoAtaqueDesarm()
         {
-            animacao.AnimacaoSofrendoAtqDesarm();
             if (jogador.EstaMorto())
             {
+                estaArmado = false;
                 OnMorreu?.Invoke(this);
                 StartCoroutine(RotinaMorrendo());
+                yield break;
             }
-            else
-            {
-                yield return StartCoroutine(animacao.EsperarAnimacao());
-                DefinirEstado(EstadoJogador.Parado);
-            }
+
+            animacao.AnimacaoSofrendoAtqDesarm();         
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+            DefinirEstado(EstadoJogador.Parado);
+            
         }
         protected IEnumerator RotinaSofrendoAtaqueArm()
         {
-            animacao.AnimacaoSofrendoAtqArm();
             if (jogador.EstaMorto())
             {
+                estaArmado = true;
                 OnMorreu?.Invoke(this);
                 StartCoroutine(RotinaMorrendo());
+                yield break;
             }
-            else
-            {
-                yield return StartCoroutine(animacao.EsperarAnimacao());
-                DefinirEstado(EstadoJogador.ModoAtaque);
-            }
+
+            animacao.AnimacaoSofrendoAtqArm();
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+            DefinirEstado(EstadoJogador.ModoAtaque);
         }
         //-------------------------------------------------------------------------
 
