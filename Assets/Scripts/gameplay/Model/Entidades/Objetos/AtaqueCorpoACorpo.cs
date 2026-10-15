@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class AtaqueCorpoACorpo : MonoBehaviour
     {

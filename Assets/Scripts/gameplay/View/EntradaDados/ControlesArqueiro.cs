@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-namespace Assets.Scripts.View.EntradaDados
+namespace Assets.Scripts.Gameplay.View.EntradaDados
 {
     public class ControlesArqueiro : MonoBehaviour, IControles
     {      

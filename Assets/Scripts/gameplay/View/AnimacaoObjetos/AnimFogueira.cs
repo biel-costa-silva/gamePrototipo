@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-namespace Assets.Scripts.View.AnimacaoObjetos
+namespace Assets.Scripts.Gameplay.View.AnimacaoObjetos
 {
     public class AnimFogueira : MonoBehaviour
     {

@@ -1,6 +1,5 @@
-﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using System.Collections;
-using UnityEngine;
+﻿
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 
 namespace Assets.Scripts.Gameplay.View.AnimacaoPersonagens
 {

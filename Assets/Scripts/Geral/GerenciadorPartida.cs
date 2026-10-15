@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Model.Entidades.Objetos;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using System.Collections;
+﻿using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
+using Assets.Scripts.Gameplay.View;
 using UnityEngine;
 
 namespace Assets.Scripts.Geral
@@ -13,7 +13,7 @@ namespace Assets.Scripts.Geral
         [SerializeField] private ControladorJogador player1;
         [SerializeField] private ControladorJogador player2;
         [SerializeField] private Totem totem;           
-        [SerializeField] private Camera cameraController;
+        [SerializeField] private MinhaCamera cameraController;
         [SerializeField] private TMPro.TextMeshProUGUI textoTempoSobrevivido;
 
         [SerializeField] private GameObject telaGameOver;       

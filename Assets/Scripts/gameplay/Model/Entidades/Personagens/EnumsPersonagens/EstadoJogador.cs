@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using UnityEngine;
-
-namespace Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes
+﻿
+namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens
 {
     public enum EstadoJogador 
     {

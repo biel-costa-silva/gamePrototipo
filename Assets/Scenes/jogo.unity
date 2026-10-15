@@ -44210,7 +44210,7 @@ Transform:
   m_GameObject: {fileID: 1466005008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.07, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70934,10 +70934,6 @@ PrefabInstance:
       value: 0.17254902
       objectReference: {fileID: 0}
     - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
-      propertyPath: intervaloPiscar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668153011245708325, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: intervaloTransicao
       value: 0.2
       objectReference: {fileID: 0}
@@ -70980,29 +70976,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1193286245}
     m_Modifications:
-    - target: {fileID: 263698848887219949, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6466463694678182084, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6467367763803647576, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 519420033}
-    - target: {fileID: 6467367763803647576, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7373606228935726819, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
       propertyPath: m_Name
       value: Slime
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720112755668524151, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7888820156319145504, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
       propertyPath: m_Color.b
@@ -71106,14 +71086,6 @@ PrefabInstance:
       value: 0.16981131
       objectReference: {fileID: 0}
     - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 8407182187933017775}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-      propertyPath: intervaloPiscar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4667944189069879087, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: intervaloTransicao
       value: 0.2
       objectReference: {fileID: 0}
@@ -71186,11 +71158,6 @@ BoxCollider2D:
 --- !u!4 &8407182187933017769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
-  m_PrefabInstance: {fileID: 7118842511746470945}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &8407182187933017775 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
   m_PrefabInstance: {fileID: 7118842511746470945}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

@@ -1,9 +1,8 @@
-﻿using Assets.Scripts.Geral;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class AtaqueADistancia : MonoBehaviour
     {

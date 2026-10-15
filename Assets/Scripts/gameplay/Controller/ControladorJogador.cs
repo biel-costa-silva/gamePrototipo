@@ -1,15 +1,16 @@
-﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using Assets.Scripts.Geral;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.View;
-using Assets.Scripts.View.EntradaDados;
+﻿using Assets.Scripts.Geral;
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
+using Assets.Scripts.Gameplay.View;
+using Assets.Scripts.Gameplay.View.EntradaDados;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Controller
+
+namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorJogador : MonoBehaviour
     {
@@ -60,6 +61,7 @@ namespace Assets.Scripts.Controller
 
             //cria o model
             jogador = CriarJogador();
+            
         }
         protected virtual Jogador CriarJogador()
         {
@@ -67,6 +69,11 @@ namespace Assets.Scripts.Controller
         }
 
         // ----------------------------- Métodos de controle ---------------------------------
+        protected void DefinirEstado(EstadoJogador novoEstado)
+        {
+            estadoAtual = novoEstado;
+        }
+
         public void ReceberGolpe(HitBox golpe)
         {
             if (golpe == null || golpe.consumida) return;
@@ -158,24 +165,24 @@ namespace Assets.Scripts.Controller
                 if (jogador.sofreuAtaque)
                 {
                     jogador.LimparFlagAtaque();
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSofrendoAtaqueDesarm());
                     return;
                 }
                 if (controle.ComandoMovimento() != 0)
                 {
-                    estadoAtual = EstadoJogador.Andando;
+                    DefinirEstado(EstadoJogador.Andando);
                     return;
                 }
                 if (controle.ComandoSaqueArma())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSacanadoArma());
                     return;
                 }
                 if (controle.ComandoInteracao() && interagivelAtual != null && interagivelAtual.PodeSofrerInteracao())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaInteracao());
                     interagivelAtual.SofrerInteracao(jogador);
                     return;
@@ -188,7 +195,7 @@ namespace Assets.Scripts.Controller
                 if (jogador.sofreuAtaque)
                 {
                     jogador.LimparFlagAtaque();
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSofrendoAtaqueDesarm());
                     return;
                 }
@@ -199,11 +206,11 @@ namespace Assets.Scripts.Controller
                 }
                 else
                 {
-                    estadoAtual = EstadoJogador.Parado;
+                    DefinirEstado(EstadoJogador.Parado);
                 }
                 if (controle.ComandoSaqueArma())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSacanadoArma());
                     return;
                 }
@@ -218,24 +225,24 @@ namespace Assets.Scripts.Controller
                 if (jogador.sofreuAtaque)
                 {
                     jogador.LimparFlagAtaque();
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSofrendoAtaqueArm());
                     return;
                 }
                 if (controle.ComandoMovimento() != 0)
                 {
-                    estadoAtual = EstadoJogador.AndandoArmado;
+                    DefinirEstado(EstadoJogador.AndandoArmado);
                     return;
                 }
                 if (controle.ComandoSaqueArma())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaGuardandoArma());
                     return;
                 }
                 if (controle.ComandoAtaque() > 0)
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaAtacando());
                     return;
                 }
@@ -247,7 +254,7 @@ namespace Assets.Scripts.Controller
                 if (jogador.sofreuAtaque)
                 {
                     jogador.LimparFlagAtaque();
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaSofrendoAtaqueArm());
                     return;
                 }
@@ -258,17 +265,17 @@ namespace Assets.Scripts.Controller
                 }
                 else
                 {
-                    estadoAtual = EstadoJogador.ModoAtaque;
+                    DefinirEstado(EstadoJogador.ModoAtaque);
                 }
                 if (controle.ComandoSaqueArma())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaGuardandoArma());
                     return;
                 }
                 if (controle.ComandoAtaque() > 0)
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaAtacando());
                     return;
                 }
@@ -301,7 +308,7 @@ namespace Assets.Scripts.Controller
 
         protected IEnumerator RotinaAlertaESaque()
         {
-            estadoAtual = EstadoJogador.Ocupado;
+            DefinirEstado(EstadoJogador.Ocupado);
             animacao.AnimacaoAlerta();
 
             yield return StartCoroutine(animacao.EsperarAnimacao());
@@ -312,7 +319,7 @@ namespace Assets.Scripts.Controller
 
         protected virtual IEnumerator RotinaDesarmeForcado()
         {
-            estadoAtual = EstadoJogador.Ocupado;
+            DefinirEstado(EstadoJogador.Ocupado);
             animacao.AnimacaoInterrogado();
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // reaproveita a rotina existente, que já termina em Parado
@@ -325,21 +332,21 @@ namespace Assets.Scripts.Controller
         {
             animacao.AnimacaoSacandoArma();
             yield return StartCoroutine(animacao.EsperarAnimacao());
-            estadoAtual = EstadoJogador.ModoAtaque;
+            DefinirEstado(EstadoJogador.ModoAtaque);
         }
         //
         protected IEnumerator RotinaGuardandoArma()
         {
             animacao.AnimacaoGuardandoArma();
             yield return StartCoroutine(animacao.EsperarAnimacao());
-            estadoAtual = EstadoJogador.Parado;
+            DefinirEstado(EstadoJogador.Parado);
         }
         //
         protected IEnumerator RotinaInteracao()
         {
             animacao.AnimacaoInteragindo();
             yield return StartCoroutine(animacao.EsperarAnimacao());
-            estadoAtual = EstadoJogador.Parado;
+            DefinirEstado(EstadoJogador.Parado);
         }
         //
         protected virtual IEnumerator RotinaAtacando()
@@ -351,13 +358,22 @@ namespace Assets.Scripts.Controller
             animacao.AnimacaoAtacando();
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
-            estadoAtual = EstadoJogador.ModoAtaque;
+            DefinirEstado(EstadoJogador.ModoAtaque);
         }
 
         protected IEnumerator RotinaMorrendo()
         {
-            animacao.AnimacaoMorrendo();
+            if (animacao.morteArmado)
+            {
+                animacao.AnimacaoMorrendo();
+            }
+            else if(animacao.morteDesermado)
+            {
+                animacao.AnimacaoMorrendo2();
+            }
+
             yield return StartCoroutine(animacao.EsperarAnimacao());
+
             estadoAtual = EstadoJogador.Morto;
         }
 
@@ -365,8 +381,16 @@ namespace Assets.Scripts.Controller
         protected IEnumerator RotinaSofrendoAtaqueDesarm()
         {
             animacao.AnimacaoSofrendoAtqDesarm();
-            yield return StartCoroutine(animacao.EsperarAnimacao());
-            estadoAtual = EstadoJogador.Parado;
+            if (jogador.EstaMorto())
+            {
+                OnMorreu?.Invoke(this);
+                StartCoroutine(RotinaMorrendo());
+            }
+            else
+            {
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                DefinirEstado(EstadoJogador.Parado);
+            }
         }
         protected IEnumerator RotinaSofrendoAtaqueArm()
         {
@@ -379,7 +403,7 @@ namespace Assets.Scripts.Controller
             else
             {
                 yield return StartCoroutine(animacao.EsperarAnimacao());
-                estadoAtual = EstadoJogador.ModoAtaque;
+                DefinirEstado(EstadoJogador.ModoAtaque);
             }
         }
         //-------------------------------------------------------------------------

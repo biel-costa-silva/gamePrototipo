@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using System.Collections;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class EntradaSaida : MonoBehaviour, IInteracoes
     {

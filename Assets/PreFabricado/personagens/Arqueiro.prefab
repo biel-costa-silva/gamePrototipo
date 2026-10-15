@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4004033451021288734}
   - component: {fileID: 636199802341530527}
   - component: {fileID: 5110454430395144652}
-  - component: {fileID: 5591737846092061886}
+  - component: {fileID: 6902937366180718715}
   - component: {fileID: 4667944189069879087}
   - component: {fileID: 1692962146096786279}
   - component: {fileID: 6198592607764653138}
@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3126009905939436823}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.69, y: -3.12, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6642814461191988220, guid: bf5ee6fc5acd5c841bd4fbcf15f3ec6c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8117647, g: 0.8117647, b: 0.8117647, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -180,10 +180,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.2283511
+  m_Mass: 1
   m_LinearDamping: 10
   m_AngularDamping: 0
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.Funcionalidades.ControlesArqueiro
---- !u!114 &5591737846092061886
+--- !u!114 &6902937366180718715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,10 +218,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea49c9e3a0375b4993a6077a7c2d3f2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.View.AnimacaoPeoes.AnimArqueiro
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.AnimacaoPersonagens.AnimArqueiro
   controller: {fileID: 0}
   animacaoTerminou: 0
   novoAtaque: 1
+  morteDesermado: 1
+  morteArmado: 0
 --- !u!114 &4667944189069879087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,8 +238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorArqueiro
   vidaUI: {fileID: 0}
   spriteRenderer: {fileID: 8056795795139508211}
-  duracaoInvulneravel: 1.5
-  intervaloPiscar: 0.2
+  duracaoInvulneravel: 1.2
+  intervaloTransicao: 0.2
+  corEscura: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   duracaoRolagem: 0.45
   tempoParaCarregar: 1.5
   indiceVfxCarregado: 0
@@ -254,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosArqueiro
   camera: {fileID: 0}
+  arteOlhaParaEsquerda: 0
   ataques:
   - {fileID: 2959560683888490588, guid: 98affec6f30a36f498428c89072b279b, type: 3}
   - {fileID: 7308487408719575949, guid: 14383a2544e4f5a49b788fdc6a103317, type: 3}

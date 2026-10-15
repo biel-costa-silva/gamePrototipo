@@ -1,9 +1,7 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using System.Collections;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 {
@@ -14,7 +12,7 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         protected Rigidbody2D rb;
         protected SpriteRenderer sprite;
         protected BoxCollider2D boxColliderP1;
-        public Camera camera;
+        public MinhaCamera camera;
 
         //variaveis de controle
         [SerializeField] protected bool arteOlhaParaEsquerda = false;

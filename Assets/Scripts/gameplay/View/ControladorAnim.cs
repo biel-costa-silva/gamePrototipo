@@ -1,9 +1,8 @@
-﻿using Assets.Scripts.Controller;
+﻿using Assets.Scripts.Gameplay.Controller;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.U2D;
 
-namespace Assets.Scripts.View
+namespace Assets.Scripts.Gameplay.View
 {
     abstract public class ControladorAnim : MonoBehaviour
     {
@@ -14,6 +13,11 @@ namespace Assets.Scripts.View
         public bool animacaoTerminou = false;
         public bool novoAtaque = true;
         public int indiceAtaque { get; set; }
+
+        public bool morteDesermado = true;
+        public bool morteArmado = false;
+
+
 
         void Awake()
         {
@@ -83,6 +87,11 @@ namespace Assets.Scripts.View
             animacaoTerminou = false;
             animator.Play("JogadorMorrendo", 0, 0f);
         }
+        public void AnimacaoMorrendo2()
+        {
+            animacaoTerminou = false;
+            animator.Play("JogadorMorrendo2", 0, 0f);
+        }
 
         public void AnimacaoAlerta()
         {
@@ -131,6 +140,15 @@ namespace Assets.Scripts.View
         {
             controller.AplicarGolpe(indiceAtaque);
         }
-
+        public void EventoSetMorteDesarm()
+        {
+            morteArmado = false;
+            morteDesermado = true;
+        }
+        public void EventoSetMorteArm()
+        {
+            morteArmado = true;
+            morteDesermado = false;
+        }
     }
 }

@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
-using Unity.VisualScripting;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 
-namespace Assets.Scripts.View.EntradaDados
+namespace Assets.Scripts.Gameplay.View.EntradaDados
 {
 	public class ControlesGuerreiro : MonoBehaviour, IControles, IHabilidade
 	{

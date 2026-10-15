@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEditor;
-using Unity.VisualScripting;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.View.AnimacaoObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Gameplay.View.AnimacaoObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
 	public class Fogueira : MonoBehaviour, IInteracoes
 	{

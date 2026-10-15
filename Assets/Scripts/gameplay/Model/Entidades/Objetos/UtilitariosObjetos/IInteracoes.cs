@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 
-namespace Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos
 {
 	public interface IInteracoes
 	{

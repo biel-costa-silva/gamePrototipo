@@ -1,11 +1,9 @@
-﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Gameplay.Controller;
+﻿using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-namespace Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos
 {
     public class HitBox : MonoBehaviour, ICausamDano
     {

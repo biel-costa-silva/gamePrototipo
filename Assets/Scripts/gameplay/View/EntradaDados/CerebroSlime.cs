@@ -1,9 +1,8 @@
-﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Gameplay.View.EntradaDados;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
+﻿using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
 using UnityEngine;
 
-namespace Assets.Scripts.View.EntradaDados
+namespace Assets.Scripts.Gameplay.View.EntradaDados
 {
     public class CerebroSlime : MonoBehaviour, IComportamento
     {

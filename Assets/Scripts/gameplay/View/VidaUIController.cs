@@ -1,108 +1,108 @@
-using Assets.Scripts.Controller;
 using Assets.Scripts.Geral;
-using Assets.Scripts.Model.Entidades.Peoes;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(CanvasGroup))]
-public class VidaUIController : MonoBehaviour
+namespace Assets.Scripts.Gameplay.View
 {
-
-    public int vida;
-    
-    public int vidaMax;
-
-    public Image[] coracao;
-    public Sprite cheio;
-    public Sprite vazio;
-
-    [SerializeField] private float duracaoFade = 0.25f;
-
-    private CanvasGroup canvasGroup;    
-    private bool visivelAtualmente = false;
-    private Coroutine fadeAtual;
-
-    private void Awake()
+    [RequireComponent(typeof(CanvasGroup))]
+    public class VidaUIController : MonoBehaviour
     {
-        canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
-    }
 
+        public int vida;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(GerenciadorPausa.JogoPausado) return;
+        public int vidaMax;
 
-        LogicaCoracao();      
-    }
-   
+        public Image[] coracao;
+        public Sprite cheio;
+        public Sprite vazio;
 
-    public void DefinirVisivel(bool visivel)
-    {
-        if (visivel == visivelAtualmente) return;
+        [SerializeField] private float duracaoFade = 0.25f;
 
-        visivelAtualmente = visivel;
+        private CanvasGroup canvasGroup;
+        private bool visivelAtualmente = false;
+        private Coroutine fadeAtual;
 
-        if (fadeAtual != null) StopCoroutine(fadeAtual);
-        fadeAtual = StartCoroutine(Fade(visivel ? 1f : 0f));
-    }
-
-    private IEnumerator Fade(float alvo)
-    {
-        float inicio = canvasGroup.alpha;
-        float tempoPassado = 0f;
-
-        while (tempoPassado < duracaoFade)
+        private void Awake()
         {
-            tempoPassado += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Lerp(inicio, alvo, tempoPassado / duracaoFade);
-            yield return null;
+            canvasGroup = GetComponent<CanvasGroup>();
+            canvasGroup.alpha = 0f;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
         }
 
-        canvasGroup.alpha = alvo;
-        canvasGroup.interactable = alvo > 0.5f;
-        canvasGroup.blocksRaycasts = alvo > 0.5f;
-    }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (GerenciadorPausa.JogoPausado) return;
+
+            LogicaCoracao();
+        }
 
 
-    public void Decrementar(int dano)
-    {
-        vida = vida - dano;
-    }
-    public void RestaurarCheia()
-    {
-        vida = vidaMax;
-    }
+        public void DefinirVisivel(bool visivel)
+        {
+            if (visivel == visivelAtualmente) return;
 
-    void LogicaCoracao()
-    {
-        if(vida > vidaMax)
+            visivelAtualmente = visivel;
+
+            if (fadeAtual != null) StopCoroutine(fadeAtual);
+            fadeAtual = StartCoroutine(Fade(visivel ? 1f : 0f));
+        }
+
+        private IEnumerator Fade(float alvo)
+        {
+            float inicio = canvasGroup.alpha;
+            float tempoPassado = 0f;
+
+            while (tempoPassado < duracaoFade)
+            {
+                tempoPassado += Time.deltaTime;
+                canvasGroup.alpha = Mathf.Lerp(inicio, alvo, tempoPassado / duracaoFade);
+                yield return null;
+            }
+
+            canvasGroup.alpha = alvo;
+            canvasGroup.interactable = alvo > 0.5f;
+            canvasGroup.blocksRaycasts = alvo > 0.5f;
+        }
+
+
+        public void Decrementar(int dano)
+        {
+            vida = vida - dano;
+        }
+        public void RestaurarCheia()
         {
             vida = vidaMax;
         }
 
-        for (int i = 0; i < coracao.Length; i++)
+        void LogicaCoracao()
         {
-            if(i < vida)
+            if (vida > vidaMax)
             {
-                coracao[i].sprite = cheio;
+                vida = vidaMax;
             }
-            else
+
+            for (int i = 0; i < coracao.Length; i++)
             {
-                coracao[i].sprite = vazio;
-            }
-            if(i < vidaMax)
-            {
-                coracao[i].enabled = true;
-            }
-            else
-            {
-                coracao[i].enabled = true;
+                if (i < vida)
+                {
+                    coracao[i].sprite = cheio;
+                }
+                else
+                {
+                    coracao[i].sprite = vazio;
+                }
+                if (i < vidaMax)
+                {
+                    coracao[i].enabled = true;
+                }
+                else
+                {
+                    coracao[i].enabled = true;
+                }
             }
         }
     }

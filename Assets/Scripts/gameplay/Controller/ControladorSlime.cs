@@ -2,14 +2,14 @@
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsInimigos;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 using Assets.Scripts.Gameplay.View.AnimacaoPersonagens;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using System.Collections;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using UnityEngine;
 
 namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorSlime : ControladorInimigo
     {
+        public Slime slime;
         private FisicaSlime fisicaSlime;
         private AnimSlime animSlime;
 
@@ -18,12 +18,16 @@ namespace Assets.Scripts.Gameplay.Controller
             base.Awake();
             fisicaSlime = fisica as FisicaSlime;
             animSlime = animacao as AnimSlime;
+            slime = inimigo as Slime;
         }
         private void Start()
         {
             OnEstadoAlterado += (c, estado) => Debug.Log($"Slime -> {estado}");
         }
-        protected override Inimigo CriarInimigo() => new Slime();
+        protected override Inimigo CriarInimigo()
+        {
+            return new Slime();
+        }
 
         protected override int EscolherVariacaoDano()
         {

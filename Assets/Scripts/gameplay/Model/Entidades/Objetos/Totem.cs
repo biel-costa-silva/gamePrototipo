@@ -1,14 +1,13 @@
-﻿using Assets.Scripts.Controller;
+﻿using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.View.AnimacaoObjetos;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.View.AnimacaoObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class Totem : MonoBehaviour, IInteracoes
     {

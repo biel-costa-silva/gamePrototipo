@@ -64,7 +64,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4787097399626619259}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.72, y: -3.15, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
@@ -122,7 +122,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3592814690901215313, guid: 1d537da9fb3e8814884a570bd9ddab2e, type: 3}
-  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -189,10 +189,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1.0722675
+  m_Mass: 1
   m_LinearDamping: 10
   m_AngularDamping: 0
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -219,6 +219,8 @@ MonoBehaviour:
   controller: {fileID: 0}
   animacaoTerminou: 0
   novoAtaque: 1
+  morteDesermado: 1
+  morteArmado: 0
   estaDefendendo: 0
   estaRepelindo: 0
 --- !u!114 &7990867899360265064
@@ -247,8 +249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Controller.ControladorGuerreiro
   vidaUI: {fileID: 0}
   spriteRenderer: {fileID: 5668570390027234579}
-  duracaoInvulneravel: 1.5
-  intervaloPiscar: 0.2
+  duracaoInvulneravel: 1.2
+  intervaloTransicao: 0.2
+  corEscura: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
 --- !u!114 &3124874436745639230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Peoes.OficiosPeoes.OficiosGuerreiro
   camera: {fileID: 0}
+  arteOlhaParaEsquerda: 0
   ataques:
   - {fileID: 5688417427016420097, guid: 4fcb48170241d0741bc4f3af258af404, type: 3}
   - {fileID: 3127032226217516755, guid: 59db16ecd2f8bd744a1762c62b309494, type: 3}

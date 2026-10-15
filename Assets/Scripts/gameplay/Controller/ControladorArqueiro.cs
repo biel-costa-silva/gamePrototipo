@@ -1,13 +1,13 @@
 ﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.Model.Entidades.Peoes;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.View.AnimacaoPeoes;
-using Assets.Scripts.View.EntradaDados;
+using Assets.Scripts.Gameplay.View.AnimacaoPersonagens;
 using System.Collections;
 using UnityEngine;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
+using Assets.Scripts.Gameplay.View.EntradaDados;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 
-namespace Assets.Scripts.Controller
+namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorArqueiro : ControladorJogador
     {
@@ -49,7 +49,7 @@ namespace Assets.Scripts.Controller
 
                 if (controleArqueiro.ComandoRolar())
                 {
-                    estadoAtual = EstadoJogador.Ocupado;
+                    DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaRolando());
                     return;
                 }
@@ -98,7 +98,7 @@ namespace Assets.Scripts.Controller
                 animArqueiro.AnimacaoDispararCarregado();                
                 fisicaArqueiro.AplicarImpulsoAtaque(7);
                 yield return StartCoroutine(animArqueiro.EsperarAnimacao());
-                estadoAtual = EstadoJogador.ModoAtaque; // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
+                DefinirEstado(EstadoJogador.ModoAtaque); // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
             }
             else
             {
@@ -156,7 +156,7 @@ namespace Assets.Scripts.Controller
             }
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // aguarda o último frame
-            estadoAtual = EstadoJogador.ModoAtaque;
+            DefinirEstado(EstadoJogador.ModoAtaque);
         }
 
         IEnumerator RotinaRolando()
@@ -180,7 +180,7 @@ namespace Assets.Scripts.Controller
             fisicaArqueiro.AtravessarInimigos(false);
 
             yield return StartCoroutine(animArqueiro.EsperarAnimacao());
-            estadoAtual = EstadoJogador.ModoAtaque;
+            DefinirEstado(EstadoJogador.ModoAtaque);
         }
     }
 }

@@ -1,10 +1,9 @@
-﻿using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 
-namespace Assets.Scripts.Model.Entidades.Objetos
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class Item : MonoBehaviour, IInteracoes
     {

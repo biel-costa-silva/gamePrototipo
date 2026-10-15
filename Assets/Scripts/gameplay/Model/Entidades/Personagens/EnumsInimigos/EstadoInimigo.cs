@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
+﻿
 namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsInimigos
 {
     public enum EstadoInimigo { 

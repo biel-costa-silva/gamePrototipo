@@ -1,43 +1,46 @@
 ﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-public class ProjetilParabolico : MonoBehaviour
+namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
-    [SerializeField] private float margemDeVida = 1f;
-    private Rigidbody2D rb;
-
-    private void Awake()
+    [RequireComponent(typeof(Rigidbody2D))]
+    public class ProjetilParabolico : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
+        [SerializeField] private float margemDeVida = 1f;
+        private Rigidbody2D rb;
 
-    // Calcula a velocidade inicial que faz a bola chegar em 'alvo' depois de 'tempoDeVoo'
-    public void Lancar(Vector2 alvo, float tempoDeVoo)
-    {
-        Vector2 delta = alvo - (Vector2)transform.position;
-        float g = Physics2D.gravity.y * rb.gravityScale;
+        private void Awake()
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
 
-        float vx = delta.x / tempoDeVoo;
-        float vy = (delta.y - 0.5f * g * tempoDeVoo * tempoDeVoo) / tempoDeVoo;
+        // Calcula a velocidade inicial que faz a bola chegar em 'alvo' depois de 'tempoDeVoo'
+        public void Lancar(Vector2 alvo, float tempoDeVoo)
+        {
+            Vector2 delta = alvo - (Vector2)transform.position;
+            float g = Physics2D.gravity.y * rb.gravityScale;
 
-        rb.linearVelocity = new Vector2(vx, vy);
-        Destroy(gameObject, margemDeVida); // rede de segurança caso não bata em nada
-    }
+            float vx = delta.x / tempoDeVoo;
+            float vy = (delta.y - 0.5f * g * tempoDeVoo * tempoDeVoo) / tempoDeVoo;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log($"[Bola] tocou em: {other.name}");
-        if (other.GetComponent<HitBox>() != null) return;                 // choque é resolvido no HitBox
-        if (other.GetComponentInParent<FisicaInimigo>() != null) return;  // não explode em outros inimigos
-        StartCoroutine(DestruirNoProximoFrame());
-    }
+            rb.linearVelocity = new Vector2(vx, vy);
+            Destroy(gameObject, margemDeVida); // rede de segurança caso não bata em nada
+        }
 
-    private IEnumerator DestruirNoProximoFrame()
-    {
-        yield return null;
-        Destroy(gameObject);
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Debug.Log($"[Bola] tocou em: {other.name}");
+            if (other.GetComponent<HitBox>() != null) return;                 // choque é resolvido no HitBox
+            if (other.GetComponentInParent<FisicaInimigo>() != null) return;  // não explode em outros inimigos
+            StartCoroutine(DestruirNoProximoFrame());
+        }
+
+        private IEnumerator DestruirNoProximoFrame()
+        {
+            yield return null;
+            Destroy(gameObject);
+        }
     }
 }

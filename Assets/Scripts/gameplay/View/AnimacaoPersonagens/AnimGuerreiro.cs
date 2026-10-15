@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using Unity.VisualScripting;
-using UnityEditor.Rendering;
-using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
+﻿
+namespace Assets.Scripts.Gameplay.View.AnimacaoPersonagens
 
-namespace Assets.Scripts.View.AnimacaoPeoes
 {
     public class AnimGuerreiro : ControladorAnim
     {
 
         //variaveis de controle
         public bool estaDefendendo = false;
-        public bool estaRepelindo = false;       
+        public bool estaRepelindo = false;
 
         // ----------------  Métodos de acionamento ------------------
 
@@ -45,7 +38,7 @@ namespace Assets.Scripts.View.AnimacaoPeoes
         }
 
         public void AnimacaoAgachado(bool parametro) => animator.SetBool("isAgachado", parametro);
-       
+
 
         // ------------------------------------------------------------------------------------ #
 
@@ -70,7 +63,5 @@ namespace Assets.Scripts.View.AnimacaoPeoes
             estaDefendendo = false;
             estaRepelindo = false;
         }
-
-
     }
 }

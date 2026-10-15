@@ -1,13 +1,11 @@
-﻿using Assets.Scripts.Controller;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsInimigos;
+using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
 using Assets.Scripts.Gameplay.View;
 using Assets.Scripts.Gameplay.View.EntradaDados;
 using Assets.Scripts.Geral;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.View;
-using Assets.Scripts.View.EntradaDados;
 using System;
 using System.Collections;
 using System.Collections.Generic;

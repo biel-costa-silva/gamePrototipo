@@ -1,9 +1,5 @@
-﻿using Assets.Scripts.Model.Entidades.Peoes.EnumsPeoes;
-using Assets.Scripts.View.AnimacaoPeoes;
-using System.Collections;
-using UnityEngine;
-
-namespace Assets.Scripts.Model.Entidades.Peoes
+﻿
+namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
 {
 	public class Arqueiro : Jogador
 	{

@@ -1,10 +1,5 @@
-﻿using Assets.Scripts.Controller;
-using Assets.Scripts.Gameplay.Controller;
-using Assets.Scripts.Model.Entidades.Objetos;
-using Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos;
-using System.Collections;
+﻿using Assets.Scripts.Gameplay.Controller;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
