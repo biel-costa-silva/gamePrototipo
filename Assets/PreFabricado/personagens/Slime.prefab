@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9623196ce0383874da1726903915a57d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.View.EntradaDados.CerebroSlime
-  alcanceVisao: 10
+  alcanceVisao: 20.14
   alcanceCorpoACorpo: 1.2
   alcanceDistancia: 6
   intervaloDisparo: 4
@@ -263,9 +263,9 @@ MonoBehaviour:
   knockbackPorDano: 4
   knockbackMaximo: 25
   velocidadeHorizontal: 8
-  tempoDeVooMin: 0.5
-  tempoDeVooMax: 1
-  alturaMira: 1
+  tempoDeVooMin: 1
+  tempoDeVooMax: 3
+  alturaMira: 3.5
   prefabsVFX:
   - {fileID: 4100241316695536120, guid: 07f777c528b88b5438e9f517102755bd, type: 3}
   - {fileID: 2595363660871985865, guid: df10c717bc8a62a4baeeb1114c956fb3, type: 3}

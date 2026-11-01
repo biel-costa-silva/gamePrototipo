@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -766884602261395865, guid: 9bb3cb5c2cef39346a43795fbf00d432, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1904e92c6beff8446944a79404730665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Objetos.UtilitariosObjetos.HitBox
-  origem: {fileID: 0}
   consumida: 0
 --- !u!114 &6536982168225381997
 MonoBehaviour:

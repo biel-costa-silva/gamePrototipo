@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3358629569782730444, guid: 2ad39876a43485d46ac2cd0fbce2a5ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,5 +202,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1904e92c6beff8446944a79404730665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Jogabilidade.Mundo.HitBox
-  origem: {fileID: 0}
   consumida: 0

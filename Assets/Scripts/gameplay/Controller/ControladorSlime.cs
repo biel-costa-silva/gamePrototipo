@@ -39,7 +39,7 @@ namespace Assets.Scripts.Gameplay.Controller
         {
             Debug.Log($"[Slime] AplicarGolpe indice={indice}");
             if (indice == 1) //ataque parabola
-                fisicaSlime.AplicarGolpeProjetil(this, inimigo.GetDano(), indice, comportamento.PosicaoAlvo());
+                fisicaSlime.AplicarGolpeProjetil(this, slime.GetDano(), indice, comportamento.PosicaoAlvo());
             else
                 base.AplicarGolpe(indice);
         }

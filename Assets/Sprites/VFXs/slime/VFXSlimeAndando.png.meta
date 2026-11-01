@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 8204418678039327
     second: VFXSlimeAndando_0
+  - first:
+      213: -4765089105547845598
+    second: VFXSlimeAndando_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -161,10 +164,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 12c647f29ec26654a879b42b8b580803
-      internalID: -2026727970
+      spriteID: 220acbc74b00fddb0800000000000000
+      internalID: -4765089105547845598
       vertices: []
       indices: 
       edges: []
@@ -185,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 766a318de1a6d494094570993fbe5179
-      internalID: -1790103858
+      spriteID: 645dd45efe9205d49b901e5257f20bae
+      internalID: 1963626673
       vertices: []
       indices: 
       edges: []
@@ -207,8 +210,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0addeafda62cfa342a4faf895ed2bdb6
-      internalID: -700055547
+      spriteID: 04c5ad9c007920848a35522f08a93b7d
+      internalID: 1690080584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXSlimeAndando_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1df5f38c8080d4b9b65e5b4d99ad9f
+      internalID: 361776522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFXSlimeAndando_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31cd8cd052f9aa4a895674713464072
+      internalID: 1216571010
       vertices: []
       indices: 
       edges: []
@@ -217,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 140c544dd2c30e34291ca12d899099c9
+    spriteID: 72938d9124306cd48a67f85edd282391
     internalID: 0
     vertices: []
     indices: 
@@ -230,9 +277,11 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       VFXSlimeAndando_0: 8204418678039327
-      VFXSlimeAndando_1: -2026727970
-      VFXSlimeAndando_2: -1790103858
-      VFXSlimeAndando_3: -700055547
+      VFXSlimeAndando_1: -4765089105547845598
+      VFXSlimeAndando_2: 1963626673
+      VFXSlimeAndando_3: 1690080584
+      VFXSlimeAndando_4: 361776522
+      VFXSlimeAndando_5: 1216571010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,6 +14,7 @@ namespace Assets.Scripts.Geral
         [SerializeField] private ControladorJogador player2;
         [SerializeField] private Totem totem;           
         [SerializeField] private MinhaCamera cameraController;
+        [SerializeField] private SpawnerInimigos spawner;
         [SerializeField] private TMPro.TextMeshProUGUI textoTempoSobrevivido;
 
         [SerializeField] private GameObject telaGameOver;       
@@ -76,6 +77,7 @@ namespace Assets.Scripts.Geral
             SalvarCheckpoint();
             cameraController.TravarCamera();
             tempoInicioCombate = Time.time;
+            if (spawner != null) spawner.Iniciar();
         }
 
         public void SalvarCheckpoint()
@@ -88,6 +90,7 @@ namespace Assets.Scripts.Geral
         {
             if (jogoAcabou) return;
             jogoAcabou = true;
+            if (spawner != null) spawner.Parar();
 
             ControladorJogador outroJogador = (quemMorreu == player1) ? player2 : player1;
             outroJogador.MorrerForcado();
@@ -123,6 +126,7 @@ namespace Assets.Scripts.Geral
 
             cameraController.DestravarCamera();
             totem.Resetar();
+            if (spawner != null) spawner.Resetar();
         }
     }
 }

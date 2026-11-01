@@ -11,7 +11,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class Totem : MonoBehaviour, IInteracoes
     {
-        private AnimTotem animacao;               
+        private AnimTotem animacao;
+        private DestaqueInteracao destaque;
         private StatusQueryOptions statusTotem { get; set; } // Enums, adicionar posteriormente
 
         private bool jaAtivado = false;
@@ -23,6 +24,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         {
             animacao = GetComponent<AnimTotem>();
             if (animacao == null) animacao = gameObject.AddComponent<AnimTotem>();
+            destaque = GetComponent<DestaqueInteracao>();   // novo
         }
 
         public void SofrerInteracao(Jogador jogador)
@@ -31,6 +33,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             if (jogadoresPresentes.Count < 2) return;
 
             jaAtivado = true;
+            destaque.Esconder();
 
             animacao.AnimacaoAtivando();
             OnAtivado?.Invoke();
@@ -40,12 +43,14 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         {
             ControladorJogador contJogador = other.GetComponent<ControladorJogador>();
             if (contJogador != null) jogadoresPresentes.Add(contJogador.jogador);
+            if (destaque != null && !jaAtivado) destaque.Mostrar();   // novo
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             ControladorJogador contJogador = other.GetComponent<ControladorJogador>();
             if (contJogador != null) jogadoresPresentes.Remove(contJogador.jogador);
+            if (destaque != null && jogadoresPresentes.Count == 0) destaque.Esconder();   // novo
         }
 
         public bool PodeSofrerInteracao()
