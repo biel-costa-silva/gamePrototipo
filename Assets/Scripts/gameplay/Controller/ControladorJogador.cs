@@ -32,6 +32,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
 
         [SerializeField] private SpriteRenderer spriteRenderer;
+        private IconeInteracaoJogador iconeInteracao;
         [SerializeField] private float duracaoInvulneravel = 1f;
         [SerializeField] private float intervaloTransicao = 0.15f;
         [SerializeField] private Color corEscura = new Color(0.35f, 0.35f, 0.35f, 1f);
@@ -62,6 +63,7 @@ namespace Assets.Scripts.Gameplay.Controller
             fisica = GetComponent<FisicaJogador>();
             animacao = GetComponent<ControladorAnim>();
             controle = GetComponent<IControles>();
+            iconeInteracao = GetComponentInChildren<IconeInteracaoJogador>();
 
             //cria o model
             jogador = CriarJogador();
@@ -211,11 +213,17 @@ namespace Assets.Scripts.Gameplay.Controller
                     return;
                 }
                 if (controle.ComandoInteracao() && interagivelAtual != null && interagivelAtual.PodeSofrerInteracao())
-                {
+                {                    
                     DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaInteracao());
                     interagivelAtual.SofrerInteracao(jogador);
+                    
                     return;
+                }
+                if (controle.ComandoInteracao() && interagivelAtual != null && !interagivelAtual.PodeSofrerInteracao())
+                {
+                    Debug.Log("[Interacao] tentou interagir sem poder");
+                    if (iconeInteracao != null) iconeInteracao.Tremer();
                 }
             }
 
