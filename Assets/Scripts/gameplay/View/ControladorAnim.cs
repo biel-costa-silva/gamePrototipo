@@ -28,7 +28,10 @@ namespace Assets.Scripts.Gameplay.View
         {
             animator.ResetTrigger("sacarArma");
             animator.ResetTrigger("guardarArma");
-            animator.ResetTrigger("interagir");
+            animator.ResetTrigger("levantar");
+            animator.ResetTrigger("interagirFog");
+            animator.ResetTrigger("interagirItem");
+            animator.ResetTrigger("interagirTotem");
             animator.ResetTrigger("atacar");
             animator.ResetTrigger("sofrerAtqArm");
             animator.ResetTrigger("sofrerAtqDesarm");
@@ -54,11 +57,30 @@ namespace Assets.Scripts.Gameplay.View
             animacaoTerminou = false;
             animator.SetTrigger("guardarArma");
         }
+
+
         //
-        public void AnimacaoInteragindo()
+        public void AnimacaoInteragindoFogueira()
         {
             animacaoTerminou = false;
-            animator.SetTrigger("interagir");
+            animator.SetTrigger("interagirFog");
+        }
+        public void AnimacaoInteragindoItem()
+        {
+            animacaoTerminou = false;
+            animator.SetTrigger("interagirItem");
+        }
+        public void AnimacaoInteragindoTotem()// retirar talez não seja necessário
+        {
+            animacaoTerminou = false;
+            animator.SetTrigger("interagirTotem");
+        }
+
+
+        public void AnimacaoLevantando()
+        {
+            animacaoTerminou = false;
+            animator.SetTrigger("levantar");
         }
         //
         public void AnimacaoAtacando()
@@ -88,7 +110,6 @@ namespace Assets.Scripts.Gameplay.View
             animacaoTerminou = false;
             animator.Play("JogadorMorrendo2", 0, 0f);
         }
-
         public void AnimacaoAlerta()
         {
             animacaoTerminou = false;

@@ -20,6 +20,96 @@ TextureImporter:
   - first:
       213: -645089387411297221
     second: fogueiraAcesa_5
+  - first:
+      213: 6304511957303677796
+    second: fogueiraAcesa_6
+  - first:
+      213: 1238979979170925505
+    second: fogueiraAcesa_7
+  - first:
+      213: 4973128681922970540
+    second: fogueiraAcesa_8
+  - first:
+      213: -1032651525680865298
+    second: fogueiraAcesa_9
+  - first:
+      213: 8039949042975863144
+    second: fogueiraAcesa_10
+  - first:
+      213: -5953183116945576950
+    second: fogueiraAcesa_11
+  - first:
+      213: 6662461531300986114
+    second: fogueiraAcesa_12
+  - first:
+      213: 4293731435929302063
+    second: fogueiraAcesa_13
+  - first:
+      213: -2191071734148112655
+    second: fogueiraAcesa_14
+  - first:
+      213: 8631996974742787535
+    second: fogueiraAcesa_15
+  - first:
+      213: 5526958566778384262
+    second: fogueiraAcesa_16
+  - first:
+      213: 5838071291582144975
+    second: fogueiraAcesa_17
+  - first:
+      213: 7135263093297718097
+    second: fogueiraAcesa_18
+  - first:
+      213: -1415417158790038052
+    second: fogueiraAcesa_19
+  - first:
+      213: 1434863020813051444
+    second: fogueiraAcesa_20
+  - first:
+      213: -7258802261549768081
+    second: fogueiraAcesa_21
+  - first:
+      213: 9083559371070342412
+    second: fogueiraAcesa_22
+  - first:
+      213: -4935184904335185092
+    second: fogueiraAcesa_23
+  - first:
+      213: 3563684885495716149
+    second: fogueiraAcesa_24
+  - first:
+      213: 8026376092193271300
+    second: fogueiraAcesa_25
+  - first:
+      213: -802909042683504856
+    second: fogueiraAcesa_26
+  - first:
+      213: 3695988136400515192
+    second: fogueiraAcesa_27
+  - first:
+      213: 6883104629040091084
+    second: fogueiraAcesa_28
+  - first:
+      213: 1095743803584085066
+    second: fogueiraAcesa_29
+  - first:
+      213: -5423037054524537267
+    second: fogueiraAcesa_30
+  - first:
+      213: -5438878647689669354
+    second: fogueiraAcesa_31
+  - first:
+      213: -5060361128683544861
+    second: fogueiraAcesa_32
+  - first:
+      213: 1545082761701856219
+    second: fogueiraAcesa_33
+  - first:
+      213: -9040911824978898879
+    second: fogueiraAcesa_34
+  - first:
+      213: -55865323278802181
+    second: fogueiraAcesa_35
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +177,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -272,11 +362,671 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463d941f8302e7750800000000000000
+      internalID: 6304511957303677796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbcd460abdb13110800000000000000
+      internalID: 1238979979170925505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3435cff2a140540800000000000000
+      internalID: 4973128681922970540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefd60b98e84ba1f0800000000000000
+      internalID: -1032651525680865298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86171de9e03a39f60800000000000000
+      internalID: 8039949042975863144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c2b971f7b026da0800000000000000
+      internalID: -5953183116945576950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d76e6a671d57c50800000000000000
+      internalID: 6662461531300986114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f247e77edf5669b30800000000000000
+      internalID: 4293731435929302063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fed3b8dddfb791e0800000000000000
+      internalID: -2191071734148112655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc55ac5a3830bc770800000000000000
+      internalID: 8631996974742787535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fa02d8883b3bc40800000000000000
+      internalID: 5526958566778384262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1e82488eef40150800000000000000
+      internalID: 5838071291582144975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15327f6aafb850360800000000000000
+      internalID: 7135263093297718097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddb351e79d6b5ce0800000000000000
+      internalID: -1415417158790038052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436e7e0b058a9e310800000000000000
+      internalID: 1434863020813051444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_21
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6226894dcd834b90800000000000000
+      internalID: -7258802261549768081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_22
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0581d80f194f0e70800000000000000
+      internalID: 9083559371070342412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_23
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b2b3c2a73b28bb0800000000000000
+      internalID: -4935184904335185092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539966ba580c47130800000000000000
+      internalID: 3563684885495716149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e2ed0c78a636f60800000000000000
+      internalID: 8026376092193271300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_26
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82796ebca7e7bd4f0800000000000000
+      internalID: -802909042683504856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_27
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870f53cb0a9ca4330800000000000000
+      internalID: 3695988136400515192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_28
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf08cd1133b58f50800000000000000
+      internalID: 6883104629040091084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_29
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cf6711f2dd43f00800000000000000
+      internalID: 1095743803584085066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_30
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46c84908808db4b0800000000000000
+      internalID: -5423037054524537267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_31
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6151004bfa83584b0800000000000000
+      internalID: -5438878647689669354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_32
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894b3406316cefc409aad0a8d7f287c0
+      internalID: -835714226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_33
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc5cd43273bed2479ff953ec2ec3954
+      internalID: -1115239396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_34
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cb66bbd211a5945a5480a911ed2cbc
+      internalID: -1799292119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogueiraAcesa_35
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d5f06e5ac6b7429bcc7eee4f629a1
+      internalID: -1344291774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cf8ceda239bff5849a3edc43a6312b9c
+    spriteID: b0893193fa3b9c84cbb6669e23d64a16
     internalID: 0
     vertices: []
     indices: 
@@ -286,14 +1036,44 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":36.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       fogueiraAcesa_0: 4995802041215678122
       fogueiraAcesa_1: -385871752741021099
+      fogueiraAcesa_10: 8039949042975863144
+      fogueiraAcesa_11: -5953183116945576950
+      fogueiraAcesa_12: 6662461531300986114
+      fogueiraAcesa_13: 4293731435929302063
+      fogueiraAcesa_14: -2191071734148112655
+      fogueiraAcesa_15: 8631996974742787535
+      fogueiraAcesa_16: 5526958566778384262
+      fogueiraAcesa_17: 5838071291582144975
+      fogueiraAcesa_18: 7135263093297718097
+      fogueiraAcesa_19: -1415417158790038052
       fogueiraAcesa_2: -3529095157789770526
+      fogueiraAcesa_20: 1434863020813051444
+      fogueiraAcesa_21: -7258802261549768081
+      fogueiraAcesa_22: 9083559371070342412
+      fogueiraAcesa_23: -4935184904335185092
+      fogueiraAcesa_24: 3563684885495716149
+      fogueiraAcesa_25: 8026376092193271300
+      fogueiraAcesa_26: -802909042683504856
+      fogueiraAcesa_27: 3695988136400515192
+      fogueiraAcesa_28: 6883104629040091084
+      fogueiraAcesa_29: 1095743803584085066
       fogueiraAcesa_3: -4496813684296184926
+      fogueiraAcesa_30: -5423037054524537267
+      fogueiraAcesa_31: -5438878647689669354
+      fogueiraAcesa_32: -835714226
+      fogueiraAcesa_33: -1115239396
+      fogueiraAcesa_34: -1799292119
+      fogueiraAcesa_35: -1344291774
       fogueiraAcesa_4: 7843573563010360275
       fogueiraAcesa_5: -645089387411297221
+      fogueiraAcesa_6: 6304511957303677796
+      fogueiraAcesa_7: 1238979979170925505
+      fogueiraAcesa_8: 4973128681922970540
+      fogueiraAcesa_9: -1032651525680865298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

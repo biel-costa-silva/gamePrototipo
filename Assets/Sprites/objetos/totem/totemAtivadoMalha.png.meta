@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: dc55ae6737d11474890dc84ca4a92987
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5492323515964351053
+    second: totemAtivadoMalha_0
+  - first:
+      213: 8491276596282415757
+    second: totemAtivadoMalha_1
+  - first:
+      213: -2788749551421800624
+    second: totemAtivadoMalha_2
+  - first:
+      213: 1052201817863982065
+    second: totemAtivadoMalha_3
+  - first:
+      213: 2268023157437829322
+    second: totemAtivadoMalha_4
+  - first:
+      213: 7096662782213144831
+    second: totemAtivadoMalha_5
+  - first:
+      213: -6278851643916524853
+    second: totemAtivadoMalha_6
+  - first:
+      213: -7782953298467701365
+    second: totemAtivadoMalha_7
+  - first:
+      213: 5707847350163052577
+    second: totemAtivadoMalha_8
+  - first:
+      213: -4530236809915317921
+    second: totemAtivadoMalha_9
+  - first:
+      213: 2254368316219802414
+    second: totemAtivadoMalha_10
+  - first:
+      213: 6421823498016405255
+    second: totemAtivadoMalha_11
+  - first:
+      213: 615301968202922440
+    second: totemAtivadoMalha_12
+  - first:
+      213: -7941593845225563238
+    second: totemAtivadoMalha_13
+  - first:
+      213: 3592124382961580049
+    second: totemAtivadoMalha_14
+  - first:
+      213: -4108031545248979442
+    second: totemAtivadoMalha_15
+  - first:
+      213: 5040365245769877594
+    second: totemAtivadoMalha_16
+  - first:
+      213: 2210639811933497989
+    second: totemAtivadoMalha_17
+  - first:
+      213: 7938804082246890587
+    second: totemAtivadoMalha_18
+  - first:
+      213: -2589353427272444948
+    second: totemAtivadoMalha_19
+  - first:
+      213: 5503673135417126676
+    second: totemAtivadoMalha_20
+  - first:
+      213: -9098936061660305248
+    second: totemAtivadoMalha_21
+  - first:
+      213: 5387033869051425127
+    second: totemAtivadoMalha_22
+  - first:
+      213: 2999144832725752447
+    second: totemAtivadoMalha_23
+  - first:
+      213: -5166746117771567004
+    second: totemAtivadoMalha_24
+  - first:
+      213: 350693938820241312
+    second: totemAtivadoMalha_25
+  - first:
+      213: -8266745914580318392
+    second: totemAtivadoMalha_26
+  - first:
+      213: 7962930286650660265
+    second: totemAtivadoMalha_27
+  - first:
+      213: -6976896870393328889
+    second: totemAtivadoMalha_28
+  - first:
+      213: -4112509903807271163
+    second: totemAtivadoMalha_29
+  - first:
+      213: 6673377733599288361
+    second: totemAtivadoMalha_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: totemAtivadoMalha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd9b6f9cd857c3b0800000000000000
+      internalID: -5492323515964351053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1152
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a500b531317d570800000000000000
+      internalID: 8491276596282415757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_2
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1152
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f39f3fe0f5c49d0800000000000000
+      internalID: -2788749551421800624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb8dc18afb2a9e00800000000000000
+      internalID: 1052201817863982065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_4
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1056
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac011719b03a97f10800000000000000
+      internalID: 2268023157437829322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_5
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1056
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0cc8063396c7260800000000000000
+      internalID: 7096662782213144831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc26af652b90dd8a0800000000000000
+      internalID: -6278851643916524853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 960
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8db06df5356df390800000000000000
+      internalID: -7782953298467701365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_8
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 960
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1289f9a6ce8563f40800000000000000
+      internalID: 5707847350163052577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f514994af9d5121c0800000000000000
+      internalID: -4530236809915317921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 864
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e234d291a00294f10800000000000000
+      internalID: 2254368316219802414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_11
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 864
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70736897276ee1950800000000000000
+      internalID: 6421823498016405255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9755c41edf98800800000000000000
+      internalID: 615301968202922440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 768
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bd6e0697ac9c190800000000000000
+      internalID: -7941593845225563238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_14
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 768
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118b17b281ac9d130800000000000000
+      internalID: 3592124382961580049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06e55b23175df6c0800000000000000
+      internalID: -4108031545248979442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_16
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 672
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58865c6c79f2f540800000000000000
+      internalID: 5040365245769877594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_17
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 672
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ae1ac4235cdae10800000000000000
+      internalID: 2210639811933497989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b543fbf404c4c2e60800000000000000
+      internalID: 7938804082246890587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 576
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce35c71e6c4c01cd0800000000000000
+      internalID: -2589353427272444948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_20
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 576
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fe5649e89f06c40800000000000000
+      internalID: 5503673135417126676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8eeb23cd51ab180800000000000000
+      internalID: -9098936061660305248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_22
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 480
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761fecd13c692ca40800000000000000
+      internalID: 5387033869051425127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_23
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 480
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a1190d55a1f9920800000000000000
+      internalID: 2999144832725752447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460e89dc7c70c48b0800000000000000
+      internalID: -5166746117771567004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_25
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 384
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a75340874aedd400800000000000000
+      internalID: 350693938820241312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_26
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 384
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8474709c36e964d80800000000000000
+      internalID: -8266745914580318392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5130308e2028e60800000000000000
+      internalID: 7962930286650660265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_28
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 288
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bcba5f2451d2f90800000000000000
+      internalID: -6976896870393328889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_29
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 288
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50faa40180e6de6c0800000000000000
+      internalID: -4112509903807271163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cdf2f01b99c9c50800000000000000
+      internalID: 6673377733599288361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_31
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 192
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61162c36b9f4066428520966f0f6f1ae
+      internalID: -1938607512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_32
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 192
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002bb45dadc58b74ba775b788b648eb9
+      internalID: 359530333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2b38e5b9e07fd46b77b661663e96e7
+      internalID: 51521137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_34
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aeecbc11eca2545935b0f01a5fcd5b
+      internalID: 475753508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_35
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 96
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e308cdf710e9f24b9a0cf1a16d0ed03
+      internalID: -438035924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991a65a9165a8c543aafa8c24587bd05
+      internalID: -280760097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_37
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2e4f32af10a5b4e818271ef454b44f
+      internalID: 1369991389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: totemAtivadoMalha_38
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 608
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74aafcb19bd895642bdead58fd9f3a99
+      internalID: 1329720887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfe404e0785159d4cb41e7782d2e46b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":13.0},"gridSpriteSize":{"x":608.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      totemAtivadoMalha_0: -5492323515964351053
+      totemAtivadoMalha_1: 8491276596282415757
+      totemAtivadoMalha_10: 2254368316219802414
+      totemAtivadoMalha_11: 6421823498016405255
+      totemAtivadoMalha_12: 615301968202922440
+      totemAtivadoMalha_13: -7941593845225563238
+      totemAtivadoMalha_14: 3592124382961580049
+      totemAtivadoMalha_15: -4108031545248979442
+      totemAtivadoMalha_16: 5040365245769877594
+      totemAtivadoMalha_17: 2210639811933497989
+      totemAtivadoMalha_18: 7938804082246890587
+      totemAtivadoMalha_19: -2589353427272444948
+      totemAtivadoMalha_2: -2788749551421800624
+      totemAtivadoMalha_20: 5503673135417126676
+      totemAtivadoMalha_21: -9098936061660305248
+      totemAtivadoMalha_22: 5387033869051425127
+      totemAtivadoMalha_23: 2999144832725752447
+      totemAtivadoMalha_24: -5166746117771567004
+      totemAtivadoMalha_25: 350693938820241312
+      totemAtivadoMalha_26: -8266745914580318392
+      totemAtivadoMalha_27: 7962930286650660265
+      totemAtivadoMalha_28: -6976896870393328889
+      totemAtivadoMalha_29: -4112509903807271163
+      totemAtivadoMalha_3: 1052201817863982065
+      totemAtivadoMalha_30: 6673377733599288361
+      totemAtivadoMalha_31: -1938607512
+      totemAtivadoMalha_32: 359530333
+      totemAtivadoMalha_33: 51521137
+      totemAtivadoMalha_34: 475753508
+      totemAtivadoMalha_35: -438035924
+      totemAtivadoMalha_36: -280760097
+      totemAtivadoMalha_37: 1369991389
+      totemAtivadoMalha_38: 1329720887
+      totemAtivadoMalha_4: 2268023157437829322
+      totemAtivadoMalha_5: 7096662782213144831
+      totemAtivadoMalha_6: -6278851643916524853
+      totemAtivadoMalha_7: -7782953298467701365
+      totemAtivadoMalha_8: 5707847350163052577
+      totemAtivadoMalha_9: -4530236809915317921
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

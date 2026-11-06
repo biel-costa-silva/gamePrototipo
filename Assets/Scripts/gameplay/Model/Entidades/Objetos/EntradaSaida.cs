@@ -6,6 +6,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class EntradaSaida : MonoBehaviour, IInteracoes
     {
+        string IInteracoes.nome { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
         public bool PodeSofrerInteracao()
         {
             throw new System.NotImplementedException();

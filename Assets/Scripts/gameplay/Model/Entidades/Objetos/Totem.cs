@@ -12,14 +12,15 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 {
     public class Totem : MonoBehaviour, IInteracoes
     {
+        string IInteracoes.nome { get; set; } = "totem";
         private AnimTotem animacao;
         private DestaqueInteracao destaque;
-        private StatusQueryOptions statusTotem { get; set; } // Enums, adicionar posteriormente
-
-        private bool jaAtivado = false;
+       
+                
         private readonly HashSet<ControladorJogador> presentes = new HashSet<ControladorJogador>();
-
         public event Action OnAtivado;
+        private bool jaAtivado = false;
+
 
         private void Awake()
         {
@@ -28,10 +29,10 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             destaque = GetComponent<DestaqueInteracao>();   // novo
         }
 
+
         public void SofrerInteracao(Jogador jogador)
         {
-            if (jaAtivado) return;
-            if (presentes.Count < 2) return;
+            if (jaAtivado) return;            
 
             jaAtivado = true;
             DefinirIconesDeTodos(EstadoIconeInteracao.Nenhum);
@@ -80,7 +81,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         private void AtualizarIcones()
         {
             if (jaAtivado) return;
-            EstadoIconeInteracao estado = presentes.Count >= 2
+            EstadoIconeInteracao estado = presentes.Count >= 2 //demonstra necessidade de interação mutua
                 ? EstadoIconeInteracao.Possivel
                 : EstadoIconeInteracao.Impossivel;
             DefinirIconesDeTodos(estado);

@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: 942e6544eb8a1c748b51314b5b26bc96
+guid: f07afbad5c044454f81da5645cd67802
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5069711869990309482
-    second: fogueiraApagada_0
+      213: -999450782744874932
+    second: arqueiroSentando_0
   - first:
-      213: -178387556017679780
-    second: fogueiraApagada_1
+      213: -7026911705489796759
+    second: arqueiroSentando_1
+  - first:
+      213: -7850148412926484483
+    second: arqueiroSentando_2
+  - first:
+      213: -6986504363318376762
+    second: arqueiroSentando_3
+  - first:
+      213: -1694013486836165782
+    second: arqueiroSentando_4
+  - first:
+      213: -622516785393911277
+    second: arqueiroSentando_5
+  - first:
+      213: -7658131694369434112
+    second: arqueiroSentando_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,7 +144,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fogueiraApagada_0
+      name: arqueiroSentando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69175ab2ae3c4a9b0800000000000000
-      internalID: -5069711869990309482
+      spriteID: c407104fecc3122f0800000000000000
+      internalID: -999450782744874932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogueiraApagada_1
+      name: arqueiroSentando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -166,8 +181,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c525733867d368df0800000000000000
-      internalID: -178387556017679780
+      spriteID: 9611f36b8056b7e90800000000000000
+      internalID: -7026911705489796759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroSentando_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff9b6d3c9bae0390800000000000000
+      internalID: -7850148412926484483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroSentando_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c601b23c43fa0f90800000000000000
+      internalID: -6986504363318376762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroSentando_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63d86085b7ad78e0800000000000000
+      internalID: -1694013486836165782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroSentando_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ab0eb28406c57f0800000000000000
+      internalID: -622516785393911277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroSentando_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00613f96cc9d8b590800000000000000
+      internalID: -7658131694369434112
       vertices: []
       indices: 
       edges: []
@@ -176,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 67933ea527972b84b8ed6f3cf20506c8
+    spriteID: 23012d9844bb40f4ba77e5c4b729e2e1
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +311,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      fogueiraApagada_0: -5069711869990309482
-      fogueiraApagada_1: -178387556017679780
+      arqueiroSentando_0: -999450782744874932
+      arqueiroSentando_1: -7026911705489796759
+      arqueiroSentando_2: -7850148412926484483
+      arqueiroSentando_3: -6986504363318376762
+      arqueiroSentando_4: -1694013486836165782
+      arqueiroSentando_5: -622516785393911277
+      arqueiroSentando_6: -7658131694369434112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

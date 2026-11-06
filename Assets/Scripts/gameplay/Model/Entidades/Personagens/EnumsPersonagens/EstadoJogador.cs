@@ -5,6 +5,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens
     {
         Ocupado,
 
+        Sentado,
         Parado,
         Andando,        
         Interagindo,

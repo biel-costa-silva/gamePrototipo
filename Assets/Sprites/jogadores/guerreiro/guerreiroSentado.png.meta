@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: fddb0ad4388e10b4db5a98bebd555201
+guid: 953dc6e8bf042d04abe07fbb229a9623
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 346872583090013324
-    second: totemAtivada_0
+      213: -7086091989050044942
+    second: guerreiroSentado_0
   - first:
-      213: 7066116251383999569
-    second: totemAtivada_1
+      213: -2154014172647273847
+    second: guerreiroSentado_1
   - first:
-      213: 6325719420515719526
-    second: totemAtivada_2
+      213: -2421393622185464530
+    second: guerreiroSentado_2
   - first:
-      213: 5060736580542946832
-    second: totemAtivada_3
+      213: -4198198302361215075
+    second: guerreiroSentado_3
+  - first:
+      213: -567751983529982585
+    second: guerreiroSentado_4
+  - first:
+      213: -4716565909500755490
+    second: guerreiroSentado_5
+  - first:
+      213: -7989774981165635318
+    second: guerreiroSentado_6
+  - first:
+      213: 2515803832494678176
+    second: guerreiroSentado_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: totemAtivada_0
+      name: guerreiroSentado_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c840769c6c650d400800000000000000
-      internalID: 346872583090013324
+      spriteID: 2fd4ee231e429ad90800000000000000
+      internalID: -7086091989050044942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: totemAtivada_1
+      name: guerreiroSentado_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15cab51fa43ef0260800000000000000
-      internalID: 7066116251383999569
+      spriteID: 98ac33eb5876b12e0800000000000000
+      internalID: -2154014172647273847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: totemAtivada_2
+      name: guerreiroSentado_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66911a04c4879c750800000000000000
-      internalID: 6325719420515719526
+      spriteID: e2d2d38645b756ed0800000000000000
+      internalID: -2421393622185464530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: totemAtivada_3
+      name: guerreiroSentado_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +228,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01e56196b195b3640800000000000000
-      internalID: 5060736580542946832
+      spriteID: d9f9c1313e00db5c0800000000000000
+      internalID: -4198198302361215075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroSentado_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7850c2d3490fe18f0800000000000000
+      internalID: -567751983529982585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroSentado_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed18d747b446b8eb0800000000000000
+      internalID: -4716565909500755490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroSentado_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09a15c7cfd9e1190800000000000000
+      internalID: -7989774981165635318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guerreiroSentado_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a06960a14ee9e220800000000000000
+      internalID: 2515803832494678176
       vertices: []
       indices: 
       edges: []
@@ -226,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 33e0954fdfccc064faa87292fde8ace0
+    spriteID: 2ee1fc2dd902b4248bcd0d240cfabe8f
     internalID: 0
     vertices: []
     indices: 
@@ -236,12 +336,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      totemAtivada_0: 346872583090013324
-      totemAtivada_1: 7066116251383999569
-      totemAtivada_2: 6325719420515719526
-      totemAtivada_3: 5060736580542946832
+      guerreiroSentado_0: -7086091989050044942
+      guerreiroSentado_1: -2154014172647273847
+      guerreiroSentado_2: -2421393622185464530
+      guerreiroSentado_3: -4198198302361215075
+      guerreiroSentado_4: -567751983529982585
+      guerreiroSentado_5: -4716565909500755490
+      guerreiroSentado_6: -7989774981165635318
+      guerreiroSentado_7: 2515803832494678176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,8 +9,9 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
     {
         // Precisa de um Collider2D com "Is Trigger" marcado NO MESMO GameObject (igual ao Totem).
         public event Action<Item> OnColetado;
-
         private bool coletado = false;
+
+        string IInteracoes.nome { get; set; } = "item";
 
         // Não acessa nada da Unity de propósito: o jogador pode manter uma referência
         // a este item mesmo depois dele ser destruído.

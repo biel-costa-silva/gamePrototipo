@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos;
+using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
 using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
@@ -25,6 +26,8 @@ namespace Assets.Scripts.Gameplay.Controller
         //controles
         protected IControles controle;
         protected IInteracoes interagivelAtual;
+
+
         //variaveis de controle
         private bool estaSendoAlertado = false;
         private bool estaSendoDesarmado = false;
@@ -170,6 +173,22 @@ namespace Assets.Scripts.Gameplay.Controller
             estaSendoDesarmado = true;
             StartCoroutine(RotinaDesarmeForcado());
         }
+        private void TravarPorMenu()
+        {
+            fisica.Parar();   // não continua deslizando
+
+            if (estadoAtual == EstadoJogador.Andando)
+            {
+                DefinirEstado(EstadoJogador.Parado);
+                animacao.AnimacaoParado();
+            }
+            else if (estadoAtual == EstadoJogador.AndandoArmado)
+            {
+                DefinirEstado(EstadoJogador.ModoAtaque);
+                animacao.AnimacaoParadoArmado();
+            }
+            // Parado e ModoAtaque já estão parados
+        }
 
         // --------------------------------------------------------------
 
@@ -187,7 +206,17 @@ namespace Assets.Scripts.Gameplay.Controller
             interagivelAtual = fisica.GetInteragivelPendente();
 
             if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.Morto) return;
-
+            
+            if (GerenciadorInteracoes.menuAberto)
+            {
+                TravarPorMenu();
+                return;
+            }
+            // --- SENTADO ---
+            if (estadoAtual == EstadoJogador.Sentado)
+            {
+                //limita o personagem à interações com o canva na fogueira
+            }
             // --- PARADO ---
             if (estadoAtual == EstadoJogador.Parado)
             {
@@ -216,13 +245,12 @@ namespace Assets.Scripts.Gameplay.Controller
                 {                    
                     DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaInteracao());
-                    interagivelAtual.SofrerInteracao(jogador);
                     
                     return;
                 }
                 if (controle.ComandoInteracao() && interagivelAtual != null && !interagivelAtual.PodeSofrerInteracao())
                 {
-                    Debug.Log("[Interacao] tentou interagir sem poder");
+                    Debug.Log("[Interacao] tentou interagir sem poder");//aciona movimento de negação do icone
                     if (iconeInteracao != null) iconeInteracao.Tremer();
                 }
             }
@@ -283,6 +311,18 @@ namespace Assets.Scripts.Gameplay.Controller
                     DefinirEstado(EstadoJogador.Ocupado);
                     StartCoroutine(RotinaAtacando());
                     return;
+                }
+                if (controle.ComandoInteracao() && interagivelAtual != null && interagivelAtual.PodeSofrerInteracao())
+                {
+                    DefinirEstado(EstadoJogador.Ocupado);
+                    StartCoroutine(RotinaInteracao());
+
+                    return;
+                }
+                if (controle.ComandoInteracao() && interagivelAtual != null && !interagivelAtual.PodeSofrerInteracao())
+                {
+                    Debug.Log("[Interacao] tentou interagir sem poder");//aciona movimento de negação do icone
+                    if (iconeInteracao != null) iconeInteracao.Tremer();
                 }
             }
 
@@ -379,11 +419,51 @@ namespace Assets.Scripts.Gameplay.Controller
             DefinirEstado(EstadoJogador.Parado);
         }
         //
-        protected IEnumerator RotinaInteracao()
+        protected IEnumerator RotinaInteracao()//especificar o tipo da interação
         {
-            animacao.AnimacaoInteragindo();
-            yield return StartCoroutine(animacao.EsperarAnimacao());
-            DefinirEstado(EstadoJogador.Parado);
+            IInteracoes alvo = interagivelAtual;
+
+            if (estaArmado)
+            {
+                animacao.AnimacaoGuardandoArma();
+                yield return StartCoroutine(animacao.EsperarAnimacao());                
+            }
+
+            if(interagivelAtual.nome == "fogueira")
+            {
+                animacao.AnimacaoInteragindoFogueira();
+                interagivelAtual.SofrerInteracao(jogador);
+                yield return StartCoroutine(animacao.EsperarAnimacao()); //talvez não sirva nesse caso
+                DefinirEstado(EstadoJogador.Sentado);
+
+                yield break;
+            }
+            if (interagivelAtual.nome == "item")
+            {
+                animacao.AnimacaoInteragindoItem();
+                interagivelAtual.SofrerInteracao(jogador);
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                DefinirEstado(EstadoJogador.Parado);
+
+                yield break;
+            }
+            if(alvo is Totem)
+            {
+                GerenciadorInteracoes.instancia.PedirConfirmacao();
+
+                yield return new WaitUntil(() =>
+                    GerenciadorInteracoes.resposta != RespostaConfirmacao.Aguardando
+                    || GerenciadorPartida.jogoAcabou);
+
+                if (GerenciadorInteracoes.resposta != RespostaConfirmacao.Sim)
+                {
+                    DefinirEstado(EstadoJogador.Parado);   // "não": nada acontece
+                    yield break;
+                }
+
+                alvo.SofrerInteracao(jogador);                 // "sim": o totem é ativado    
+                DefinirEstado(EstadoJogador.Parado);
+            }            
         }
         //
         protected virtual IEnumerator RotinaAtacando()

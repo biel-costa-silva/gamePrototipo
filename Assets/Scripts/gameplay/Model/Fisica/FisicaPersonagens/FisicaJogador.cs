@@ -37,5 +37,10 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
                 ataqueADistancia.Inicializar(direcao);
             }
         }
+
+        public void Parar()
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        }
     }
 }
