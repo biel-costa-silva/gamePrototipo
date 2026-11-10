@@ -22,6 +22,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         private bool travada = false;
         private Vector3 destinoTravado;
 
+        private float yFixo;
 
         public void Awake()
         {
@@ -33,6 +34,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             float altura = cam.orthographicSize * 2f;// orthographicSize = metade da altura da câmera
             float largura = altura * cam.aspect; // aspect = largura da câmera
             metadeLargura = largura / 2f;
+
+            yFixo = transform.position.y;
         }
 
 
@@ -52,7 +55,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
                 Vector2 centro = (p1 + p2) / 2f;
 
                 //para onde a câmera se dirige 
-                destino = new Vector3(centro.x, centro.y, transform.position.z);
+                destino = new Vector3(centro.x, yFixo, transform.position.z);
                 destino.x = Mathf.Clamp(destino.x, minX, maxX);
             }
 
@@ -60,7 +63,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         }
         public void TravarCamera()//mudar isso
         {
-            Vector3 destino = new Vector3(totem.position.x, transform.position.y, transform.position.z);
+            Vector3 destino = new Vector3(totem.position.x, yFixo, transform.position.z);
             destino.x = Mathf.Clamp(destino.x, minX, maxX);
 
             destinoTravado = destino;
