@@ -11,6 +11,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         public Transform player1;
         public Transform player2;
 
+        public Transform totem;
+
         [Header("Limtes do mapa")]
         public float minX, maxX;
 
@@ -56,14 +58,9 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
             transform.position = Vector3.Lerp(transform.position, destino, suavidade * Time.deltaTime);
         }
-        public void TravarCamera()
+        public void TravarCamera()//mudar isso
         {
-            Vector2 p1 = player1.position;
-            Vector2 p2 = player2.position;
-
-            Vector2 centro = (p1 + p2) / 2f;
-
-            Vector3 destino = new Vector3(centro.x, centro.y, transform.position.z);
+            Vector3 destino = new Vector3(totem.position.x, transform.position.y, transform.position.z);
             destino.x = Mathf.Clamp(destino.x, minX, maxX);
 
             destinoTravado = destino;
