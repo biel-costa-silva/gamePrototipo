@@ -15,7 +15,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         string IInteracoes.nome { get; set; } = "totem";
         private AnimTotem animacao;
         private DestaqueInteracao destaque;
-       
+        private BoxCollider2D collider;
                 
         private readonly HashSet<ControladorJogador> presentes = new HashSet<ControladorJogador>();
         public event Action OnAtivado;
@@ -27,6 +27,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             animacao = GetComponent<AnimTotem>();
             if (animacao == null) animacao = gameObject.AddComponent<AnimTotem>();
             destaque = GetComponent<DestaqueInteracao>();   // novo
+            collider = GetComponent<BoxCollider2D>();
         }
 
 
@@ -39,6 +40,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             if (destaque != null) destaque.Esconder();
 
             animacao.AnimacaoAtivando();
+
+            collider.enabled = false;
             OnAtivado?.Invoke();
         }
 
@@ -76,6 +79,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             presentes.Clear();
             if (destaque != null) destaque.Esconder();
             animacao.AnimacaoDesativado();
+            collider.enabled = true;
         }
 
         private void AtualizarIcones()
