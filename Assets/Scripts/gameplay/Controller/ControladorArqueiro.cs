@@ -1,11 +1,12 @@
-﻿using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
-using Assets.Scripts.Gameplay.View.AnimacaoPersonagens;
-using System.Collections;
-using UnityEngine;
+﻿using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
-using Assets.Scripts.Gameplay.View.EntradaDados;
 using Assets.Scripts.Gameplay.Model.Entidades.Personagens.EnumsPersonagens;
-using Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos;
+using Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens;
+using Assets.Scripts.Gameplay.View.AnimacaoPersonagens;
+using Assets.Scripts.Gameplay.View.EntradaDados;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Scripts.Gameplay.Controller
 {
@@ -177,10 +178,27 @@ namespace Assets.Scripts.Gameplay.Controller
 
             fisicaArqueiro.PararRolagem();
             invulneravel = false;
-            fisicaArqueiro.AtravessarInimigos(false);
+            StartCoroutine(RotinaSaindoDosInimigos());
 
             yield return StartCoroutine(animArqueiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
+        }
+
+        private IEnumerator RotinaSaindoDosInimigos()
+        {
+            List<ControladorInimigo> sobrepostos = new List<ControladorInimigo>();
+
+            while (true)
+            {
+                sobrepostos.Clear();
+                bool aindaHa = fisicaArqueiro.AtualizarColisoesPosRolagem(sobrepostos);
+
+                foreach (ControladorInimigo inimigo in sobrepostos)
+                    inimigo.TentarDanoDeContato(this);   // dano normal, recuo para o lado
+
+                if (!aindaHa) yield break;
+                yield return new WaitForFixedUpdate();
+            }
         }
     }
 }

@@ -55,9 +55,12 @@ namespace Assets.Scripts.Gameplay.Controller
 
         private void OnCollisionStay2D(Collision2D col)
         {
-            if (estadoAtual == EstadoInimigo.Morto) return;
+            TentarDanoDeContato(col.collider.GetComponentInParent<ControladorJogador>());
+        }
 
-            ControladorJogador jogador = col.collider.GetComponentInParent<ControladorJogador>();
+        public void TentarDanoDeContato(ControladorJogador jogador)
+        {
+            if (estadoAtual == EstadoInimigo.Morto) return;
             if (jogador == null || jogador.estadoAtual == EstadoJogador.Morto) return;
 
             if (proximoToque.TryGetValue(jogador, out float liberaEm) && Time.time < liberaEm) return;

@@ -36,6 +36,28 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
                 pares.Clear();
             }
         }
+
+        public bool AtualizarColisoesPosRolagem(List<ControladorInimigo> sobrepostos)
+        {
+            for (int i = pares.Count - 1; i >= 0; i--)
+            {
+                var (meu, dele) = pares[i];
+                if (meu == null || dele == null) { pares.RemoveAt(i); continue; }
+
+                if (meu.Distance(dele).isOverlapped)
+                {
+                    ControladorInimigo inimigo = dele.GetComponentInParent<ControladorInimigo>();
+                    if (inimigo != null && !sobrepostos.Contains(inimigo)) sobrepostos.Add(inimigo);
+                }
+                else
+                {
+                    Physics2D.IgnoreCollision(meu, dele, false);   // livre: volta a colidir
+                    pares.RemoveAt(i);
+                }
+            }
+            return pares.Count > 0;
+        }
+
         public void SpawnarVFX(int indice)
         {
             float direcao = GetDirecao();
