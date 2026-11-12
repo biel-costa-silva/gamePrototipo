@@ -8,7 +8,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
     {
         [Header("Referências")]
         [SerializeField] private MinhaCamera cameraController;
-        [SerializeField] private Transform posicaoCanvasRound;
+        [SerializeField] private Transform posicaoCanvasRound; 
+        [SerializeField] private Transform posicaoDropItem;
         [SerializeField] private GameObject[] animacoesRound;
         [Tooltip("Distância além da borda da câmera onde o inimigo nasce. O Y do spawn é o do próprio GameObject do Spawner.")]
         [SerializeField] private float margemForaDaTela = 1.5f;
@@ -150,7 +151,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
                 cameraController.GetLimiteEsquerdo() + margemItemNaTela,
                 cameraController.GetLimiteDireito() - margemItemNaTela);
 
-            GameObject go = Instantiate(itemDoRound, new Vector3(x, transform.position.y, transform.position.z), Quaternion.identity);
+            GameObject go = Instantiate(itemDoRound, posicaoDropItem.position, Quaternion.identity);
             itemAtual = go.GetComponent<Item>();
 
             if (itemAtual == null)
@@ -160,6 +161,9 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
                 PrepararProximoRound();
                 return;
             }
+
+            float direcao = Random.value < 0.5f ? -1f : 1f;
+            itemAtual.Cuspir(direcao, transform.position.y);
 
             aguardandoItem = true;
             itemAtual.OnColetado += AoItemColetado;
