@@ -25,6 +25,7 @@ namespace Assets.Scripts.Gameplay.Controller
         [SerializeField] protected VidaUIController vidaUI;
         //controles
         protected IControles controle;
+        protected MonoBehaviour controleBehaviour;
         protected IInteracoes interagivelAtual;
 
 
@@ -66,12 +67,18 @@ namespace Assets.Scripts.Gameplay.Controller
             fisica = GetComponent<FisicaJogador>();
             animacao = GetComponent<ControladorAnim>();
             controle = GetComponent<IControles>();
+            controleBehaviour = controle as MonoBehaviour;
             iconeInteracao = GetComponentInChildren<IconeInteracaoJogador>();
 
             //cria o model
             jogador = CriarJogador();
             if (spriteRenderer != null) corBase = spriteRenderer.color;
 
+        }
+        protected void AtivarControles(bool ativo)
+        {
+            if (controleBehaviour != null)
+                controleBehaviour.enabled = ativo;
         }
         protected virtual Jogador CriarJogador()
         {
@@ -196,6 +203,9 @@ namespace Assets.Scripts.Gameplay.Controller
         {
             if (GerenciadorPausa.JogoPausado) return;
 
+
+
+
             HitBox golpe = fisica.ConsumirGolpePendente();
             if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {
@@ -212,6 +222,10 @@ namespace Assets.Scripts.Gameplay.Controller
                 TravarPorMenu();
                 return;
             }
+
+
+
+
             // --- SENTADO ---
             if (estadoAtual == EstadoJogador.Sentado)
             {
@@ -425,8 +439,10 @@ namespace Assets.Scripts.Gameplay.Controller
 
             if (estaArmado)
             {
+                AtivarControles(false);
                 animacao.AnimacaoGuardandoArma();
-                yield return StartCoroutine(animacao.EsperarAnimacao());                
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                DefinirEstado(EstadoJogador.Parado);
             }
 
             if(interagivelAtual.nome == "fogueira")
@@ -435,6 +451,7 @@ namespace Assets.Scripts.Gameplay.Controller
                 interagivelAtual.SofrerInteracao(jogador);
                 yield return StartCoroutine(animacao.EsperarAnimacao()); //talvez não sirva nesse caso
                 DefinirEstado(EstadoJogador.Sentado);
+                AtivarControles(true);
 
                 yield break;
             }
@@ -444,6 +461,7 @@ namespace Assets.Scripts.Gameplay.Controller
                 interagivelAtual.SofrerInteracao(jogador);
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 DefinirEstado(EstadoJogador.Parado);
+                AtivarControles(true);
 
                 yield break;
             }
@@ -463,6 +481,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
                 alvo.SofrerInteracao(jogador);                 // "sim": o totem é ativado    
                 DefinirEstado(EstadoJogador.Parado);
+                AtivarControles(true);
             }            
         }
         //

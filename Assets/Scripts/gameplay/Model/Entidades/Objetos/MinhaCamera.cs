@@ -38,7 +38,6 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             yFixo = transform.position.y;
         }
 
-
         void LateUpdate()
         {
             Vector3 destino;

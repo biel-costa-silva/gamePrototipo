@@ -72715,10 +72715,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guerreiro
       objectReference: {fileID: 0}
+    - target: {fileID: 6654632623966596378, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7084617555371837068, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: vidaUI
       value: 
       objectReference: {fileID: 838097168}
+    - target: {fileID: 7084617555371837068, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
