@@ -8,6 +8,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
     {
         [Header("Referências")]
         [SerializeField] private MinhaCamera cameraController;
+        [SerializeField] private Transform posicaoCanvasRound;
+        [SerializeField] private GameObject[] animacoesRound;
         [Tooltip("Distância além da borda da câmera onde o inimigo nasce. O Y do spawn é o do próprio GameObject do Spawner.")]
         [SerializeField] private float margemForaDaTela = 1.5f;
 
@@ -38,7 +40,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         [Tooltip("Pausa entre pegar o item e começar o próximo round.")]
         [SerializeField] private float pausaEntreRounds = 3f;
 
-        public int RodadaAtual { get; private set; } = 0;
+        public int rodadaAtual { get; private set; } = 0;
 
         private readonly List<GameObject> ordem = new List<GameObject>();   // todos os tipos, na ordem
         private readonly List<GameObject> vivos = new List<GameObject>();
@@ -73,7 +75,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         {
             if (ativo) return;
             ativo = true;
-            RodadaAtual = 0;
+            rodadaAtual = 0;
             aguardandoProximoRound = true;   // espera a pausa e começa o round 1
             timer = pausaEntreRounds;
         }
@@ -87,7 +89,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         {
             ativo = false;
             aguardandoItem = false;
-            RodadaAtual = 0;
+            rodadaAtual = 0;
             LimparItem();
             foreach (GameObject inimigo in vivos)
             {
@@ -114,7 +116,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
             if (aguardandoProximoRound)
             {
-                if (timer <= 0f) IniciarRound(RodadaAtual + 1);
+                if (timer <= 0f) IniciarRound(rodadaAtual + 1);
                 return;
             }
 
@@ -187,7 +189,10 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
         private void IniciarRound(int round)
         {
-            RodadaAtual = round;
+            rodadaAtual = round;
+            if (round - 1 < animacoesRound.Length)
+                Instantiate(animacoesRound[round - 1], posicaoCanvasRound.position, Quaternion.identity);
+
             aguardandoProximoRound = false;
             geradosNoRound = 0;
             timer = 0f;

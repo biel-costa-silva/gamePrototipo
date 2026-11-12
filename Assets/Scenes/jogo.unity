@@ -20522,6 +20522,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Model.Entidades.Objetos.SpawnerInimigos
   cameraController: {fileID: 519420033}
+  posicaoCanvasRound: {fileID: 1595404348}
+  animacoesRound:
+  - {fileID: 3591483079343926739, guid: a459232826e96a6428e64cf33662e8ea, type: 3}
+  - {fileID: 178565433221007089, guid: aedbeedfe020326408d3ca135302bba9, type: 3}
+  - {fileID: 6850826044157688177, guid: 348c505b6c037244e87ff8ea5a1a2962, type: 3}
+  - {fileID: 2274027041041390930, guid: 3913d63d8ce50d542864e4f7bfd7eb84, type: 3}
   margemForaDaTela: 1.5
   slime: {fileID: 7373606228935726819, guid: 0803b388edf93bb488ca78108c4af319, type: 3}
   goblin: {fileID: 0}
@@ -53311,6 +53317,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1899744805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1595404347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595404348}
+  m_Layer: 0
+  m_Name: posicao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1595404348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595404347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1597556439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1595626607
 GameObject:
   m_ObjectHideFlags: 0
@@ -53526,6 +53563,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1645659667}
+  - {fileID: 1595404348}
   m_Father: {fileID: 398985218}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1597556440
