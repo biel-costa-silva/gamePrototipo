@@ -80,7 +80,7 @@ namespace Assets.Scripts.Geral
             if (spawner != null) spawner.Iniciar();
         }
 
-        public void SalvarCheckpoint()
+        public void SalvarCheckpoint()//atualizar
         {
             checkpoint1 = player1.transform.position;
             checkpoint2 = player2.transform.position;
@@ -90,6 +90,7 @@ namespace Assets.Scripts.Geral
         {
             if (jogoAcabou) return;
             jogoAcabou = true;
+
             if (spawner != null) spawner.Parar();
 
             ControladorJogador outroJogador = (quemMorreu == player1) ? player2 : player1;
@@ -112,7 +113,7 @@ namespace Assets.Scripts.Geral
             textoTempoSobrevivido.text = $"tempo de sincronização {minutos:00}:{segundosRestantes:00}";
         }
 
-        public void ReiniciarAposGameOver()
+        public void ReiniciarAposGameOver()//atualizar
         {
             jogoAcabou = false;
 

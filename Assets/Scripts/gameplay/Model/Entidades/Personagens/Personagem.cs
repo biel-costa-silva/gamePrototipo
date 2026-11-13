@@ -13,7 +13,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
         protected float velocidadeBase;
 
         //flags
-        public bool sofreuAtaque { get; protected set; }
+        public bool sofreuAtaque { get; set; }
         public bool sofreuChoque { get; set; }
         public bool deCostas { get; set; }
 

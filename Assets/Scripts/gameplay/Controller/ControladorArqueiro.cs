@@ -65,45 +65,70 @@ namespace Assets.Scripts.Gameplay.Controller
 
         protected override IEnumerator RotinaAtacando()
         {
+            arqueiro.sofreuAtaque = false; // limpa flag velha, como no guerreiro
+            bool atingido = false;
+
             animacao.indiceAtaque = 2;
             animArqueiro.AnimacaoPuxando();
-            yield return StartCoroutine(animArqueiro.EsperarAnimacao());
+            yield return null;
 
-            // 2. Soltou durante a animação de puxar (antes mesmo de carregar)? -> ataque padrão
-            if (!controleArqueiro.ComandoAtaqueCarregando())
+            do
             {
-                yield return StartCoroutine(ExecutarAtaquePadrao());
-                yield break;
-            }
+                // 1. Puxando o arco
+                while (!animacao.animacaoTerminou && !(atingido = arqueiro.sofreuAtaque))
+                    yield return null;
+                if (atingido) break;
 
-            // 3. Já está em "Segurando" (automático). Agora cronometra a carga.
-            float tempoSegurando = 0f;
-            bool cargaPronta = false;
-
-            while (controleArqueiro.ComandoAtaqueCarregando())
-            {
-                tempoSegurando += Time.deltaTime;
-
-                if (!cargaPronta && tempoSegurando >= tempoParaCarregar)
+                // 2. Soltou antes de carregar -> ataque padrão
+                if (!controleArqueiro.ComandoAtaqueCarregando())
                 {
-                    cargaPronta = true;
-                    fisicaArqueiro.SpawnarVFX(indiceVfxCarregado); // sinal visual de "pronto"                    
+                    yield return StartCoroutine(ExecutarAtaquePadrao());
+                    yield break;
                 }
 
-                yield return null;
-            }
+                // 3. Carregando
+                float tempoSegurando = 0f;
+                bool cargaPronta = false;
 
-            // 4. Soltou o botão: decide o destino final
-            if (cargaPronta)
-            {
-                animArqueiro.AnimacaoDispararCarregado();                
+                while (controleArqueiro.ComandoAtaqueCarregando())
+                {
+                    if (atingido = arqueiro.sofreuAtaque) break;
+
+                    tempoSegurando += Time.deltaTime;
+
+                    if (!cargaPronta && tempoSegurando >= tempoParaCarregar)
+                    {
+                        cargaPronta = true;
+                        fisicaArqueiro.SpawnarVFX(indiceVfxCarregado);
+                    }
+                    yield return null;
+                }
+                if (atingido) break;
+
+                // 4. Soltou o botão
+                if (!cargaPronta)
+                {
+                    yield return StartCoroutine(ExecutarAtaquePadrao());
+                    yield break;
+                }
+
+                animArqueiro.AnimacaoDispararCarregado();
                 fisicaArqueiro.AplicarImpulsoAtaque(7);
-                yield return StartCoroutine(animArqueiro.EsperarAnimacao());
-                DefinirEstado(EstadoJogador.ModoAtaque); // AtaqueCarregado -> ModoAtaque já é automático no Animator, isso só sincroniza o C#
-            }
-            else
+                yield return null;
+
+                while (!animacao.animacaoTerminou && !(atingido = arqueiro.sofreuAtaque))
+                    yield return null;
+                if (atingido) break;
+
+                DefinirEstado(EstadoJogador.ModoAtaque);
+
+            } while (false);
+
+            // Único ponto de tratamento de dano
+            if (atingido)
             {
-                yield return StartCoroutine(ExecutarAtaquePadrao());
+                arqueiro.LimparFlagAtaque();
+                yield return StartCoroutine(RotinaSofrendoAtaqueArm());
             }
         }
 
