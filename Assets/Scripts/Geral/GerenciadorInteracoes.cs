@@ -23,18 +23,29 @@ namespace Assets.Scripts.Geral
         {
             instancia = this;
         }
+
+        private IEnumerator Start()
+        {
+            if (menuInteracaoTotem != null)
+                yield return StartCoroutine(menuInteracaoTotem.PreAquecer());
+
+            if (menuInteracaoFogueira != null)
+                yield return StartCoroutine(menuInteracaoFogueira.PreAquecer());
+        }
+
         private void Update()
         {
             if (GerenciadorPartida.jogoAcabou) return;
-            if (menuAberto && Input.GetKeyDown(KeyCode.Escape)) Responder(RespostaConfirmacao.Nao);
-            
-        }
+            if (menuAberto && Input.GetKeyDown(KeyCode.Escape)) Responder(RespostaConfirmacao.Nao);            
+        }        
+
         public void PedirConfirmacao()
         {
             resposta = RespostaConfirmacao.Aguardando;
             menuAberto = true;
             menuInteracaoTotem.Mostrar();
         }
+
         private void Responder(RespostaConfirmacao r)
         {
             if (!menuAberto) return;

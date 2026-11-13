@@ -6,18 +6,29 @@ using UnityEngine;
 public class FadeCanvas : MonoBehaviour
 {
     [SerializeField] private float duracao = 0.25f;
-    private CanvasGroup canvasGroup;
+    private CanvasGroup grupo;
+    private CanvasGroup canvasGroup => grupo != null ? grupo : (grupo = GetComponent<CanvasGroup>());
 
     private void Awake()
     {
-        canvasGroup = GetComponent<CanvasGroup>();
+        grupo = GetComponent<CanvasGroup>();
+    }
+    public IEnumerator PreAquecer()
+    {
+        gameObject.SetActive(true);              // Awake/OnEnable/layout rodam aqui
+        canvasGroup.alpha = 0.01f;               // quase invisível, mas ainda desenha
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+        Canvas.ForceUpdateCanvases();
+        yield return null;                       // 1 frame para o render montar tudo
+        canvasGroup.alpha = 0f;                  // corrige o bug 1
+        gameObject.SetActive(false);
     }
 
     public void Mostrar(Action aoTerminar = null)
     {
         if (gameObject.activeInHierarchy && canvasGroup.interactable)
-        {
-            // já está visível e interagível, não precisa fazer nada
+        {            
             aoTerminar?.Invoke();
             return;
         }
@@ -31,10 +42,10 @@ public class FadeCanvas : MonoBehaviour
     {
         if (!gameObject.activeInHierarchy)
         {
-            // já está escondido, não precisa fazer nada
             aoTerminar?.Invoke();
             return;
         }
+        canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         StopAllCoroutines();
         StartCoroutine(Fade(canvasGroup.alpha, 0f, false, aoTerminar));
