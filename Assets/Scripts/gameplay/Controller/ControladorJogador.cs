@@ -53,6 +53,7 @@ namespace Assets.Scripts.Gameplay.Controller
                 if (_estadoAtual == value) return;
                 _estadoAtual = value;
                 AtualizarArmado(value);
+                AtualizarAnimacaoDeAndar(value);
                 OnEstadoAlterado?.Invoke(this, _estadoAtual);
             }
         }
@@ -136,6 +137,25 @@ namespace Assets.Scripts.Gameplay.Controller
             fisica.AplicarGolpe(this, jogador.GetDano(), indice);
         }
 
+        private void AtualizarAnimacaoDeAndar(EstadoJogador estado)
+        {
+            if (animacao == null) return;
+
+            switch (estado)
+            {
+                case EstadoJogador.Parado:
+                case EstadoJogador.ModoAtaque:
+                    animacao.AnimacaoParado();           // isAndando = false
+                    animacao.AnimacaoParadoArmado();     // isAndandoArm = false
+                    break;
+                case EstadoJogador.Andando:
+                    animacao.AnimacaoParadoArmado();     // não pode estar "andando armado" também
+                    break;
+                case EstadoJogador.AndandoArmado:
+                    animacao.AnimacaoParado();
+                    break;
+            }
+        }
         public void MorrerForcado()
         {
             vidaUI.Decrementar(10);//gambiarra
@@ -411,6 +431,7 @@ namespace Assets.Scripts.Gameplay.Controller
         protected virtual IEnumerator RotinaDesarmeForcado()
         {
             DefinirEstado(EstadoJogador.Ocupado);
+            fisica.Parar();
             animacao.AnimacaoInterrogado();
 
             yield return StartCoroutine(animacao.EsperarAnimacao()); // reaproveita a rotina existente, que já termina em Parado
@@ -439,29 +460,28 @@ namespace Assets.Scripts.Gameplay.Controller
 
             if (estaArmado)
             {
-                AtivarControles(false);
                 animacao.AnimacaoGuardandoArma();
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 DefinirEstado(EstadoJogador.Parado);
+                animacao.AnimacaoForcarParado();
+                DefinirEstado(EstadoJogador.Ocupado);
             }
 
-            if(interagivelAtual.nome == "fogueira")
+            if(alvo is Fogueira)
             {
                 animacao.AnimacaoInteragindoFogueira();
-                interagivelAtual.SofrerInteracao(jogador);
+                alvo.SofrerInteracao(jogador);
                 yield return StartCoroutine(animacao.EsperarAnimacao()); //talvez não sirva nesse caso
                 DefinirEstado(EstadoJogador.Sentado);
-                AtivarControles(true);
 
                 yield break;
             }
-            if (interagivelAtual.nome == "item")
+            if (alvo is Item)
             {
                 animacao.AnimacaoInteragindoItem();
-                interagivelAtual.SofrerInteracao(jogador);
+                alvo.SofrerInteracao(jogador);
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 DefinirEstado(EstadoJogador.Parado);
-                AtivarControles(true);
 
                 yield break;
             }
@@ -473,15 +493,11 @@ namespace Assets.Scripts.Gameplay.Controller
                     GerenciadorInteracoes.resposta != RespostaConfirmacao.Aguardando
                     || GerenciadorPartida.jogoAcabou);
 
-                if (GerenciadorInteracoes.resposta != RespostaConfirmacao.Sim)
+                if (GerenciadorInteracoes.resposta == RespostaConfirmacao.Sim)
                 {
-                    DefinirEstado(EstadoJogador.Parado);   // "não": nada acontece
-                    yield break;
-                }
-
-                alvo.SofrerInteracao(jogador);                 // "sim": o totem é ativado    
+                    alvo.SofrerInteracao(jogador);
+                }                
                 DefinirEstado(EstadoJogador.Parado);
-                AtivarControles(true);
             }            
         }
         //

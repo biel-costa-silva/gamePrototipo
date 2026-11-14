@@ -54,7 +54,6 @@ namespace Assets.Scripts.Gameplay.Controller
                     StartCoroutine(RotinaRolando());
                     return;
                 }
-
             }
         }
 

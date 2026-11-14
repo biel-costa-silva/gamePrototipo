@@ -40,6 +40,15 @@ namespace Assets.Scripts.Gameplay.View
             animator.ResetTrigger("sofrerAtqDefendendo");
         }
 
+        public void AnimacaoForcarParado()
+        {
+            Debug.Log("passou por aqui ForcarParado");
+            ResetarTriggers();
+            animator.SetBool("isAndando", false);
+            animator.SetBool("isAndandoArm", false);
+            animator.Play("JogadorParado", 0, 0f);
+        }
+
         //Parâmetros
         public void AnimacaoParado() => animator.SetBool("isAndando", false);
         public void AnimacaoAndando(bool parametro) => animator.SetBool("isAndando", parametro);
