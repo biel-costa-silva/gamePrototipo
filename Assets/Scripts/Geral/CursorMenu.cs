@@ -6,16 +6,21 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class CursorMenu : MonoBehaviour
 {
+    public static CursorMenu instancia;
+
     [Tooltip("Marque na cena do menu principal. Na cena do jogo, deixe desmarcado.")]
     [SerializeField] private bool sempreAtivo = false;
     [SerializeField] private float velocidadeSlide = 14f;
 
+    [SerializeField] private Texture2D texturaCursor;
+    [SerializeField] private Vector2 pontaDoCursor = Vector2.zero;   // pixel da ponta, contado a partir do canto superior esquerdo
+
+
     private bool ativo;
     private bool deslizando;
+    private bool pedidoSincronizar;
     private Vector2 ultimaPosicaoDefinida;
     private GameObject ultimoSelecionado;
-
-    public static CursorMenu instancia;
 
 
     private void Awake()
@@ -23,40 +28,60 @@ public class CursorMenu : MonoBehaviour
         instancia = this;
         ativo = sempreAtivo;
         Cursor.visible = ativo;
+        Cursor.SetCursor(texturaCursor, pontaDoCursor, CursorMode.Auto);
     }
 
     public void Sincronizar()
     {
-        deslizando = true;
+        pedidoSincronizar = true;
+    }
+
+    private void OnApplicationFocus(bool temFoco)
+    {
+        if (temFoco) Cursor.visible = ativo;   // o Windows/Editor pode reexibir o cursor ao trocar de janela
     }
 
     private void Update()
     {
-        // ativo no menu principal, no pause e na confirmação do totem
         bool deve = sempreAtivo || GerenciadorPausa.JogoPausado || GerenciadorInteracoes.menuAberto;
         if (deve != ativo)
         {
             ativo = deve;
             deslizando = false;
         }
+
         if (Cursor.visible != ativo) Cursor.visible = ativo;
 
-        if (!ativo || Mouse.current == null || EventSystem.current == null) return;
+        if (!ativo || Mouse.current == null || EventSystem.current == null)
+        {
+            pedidoSincronizar = false;
+            return;
+        }
 
         EventSystem es = EventSystem.current;
         GameObject atual = es.currentSelectedGameObject;
         if (atual != null) ultimoSelecionado = atual;
 
-        // o jogador mexeu o mouse de verdade: o mouse assume o controle
         Vector2 posReal = Mouse.current.position.ReadValue();
+
+        // o jogador mexeu o mouse de verdade durante o deslize: o mouse assume
         if (deslizando && (posReal - ultimaPosicaoDefinida).sqrMagnitude > 25f)
             deslizando = false;
 
-        // apertou uma seta: o cursor desliza até o botão selecionado
+        // o que inicia um deslize: pedido do menu ou seta apertada
+        bool comecar = pedidoSincronizar;
+        pedidoSincronizar = false;
+
         if (SetaApertada())
         {
             if (atual == null && ultimoSelecionado != null)       // clicou no vazio e perdeu a seleção
                 es.SetSelectedGameObject(ultimoSelecionado);
+            comecar = true;
+        }
+
+        if (comecar)
+        {
+            if (!deslizando) ultimaPosicaoDefinida = posReal;      // ponto de partida correto
             deslizando = true;
         }
 
@@ -76,15 +101,14 @@ public class CursorMenu : MonoBehaviour
 
         Definir(nova);
     }
-    private void OnApplicationFocus(bool temFoco)
-    {
-        if (temFoco) Cursor.visible = ativo;   // o Windows/Editor pode reexibir o cursor ao trocar de janela
-    }
+    
 
     private bool SetaApertada()
     {
         return Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow)
-            || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow);
+            || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)
+            || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S)
+            || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D);
     }
 
     private void Definir(Vector2 pos)
