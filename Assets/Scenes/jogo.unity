@@ -5060,6 +5060,7 @@ GameObject:
   - component: {fileID: 255781523}
   - component: {fileID: 255781526}
   - component: {fileID: 255781525}
+  - component: {fileID: 255781527}
   m_Layer: 5
   m_Name: Pprincipal
   m_TagString: Untagged
@@ -5153,6 +5154,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &255781527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255781521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 2079804049}
 --- !u!114 &257146542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31619,6 +31633,7 @@ Transform:
   - {fileID: 9790610}
   - {fileID: 1770452572}
   - {fileID: 393356951}
+  - {fileID: 1718623070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &733285238
@@ -38150,7 +38165,7 @@ GameObject:
   - component: {fileID: 1171900544}
   - component: {fileID: 1171900543}
   m_Layer: 6
-  m_Name: Pprincipal
+  m_Name: Texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45071,6 +45086,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2482074268499292796, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
   m_PrefabInstance: {fileID: 1928731782}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1450699253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442549608898630486, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+  m_PrefabInstance: {fileID: 1928731782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &1456024997
 GameObject:
   m_ObjectHideFlags: 0
@@ -54339,6 +54365,7 @@ GameObject:
   - component: {fileID: 1645659670}
   - component: {fileID: 1645659669}
   - component: {fileID: 1645659673}
+  - component: {fileID: 1645659674}
   m_Layer: 6
   m_Name: menuTotem
   m_TagString: Untagged
@@ -54476,6 +54503,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1645659674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645659666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 1450699253}
 --- !u!213 &1661727814
 Sprite:
   m_ObjectHideFlags: 0
@@ -59861,6 +59901,52 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &1718623069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718623070}
+  - component: {fileID: 1718623071}
+  m_Layer: 0
+  m_Name: CursorMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1718623070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718623069}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 717951458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718623071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718623069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc0790407daab249b0bc4f6e04f436c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorMenu
+  sempreAtivo: 0
+  velocidadeSlide: 14
 --- !u!1 &1730051899
 GameObject:
   m_ObjectHideFlags: 0
@@ -61907,6 +61993,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2482074268499292796, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
   m_PrefabInstance: {fileID: 1819627975}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1819627980 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442549608898630486, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+  m_PrefabInstance: {fileID: 1819627975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &1837116987
 GameObject:
   m_ObjectHideFlags: 0
@@ -70949,6 +71046,17 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!114 &2079804049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442549608898630486, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+  m_PrefabInstance: {fileID: 178391398}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!213 &2083027554
 Sprite:
   m_ObjectHideFlags: 0
@@ -71172,6 +71280,7 @@ GameObject:
   - component: {fileID: 2090478398}
   - component: {fileID: 2090478400}
   - component: {fileID: 2090478401}
+  - component: {fileID: 2090478402}
   m_Layer: 5
   m_Name: Popcoes
   m_TagString: Untagged
@@ -71267,6 +71376,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeCanvas
   duracao: 0.25
+--- !u!114 &2090478402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090478396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 1819627980}
 --- !u!1 &2104134791
 GameObject:
   m_ObjectHideFlags: 0

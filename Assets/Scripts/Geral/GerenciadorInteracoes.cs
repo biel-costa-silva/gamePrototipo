@@ -18,7 +18,6 @@ namespace Assets.Scripts.Geral
         [SerializeField] private FadeCanvas menuInteracaoTotem;
         [SerializeField] private FadeCanvas menuInteracaoFogueira;
 
-
         private void Awake()
         {
             instancia = this;
@@ -40,7 +39,7 @@ namespace Assets.Scripts.Geral
         }        
 
         public void PedirConfirmacao()
-        {
+        {            
             resposta = RespostaConfirmacao.Aguardando;
             menuAberto = true;
             menuInteracaoTotem.Mostrar();

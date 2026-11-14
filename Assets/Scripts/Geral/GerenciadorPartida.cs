@@ -32,7 +32,7 @@ namespace Assets.Scripts.Geral
         private void Awake()
         {
             instancia = this;
-        }
+        }        
 
         private void OnEnable()
         {

@@ -1248,6 +1248,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08e4317ba0000fc49aa8fb6c9685a2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BotaoAnimado
+--- !u!1 &412430163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412430165}
+  - component: {fileID: 412430164}
+  m_Layer: 0
+  m_Name: CursorMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &412430164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412430163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc0790407daab249b0bc4f6e04f436c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorMenu
+  sempreAtivo: 1
+  velocidadeSlide: 14
+--- !u!4 &412430165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412430163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 85.52682, y: -1.83829, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &439495372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1732,6 +1778,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1084005103}
   m_SourcePrefab: {fileID: 100100000, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+--- !u!114 &439495373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442549608898630486, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+  m_PrefabInstance: {fileID: 439495372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084005101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &461849907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4156,6 +4213,7 @@ GameObject:
   - component: {fileID: 750916081}
   - component: {fileID: 750916082}
   - component: {fileID: 750916083}
+  - component: {fileID: 750916084}
   m_Layer: 5
   m_Name: MenuPrincipal
   m_TagString: Untagged
@@ -4212,6 +4270,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeCanvas
   duracao: 0.5
+--- !u!114 &750916084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750916080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 533481659008558778}
 --- !u!224 &750998124 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2482074268499292796, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
@@ -6757,6 +6828,7 @@ GameObject:
   - component: {fileID: 1210789010}
   - component: {fileID: 1210789011}
   - component: {fileID: 1210789012}
+  - component: {fileID: 1210789013}
   m_Layer: 5
   m_Name: MenuOpcoes
   m_TagString: Untagged
@@ -6813,6 +6885,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeCanvas
   duracao: 0.25
+--- !u!114 &1210789013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210789009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 439495373}
 --- !u!1 &1258983516
 GameObject:
   m_ObjectHideFlags: 0
@@ -9766,6 +9851,7 @@ GameObject:
   - component: {fileID: 1918648495}
   - component: {fileID: 1918648496}
   - component: {fileID: 1918648497}
+  - component: {fileID: 1918648498}
   m_Layer: 5
   m_Name: MenuVolume
   m_TagString: Untagged
@@ -9821,6 +9907,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeCanvas
   duracao: 0.25
+--- !u!114 &1918648498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918648494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35189a59482dd478c15979cb43ee60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecionarAoAbrir
+  primeiroBotao: {fileID: 1675486336}
 --- !u!1 &1959042364
 GameObject:
   m_ObjectHideFlags: 0
@@ -11019,6 +11118,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 639935552}
   m_SourcePrefab: {fileID: 100100000, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+--- !u!114 &533481659008558778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442549608898630486, guid: 9c733feb5639c154a863d69d90d46401, type: 3}
+  m_PrefabInstance: {fileID: 533481659008558777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &2932331286047633903 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 374879034174474194, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
@@ -11109,3 +11219,4 @@ SceneRoots:
   - {fileID: 2042847379}
   - {fileID: 562269789}
   - {fileID: 5433588058620622279}
+  - {fileID: 412430165}

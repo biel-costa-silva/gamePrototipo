@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Geral
@@ -8,6 +9,13 @@ namespace Assets.Scripts.Geral
         public static bool JogoPausado { get; private set; } = false;
 
         [SerializeField] private FadeCanvas menuPausa;
+
+        private IEnumerator Start()
+        {
+            if (menuPausa != null)
+                yield return StartCoroutine(menuPausa.PreAquecer());
+            
+        }
 
         private void Update()
         {
