@@ -35,6 +35,15 @@ TextureImporter:
   - first:
       213: -4304069988902006763
     second: arqueiroColetandoItem_10
+  - first:
+      213: -5937747324852957612
+    second: arqueiroColetandoItem_11
+  - first:
+      213: 8332222518646430648
+    second: arqueiroColetandoItem_12
+  - first:
+      213: 1364830644230246429
+    second: arqueiroColetandoItem_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -397,11 +406,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: arqueiroColetandoItem_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db92ab6b94393041b0b2a1a80635d68
+      internalID: -5937747324852957612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d8e96799b75c9304fa7dfbc2e5f3220f
+    spriteID: 1e0f25673b97be64790fd957c13dd2fb
     internalID: 0
     vertices: []
     indices: 
@@ -411,11 +442,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       arqueiroColetandoItem_0: 8737626796463673743
       arqueiroColetandoItem_1: -4228085229835733996
       arqueiroColetandoItem_10: -4304069988902006763
+      arqueiroColetandoItem_11: -5937747324852957612
       arqueiroColetandoItem_2: 8902318734681481471
       arqueiroColetandoItem_3: 4891423191013719093
       arqueiroColetandoItem_4: -4277705236646880176
