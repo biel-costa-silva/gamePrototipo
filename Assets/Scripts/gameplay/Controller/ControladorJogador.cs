@@ -479,6 +479,7 @@ namespace Assets.Scripts.Gameplay.Controller
             if (alvo is Item)
             {
                 animacao.AnimacaoInteragindoItem();
+                yield return new WaitForSeconds(0.5f);
                 alvo.SofrerInteracao(jogador);
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 DefinirEstado(EstadoJogador.Parado);

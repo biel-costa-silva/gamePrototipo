@@ -179,7 +179,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2032
+        width: 1781
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -191,6 +191,50 @@ TextureImporter:
       bones: []
       spriteID: 9deb9ed828d4f0360800000000000000
       internalID: 7138009157527518937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente1_1
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 0
+        width: 251
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f874d3dc5fee49944bb1ab3b4ca96
+      internalID: -303719107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente1_2
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 0
+        width: 173
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c52d68f1c3cb2498045e401be12c3c
+      internalID: 1491775587
       vertices: []
       indices: 
       edges: []
@@ -212,6 +256,8 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2032.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       frente1_0: 7138009157527518937
+      frente1_1: -303719107
+      frente1_2: 1491775587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

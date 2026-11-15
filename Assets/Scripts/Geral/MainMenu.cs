@@ -95,6 +95,5 @@ public class MainMenu : MonoBehaviour
 
         yield return null;
         GerenciadorMusicas.instancia.TocarMusica("Menu");
-
     }
 }
