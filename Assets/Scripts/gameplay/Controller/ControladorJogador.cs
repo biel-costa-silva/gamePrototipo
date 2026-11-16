@@ -474,10 +474,28 @@ namespace Assets.Scripts.Gameplay.Controller
 
             if(alvo is Fogueira)
             {
-                animacao.AnimacaoInteragindoFogueira();
-                alvo.SofrerInteracao(jogador);
-                yield return StartCoroutine(animacao.EsperarAnimacao()); //talvez não sirva nesse caso
+                Fogueira alvoAtual = alvo as Fogueira;
+                animacao.AnimacaoInteragindoFogueira();                
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                
                 DefinirEstado(EstadoJogador.Sentado);
+                alvoAtual.SofrerInteracao(jogador);
+
+                GerenciadorInteracoes.instancia.PedirConfirmacao();
+
+                yield return new WaitUntil(() =>
+                    GerenciadorInteracoes.resposta != RespostaConfirmacao.Aguardando
+                    || GerenciadorPartida.jogoAcabou);
+
+                if (GerenciadorInteracoes.resposta == RespostaConfirmacao.Sim)
+                {
+                    alvoAtual.ListarMemorias();
+                }
+                //
+                //
+                animacao.AnimacaoLevantando();
+                yield return StartCoroutine(animacao.EsperarAnimacao());
+                DefinirEstado(EstadoJogador.Parado);
 
                 yield break;
             }

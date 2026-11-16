@@ -18,7 +18,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         private bool jaAtivado = false;
         private readonly HashSet<ControladorJogador> presentes = new HashSet<ControladorJogador>();
 
-        string IInteracoes.nome { get; set; } = "fogueira";
+        string IInteracoes.nome { get; set; } = "fogueira";//tirar depois tambem na interface
 
         private void Awake()
         {
@@ -72,14 +72,25 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
 
 
-
         public void SofrerInteracao(Jogador jogador)
-        {           
+        {                       
+            if (jaAtivado) return;
+
             animacao.animacaoInspencionar();//chamar 
+            jaAtivado = true;
+            DefinirIconesDeTodos(EstadoIconeInteracao.Nenhum);
+            if (destaque != null) destaque.Esconder();
+
+            //collider.enabled = false;
+            //OnAtivado?.Invoke();
         }
         public void SairInteracao()
         {
             animacao.animacaoVoltar();
+        }
+        public void ListarMemorias()
+        {
+            Debug.Log("Listagem de memórias");
         }
 
         public bool PodeSofrerInteracao()

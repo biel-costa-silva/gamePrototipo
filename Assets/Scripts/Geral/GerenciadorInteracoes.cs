@@ -13,10 +13,13 @@ namespace Assets.Scripts.Geral
         public static RespostaConfirmacao resposta { get; private set; }
 
         public static bool totemInteragido { get; set; } = false;
+        public static bool fogueiraInteragido { get; set; } = false;
         public static bool confirmacaoDeInteracao { get; private set; } = false;
+
 
         [SerializeField] private FadeCanvas menuInteracaoTotem;
         [SerializeField] private FadeCanvas menuInteracaoFogueira;
+
 
         private void Awake()
         {
@@ -43,6 +46,7 @@ namespace Assets.Scripts.Geral
             resposta = RespostaConfirmacao.Aguardando;
             menuAberto = true;
             menuInteracaoTotem.Mostrar();
+            menuInteracaoFogueira.Mostrar();
         }
 
         private void Responder(RespostaConfirmacao r)
@@ -51,9 +55,11 @@ namespace Assets.Scripts.Geral
             resposta = r;                // fica guardada até o próximo pedido
             menuAberto = false;
             menuInteracaoTotem.Esconder();
+            menuInteracaoFogueira.Esconder();
         }
 
         public void BotaoSim() { Responder(RespostaConfirmacao.Sim); }
         public void BotaoNao() { Responder(RespostaConfirmacao.Nao); }
+
     }
 }
