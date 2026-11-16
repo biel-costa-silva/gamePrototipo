@@ -10,9 +10,6 @@ namespace Assets.Scripts.Gameplay.View.EntradaDados
 
 		//Jogadores
 		public bool ComandoSaqueArma();
-		
-		//Guerreiro
-
-		//Arqueiro
+		bool bloqueado { get; set; }
 	}
 }

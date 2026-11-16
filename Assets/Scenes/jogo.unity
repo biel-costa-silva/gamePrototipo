@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1bd2a0140e30243af7eef7130c638e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.GerenciadorPausa
+  controleArqueiro: {fileID: 8407182187933017779}
+  controleGuerreiro: {fileID: 7138768640420163610}
   menuPausa: {fileID: 1519809351}
 --- !u!213 &10934478
 Sprite:
@@ -81588,6 +81590,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a422160e338d5f346bd6e057949f6113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorGuerreiro
+--- !u!114 &7138768640420163610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6654632623966596378, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+  m_PrefabInstance: {fileID: 2287725985368274279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff952d6561c86ef438b5e52ddc83a590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.EntradaDados.ControlesGuerreiro
 --- !u!4 &8407182187933017769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
@@ -81604,6 +81617,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b39b8a22f28bfc4a9c366def765349d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Controller.ControladorArqueiro
+--- !u!114 &8407182187933017779 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8211192065883485698, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+  m_PrefabInstance: {fileID: 7118842511746470945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d8fc245d8414cc4b9018f718f3b5050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.EntradaDados.ControlesArqueiro
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

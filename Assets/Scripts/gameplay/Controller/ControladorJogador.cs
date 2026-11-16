@@ -78,8 +78,13 @@ namespace Assets.Scripts.Gameplay.Controller
         }
         protected void AtivarControles(bool ativo)
         {
-            if (controleBehaviour != null)
-                controleBehaviour.enabled = ativo;
+            controle.bloqueado = !ativo;
+
+            if (!ativo)
+            {
+                // zera o que o Animator ficou guardando
+                animacao.ResetarParametrosMovimento();
+            }
         }
         protected virtual Jogador CriarJogador()
         {
