@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0f3fbf19fa5d9340849694a1d69e486
-      internalID: 1795464603
+      spriteID: 2c226182a01734744a82d3e75c239338
+      internalID: -16751775
       vertices: []
       indices: 
       edges: []
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7788672be38da9b4abb01b10af9dcdde
-      internalID: -846837259
+      spriteID: e40952c7cadede04fa2f0e1218ffd73a
+      internalID: -1269490920
       vertices: []
       indices: 
       edges: []
@@ -207,8 +207,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4cea71b10e964439a83eda46e3698c
-      internalID: 22250031
+      spriteID: 33296cba02ed8c242976fb5f3db26090
+      internalID: 1179840598
       vertices: []
       indices: 
       edges: []
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d424d66f7a78da043a5e81c90be11713
-      internalID: -1348305695
+      spriteID: e7ddebd36fbfc7a4ab93a22d18324efe
+      internalID: 1544761955
       vertices: []
       indices: 
       edges: []
@@ -251,8 +251,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24a5cfd36c57bed4a842d77cf3232d0c
-      internalID: -877955567
+      spriteID: 07f0443ba412dd54ab52fb763f871535
+      internalID: -546622053
       vertices: []
       indices: 
       edges: []
@@ -261,7 +261,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8091729ed4a320447b698c2c80efd020
+    spriteID: 2ac76bb97d8e9934899ace680f577127
     internalID: 0
     vertices: []
     indices: 
@@ -274,11 +274,11 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       VFXslimeDanoAr_0: 17209279917723881
-      VFXslimeDanoAr_1: 1795464603
-      VFXslimeDanoAr_2: -846837259
-      VFXslimeDanoAr_3: 22250031
-      VFXslimeDanoAr_4: -1348305695
-      VFXslimeDanoAr_5: -877955567
+      VFXslimeDanoAr_1: -16751775
+      VFXslimeDanoAr_2: -1269490920
+      VFXslimeDanoAr_3: 1179840598
+      VFXslimeDanoAr_4: 1544761955
+      VFXslimeDanoAr_5: -546622053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -37,5 +37,10 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
 
             return danoFinal;
         }
+        public void EventoVFXIsolado()
+        {
+            float direcao = GetDirecao();
+
+        }
     }
 }

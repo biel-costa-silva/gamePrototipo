@@ -197,6 +197,13 @@ AnimationClip:
     floatParameter: 0.01
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: SpawnarVFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 10
+    messageOptions: 0
   - time: 0.5
     functionName: OnAnimacaoTerminou
     data: 

@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bebeadc2b708046889fb1701d9cdb2
-      internalID: -535192124
+      spriteID: fb13ddca7d8f74c4380e32a008fb7404
+      internalID: -510236117
       vertices: []
       indices: 
       edges: []
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6719a5b5ca09ee040a464d8ad714b8ec
-      internalID: -2071826049
+      spriteID: 84d1fa554c17df6409973eea87ba3bdc
+      internalID: -504670844
       vertices: []
       indices: 
       edges: []
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba7279adc2d67d14a94fc68046f30115
-      internalID: 1714198781
+      spriteID: ad8ec80755e043a4f82099459295c81e
+      internalID: 937675949
       vertices: []
       indices: 
       edges: []
@@ -279,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42eb2ac7f05cd3b4688dc62b4a52c368
-      internalID: 380368993
+      spriteID: f345f8fee838c4d47a88f978eb2d3b09
+      internalID: 153126552
       vertices: []
       indices: 
       edges: []
@@ -301,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd22a7fd73585dd4e8eb29a24f585319
-      internalID: 1121866156
+      spriteID: 40e3963de7281ae4f9a873f26e1f316f
+      internalID: -199386145
       vertices: []
       indices: 
       edges: []
@@ -323,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 439c0d4898972b045b8824086f5e52ea
-      internalID: -684564294
+      spriteID: f0d2438e78e87d442bd930a7a80b7958
+      internalID: -1046129660
       vertices: []
       indices: 
       edges: []
@@ -345,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b9ba3ac65d3874d8d0156873e1f7b8
-      internalID: -1711150023
+      spriteID: 8a8b626d09c714b4db3578bc4225942c
+      internalID: -1028964763
       vertices: []
       indices: 
       edges: []
@@ -367,30 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c63eb5063387ec94fb1ea3cf53c420cc
-      internalID: -1879830983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VFXSlimeExplosaoBola2_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c06375c7a64518444b8cd20e2ddc5294
-      internalID: 547001232
+      spriteID: 59058839fc2d6204eb8bd088a846b06a
+      internalID: -347903726
       vertices: []
       indices: 
       edges: []
@@ -399,7 +377,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d3ecf56356cbf884d8e93603e7866be9
+    spriteID: f4a851d3f5290bb42be2d872cede354b
     internalID: 0
     vertices: []
     indices: 
@@ -413,16 +391,15 @@ TextureImporter:
     nameFileIdTable:
       VFXSlimeExplosaoBola2_0: 3184293962946029934
       VFXSlimeExplosaoBola2_1: -3246769754711572809
-      VFXSlimeExplosaoBola2_10: -1879830983
-      VFXSlimeExplosaoBola2_11: 547001232
+      VFXSlimeExplosaoBola2_10: -347903726
       VFXSlimeExplosaoBola2_2: 6523392399283451982
-      VFXSlimeExplosaoBola2_3: -535192124
-      VFXSlimeExplosaoBola2_4: -2071826049
-      VFXSlimeExplosaoBola2_5: 1714198781
-      VFXSlimeExplosaoBola2_6: 380368993
-      VFXSlimeExplosaoBola2_7: 1121866156
-      VFXSlimeExplosaoBola2_8: -684564294
-      VFXSlimeExplosaoBola2_9: -1711150023
+      VFXSlimeExplosaoBola2_3: -510236117
+      VFXSlimeExplosaoBola2_4: -504670844
+      VFXSlimeExplosaoBola2_5: 937675949
+      VFXSlimeExplosaoBola2_6: 153126552
+      VFXSlimeExplosaoBola2_7: -199386145
+      VFXSlimeExplosaoBola2_8: -1046129660
+      VFXSlimeExplosaoBola2_9: -1028964763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

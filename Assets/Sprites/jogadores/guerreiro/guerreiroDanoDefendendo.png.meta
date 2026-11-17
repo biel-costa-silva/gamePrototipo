@@ -23,6 +23,21 @@ TextureImporter:
   - first:
       213: -5505040220196677001
     second: guerreiroDanoDefendendo_6
+  - first:
+      213: -519795923094412854
+    second: guerreiroDanoDefendendo_7
+  - first:
+      213: 244798512148652274
+    second: guerreiroDanoDefendendo_8
+  - first:
+      213: -6492086355854556895
+    second: guerreiroDanoDefendendo_9
+  - first:
+      213: -46673714209251412
+    second: guerreiroDanoDefendendo_10
+  - first:
+      213: 56576579479367096
+    second: guerreiroDanoDefendendo_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -301,7 +316,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 27db6406729af1245b83a15df8630ef3
+    spriteID: 7a8c7dcb605b90e4abfb43a9d70aee93
     internalID: 0
     vertices: []
     indices: 

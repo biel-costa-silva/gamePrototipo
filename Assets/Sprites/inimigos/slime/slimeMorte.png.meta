@@ -338,8 +338,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd8fb8a78a288c41964fae5e0bef3cb
-      internalID: -1208298958
+      spriteID: 6ddf6016007b7f74ea779d7fc8433499
+      internalID: 1738181444
       vertices: []
       indices: 
       edges: []
@@ -360,8 +360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4976d6bcf4aea164c865793fd9287655
-      internalID: -1561949318
+      spriteID: 56e30ae5a9e36ee47bb5363c0c0ff229
+      internalID: 2058384104
       vertices: []
       indices: 
       edges: []
@@ -382,8 +382,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0325d54e574be614fa50e85fc4e3b622
-      internalID: -1765164326
+      spriteID: 549eb36a83866fc4b8b2d03124347bbf
+      internalID: 320865108
       vertices: []
       indices: 
       edges: []
@@ -404,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df3699db14db584dbeab0a8d8e5e389
-      internalID: -230566067
+      spriteID: 0f85b8799a4f6fa4fb60014bc288bee8
+      internalID: -1600634210
       vertices: []
       indices: 
       edges: []
@@ -414,7 +414,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 172e03e3b7255fa4bb3342e15224a2e6
+    spriteID: f81aed73bbe66004881d00df78d70428
     internalID: 0
     vertices: []
     indices: 
@@ -428,16 +428,16 @@ TextureImporter:
     nameFileIdTable:
       slimeMorte_0: 321606291170001918
       slimeMorte_1: -4205089780736170385
-      slimeMorte_10: -1765164326
-      slimeMorte_11: -230566067
+      slimeMorte_10: 320865108
+      slimeMorte_11: -1600634210
       slimeMorte_2: -6441450837096896328
       slimeMorte_3: -4716464716822608689
       slimeMorte_4: -5362015002204452440
       slimeMorte_5: -1273700979043543348
       slimeMorte_6: 6954512476903369387
       slimeMorte_7: -7415374896830947170
-      slimeMorte_8: -1208298958
-      slimeMorte_9: -1561949318
+      slimeMorte_8: 1738181444
+      slimeMorte_9: 2058384104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
