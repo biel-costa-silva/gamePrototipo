@@ -82155,7 +82155,7 @@ PrefabInstance:
       objectReference: {fileID: 2350678801349393078}
     - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: prefabsVFX.Array.size
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: 'prefabsVFX.Array.data[3]'
@@ -82189,6 +82189,22 @@ PrefabInstance:
       propertyPath: 'prefabsVFX.Array.data[10]'
       value: 
       objectReference: {fileID: 4298945489767472227, guid: 2524cbfd66dbb044a98fdf954b194966, type: 3}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[11]'
+      value: 
+      objectReference: {fileID: 2625676194394051702, guid: 925e7c8de4a0f74418b27c728ae63dc6, type: 3}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[12]'
+      value: 
+      objectReference: {fileID: 274779811302703892, guid: 5a2861afb7daa5f4988596c0fd6c18f1, type: 3}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[13]'
+      value: 
+      objectReference: {fileID: 555199940889544990, guid: 457fae9a359b8ee42a0ecb410d98d02d, type: 3}
+    - target: {fileID: 1364221102708959252, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[14]'
+      value: 
+      objectReference: {fileID: 296877380562141560, guid: 602388abbf771124ab9ad35ae046fb60, type: 3}
     - target: {fileID: 3114379907548003659, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.52
@@ -82295,9 +82311,45 @@ PrefabInstance:
       propertyPath: boxColliderP2
       value: 
       objectReference: {fileID: 7138768640420163600}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: multiplicadorRolagem
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: prefabsVFX.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5573874692177650454, guid: ce6250521438bcb468e5bd6195b10a76, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[2]'
+      value: 
+      objectReference: {fileID: 178058478225583605, guid: c8c11fcc6d496c54b8b0e0e994b83978, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4796034560138429877, guid: d4d9c8fe0f1750a4c97e0c9b31605400, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4677070361783498353, guid: 17da13694bbe2944682c6145e8ec994b, type: 3}
+    - target: {fileID: 2276151647627783177, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: 'prefabsVFX.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8558506701188003192, guid: e78c01e0db23afd40ae87dcee5b05b9a, type: 3}
     - target: {fileID: 3126009905939436823, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_Name
       value: Arqueiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004033451021288734, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004033451021288734, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82339,10 +82391,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056795795139508211, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 8826681123410267996, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: vidaUI
       value: 
       objectReference: {fileID: 1028368356}
+    - target: {fileID: 8826681123410267996, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: duracaoRolagem
+      value: 0.52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

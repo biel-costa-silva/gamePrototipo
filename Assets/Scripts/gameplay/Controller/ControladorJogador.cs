@@ -324,7 +324,7 @@ namespace Assets.Scripts.Gameplay.Controller
             // --- MODO ATAQUE ---
             if (estadoAtual == EstadoJogador.ModoAtaque)
             {
-                jogador.SetVelocidade(jogador.GetVelocidadeBase() + 2);
+                jogador.SetVelocidade(jogador.GetVelocidadeBase() + 2.7f);
                 animacao.AnimacaoParadoArmado();
 
                 if (jogador.sofreuAtaque)

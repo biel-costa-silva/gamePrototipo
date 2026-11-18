@@ -46,7 +46,7 @@ namespace Assets.Scripts.Gameplay.Controller
             
             if (estadoAtual == EstadoJogador.ModoAtaque || estadoAtual == EstadoJogador.AndandoArmado)
             {
-                arqueiro.SetVelocidade(arqueiro.GetVelocidadeBase() + 3);
+                arqueiro.SetVelocidade(arqueiro.GetVelocidadeBase() + 3.7f);
 
                 if (controleArqueiro.ComandoRolar())
                 {

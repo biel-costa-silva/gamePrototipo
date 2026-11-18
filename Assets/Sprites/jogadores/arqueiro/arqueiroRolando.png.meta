@@ -20,15 +20,6 @@ TextureImporter:
   - first:
       213: 4186616355215391515
     second: arqueiroRolando_5
-  - first:
-      213: 4316783499060549866
-    second: arqueiroRolando_6
-  - first:
-      213: -3824558479431208889
-    second: arqueiroRolando_7
-  - first:
-      213: -8480015681200730781
-    second: arqueiroRolando_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -295,10 +286,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae895c998bb48eb30800000000000000
-      internalID: 4316783499060549866
+      spriteID: 7b4a1abd158eb7242a5bff8327c22c7a
+      internalID: -660384318
       vertices: []
       indices: 
       edges: []
@@ -317,10 +308,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7407bca83507ceac0800000000000000
-      internalID: -3824558479431208889
+      spriteID: fa6999f72e4eea647b2169d24c6a5ae5
+      internalID: -1014274634
       vertices: []
       indices: 
       edges: []
@@ -339,10 +330,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 36dc940caaee05a80800000000000000
-      internalID: -8480015681200730781
+      spriteID: f76da5ba5022dc14f9eb28eeefef6f4a
+      internalID: -318522093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arqueiroRolando_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c0a0f304d2afe4bbe29e796d88f89e
+      internalID: 253508238
       vertices: []
       indices: 
       edges: []
@@ -351,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d5b0f19672b99a34fbbaf7fde54c4b63
+    spriteID: 335b663a515dc2849bbe32c6eb1aab48
     internalID: 0
     vertices: []
     indices: 
@@ -361,7 +374,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       arqueiroRolando_0: 6850311587120874544
       arqueiroRolando_1: -2653400009413378549
@@ -369,9 +382,10 @@ TextureImporter:
       arqueiroRolando_3: -3061635538113906063
       arqueiroRolando_4: 5055373192567895483
       arqueiroRolando_5: 4186616355215391515
-      arqueiroRolando_6: 4316783499060549866
-      arqueiroRolando_7: -3824558479431208889
-      arqueiroRolando_8: -8480015681200730781
+      arqueiroRolando_6: -660384318
+      arqueiroRolando_7: -1014274634
+      arqueiroRolando_8: -318522093
+      arqueiroRolando_9: 253508238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

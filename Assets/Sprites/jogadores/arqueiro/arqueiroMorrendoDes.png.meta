@@ -56,6 +56,15 @@ TextureImporter:
   - first:
       213: -7356343041390986382
     second: arqueiroMorrendoDes_17
+  - first:
+      213: -9202448368037456796
+    second: arqueiroMorrendoDes_18
+  - first:
+      213: 108246693961015750
+    second: arqueiroMorrendoDes_19
+  - first:
+      213: 7587265035678723114
+    second: arqueiroMorrendoDes_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -576,7 +585,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 81e00d1717bde7848a39d1c6e1bb931f
+    spriteID: 11e2d66fcdcb2d34d8f6da11dc6c5698
     internalID: 0
     vertices: []
     indices: 
