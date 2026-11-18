@@ -213,6 +213,13 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.25
+    functionName: SpawnarVFX
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 6
+    messageOptions: 0
+  - time: 0.25
     functionName: EventoAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
