@@ -101,6 +101,7 @@ namespace Assets.Scripts.Gameplay.Controller
                 case EstadoJogador.Agachado:
                 case EstadoJogador.Atacando:
                     estaArmado = true; break;
+                case EstadoJogador.Sentado:
                 case EstadoJogador.Parado:
                 case EstadoJogador.Andando:
                     estaArmado = false; break;                    
@@ -255,6 +256,7 @@ namespace Assets.Scripts.Gameplay.Controller
             if (estadoAtual == EstadoJogador.Sentado)
             {
                 //limita o personagem à interações com o canva na fogueira
+                return;
             }
             // --- PARADO ---
             if (estadoAtual == EstadoJogador.Parado)
@@ -459,6 +461,22 @@ namespace Assets.Scripts.Gameplay.Controller
             DefinirEstado(EstadoJogador.Parado);
         }
         //
+        public void LevantarDaFogueira()
+        {
+            if (estadoAtual == EstadoJogador.Sentado)
+            {
+                StartCoroutine(RotinaLevantandoDaFogueira());
+            }
+        }
+
+        private IEnumerator RotinaLevantandoDaFogueira()
+        {
+            DefinirEstado(EstadoJogador.Ocupado);
+            animacao.AnimacaoLevantando();
+            yield return StartCoroutine(animacao.EsperarAnimacao());
+            DefinirEstado(EstadoJogador.Parado);
+        }
+
         protected IEnumerator RotinaInteracao()//especificar o tipo da interação
         {
             IInteracoes alvo = interagivelAtual;
@@ -479,23 +497,8 @@ namespace Assets.Scripts.Gameplay.Controller
                 yield return StartCoroutine(animacao.EsperarAnimacao());
                 
                 DefinirEstado(EstadoJogador.Sentado);
-                alvoAtual.SofrerInteracao(jogador);
-
-                GerenciadorInteracoes.instancia.PedirConfirmacao();
-
-                yield return new WaitUntil(() =>
-                    GerenciadorInteracoes.resposta != RespostaConfirmacao.Aguardando
-                    || GerenciadorPartida.jogoAcabou);
-
-                if (GerenciadorInteracoes.resposta == RespostaConfirmacao.Sim)
-                {
-                    alvoAtual.ListarMemorias();
-                }
-                //
-                //
-                animacao.AnimacaoLevantando();
-                yield return StartCoroutine(animacao.EsperarAnimacao());
-                DefinirEstado(EstadoJogador.Parado);
+                fisica.Parar();
+                alvoAtual.Interagir(this);
 
                 yield break;
             }
