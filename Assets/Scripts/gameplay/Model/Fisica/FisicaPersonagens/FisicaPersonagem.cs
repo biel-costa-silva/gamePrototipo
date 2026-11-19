@@ -85,6 +85,11 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             DefinirOlhar(direcaoGolpe > 0);
         }
 
+        public void OlharPara(float posX)
+        {
+            DefinirOlhar(posX < transform.position.x);
+        }
+
 
         //correcao de colliders
         public void TrocarOffsetX(float novoValor)

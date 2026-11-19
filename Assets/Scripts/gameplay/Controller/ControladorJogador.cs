@@ -114,12 +114,12 @@ namespace Assets.Scripts.Gameplay.Controller
 
         public void ReceberGolpe(HitBox golpe)
         {
-            if (golpe == null || golpe.consumida) return;
+            if (golpe == null || golpe.consumida || estadoAtual == EstadoJogador.Sentado) return;
             ProcessarDano(golpe);
         }
         protected virtual void ProcessarDano(HitBox golpe)
         {            
-            if (invulneravel) return;//ignora golpe enquanto vulneravel
+            if (invulneravel || estadoAtual == EstadoJogador.Sentado) return;//ignora golpe enquanto vulneravel ou sentado
 
             bool deCosta = fisica.EstaDeCostas(golpe.direcao);
 
@@ -235,8 +235,15 @@ namespace Assets.Scripts.Gameplay.Controller
             HitBox golpe = fisica.ConsumirGolpePendente();
             if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {
-                Debug.Log($"Controller processando golpe. Consumida: {golpe.consumida}");
-                ProcessarDano(golpe);
+                if (estadoAtual == EstadoJogador.Sentado)
+                {
+                    // Sentado na fogueira: imune a dano e empurrões de golpes (sem fogo amigo)
+                }
+                else
+                {
+                    Debug.Log($"Controller processando golpe. Consumida: {golpe.consumida}");
+                    ProcessarDano(golpe);
+                }
             }
 
             interagivelAtual = fisica.GetInteragivelPendente();
@@ -461,6 +468,14 @@ namespace Assets.Scripts.Gameplay.Controller
             DefinirEstado(EstadoJogador.Parado);
         }
         //
+        public void OlharPara(float posX)
+        {
+            if (fisica != null)
+            {
+                fisica.OlharPara(posX);
+            }
+        }
+
         public void LevantarDaFogueira()
         {
             if (estadoAtual == EstadoJogador.Sentado)

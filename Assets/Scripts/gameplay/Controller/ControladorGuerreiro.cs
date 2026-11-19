@@ -75,7 +75,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
         protected override void ProcessarDano(HitBox golpe)
         {
-            if (invulneravel)
+            if (invulneravel || estadoAtual == EstadoJogador.Sentado)
             {
                 Debug.Log("Dano ignorado: invulnerável");
                 return;

@@ -13,7 +13,6 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
     {
         [SerializeField] private GameObject efeitoFogueira; // filho da Fogueira na hierarquia, animações separadas
         [SerializeField] private MenuFogueiraUI menuUI;
-        [SerializeField] private Transform[] pontosDeAssento; // Opcional: posições ao lado do fogo para cada jogador
 
         private AnimEfeitoFogueira animacao;
         private DestaqueInteracao destaque;
@@ -83,7 +82,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             if (c == null) return;
 
             presentes.Add(c);
-            if (destaque != null) destaque.Mostrar();
+            AtualizarDestaque();
             AtualizarIcones();
         }
 
@@ -92,11 +91,46 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             ControladorJogador c = other.GetComponent<ControladorJogador>();
             if (c == null) return;
 
+            // Se o jogador está sentado na fogueira, ele não "saiu" da interação
+            if (sentados.Contains(c)) return;
+
             DefinirIcone(c, EstadoIconeInteracao.Nenhum);
             presentes.Remove(c);
 
-            if (presentes.Count == 0 && destaque != null) destaque.Esconder();
+            AtualizarDestaque();
             AtualizarIcones();
+        }
+
+        private void AtualizarDestaque()
+        {
+            if (destaque == null) return;
+
+            // Se já temos 2 sentados, ninguém mais pode interagir
+            if (sentados.Count >= 2)
+            {
+                destaque.Esconder();
+                return;
+            }
+
+            // O destaque só brilha se houver pelo menos um jogador presente que ainda NÃO sentou
+            bool temJogadorApto = false;
+            foreach (ControladorJogador c in presentes)
+            {
+                if (c != null && !sentados.Contains(c))
+                {
+                    temJogadorApto = true;
+                    break;
+                }
+            }
+
+            if (temJogadorApto)
+            {
+                destaque.Mostrar();
+            }
+            else
+            {
+                destaque.Esconder();
+            }
         }
 
         private void AtualizarIcones()
@@ -142,17 +176,17 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             {
                 sentados.Add(controlador);
 
-                // Opcional: posiciona o jogador no ponto de assento correspondente
-                int indiceAssento = sentados.Count - 1;
-                if (pontosDeAssento != null && indiceAssento < pontosDeAssento.Length && pontosDeAssento[indiceAssento] != null)
+                // Vira o jogador para olhar na direção da fogueira sem teleportar
+                controlador.OlharPara(transform.position.x);
+
+                // Dispara o efeito de inspecionar apenas no primeiro jogador a sentar
+                if (sentados.Count == 1 && animacao != null)
                 {
-                    Vector3 posAssento = pontosDeAssento[indiceAssento].position;
-                    controlador.transform.position = new Vector3(posAssento.x, controlador.transform.position.y, controlador.transform.position.z);
+                    animacao.animacaoInspencionar();
                 }
             }
 
-            if (animacao != null) animacao.animacaoInspencionar();
-
+            AtualizarDestaque();
             AtualizarIcones();
 
             bool ambosSentados = sentados.Count >= 2;
@@ -172,6 +206,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
         public void LevantarTodos()
         {
+            if (sentados.Count == 0) return;
+
             List<ControladorJogador> listaParaLevantar = new List<ControladorJogador>(sentados);
             sentados.Clear();
 
@@ -193,6 +229,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
                 animacao.animacaoVoltar();
             }
 
+            AtualizarDestaque();
             AtualizarIcones();
         }
 
@@ -217,7 +254,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         {
             LevantarTodos();
             presentes.Clear();
-            if (destaque != null) destaque.Esconder();
+            AtualizarDestaque();
         }
     }
 }
