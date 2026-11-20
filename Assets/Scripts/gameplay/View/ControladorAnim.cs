@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Gameplay.Controller;
+using Assets.Scripts.Geral;
 using System.Collections;
 using UnityEngine;
 
@@ -161,6 +162,11 @@ namespace Assets.Scripts.Gameplay.View
         {
             ResetarTriggers();
             animacaoTerminou = true;
+        }
+
+        public virtual void IniciarSomFrame(string nome)
+        {
+            GerenciadorAudio.instancia.TocarAudio2D(nome);
         }
 
         //COMBOS!
