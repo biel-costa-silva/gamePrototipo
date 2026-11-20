@@ -26,32 +26,30 @@ namespace Assets.Scripts.Geral
 
 
             if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (JogoPausado)
-                {
-                    controleArqueiro.Ligar();
-                    controleGuerreiro.Ligar();
-                    Retomar();
-                }
+            {                
+                if (JogoPausado) Retomar();        
 
-                else
-                {
-                    controleArqueiro.Desligar();
-                    controleGuerreiro.Desligar();
-                    Pausar();
-                }
+                else Pausar();
             }
         }
 
         public void Pausar()
-        {            
+        {
+            GerenciadorAudio.instancia.TocarAudio2D("entrarMenu");
+
+            controleArqueiro.Desligar();
+            controleGuerreiro.Desligar();
             JogoPausado = true;
             Time.timeScale = 0f;
             menuPausa.Mostrar();
         }
 
         public void Retomar()
-        {            
+        {
+            GerenciadorAudio.instancia.TocarAudio2D("sairMenu");
+
+            controleArqueiro.Ligar();
+            controleGuerreiro.Ligar();
             JogoPausado = false;
             menuPausa.Esconder();
             Time.timeScale = 1f;
