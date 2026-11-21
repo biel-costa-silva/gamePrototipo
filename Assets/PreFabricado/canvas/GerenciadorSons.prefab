@@ -56,6 +56,17 @@ MonoBehaviour:
   - grupoID: click
     clips:
     - {fileID: 8300000, guid: 2770b490a4e1d68429a694e023024eee, type: 3}
+  - grupoID: entrarMenu
+    clips:
+    - {fileID: 8300000, guid: a078e22d231af974688e79241dd37c9a, type: 3}
+  - grupoID: sairMenu
+    clips:
+    - {fileID: 8300000, guid: b06e9cea37cd4f74192fd15acd4a3caa, type: 3}
+  - grupoID: andando
+    clips:
+    - {fileID: 8300000, guid: 7353813234645354986811cc5a76807c, type: 3}
+    - {fileID: 8300000, guid: 777873332fef58b49a38d570bd5d6090, type: 3}
+    - {fileID: 8300000, guid: 76ed3bf803e1b4c4d9d58aebdf4ab8eb, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +82,8 @@ MonoBehaviour:
   trilhas:
   - nomeTrilha: Menu
     clip: {fileID: 8300000, guid: bab9a8857fccdd943a058675daf8363c, type: 3}
+  - nomeTrilha: Caverna
+    clip: {fileID: 0}
 --- !u!114 &374879034174474194
 MonoBehaviour:
   m_ObjectHideFlags: 0
