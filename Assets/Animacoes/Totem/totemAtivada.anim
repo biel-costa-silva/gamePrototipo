@@ -89,7 +89,7 @@ AnimationClip:
     - time: 2.75
       value: {fileID: 51521137, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - time: 2.8333333
-      value: {fileID: 475753508, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
+      value: {fileID: 51521137, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - time: 2.9166667
       value: {fileID: -438035924, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - time: 3
@@ -154,7 +154,7 @@ AnimationClip:
     - {fileID: -1938607512, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - {fileID: 359530333, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - {fileID: 51521137, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
-    - {fileID: 475753508, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
+    - {fileID: 51521137, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - {fileID: -438035924, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - {fileID: -280760097, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
     - {fileID: 1369991389, guid: dc55ae6737d11474890dc84ca4a92987, type: 3}
@@ -183,4 +183,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: IniciarSom3D
+    data: totemAtivado
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

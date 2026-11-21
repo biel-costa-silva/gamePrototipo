@@ -64,9 +64,18 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b06e9cea37cd4f74192fd15acd4a3caa, type: 3}
   - grupoID: andando
     clips:
-    - {fileID: 8300000, guid: 7353813234645354986811cc5a76807c, type: 3}
-    - {fileID: 8300000, guid: 777873332fef58b49a38d570bd5d6090, type: 3}
-    - {fileID: 8300000, guid: 76ed3bf803e1b4c4d9d58aebdf4ab8eb, type: 3}
+    - {fileID: 8300000, guid: 569e9c1df44bb954d985e6a9e59f62e2, type: 3}
+    - {fileID: 8300000, guid: 933bb96144eead04bb53060e7b6a1e66, type: 3}
+    - {fileID: 8300000, guid: 4fab225d3c0b03e4a990428f622f9d2a, type: 3}
+  - grupoID: fogo
+    clips:
+    - {fileID: 8300000, guid: 3262a15d8f2b21341a90caf1baddb6cb, type: 3}
+  - grupoID: ativarTotem
+    clips:
+    - {fileID: 8300000, guid: 342416625f515fb4a90e6b4c6098987b, type: 3}
+  - grupoID: totemAtivado
+    clips:
+    - {fileID: 8300000, guid: 2d87b8c1cb1e6fa4a80f0c88d98c3a92, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BibliotecaTrilhas
   trilhas:
   - nomeTrilha: Menu
-    clip: {fileID: 8300000, guid: bab9a8857fccdd943a058675daf8363c, type: 3}
+    clip: {fileID: 8300000, guid: 97e395e2051b31145b8a66308670c3d7, type: 3}
   - nomeTrilha: Caverna
     clip: {fileID: 0}
 --- !u!114 &374879034174474194

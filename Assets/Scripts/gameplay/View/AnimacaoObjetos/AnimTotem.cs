@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Geral;
+using UnityEngine;
 
 namespace Assets.Scripts.Gameplay.View.AnimacaoObjetos
 {
@@ -17,6 +18,6 @@ namespace Assets.Scripts.Gameplay.View.AnimacaoObjetos
         public void AnimacaoDesativado()
         {
             animator.Play("totemDesativado", 0, 0f);
-        }
+        }        
     }
 }

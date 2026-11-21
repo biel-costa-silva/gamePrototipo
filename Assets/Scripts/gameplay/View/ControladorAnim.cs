@@ -164,11 +164,15 @@ namespace Assets.Scripts.Gameplay.View
             animacaoTerminou = true;
         }
 
-        public virtual void IniciarSomFrame(string nome)
+        public virtual void IniciarSom2D(string nome)
         {
             GerenciadorAudio.instancia.TocarAudio2D(nome);
         }
 
+        public virtual void IniciarSom3D(string nome)
+        {
+            GerenciadorAudio.instancia.TocarAudio3D(nome, transform.position);
+        }
         //COMBOS!
         public void JanelaNovoAtq()
         {

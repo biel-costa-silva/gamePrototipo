@@ -256,5 +256,6 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             presentes.Clear();
             AtualizarDestaque();
         }
+
     }
 }

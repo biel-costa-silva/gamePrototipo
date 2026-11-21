@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8056795795139508211}
   - component: {fileID: 4004033451021288734}
   - component: {fileID: 636199802341530527}
-  - component: {fileID: 6328330944929577198}
   - component: {fileID: 8211192065883485698}
   - component: {fileID: 2276151647627783177}
   - component: {fileID: 8826681123410267996}
@@ -207,21 +206,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6328330944929577198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3126009905939436823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ea49c9e3a0375b4993a6077a7c2d3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.View.AnimacaoPersonagens.AnimArqueiro
-  controller: {fileID: 0}
-  animacaoTerminou: 0
-  novoAtaque: 1
 --- !u!114 &8211192065883485698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +291,6 @@ MonoBehaviour:
   duracaoInvulneravel: 1.2
   intervaloTransicao: 0.2
   corEscura: {r: 0.16862746, g: 0.16862746, b: 0.16862746, a: 1}
-  corOriginal: {r: 0, g: 0, b: 0, a: 0}
   duracaoRolagem: 0.45
   tempoParaCarregar: 1.2
   indiceVfxCarregado: 0
