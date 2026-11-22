@@ -76,6 +76,9 @@ MonoBehaviour:
   - grupoID: totemAtivado
     clips:
     - {fileID: 8300000, guid: 2d87b8c1cb1e6fa4a80f0c88d98c3a92, type: 3}
+  - grupoID: round
+    clips:
+    - {fileID: 8300000, guid: d9b6cd5d8fed3f441bf23081807de014, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

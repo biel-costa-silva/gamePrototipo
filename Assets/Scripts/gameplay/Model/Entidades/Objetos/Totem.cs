@@ -21,6 +21,26 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
         public event Action OnAtivado;
         private bool jaAtivado = false;
 
+        [SerializeField] private AudioSource fonteLoop;
+        [SerializeField] private AudioSource fonteEfeito;
+        [SerializeField] private AudioClip somAtivar;
+
+        // Animation Event no primeiro frame da animação de ativar
+        public void TocarAtivar()
+        {
+            fonteEfeito.PlayOneShot(somAtivar);
+        }
+
+        // Animation Event no fim da animação de ativar
+        public void IniciarLoop()
+        {
+            if (!fonteLoop.isPlaying)
+                fonteLoop.Play();
+        }
+        public void PararLoop()
+        {
+            fonteLoop.Stop();
+        }
 
         private void Awake()
         {

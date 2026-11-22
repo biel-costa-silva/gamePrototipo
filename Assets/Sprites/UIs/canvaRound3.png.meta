@@ -137,21 +137,6 @@ TextureImporter:
   - first:
       213: -1166904629317604469
     second: canvaRound3_44
-  - first:
-      213: 5944323790216819087
-    second: canvaRound3_45
-  - first:
-      213: 7112291256708405960
-    second: canvaRound3_46
-  - first:
-      213: -6795601179308418124
-    second: canvaRound3_47
-  - first:
-      213: -7945912809363126317
-    second: canvaRound3_48
-  - first:
-      213: -4044365177958935089
-    second: canvaRound3_49
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -219,7 +204,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -602,253 +587,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: canvaRound3_15
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb96990261642e910800000000000000
-      internalID: 1865130256534956475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_16
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2c22dd636ed86000800000000000000
-      internalID: 29517916203527211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_17
-      rect:
-        serializedVersion: 2
-        x: 1632
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7636e59f90f3b8620800000000000000
-      internalID: 2777382907275010919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_18
-      rect:
-        serializedVersion: 2
-        x: 1728
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db603d8e6b9e12d60800000000000000
-      internalID: 7863823396165060285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_19
-      rect:
-        serializedVersion: 2
-        x: 1824
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bc910f5cee67c320800000000000000
-      internalID: 2578151273178176688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_20
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b66c9a47a8ba4a690800000000000000
-      internalID: -7591754460688693653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_21
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ec4a8ea5402e8d10800000000000000
-      internalID: 2129675157445954785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_22
-      rect:
-        serializedVersion: 2
-        x: 2112
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c8396d5d5b0baf10800000000000000
-      internalID: 2281930131820329156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_23
-      rect:
-        serializedVersion: 2
-        x: 2208
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dce5e280978bf5000800000000000000
-      internalID: 26942952755322573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_24
-      rect:
-        serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f862d41f09bc23650800000000000000
-      internalID: 6211250659481429647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: canvaRound3_25
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c3ba1a798ecc4ab0800000000000000
-      internalID: -5022412394570533950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c34ccb8fe707efb4db60766bce8ca94f
+    spriteID: da7d110ee5a083e40bb161b898ec289f
     internalID: 0
     vertices: []
     indices: 
@@ -858,7 +601,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":26.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":15.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       canvaRound3_0: -6612759114119671487
       canvaRound3_1: -6433848803061052795
@@ -867,18 +610,7 @@ TextureImporter:
       canvaRound3_12: 7623511106777815928
       canvaRound3_13: 2763257378468659210
       canvaRound3_14: -1552613603298570999
-      canvaRound3_15: 1865130256534956475
-      canvaRound3_16: 29517916203527211
-      canvaRound3_17: 2777382907275010919
-      canvaRound3_18: 7863823396165060285
-      canvaRound3_19: 2578151273178176688
       canvaRound3_2: -8828600367067368647
-      canvaRound3_20: -7591754460688693653
-      canvaRound3_21: 2129675157445954785
-      canvaRound3_22: 2281930131820329156
-      canvaRound3_23: 26942952755322573
-      canvaRound3_24: 6211250659481429647
-      canvaRound3_25: -5022412394570533950
       canvaRound3_3: -5574765056511230415
       canvaRound3_4: -6521095530583730475
       canvaRound3_5: -3849331447636075688
