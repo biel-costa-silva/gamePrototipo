@@ -93,6 +93,9 @@ MonoBehaviour:
   - grupoID: saqueEspada
     clips:
     - {fileID: 8300000, guid: a3b2ec20c5a389943bae7edb92ad127b, type: 3}
+  - grupoID: guardarEspada
+    clips:
+    - {fileID: 8300000, guid: d09a38c1695d36541b260dec83397744, type: 3}
   - grupoID: corte1
     clips:
     - {fileID: 8300000, guid: 41138d116fce11a4eb7392563746ad29, type: 3}
@@ -111,6 +114,9 @@ MonoBehaviour:
   - grupoID: movCorte3
     clips:
     - {fileID: 8300000, guid: a7e40823af615d64d987726de06b9fb7, type: 3}
+  - grupoID: defender
+    clips:
+    - {fileID: 8300000, guid: 8912bf2c6d0423645a9c0b2c25d6bfe4, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -62708,32 +62708,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: efeitosSonoros.Array.size
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: efeitosSonoros.Array.data[17].grupoID
-      value: corte3
+      propertyPath: efeitosSonoros.Array.data[20].grupoID
+      value: defender
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: efeitosSonoros.Array.data[18].grupoID
-      value: movCorte3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: efeitosSonoros.Array.data[17].clips.Array.size
+      propertyPath: efeitosSonoros.Array.data[20].clips.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: efeitosSonoros.Array.data[18].clips.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: 'efeitosSonoros.Array.data[17].clips.Array.data[0]'
+      propertyPath: 'efeitosSonoros.Array.data[20].clips.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 124bad87996bbe14a9cda241a25d04fb, type: 3}
-    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: 'efeitosSonoros.Array.data[18].clips.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: a7e40823af615d64d987726de06b9fb7, type: 3}
+      objectReference: {fileID: 8300000, guid: 8912bf2c6d0423645a9c0b2c25d6bfe4, type: 3}
     - target: {fileID: 7551340323471449104, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.83874
