@@ -117,6 +117,15 @@ MonoBehaviour:
   - grupoID: defender
     clips:
     - {fileID: 8300000, guid: 8912bf2c6d0423645a9c0b2c25d6bfe4, type: 3}
+  - grupoID: sofrerAtqDef
+    clips:
+    - {fileID: 8300000, guid: 9906173fa35755c41a37426627d538ab, type: 3}
+  - grupoID: repelir
+    clips:
+    - {fileID: 8300000, guid: 0e587434a883b0f4abab2612043f4bc3, type: 3}
+  - grupoID: choque
+    clips:
+    - {fileID: 8300000, guid: 5f0835d4f8bac5047a9fea1f8f7c2c83, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,10 +139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BibliotecaTrilhas
   trilhas:
-  - nomeTrilha: Menu
-    clip: {fileID: 8300000, guid: 97e395e2051b31145b8a66308670c3d7, type: 3}
   - nomeTrilha: Caverna
     clip: {fileID: 0}
+  - nomeTrilha: Menu
+    clip: {fileID: 8300000, guid: 97e395e2051b31145b8a66308670c3d7, type: 3}
 --- !u!114 &374879034174474194
 MonoBehaviour:
   m_ObjectHideFlags: 0

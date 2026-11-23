@@ -281,6 +281,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.083333336
+    functionName: IniciarSom3D
+    data: andando
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
     functionName: SpawnarVFX
     data: 
     objectReferenceParameter: {fileID: 0}
