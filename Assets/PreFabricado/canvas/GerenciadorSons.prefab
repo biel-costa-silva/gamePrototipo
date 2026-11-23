@@ -93,6 +93,24 @@ MonoBehaviour:
   - grupoID: saqueEspada
     clips:
     - {fileID: 8300000, guid: a3b2ec20c5a389943bae7edb92ad127b, type: 3}
+  - grupoID: corte1
+    clips:
+    - {fileID: 8300000, guid: 41138d116fce11a4eb7392563746ad29, type: 3}
+  - grupoID: movCorte1
+    clips:
+    - {fileID: 8300000, guid: 112e254e40ad86648b597fecf38d772a, type: 3}
+  - grupoID: corte2
+    clips:
+    - {fileID: 8300000, guid: 967d2177abab20e478893e6fee62c31a, type: 3}
+  - grupoID: movCorte2
+    clips:
+    - {fileID: 8300000, guid: b9b502b650e9b2b4288b5dd303e6cf66, type: 3}
+  - grupoID: corte3
+    clips:
+    - {fileID: 8300000, guid: 124bad87996bbe14a9cda241a25d04fb, type: 3}
+  - grupoID: movCorte3
+    clips:
+    - {fileID: 8300000, guid: a7e40823af615d64d987726de06b9fb7, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
