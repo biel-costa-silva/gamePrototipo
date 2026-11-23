@@ -87,6 +87,12 @@ MonoBehaviour:
   - grupoID: sofrerDano
     clips:
     - {fileID: 8300000, guid: cc72ff8d8c974b54d801ac34a3f4c7c8, type: 3}
+  - grupoID: morrer
+    clips:
+    - {fileID: 8300000, guid: e1cc9671b25a49245b1d422d98da0c87, type: 3}
+  - grupoID: saqueEspada
+    clips:
+    - {fileID: 8300000, guid: a3b2ec20c5a389943bae7edb92ad127b, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

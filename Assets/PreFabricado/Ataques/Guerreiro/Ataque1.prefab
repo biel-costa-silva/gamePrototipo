@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 182831397068786562}
   - component: {fileID: -4162755869848621190}
   - component: {fileID: 778464220967622538}
+  - component: {fileID: 7284130597553125759}
   m_Layer: 0
   m_Name: ataque1
   m_TagString: Untagged
@@ -203,3 +204,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Jogabilidade.Mundo.HitBox
   consumida: 0
+--- !u!114 &7284130597553125759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688417427016420097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abce9571a64d4246a819cd9cece230d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens.VFXController
+  ataqueDerivado: {fileID: 0}
+  danoFixo: 0

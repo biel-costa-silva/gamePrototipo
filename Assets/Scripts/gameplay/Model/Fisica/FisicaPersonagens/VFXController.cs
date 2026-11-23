@@ -61,5 +61,10 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         {
             GerenciadorAudio.instancia.TocarAudio3D(nome, transform.position);
         }
+
+        public virtual void IniciarSom3D(AudioClip audio)
+        {
+            GerenciadorAudio.instancia.TocarAudio3D(audio, transform.position);
+        }
     }
 }
