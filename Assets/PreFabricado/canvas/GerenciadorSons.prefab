@@ -62,11 +62,6 @@ MonoBehaviour:
   - grupoID: sairMenu
     clips:
     - {fileID: 8300000, guid: b06e9cea37cd4f74192fd15acd4a3caa, type: 3}
-  - grupoID: andando
-    clips:
-    - {fileID: 8300000, guid: 569e9c1df44bb954d985e6a9e59f62e2, type: 3}
-    - {fileID: 8300000, guid: 933bb96144eead04bb53060e7b6a1e66, type: 3}
-    - {fileID: 8300000, guid: 4fab225d3c0b03e4a990428f622f9d2a, type: 3}
   - grupoID: fogo
     clips:
     - {fileID: 8300000, guid: 3262a15d8f2b21341a90caf1baddb6cb, type: 3}
@@ -79,6 +74,19 @@ MonoBehaviour:
   - grupoID: round
     clips:
     - {fileID: 8300000, guid: d9b6cd5d8fed3f441bf23081807de014, type: 3}
+  - grupoID: andando
+    clips:
+    - {fileID: 8300000, guid: 569e9c1df44bb954d985e6a9e59f62e2, type: 3}
+    - {fileID: 8300000, guid: 933bb96144eead04bb53060e7b6a1e66, type: 3}
+    - {fileID: 8300000, guid: 4fab225d3c0b03e4a990428f622f9d2a, type: 3}
+  - grupoID: correndo
+    clips:
+    - {fileID: 8300000, guid: fae217dbd532b2341abf21116575096b, type: 3}
+    - {fileID: 8300000, guid: e61e0c37617705d499aa2efd80755fd3, type: 3}
+    - {fileID: 8300000, guid: 9fe042946521d9e41b95aa5e0e89afe4, type: 3}
+  - grupoID: sofrerDano
+    clips:
+    - {fileID: 8300000, guid: cc72ff8d8c974b54d801ac34a3f4c7c8, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

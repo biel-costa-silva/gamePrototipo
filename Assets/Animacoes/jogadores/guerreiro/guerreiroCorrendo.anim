@@ -245,6 +245,20 @@ AnimationClip:
     floatParameter: 0
     intParameter: 3
     messageOptions: 0
+  - time: 0.083333336
+    functionName: IniciarSom3D
+    data: correndo
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.33333334
+    functionName: IniciarSom3D
+    data: correndo
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.41666666
     functionName: OnAnimacaoTerminou
     data: 
