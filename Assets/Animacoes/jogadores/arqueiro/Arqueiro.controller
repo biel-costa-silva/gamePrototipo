@@ -422,7 +422,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: arqueiroLevantando
+  m_Name: ArqueiroLevantando
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -702,7 +702,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: arqueiroSentado
+  m_Name: JogadorSentado
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1062,7 +1062,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: arqueiroColetandoItem
+  m_Name: ArqueiroColetandoItem
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1163,10 +1163,10 @@ AnimatorStateMachine:
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 940, y: 310, z: 0}
-  m_EntryPosition: {x: 220, y: 600, z: 0}
+  m_EntryPosition: {x: -580, y: 230, z: 0}
   m_ExitPosition: {x: 940, y: 260, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -8900392440066565753}
+  m_DefaultState: {fileID: -2203043466414965889}
 --- !u!1101 &1481956387290080987
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

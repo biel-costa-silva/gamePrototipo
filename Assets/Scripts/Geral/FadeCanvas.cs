@@ -9,24 +9,32 @@ public class FadeCanvas : MonoBehaviour
     private CanvasGroup grupo;
     private CanvasGroup canvasGroup => grupo != null ? grupo : (grupo = GetComponent<CanvasGroup>());
 
+    private bool mostrarSolicitado;
+
     private void Awake()
     {
         grupo = GetComponent<CanvasGroup>();
     }
     public IEnumerator PreAquecer()
     {
+        if (mostrarSolicitado) yield break;
+
         gameObject.SetActive(true);              // Awake/OnEnable/layout rodam aqui
         canvasGroup.alpha = 0.01f;               // quase invisível, mas ainda desenha
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         Canvas.ForceUpdateCanvases();
         yield return null;                       // 1 frame para o render montar tudo
+
+        if (mostrarSolicitado) yield break;
+
         canvasGroup.alpha = 0f;                  // corrige o bug 1
         gameObject.SetActive(false);
     }
 
     public void Mostrar(Action aoTerminar = null)
     {
+        mostrarSolicitado = true;
         if (gameObject.activeInHierarchy && canvasGroup.interactable)
         {            
             aoTerminar?.Invoke();
@@ -40,6 +48,7 @@ public class FadeCanvas : MonoBehaviour
 
     public void Esconder(Action aoTerminar = null)
     {
+        mostrarSolicitado = false;
         if (!gameObject.activeInHierarchy)
         {
             aoTerminar?.Invoke();
@@ -52,6 +61,7 @@ public class FadeCanvas : MonoBehaviour
     }
     public void MostrarImediato()
     {
+        mostrarSolicitado = true;
         StopAllCoroutines();
         gameObject.SetActive(true);
         canvasGroup.alpha = 1f;
@@ -61,6 +71,7 @@ public class FadeCanvas : MonoBehaviour
 
     public void EsconderImediato()
     {
+        mostrarSolicitado = false;
         StopAllCoroutines();
         canvasGroup.alpha = 0f;
         canvasGroup.interactable = false;

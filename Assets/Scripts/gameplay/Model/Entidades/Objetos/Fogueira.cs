@@ -4,6 +4,7 @@ using Assets.Scripts.Gameplay.Model.Entidades.Personagens;
 using Assets.Scripts.Gameplay.View.AnimacaoObjetos;
 using Assets.Scripts.Geral;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,9 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
 
         string IInteracoes.nome { get; set; } = "fogueira";
 
+        [SerializeField] private ControladorJogador[] jogadoresIniciais; // arraste os 2 jogadores no Inspector
+        [SerializeField] private bool comecarInteragida = false;
+
         private void Awake()
         {
             if (efeitoFogueira != null)
@@ -40,11 +44,26 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             }
         }
 
-        private void Start()
+        private IEnumerator Start()
         {
             ConectarMenu();
-        }
 
+            if (comecarInteragida)
+            {
+                yield return null; // espera todos os Start da cena rodarem
+                IniciarSentados();
+            }
+        }
+        private void IniciarSentados()
+        {
+            foreach (ControladorJogador c in jogadoresIniciais)
+            {
+                if (c == null) continue;
+
+                presentes.Add(c);   // para os ícones e o destaque funcionarem
+                Interagir(c);       // adiciona em sentados, abre/atualiza o menu
+            }
+        }
         private void OnEnable()
         {
             ConectarMenu();
@@ -256,6 +275,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             presentes.Clear();
             AtualizarDestaque();
         }
+
+        
 
     }
 }

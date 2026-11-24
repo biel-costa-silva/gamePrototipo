@@ -44,7 +44,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
 
         protected bool estaArmado = false;
-        private EstadoJogador _estadoAtual = EstadoJogador.Parado;
+        private EstadoJogador _estadoAtual = EstadoJogador.Sentado;
         public EstadoJogador estadoAtual
         {
             get => _estadoAtual;
@@ -117,6 +117,7 @@ namespace Assets.Scripts.Gameplay.Controller
             if (golpe == null || golpe.consumida || estadoAtual == EstadoJogador.Sentado) return;
             ProcessarDano(golpe);
         }
+
         protected virtual void ProcessarDano(HitBox golpe)
         {            
             if (invulneravel || estadoAtual == EstadoJogador.Sentado) return;//ignora golpe enquanto vulneravel ou sentado
@@ -177,7 +178,7 @@ namespace Assets.Scripts.Gameplay.Controller
             StopAllCoroutines();
             RestaurarEstadoVisualEFlags();
             estaArmado = false;
-            estadoAtual = EstadoJogador.Parado;
+            estadoAtual = EstadoJogador.Sentado;
             animacao.AnimacaoPosTP();
             animacao.OnAnimacaoTerminou();
         }

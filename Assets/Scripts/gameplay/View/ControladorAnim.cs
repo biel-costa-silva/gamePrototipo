@@ -142,7 +142,7 @@ namespace Assets.Scripts.Gameplay.View
         public void AnimacaoPosTP()
         {
             animacaoTerminou = false;
-            animator.Play("JogadorParado", 0, 0f);
+            animator.Play("JogadorSentado", 0, 0f);
         }
 
 
