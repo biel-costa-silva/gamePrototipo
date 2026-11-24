@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("jogo");
-        GerenciadorMusicas.instancia.TocarMusica("Caverna");
+        GerenciadorMusicas.instancia.TocarMusica("Ambiente");
     }
 
     public void Quit()
