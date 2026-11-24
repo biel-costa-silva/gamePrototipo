@@ -58,8 +58,7 @@ namespace Assets.Scripts.Geral
         public void SairParaMenu()
         {
             JogoPausado = false; // reseta o flag antes de trocar de cena
-            Time.timeScale = 1f;
-            SceneManager.LoadScene("menu");
+            GerenciadorNivel.instancia.IrPara("Menu");
         }
     }
 }

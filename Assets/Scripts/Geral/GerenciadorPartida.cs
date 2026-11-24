@@ -32,7 +32,13 @@ namespace Assets.Scripts.Geral
         private void Awake()
         {
             instancia = this;
-        }        
+            jogoAcabou = false;
+            Time.timeScale = 1f;
+        }
+        private void Start()
+        {
+            GerenciadorMusicas.instancia.TocarMusica("Ambiente");
+        }
 
         private void OnEnable()
         {
@@ -74,18 +80,18 @@ namespace Assets.Scripts.Geral
 
         private void AoTotemAtivado()
         {
-            SalvarCheckpoint();
+            //SalvarCheckpoint();
             cameraController.TravarCamera();
             tempoInicioCombate = Time.time;
             if (spawner != null) spawner.Iniciar();
             GerenciadorMusicas.instancia.TocarMusica("Batalha1");
         }
 
-        public void SalvarCheckpoint()//atualizar
+        /*public void SalvarCheckpoint()//atualizar
         {
             checkpoint1 = player1.transform.position;
             checkpoint2 = player2.transform.position;
-        }
+        }*/
         
         private void TratarMorte(ControladorJogador quemMorreu)
         {
@@ -114,7 +120,7 @@ namespace Assets.Scripts.Geral
             textoTempoSobrevivido.text = $"tempo de sincronização {minutos:00}:{segundosRestantes:00}";
         }
 
-        public void ReiniciarAposGameOver()//atualizar
+        /*public void ReiniciarAposGameOver()//atualizar
         {
             jogoAcabou = false;
 
@@ -131,5 +137,6 @@ namespace Assets.Scripts.Geral
             if (spawner != null) spawner.Resetar();
             GerenciadorMusicas.instancia.TocarMusica("Ambiente");
         }
+        */
     }
 }

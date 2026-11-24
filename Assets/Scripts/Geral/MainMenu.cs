@@ -1,3 +1,4 @@
+using Assets.Scripts.Geral;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,7 +37,7 @@ public class MainMenu : MonoBehaviour
     // -------------------- MENU -------------------------
     public void Play()
     {
-        SceneManager.LoadScene("jogo");
+        GerenciadorNivel.instancia.IrParaViaCutscene("Jogo");
         GerenciadorMusicas.instancia.TocarMusica("Ambiente");
     }
 

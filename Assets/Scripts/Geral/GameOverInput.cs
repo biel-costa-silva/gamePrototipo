@@ -20,7 +20,7 @@ namespace Assets.Scripts.Geral
 
             if (Input.anyKeyDown)
             {
-                GerenciadorPartida.instancia.ReiniciarAposGameOver();
+                GerenciadorNivel.instancia.IrParaViaCutscene("Jogo");
             }
         }
     }
