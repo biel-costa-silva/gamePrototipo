@@ -199,6 +199,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 97e395e2051b31145b8a66308670c3d7, type: 3}
   - nomeTrilha: Batalha1
     clip: {fileID: 8300000, guid: 31c38a7538b223e45af4c9cbca613ae6, type: 3}
+  - nomeTrilha: Silencio
+    clip: {fileID: 0}
 --- !u!114 &374879034174474194
 MonoBehaviour:
   m_ObjectHideFlags: 0

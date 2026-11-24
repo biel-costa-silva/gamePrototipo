@@ -15,6 +15,13 @@ namespace Assets.Scripts.Geral
         private float tempo;
         private bool terminou;
 
+        private void Start()
+        {
+            // Carrega a cena de jogo em segundo plano enquanto a cutscene toca
+            if (GerenciadorNivel.instancia != null)
+                GerenciadorNivel.instancia.PreCarregar(GerenciadorNivel.proximaCena);
+        }
+
         private void Update()
         {
             if (terminou) return;

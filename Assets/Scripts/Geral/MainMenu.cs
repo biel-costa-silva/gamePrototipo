@@ -37,8 +37,8 @@ public class MainMenu : MonoBehaviour
     // -------------------- MENU -------------------------
     public void Play()
     {
-        GerenciadorNivel.instancia.IrParaViaCutscene("Jogo");
-        GerenciadorMusicas.instancia.TocarMusica("Ambiente");
+        GerenciadorNivel.instancia.IrParaViaCutscene1("Jogo");
+        GerenciadorMusicas.instancia.TocarMusica("Silencio");
     }
 
     public void Quit()

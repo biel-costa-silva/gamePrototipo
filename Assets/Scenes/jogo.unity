@@ -62719,12 +62719,20 @@ PrefabInstance:
       value: GerenciadorSons
       objectReference: {fileID: 0}
     - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: trilhas.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: trilhas.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 74e38ec4e94597b4c949b78893867bea, type: 3}
     - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: trilhas.Array.data[0].nomeTrilha
       value: Ambiente
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: trilhas.Array.data[4].nomeTrilha
+      value: Tempo
       objectReference: {fileID: 0}
     - target: {fileID: 7551340323471449104, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: m_LocalPosition.x

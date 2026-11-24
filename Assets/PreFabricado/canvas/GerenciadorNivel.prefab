@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.GerenciadorNivel
   fadeTransicao: {fileID: 5681528695342760380}
-  cenaCutscene: Cutscene
+  cenaCutscene1: Cutscene
+  cenaCutscene2: PosMorte
 --- !u!1 &7104864028781242670
 GameObject:
   m_ObjectHideFlags: 0

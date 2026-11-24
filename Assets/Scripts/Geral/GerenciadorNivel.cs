@@ -17,9 +17,15 @@ namespace Assets.Scripts.Geral
         public static string proximaCena = "Jogo";
 
         [SerializeField] private FadeCanvas fadeTransicao;   // Canvas preto (filho deste objeto)
-        [SerializeField] private string cenaCutscene = "Cutscene";
+        [SerializeField] private string cenaCutscene1 = "Cutscene";
+        [SerializeField] private string cenaCutscene2 = "PosMorte";
 
         private bool carregando;
+
+        // Cena carregada em segundo plano, esperando a ativação
+        private AsyncOperation preCarregada;
+        private string nomePreCarregada;
+
 
         private void Awake()
         {
@@ -33,6 +39,7 @@ namespace Assets.Scripts.Geral
             DontDestroyOnLoad(gameObject);
         }
 
+
         /// <summary>Vai direto para uma cena (ex.: "menu").</summary>
         public void IrPara(string cena)
         {
@@ -40,13 +47,35 @@ namespace Assets.Scripts.Geral
             StartCoroutine(Rotina(cena));
         }
 
+
         /// <summary>Passa pela cena de cutscene e depois vai para o destino (ex.: "jogo").</summary>
-        public void IrParaViaCutscene(string destino)
+        public void IrParaViaCutscene1(string destino)
         {
             if (carregando) return;
             proximaCena = destino;
-            StartCoroutine(Rotina(cenaCutscene));
+            StartCoroutine(Rotina(cenaCutscene1));
         }
+
+        public void IrParaViaCutscene2(string destino)
+        {
+            if (carregando) return;
+            proximaCena = destino;
+            StartCoroutine(Rotina(cenaCutscene2));
+        }
+
+        /// <summary>
+        /// Começa a carregar a cena em segundo plano SEM ativá-la.
+        /// Chame durante a cutscene; a ativação acontece em IrPara/IrParaProxima.
+        /// </summary>
+        public void PreCarregar(string cena)
+        {
+            if (preCarregada != null) return;
+
+            nomePreCarregada = cena;
+            preCarregada = SceneManager.LoadSceneAsync(cena);
+            if (preCarregada != null) preCarregada.allowSceneActivation = false;
+        }
+
 
         /// <summary>Chamado pela cutscene ao terminar.</summary>
         public void IrParaProxima()
@@ -67,6 +96,17 @@ namespace Assets.Scripts.Geral
 
             // 2) Carrega a cena escondido pelo preto
             AsyncOperation op = SceneManager.LoadSceneAsync(cena);
+            if (preCarregada != null && nomePreCarregada == cena)
+            {
+                op = preCarregada;          // já está em 90%, só falta ativar
+                preCarregada = null;
+                op.allowSceneActivation = true;
+            }
+            else
+            {
+                op = SceneManager.LoadSceneAsync(cena);
+            }
+
             if (op == null)
             {
                 Debug.LogError($"Cena '{cena}' não encontrada. Confira o nome e o Build Settings.");
@@ -78,7 +118,7 @@ namespace Assets.Scripts.Geral
             while (!op.isDone) yield return null;
 
             // 3) Um frame para os Awake/Start da nova cena rodarem, e depois clareia
-            yield return null;
+            yield return new WaitForSeconds(1.3f);
             fadeTransicao.Esconder();
 
             carregando = false;

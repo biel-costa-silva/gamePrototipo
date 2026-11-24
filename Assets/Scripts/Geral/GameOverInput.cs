@@ -20,7 +20,8 @@ namespace Assets.Scripts.Geral
 
             if (Input.anyKeyDown)
             {
-                GerenciadorNivel.instancia.IrParaViaCutscene("Jogo");
+                GerenciadorNivel.instancia.IrParaViaCutscene2("Jogo");
+                GerenciadorMusicas.instancia.TocarMusica("Silencio");
             }
         }
     }
