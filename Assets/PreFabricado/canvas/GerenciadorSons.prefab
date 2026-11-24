@@ -56,6 +56,9 @@ MonoBehaviour:
   - grupoID: click
     clips:
     - {fileID: 8300000, guid: 2770b490a4e1d68429a694e023024eee, type: 3}
+  - grupoID: coletandoItem
+    clips:
+    - {fileID: 8300000, guid: 0cfb3a43fbc09c1409290a1c3c858544, type: 3}
   - grupoID: sentando
     clips:
     - {fileID: 8300000, guid: 1bd796aab55407d4fbaf3782a732dc94, type: 3}
