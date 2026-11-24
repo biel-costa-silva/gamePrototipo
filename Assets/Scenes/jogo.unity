@@ -24882,7 +24882,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.2, y: -1.22, z: -10}
+  m_LocalPosition: {x: -9.4, y: -1.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62708,20 +62708,284 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: efeitosSonoros.Array.size
-      value: 24
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[3].grupoID
+      value: levantando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[4].grupoID
+      value: entrarMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[5].grupoID
+      value: sairMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[6].grupoID
+      value: fogo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[7].grupoID
+      value: ativarTotem
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[8].grupoID
+      value: totemAtivado
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[9].grupoID
+      value: round
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[10].grupoID
+      value: andando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[11].grupoID
+      value: correndo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[12].grupoID
+      value: sofrerDano
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[13].grupoID
+      value: morrer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[14].grupoID
+      value: saqueEspada
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[15].grupoID
+      value: guardarEspada
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[16].grupoID
+      value: corte1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[17].grupoID
+      value: movCorte1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[18].grupoID
+      value: corte2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[19].grupoID
+      value: movCorte2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[20].grupoID
+      value: corte3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[21].grupoID
+      value: movCorte3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[22].grupoID
+      value: defender
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: efeitosSonoros.Array.data[23].grupoID
+      value: sofrerAtqDef
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[24].grupoID
+      value: repelir
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[25].grupoID
       value: choque
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
-      propertyPath: efeitosSonoros.Array.data[23].clips.Array.size
+      propertyPath: efeitosSonoros.Array.data[26].grupoID
+      value: sacarArco
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[27].grupoID
+      value: guardarArco
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[28].grupoID
+      value: puxando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[29].grupoID
+      value: tiroFlecha1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[30].grupoID
+      value: tiroFlecha2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[31].grupoID
+      value: tiroFlecha3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[32].grupoID
+      value: sinalTiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[33].grupoID
+      value: rolando
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[9].clips.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[11].clips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: efeitosSonoros.Array.data[33].clips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[3].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f0abb8bd82e7e4d468768cd1381f0210, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[4].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a078e22d231af974688e79241dd37c9a, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[5].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b06e9cea37cd4f74192fd15acd4a3caa, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[6].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3262a15d8f2b21341a90caf1baddb6cb, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[7].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 342416625f515fb4a90e6b4c6098987b, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[8].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d87b8c1cb1e6fa4a80f0c88d98c3a92, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[9].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d9b6cd5d8fed3f441bf23081807de014, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[10].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 569e9c1df44bb954d985e6a9e59f62e2, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[10].clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 933bb96144eead04bb53060e7b6a1e66, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[10].clips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fab225d3c0b03e4a990428f622f9d2a, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[11].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: fae217dbd532b2341abf21116575096b, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[11].clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e61e0c37617705d499aa2efd80755fd3, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[11].clips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fe042946521d9e41b95aa5e0e89afe4, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[12].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cc72ff8d8c974b54d801ac34a3f4c7c8, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[13].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e1cc9671b25a49245b1d422d98da0c87, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[14].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a3b2ec20c5a389943bae7edb92ad127b, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[15].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d09a38c1695d36541b260dec83397744, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[16].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 41138d116fce11a4eb7392563746ad29, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[17].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 112e254e40ad86648b597fecf38d772a, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[18].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 967d2177abab20e478893e6fee62c31a, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[19].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b9b502b650e9b2b4288b5dd303e6cf66, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[20].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 124bad87996bbe14a9cda241a25d04fb, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[21].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a7e40823af615d64d987726de06b9fb7, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[22].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8912bf2c6d0423645a9c0b2c25d6bfe4, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: 'efeitosSonoros.Array.data[23].clips.Array.data[0]'
       value: 
+      objectReference: {fileID: 8300000, guid: 9906173fa35755c41a37426627d538ab, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[24].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e587434a883b0f4abab2612043f4bc3, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[25].clips.Array.data[0]'
+      value: 
       objectReference: {fileID: 8300000, guid: 5f0835d4f8bac5047a9fea1f8f7c2c83, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[26].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: fd49eaab017eb434db69843bcccc9bfc, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[27].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b2eab6909e3ae7429660cde4954bf5c, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[28].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 430fac8ecf40a344f8e8a86fef84a479, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[29].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c3a7b513330a4684fa1b710623635d9f, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[30].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 08a80dd6890e01248ae99d5446f42e85, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[31].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: dcc3d4f1cc3fe314098878ad85b9415f, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[32].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c2b4140a58c461140ba00689142ac2a0, type: 3}
+    - target: {fileID: 4699087995076464778, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: 'efeitosSonoros.Array.data[33].clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 38a28c1158ec42246a8978f0500fea41, type: 3}
     - target: {fileID: 7551340323471449104, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.83874

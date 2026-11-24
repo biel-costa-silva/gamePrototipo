@@ -56,6 +56,12 @@ MonoBehaviour:
   - grupoID: click
     clips:
     - {fileID: 8300000, guid: 2770b490a4e1d68429a694e023024eee, type: 3}
+  - grupoID: sentando
+    clips:
+    - {fileID: 8300000, guid: 1bd796aab55407d4fbaf3782a732dc94, type: 3}
+  - grupoID: levantando
+    clips:
+    - {fileID: 8300000, guid: f0abb8bd82e7e4d468768cd1381f0210, type: 3}
   - grupoID: entrarMenu
     clips:
     - {fileID: 8300000, guid: a078e22d231af974688e79241dd37c9a, type: 3}
@@ -126,6 +132,30 @@ MonoBehaviour:
   - grupoID: choque
     clips:
     - {fileID: 8300000, guid: 5f0835d4f8bac5047a9fea1f8f7c2c83, type: 3}
+  - grupoID: sacarArco
+    clips:
+    - {fileID: 8300000, guid: fd49eaab017eb434db69843bcccc9bfc, type: 3}
+  - grupoID: guardarArco
+    clips:
+    - {fileID: 8300000, guid: 2b2eab6909e3ae7429660cde4954bf5c, type: 3}
+  - grupoID: puxando
+    clips:
+    - {fileID: 8300000, guid: 430fac8ecf40a344f8e8a86fef84a479, type: 3}
+  - grupoID: tiroFlecha1
+    clips:
+    - {fileID: 8300000, guid: c3a7b513330a4684fa1b710623635d9f, type: 3}
+  - grupoID: tiroFlecha2
+    clips:
+    - {fileID: 8300000, guid: 08a80dd6890e01248ae99d5446f42e85, type: 3}
+  - grupoID: tiroFlecha3
+    clips:
+    - {fileID: 8300000, guid: dcc3d4f1cc3fe314098878ad85b9415f, type: 3}
+  - grupoID: sinalTiro
+    clips:
+    - {fileID: 8300000, guid: c2b4140a58c461140ba00689142ac2a0, type: 3}
+  - grupoID: rolando
+    clips:
+    - {fileID: 8300000, guid: 38a28c1158ec42246a8978f0500fea41, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

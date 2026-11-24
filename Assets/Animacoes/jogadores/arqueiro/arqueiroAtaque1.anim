@@ -213,6 +213,13 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.25
+    functionName: IniciarSom3D
+    data: tiroFlecha1
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.25
     functionName: SpawnarVFX
     data: 
     objectReferenceParameter: {fileID: 0}

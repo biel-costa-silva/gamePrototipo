@@ -459,9 +459,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.010694565
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.0035773106
+  m_ExitTime: 0.0035773097
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -1252,7 +1252,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 'Atacando '
-  m_Speed: 1.2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5933599067355900407}
@@ -1428,7 +1428,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.01818256
+  m_TransitionDuration: 0
   m_TransitionOffset: 0.21884748
   m_ExitTime: 0.8883971
   m_HasExitTime: 0
@@ -1621,7 +1621,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.030620277
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.9479757
   m_HasExitTime: 0
