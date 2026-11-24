@@ -127,3 +127,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abce9571a64d4246a819cd9cece230d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens.VFXController
+  ataqueDerivado: {fileID: 0}
+  danoFixo: 0

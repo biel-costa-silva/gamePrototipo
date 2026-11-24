@@ -156,6 +156,27 @@ MonoBehaviour:
   - grupoID: rolando
     clips:
     - {fileID: 8300000, guid: 38a28c1158ec42246a8978f0500fea41, type: 3}
+  - grupoID: danoCausado
+    clips:
+    - {fileID: 8300000, guid: 35cec12d82419184fbf5f1514a50a65f, type: 3}
+  - grupoID: slimeAndando
+    clips:
+    - {fileID: 8300000, guid: cfbdf3a606d2c804fa746be6e82a21e0, type: 3}
+  - grupoID: slimeAtq1
+    clips:
+    - {fileID: 8300000, guid: 6ce27848517dbc14daeebc9cd24e9224, type: 3}
+  - grupoID: slimeAtq2
+    clips:
+    - {fileID: 8300000, guid: d26607b8e28cb18408bdf2979df18cc9, type: 3}
+  - grupoID: slimeDano
+    clips:
+    - {fileID: 8300000, guid: 9fb9d744fc93983468a1312f507ecb47, type: 3}
+  - grupoID: slimeMorte
+    clips:
+    - {fileID: 8300000, guid: df9509f3b4f7cd8499920a63fff9aa10, type: 3}
+  - grupoID: explosaoBola
+    clips:
+    - {fileID: 8300000, guid: 4bddc19d06e6ff14a9cadf67ef611f76, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
