@@ -10256,6 +10256,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GerenciadorSons
       objectReference: {fileID: 0}
+    - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: trilhas.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: trilhas.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 31c38a7538b223e45af4c9cbca613ae6, type: 3}
+    - target: {fileID: 5523889294628712530, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
+      propertyPath: trilhas.Array.data[2].nomeTrilha
+      value: Batalha1
+      objectReference: {fileID: 0}
     - target: {fileID: 7551340323471449104, guid: b97bc022fdfeb4e4a92d299d5fa27139, type: 3}
       propertyPath: m_LocalPosition.x
       value: 112.02046

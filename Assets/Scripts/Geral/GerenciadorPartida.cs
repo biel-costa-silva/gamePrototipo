@@ -78,6 +78,7 @@ namespace Assets.Scripts.Geral
             cameraController.TravarCamera();
             tempoInicioCombate = Time.time;
             if (spawner != null) spawner.Iniciar();
+            GerenciadorMusicas.instancia.TocarMusica("Batalha1");
         }
 
         public void SalvarCheckpoint()//atualizar
@@ -128,6 +129,7 @@ namespace Assets.Scripts.Geral
             cameraController.DestravarCamera();
             totem.Resetar();
             if (spawner != null) spawner.Resetar();
+            GerenciadorMusicas.instancia.TocarMusica("Ambiente");
         }
     }
 }
