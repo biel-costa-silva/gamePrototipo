@@ -24882,7 +24882,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.19, y: -1.22, z: -10}
+  m_LocalPosition: {x: -9.7, y: -1.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24907,7 +24907,7 @@ MonoBehaviour:
   minX: -10
   maxX: 105
   suavidade: 2
-  tamanhoMinimo: 6.5
+  tamanhoMinimo: 6
   tamanhoMaximo: 8
   margemLateral: 7
   suavidadeAbrir: 2.5
@@ -36835,15 +36835,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5069711869990309482, guid: 942e6544eb8a1c748b51314b5b26bc96, type: 3}
+  m_Sprite: {fileID: 4995802041215678122, guid: d8826d38363f24c4885050e8233cdd32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 113, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &915941712
 MonoBehaviour:
@@ -36898,7 +36898,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 113, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -83832,11 +83832,11 @@ PrefabInstance:
       objectReference: {fileID: 6708237717409608858, guid: 0f2880d1bda7857478ea318017f815cc, type: 3}
     - target: {fileID: 3114379907548003659, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.08
+      value: -19.88
       objectReference: {fileID: 0}
     - target: {fileID: 3114379907548003659, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.86
+      value: -3.24
       objectReference: {fileID: 0}
     - target: {fileID: 3114379907548003659, guid: 67cb21593e60aaa46aa25f2170e95e90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -83973,13 +83973,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arqueiro
       objectReference: {fileID: 0}
+    - target: {fileID: 4004033451021288734, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.26344657
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004033451021288734, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004033451021288734, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.028893746
+      objectReference: {fileID: 0}
     - target: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.03
+      value: -18.46
       objectReference: {fileID: 0}
     - target: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.77
+      value: -3.23
       objectReference: {fileID: 0}
     - target: {fileID: 5513366047608489112, guid: d9b2aaeabe4ec234aadcc58a5c96023f, type: 3}
       propertyPath: m_LocalPosition.z
