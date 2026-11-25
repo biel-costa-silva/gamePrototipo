@@ -74,6 +74,17 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos
             DesconectarMenu();
         }
 
+        private void Update()
+        {
+            if (GerenciadorPartida.jogoAcabou) return;
+            if (!Input.GetKeyDown(KeyCode.Escape)) return;
+
+            if (menuUI != null && menuUI.EstaAberto && sentados.Count > 0)
+            {
+                LevantarTodos();
+            }
+        }
+
         private void ConectarMenu()
         {
             if (menuUI != null)
