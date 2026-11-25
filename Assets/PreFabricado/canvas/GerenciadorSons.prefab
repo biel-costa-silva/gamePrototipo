@@ -74,6 +74,9 @@ MonoBehaviour:
   - grupoID: fogo
     clips:
     - {fileID: 8300000, guid: 3262a15d8f2b21341a90caf1baddb6cb, type: 3}
+  - grupoID: fogoCubo
+    clips:
+    - {fileID: 8300000, guid: a7ad8054baafb3f4d86cd1618d6385b0, type: 3}
   - grupoID: ativarTotem
     clips:
     - {fileID: 8300000, guid: 342416625f515fb4a90e6b4c6098987b, type: 3}
@@ -200,6 +203,8 @@ MonoBehaviour:
   - nomeTrilha: Batalha1
     clip: {fileID: 8300000, guid: 31c38a7538b223e45af4c9cbca613ae6, type: 3}
   - nomeTrilha: Silencio
+    clip: {fileID: 0}
+  - nomeTrilha: Tempo
     clip: {fileID: 0}
 --- !u!114 &374879034174474194
 MonoBehaviour:
