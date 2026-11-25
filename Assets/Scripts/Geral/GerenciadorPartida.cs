@@ -23,8 +23,6 @@ namespace Assets.Scripts.Geral
 
         public static bool jogoAcabou { get; private set; } = false;
 
-        private Vector3 checkpoint1;
-        private Vector3 checkpoint2;
 
         [SerializeField] private VidaUIController hud1;
         [SerializeField] private VidaUIController hud2;
@@ -34,6 +32,7 @@ namespace Assets.Scripts.Geral
             instancia = this;
             jogoAcabou = false;
             Time.timeScale = 1f;
+            GerenciadorAudio.instancia.Abafar(false, 0.01f);
         }
         private void Start()
         {
@@ -86,16 +85,14 @@ namespace Assets.Scripts.Geral
             if (spawner != null) spawner.Iniciar();
             GerenciadorMusicas.instancia.TocarMusica("Batalha1");
         }
-
-        /*public void SalvarCheckpoint()//atualizar
-        {
-            checkpoint1 = player1.transform.position;
-            checkpoint2 = player2.transform.position;
-        }*/
-        
+                
         private void TratarMorte(ControladorJogador quemMorreu)
         {
             if (jogoAcabou) return;
+
+            GerenciadorAudio.instancia.Abafar(true, 0.6f);
+            GerenciadorMusicas.instancia.SumirMusica(3f);
+
             jogoAcabou = true;
 
             if (spawner != null) spawner.Parar();
@@ -119,24 +116,5 @@ namespace Assets.Scripts.Geral
 
             textoTempoSobrevivido.text = $"tempo de sincronização {minutos:00}:{segundosRestantes:00}";
         }
-
-        /*public void ReiniciarAposGameOver()//atualizar
-        {
-            jogoAcabou = false;
-
-            telaGameOver.SetActive(false);
-
-            player1.transform.position = checkpoint1;
-            player2.transform.position = checkpoint2;
-
-            player1.Reviver();
-            player2.Reviver();
-
-            cameraController.DestravarCamera();
-            totem.Resetar();
-            if (spawner != null) spawner.Resetar();
-            GerenciadorMusicas.instancia.TocarMusica("Ambiente");
-        }
-        */
     }
 }

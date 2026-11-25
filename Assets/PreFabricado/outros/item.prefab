@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -5986297290508439622}
   - component: {fileID: 3614586504560615881}
   - component: {fileID: 3348254084060257516}
+  - component: {fileID: -5445953657616201029}
   m_Layer: 0
   m_Name: item
   m_TagString: Untagged
@@ -233,7 +234,7 @@ AudioSource:
   m_GameObject: {fileID: 2502894706360131160}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3894305770892629, guid: 633e3a70603e3dd48ba15929d157e346, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eb65e4a5cb41296409f91463b626c3fa, type: 3}
   m_PlayOnAwake: 1
@@ -321,3 +322,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5445953657616201029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2502894706360131160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6dae6d0e18f9b4a82f61c0eff38a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.PausarAudioComJogo
+  fontes:
+  - {fileID: 3348254084060257516}

@@ -1,6 +1,8 @@
 using Assets.Scripts.Geral;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
@@ -13,11 +15,18 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject clipIntro;
     [SerializeField] private FundoEscuroController fundoEscuro;
 
+
+    public AudioMixer audioMixer;
+    public Slider musicaSlider;
+    public Slider sonsSlider;
+
     private static bool introJaExibida = false;
+
 
     // ------------------- START -------------------------
     private void Start()
     {
+        CarregarVolume();
         if (!introJaExibida)
         {
             introJaExibida = true;
@@ -98,4 +107,31 @@ public class MainMenu : MonoBehaviour
         yield return null;
         GerenciadorMusicas.instancia.TocarMusica("Menu");
     }
+
+
+    public void AtualizarVolumeSons(float volume)
+    {
+        audioMixer.SetFloat("SonsVolume", volume);
+    }
+
+    public void AtualizarVolumeMusicas(float volume)
+    {
+        audioMixer.SetFloat("MusicaVolume", volume);
+    }
+
+    public void SalvarVolume()
+    {
+        audioMixer.GetFloat("MusicaVolume", out float valorMusica);
+        PlayerPrefs.SetFloat("MusicaVolume", valorMusica);
+
+        audioMixer.GetFloat("SonsVolume", out float valorSons);
+        PlayerPrefs.SetFloat("SonsVolume", valorSons);
+    }
+
+    public void CarregarVolume()
+    {
+        musicaSlider.value = PlayerPrefs.GetFloat("MusicaVolume");
+        sonsSlider.value = PlayerPrefs.GetFloat("SonsVolume");
+    }
+
 }

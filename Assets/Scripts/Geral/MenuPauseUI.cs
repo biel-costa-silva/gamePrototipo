@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Geral
 {
@@ -18,6 +20,15 @@ namespace Assets.Scripts.Geral
         [SerializeField] private float duracaoResize = 0.25f;
 
         private Coroutine resizeAtual;
+
+        public AudioMixer audioMixer;
+        public Slider musicaSlider;
+        public Slider sonsSlider;
+
+        public void Start()
+        {
+            CarregarVolume();
+        }
 
         //Principal <-> Opções
         public void AbrirOpcoes()
@@ -80,5 +91,36 @@ namespace Assets.Scripts.Geral
             fundoPreto.sizeDelta = new Vector2(larguraAlvo, fundoPreto.sizeDelta.y);
         }
 
+
+        public void AtualizarVolumeSons(float volume)
+        {
+            audioMixer.SetFloat("SonsVolume", volume);
+        }
+
+        public void AtualizarVolumeMusica(float volume)
+        {
+            audioMixer.SetFloat("MusicaVolume", volume);
+        }
+
+        public void SalvarVolume()
+        {
+            audioMixer.GetFloat("MusicaVolume", out float valorMusica);
+            PlayerPrefs.SetFloat("MusicaVolume", valorMusica);
+
+            audioMixer.GetFloat("SonsVolume", out float valorSons);
+            PlayerPrefs.SetFloat("SonsVolume", valorSons);
+        }
+
+        public void CarregarVolume()
+        {
+            float musica = PlayerPrefs.GetFloat("MusicaVolume");
+            float sons = PlayerPrefs.GetFloat("SonsVolume");
+
+            if (musicaSlider != null) musicaSlider.SetValueWithoutNotify(musica);
+            else Debug.LogWarning("musicaSlider não atribuído em " + name, this);
+
+            if (sonsSlider != null) sonsSlider.SetValueWithoutNotify(sons);
+            else Debug.LogWarning("sonsSlider não atribuído em " + name, this);
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace Assets.Scripts.Geral
         public void Pausar()
         {
             GerenciadorAudio.instancia.TocarAudio2D("entrarMenu");
+            GerenciadorAudio.instancia.Abafar(true);
 
             controleArqueiro.Desligar();
             controleGuerreiro.Desligar();
@@ -47,6 +48,7 @@ namespace Assets.Scripts.Geral
         public void Retomar()
         {
             GerenciadorAudio.instancia.TocarAudio2D("sairMenu");
+            GerenciadorAudio.instancia.Abafar(false);
 
             controleArqueiro.Ligar();
             controleGuerreiro.Ligar();

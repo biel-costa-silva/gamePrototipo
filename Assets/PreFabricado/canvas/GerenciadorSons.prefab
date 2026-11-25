@@ -183,6 +183,9 @@ MonoBehaviour:
   - grupoID: explosaoBola
     clips:
     - {fileID: 8300000, guid: 4bddc19d06e6ff14a9cadf67ef611f76, type: 3}
+  - grupoID: explosaoBola
+    clips:
+    - {fileID: 8300000, guid: 4bddc19d06e6ff14a9cadf67ef611f76, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.GerenciadorAudio
   sfxBiblioteca: {fileID: 4699087995076464778}
   sfx2DFonte: {fileID: 386044640702118603}
+  mixer: {fileID: 24100000, guid: 633e3a70603e3dd48ba15929d157e346, type: 2}
+  grupoSons: {fileID: 3894305770892629, guid: 633e3a70603e3dd48ba15929d157e346, type: 2}
+  parametrosLowPass:
+  - LowPassMusica
+  - LowPassAmbiente
 --- !u!114 &6625992951526901175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +283,7 @@ AudioSource:
   m_GameObject: {fileID: 5735930712256442603}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 925563244731095789, guid: 633e3a70603e3dd48ba15929d157e346, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -404,7 +412,7 @@ AudioSource:
   m_GameObject: {fileID: 6564977149238996937}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3894305770892629, guid: 633e3a70603e3dd48ba15929d157e346, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
