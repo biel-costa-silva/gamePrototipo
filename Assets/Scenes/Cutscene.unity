@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df151c6bc4d7fc48976d1ef461474b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.CutsceneFim
-  duracao: 9
+  duracao: 10
   tempoMinimoParaPular: 0
   permitirPular: 0
 --- !u!4 &1224568686
