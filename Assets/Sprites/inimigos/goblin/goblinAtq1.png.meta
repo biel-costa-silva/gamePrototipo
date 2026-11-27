@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: -1600069975745280
     second: goblinAtq1_7
+  - first:
+      213: -4051416231063676349
+    second: goblinAtq1_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -336,10 +339,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 795528f551366bf41bcc97924afe57fe
-      internalID: -1278639729
+      spriteID: 34a9236376a76c7c0800000000000000
+      internalID: -4051416231063676349
       vertices: []
       indices: 
       edges: []
@@ -360,8 +363,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad55462fd1bbfde41aa992c1c19c0b2e
-      internalID: 505800294
+      spriteID: e9bb49ff48672dc4a84c7a1ed65b406e
+      internalID: -2063817027
       vertices: []
       indices: 
       edges: []
@@ -370,7 +373,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b5539b088aa29174d951d6fb6aa1ef63
+    spriteID: fc500c9b491acc942ad9da4f0d41396f
     internalID: 0
     vertices: []
     indices: 
@@ -390,8 +393,8 @@ TextureImporter:
       goblinAtq1_5: -7561077613189091075
       goblinAtq1_6: -679362524487711747
       goblinAtq1_7: -1600069975745280
-      goblinAtq1_8: -1278639729
-      goblinAtq1_9: 505800294
+      goblinAtq1_8: -4051416231063676349
+      goblinAtq1_9: -2063817027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

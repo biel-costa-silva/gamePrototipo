@@ -186,6 +186,31 @@ MonoBehaviour:
   - grupoID: explosaoBola
     clips:
     - {fileID: 8300000, guid: 4bddc19d06e6ff14a9cadf67ef611f76, type: 3}
+  - grupoID: goblinAndando
+    clips:
+    - {fileID: 8300000, guid: b2af1c581a28bb94ebde4ea642ecae9f, type: 3}
+    - {fileID: 8300000, guid: c168236c6ff99524fa21961f59edfda8, type: 3}
+  - grupoID: goblinEsquiva
+    clips:
+    - {fileID: 8300000, guid: 9c2d52e44d2027a4ca7e293b28dae6ba, type: 3}
+  - grupoID: goblinMovAtq1
+    clips:
+    - {fileID: 8300000, guid: 62b8426af11286c49b9aab3b375198bf, type: 3}
+  - grupoID: goblinCorteAtq1
+    clips:
+    - {fileID: 8300000, guid: 2f7a087b33452a646b148028d4e8a281, type: 3}
+  - grupoID: goblinArremessoAtq2
+    clips:
+    - {fileID: 8300000, guid: c63acb94e8a70e14a8fbeef619e00657, type: 3}
+  - grupoID: goblinMorte
+    clips:
+    - {fileID: 8300000, guid: 8436dd9cf51eeef479efdd84cd958b16, type: 3}
+  - grupoID: goblinCaindo
+    clips:
+    - {fileID: 8300000, guid: d6752088480408b4fb03dc5d0cc6b072, type: 3}
+  - grupoID: choqueArremesso
+    clips:
+    - {fileID: 8300000, guid: e10c4e40a16e45c40ad9a0ed956fdb1e, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

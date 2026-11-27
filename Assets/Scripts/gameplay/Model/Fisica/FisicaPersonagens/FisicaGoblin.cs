@@ -11,7 +11,18 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
         [Tooltip("Velocidade horizontal durante a arrancada para trás (esquiva e arremesso da faca).")]
         [SerializeField] private float velocidadeImpulsoTras = 9f;
 
+        [SerializeField] private GameObject[] prefabsVFX;
+
         private Coroutine impulsoAtual;
+        public void SpawnarVFX(int indice)
+        {
+            float direcao = GetDirecao();
+            GameObject vfx = Instantiate(prefabsVFX[indice], posicaoInimigo.position, posicaoInimigo.rotation);
+
+            Vector3 scale = vfx.transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * direcao;
+            vfx.transform.localScale = scale;
+        }
 
         // ---------------- Impulsos ----------------
 

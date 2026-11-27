@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Objetos.AtaqueADistancia
   velocidadeProjetil: 35
+  prefabsVFX:
+  - {fileID: 8874567620724912593, guid: 17470ee487d275f44a0160528220d46d, type: 3}
 --- !u!50 &3596766791360342536
 Rigidbody2D:
   serializedVersion: 5

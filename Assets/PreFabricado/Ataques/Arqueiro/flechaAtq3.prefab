@@ -194,3 +194,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Model.Entidades.Objetos.AtaqueADistancia
   velocidadeProjetil: 55
+  prefabsVFX:
+  - {fileID: 8874567620724912593, guid: 17470ee487d275f44a0160528220d46d, type: 3}

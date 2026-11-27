@@ -8,11 +8,11 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
         public Goblin()
         {
             nome = "Goblin";
-            vida = 20;
-            vidaMax = 20;
+            vida = 12;
+            vidaMax = 12;
             dano = 1;
             defesa = 0;
-            velocidade = 2.5f;
+            velocidade = 3.2f;
             velocidadeBase = velocidade;
         }        
     }

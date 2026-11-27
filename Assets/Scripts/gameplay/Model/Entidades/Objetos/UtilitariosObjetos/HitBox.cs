@@ -63,13 +63,19 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Objetos.UtilitariosObjetos
             origem.sofreuChoque = true;
             outraHitBox.origem.sofreuChoque = true;
 
-            Destroy(outraHitBox.gameObject);
-            Destroy(gameObject);
+            DestruirComEfeito(outraHitBox.gameObject);
+            DestruirComEfeito(gameObject);
 
         }
         //Evento de Controle para Frame De Dano
         public void AtivarHitbox() => boxColl.enabled = true;
         public void DesativarHitBox() => boxColl.enabled = false;
         public void DestroirObj() => Destroy(gameObject);
+        private void DestruirComEfeito(GameObject alvo)
+        {
+            var projetil = alvo.GetComponent<AtaqueADistancia>();
+            if (projetil != null) projetil.DestruirComVFX();
+            else Destroy(alvo);
+        }
     }
 }

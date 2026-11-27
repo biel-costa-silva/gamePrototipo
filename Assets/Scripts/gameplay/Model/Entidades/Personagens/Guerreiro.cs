@@ -10,7 +10,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
             vida = 6;
             vidaMax = 6;
             dano = 2;
-            defesa = 2;            
+            defesa = 5;            
             velocidade = 2.8f;
             velocidadeBase = velocidade;
         }

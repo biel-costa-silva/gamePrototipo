@@ -230,10 +230,23 @@ MonoBehaviour:
   - {fileID: 2742261100315083697, guid: 51d537a1a2611b945b0a798770afc30e, type: 3}
   posicaoInimigo: {fileID: 3358943955180507747}
   prefabsOlhamParaEsquerda: 0
-  knockbackPorDano: 4
+  knockbackPorDano: 3.5
   knockbackMaximo: 20
   velocidadeImpulsoFrente: 4.2
   velocidadeImpulsoTras: 5.5
+  prefabsVFX:
+  - {fileID: 1593877762424514059, guid: 8de1386b59feaa044af600939af43959, type: 3}
+  - {fileID: 5934013884031354900, guid: fc38d72536c132b45a13c21fe65bc736, type: 3}
+  - {fileID: 1640849075496222182, guid: 95c71dfaf76212d41995014f83f90339, type: 3}
+  - {fileID: 3930328431196004588, guid: 267445c4e0d569b429ea77d441f0d4b4, type: 3}
+  - {fileID: 3450924894226085005, guid: a6dbf270b060a2542b5c5b739bd3e7f5, type: 3}
+  - {fileID: 6350569542701682100, guid: 930b34926fa639d40bf960e61babf4c3, type: 3}
+  - {fileID: 1788435286003286583, guid: 96bbf9c56a5f9554ea9c8112cef56250, type: 3}
+  - {fileID: 7781253920529071555, guid: 27084b86b7bb222488a0766e4f1de6b9, type: 3}
+  - {fileID: 5832621913938914464, guid: f2d90834ebfe1bb40be426ff75a815b3, type: 3}
+  - {fileID: 2230350040464144995, guid: da2a6f6fd960cc94ea3a194c1371cce3, type: 3}
+  - {fileID: 6117061287175780854, guid: 855e3091fb58d764b83b06164455686f, type: 3}
+  - {fileID: 2465883026086572858, guid: a068ac2a7cce0c34c87c35662bbc18c8, type: 3}
 --- !u!114 &4564075597878385722
 MonoBehaviour:
   m_ObjectHideFlags: 0
