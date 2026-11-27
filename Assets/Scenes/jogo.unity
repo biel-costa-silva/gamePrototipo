@@ -24100,7 +24100,6 @@ GameObject:
   m_Component:
   - component: {fileID: 458181052}
   - component: {fileID: 458181051}
-  - component: {fileID: 458181050}
   - component: {fileID: 458181049}
   m_Layer: 0
   m_Name: CameraReflexo
@@ -24153,14 +24152,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!81 &458181050
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458181048}
-  m_Enabled: 1
 --- !u!20 &458181051
 Camera:
   m_ObjectHideFlags: 0

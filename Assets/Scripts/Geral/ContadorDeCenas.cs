@@ -4,42 +4,46 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Geral
 {
-    /// <summary>
-    /// Conta quantas vezes cada cena foi carregada desde que o jogo abriu.
-    /// Classe estática: não precisa de GameObject, funciona mesmo apertando Play direto na cena Jogo.
-    /// 
-    /// ATENÇÃO: o valor já está atualizado quando o Start() dos objetos roda
-    /// (o evento sceneLoaded acontece depois do Awake/OnEnable e antes do Start).
-    /// Por isso, leia a contagem no Start(), não no Awake().
-    /// </summary>
     public static class ContadorDeCenas
     {
-        private static readonly Dictionary<string, int> vezes = new Dictionary<string, int>();
+        private static readonly Dictionary<string, int> contagem = new Dictionary<string, int>();
 
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        private static void Iniciar()
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void Inicializar()
         {
-            // Zera a cada Play (necessário se "Enter Play Mode Options" estiver sem Domain Reload)
-            vezes.Clear();
+            contagem.Clear();
             SceneManager.sceneLoaded -= AoCarregarCena;
             SceneManager.sceneLoaded += AoCarregarCena;
         }
 
         private static void AoCarregarCena(Scene cena, LoadSceneMode modo)
         {
-            vezes.TryGetValue(cena.name, out int n);
-            vezes[cena.name] = n + 1;
+            if (contagem.ContainsKey(cena.name))
+                contagem[cena.name]++;
+            else
+                contagem[cena.name] = 1;
+
+            Debug.Log($"[ContadorDeCenas] Cena '{cena.name}' carregada ({contagem[cena.name]}x).");
         }
 
-        public static int VezesAberta(string nomeDaCena)
+        public static int VezesAberta(string nome)
         {
-            return vezes.TryGetValue(nomeDaCena, out int n) ? n : 0;
+            return contagem.TryGetValue(nome, out int vezes) ? vezes : 0;
         }
 
-        public static int VezesAbertaCenaAtual() => VezesAberta(SceneManager.GetActiveScene().name);
+        public static bool EhPrimeiraVez(string nome)
+        {
+            return VezesAberta(nome) == 1;
+        }
 
-        public static bool EhPrimeiraVez(string nomeDaCena) => VezesAberta(nomeDaCena) == 1;
+        public static int VezesAbertaCenaAtual()
+        {
+            return VezesAberta(SceneManager.GetActiveScene().name);
+        }
 
-        public static bool EhPrimeiraVezCenaAtual() => VezesAbertaCenaAtual() == 1;
+        public static bool EhPrimeiraVezCenaAtual()
+        {
+            return EhPrimeiraVez(SceneManager.GetActiveScene().name);
+        }
     }
 }

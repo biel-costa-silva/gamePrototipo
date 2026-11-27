@@ -8,7 +8,6 @@ namespace Assets.Scripts.Geral
         [SerializeField] private DadosTutorial dados;
 
         private BoxCollider2D area;
-        private Camera cam;
 
         private void Awake()
         {
@@ -17,20 +16,24 @@ namespace Assets.Scripts.Geral
 
         private void Start()
         {
+            int vezes = ContadorDeCenas.VezesAbertaCenaAtual();
+
             // Só funciona na primeira vez que a cena de jogo é aberta na sessão
             if (!ContadorDeCenas.EhPrimeiraVezCenaAtual())
             {
+                Debug.Log($"[GatilhoTutorial] Desativado no Start: cena já foi aberta {vezes}x.");
                 gameObject.SetActive(false);
                 return;
             }
-
-            cam = Camera.main;
         }
 
         private void Update()
         {
-            if (cam == null || dados == null || GerenciadorTutorial.instancia == null) return;
+            if (dados == null || GerenciadorTutorial.instancia == null) return;
             if (GerenciadorTutorial.aberto) return;
+
+            Camera cam = Camera.main;
+            if (cam == null) return;
 
             // Verifica se o ponto central (X, Y) da câmera entrou na área do BoxCollider2D
             if (area.OverlapPoint(cam.transform.position))

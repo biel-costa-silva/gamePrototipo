@@ -95,11 +95,12 @@ namespace Assets.Scripts.Geral
             Time.timeScale = 1f;
 
             // 2) Carrega a cena escondido pelo preto
-            AsyncOperation op = SceneManager.LoadSceneAsync(cena);
+            AsyncOperation op;
             if (preCarregada != null && nomePreCarregada == cena)
             {
                 op = preCarregada;          // já está em 90%, só falta ativar
                 preCarregada = null;
+                nomePreCarregada = null;
                 op.allowSceneActivation = true;
             }
             else
