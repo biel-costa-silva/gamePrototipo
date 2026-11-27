@@ -34,7 +34,7 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
 
         public virtual void ReceberDano(int danoRecebido)
         {
-            vida -= danoRecebido;
+            vida -= System.Math.Max(0, danoRecebido);
             sofreuAtaque = true;
         }
         public void LimparFlagAtaque()

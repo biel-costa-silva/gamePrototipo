@@ -233,7 +233,7 @@ MonoBehaviour:
   knockbackPorDano: 4
   knockbackMaximo: 20
   velocidadeImpulsoFrente: 4.2
-  velocidadeImpulsoTras: 5.3
+  velocidadeImpulsoTras: 5.5
 --- !u!114 &4564075597878385722
 MonoBehaviour:
   m_ObjectHideFlags: 0

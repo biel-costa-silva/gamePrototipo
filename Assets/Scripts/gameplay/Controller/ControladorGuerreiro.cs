@@ -108,6 +108,7 @@ namespace Assets.Scripts.Gameplay.Controller
             }
 
             int danoFinal = guerreiro.CalcularDanoRecebido(golpe.dano, defendendo, repelindo);
+            Debug.Log($"[Guerreiro] golpe dano={golpe.dano} repelindo={repelindo} defendendo={defendendo} deCostas={deCostas}");
 
             if (repelindo)
             {
@@ -239,6 +240,7 @@ namespace Assets.Scripts.Gameplay.Controller
         {
             animGuerreiro.AnimacaoRepelindo();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
+            guerreiro.LimparFlagAtaque();
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
         //
@@ -247,6 +249,7 @@ namespace Assets.Scripts.Gameplay.Controller
         {
             animGuerreiro.AnimacaoSofrendoAtqDef();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
+            guerreiro.LimparFlagAtaque();
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
         //

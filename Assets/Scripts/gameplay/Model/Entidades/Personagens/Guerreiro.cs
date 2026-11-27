@@ -17,8 +17,8 @@ namespace Assets.Scripts.Gameplay.Model.Entidades.Personagens
 
         public int CalcularDanoRecebido(int danoRecebido, bool estaDefendendo, bool estaRepelindo)
         {
-            if (estaRepelindo) return 0;           
-            if (estaDefendendo) return danoRecebido - defesa; 
+            if (estaRepelindo) return 0;
+            if (estaDefendendo) return System.Math.Max(0, danoRecebido - defesa);
             return danoRecebido;                 
         }
     }

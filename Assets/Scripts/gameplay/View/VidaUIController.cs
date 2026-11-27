@@ -8,9 +8,7 @@ namespace Assets.Scripts.Gameplay.View
     [RequireComponent(typeof(CanvasGroup))]
     public class VidaUIController : MonoBehaviour
     {
-
         public int vida;
-
         public int vidaMax;
 
         public Image[] coracao;
@@ -71,7 +69,7 @@ namespace Assets.Scripts.Gameplay.View
 
         public void Decrementar(int dano)
         {
-            vida = vida - dano;
+            vida -= Mathf.Max(0, dano);
         }
         public void RestaurarCheia()
         {

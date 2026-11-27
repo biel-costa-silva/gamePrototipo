@@ -2542,18 +2542,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
-    - target: {fileID: 2589937027518773212, guid: fcdd933f9f7af5c4e95a916dbf422943, type: 3}
-      propertyPath: duracaoInvulneravel
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2888230951147278284, guid: fcdd933f9f7af5c4e95a916dbf422943, type: 3}
-      propertyPath: velocidadeImpulsoTras
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892079435636736521, guid: fcdd933f9f7af5c4e95a916dbf422943, type: 3}
-      propertyPath: alcanceCorpoACorpo
-      value: 2.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
