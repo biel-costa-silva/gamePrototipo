@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d572cc9021760b94e80e1fda75e2c1bc, type: 3}
+  m_Name: TutorialFogoAmigo2
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Geral.DadosTutorial
+  titulo: Fogo Amigo 2
+  descricao: " \u2022 [Jogador 1] Pressione  'J'  (Atacar)\n \u2022 [Jogador 2] Pressione
+    'Seta P.Baixo' (Rolar)"
+  video: {fileID: 32900000, guid: 174f5afccd31a7a44b567f141c2b5dc3, type: 3}
+  tempoMinimo: 4

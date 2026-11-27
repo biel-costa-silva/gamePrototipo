@@ -211,6 +211,9 @@ MonoBehaviour:
   - grupoID: choqueArremesso
     clips:
     - {fileID: 8300000, guid: e10c4e40a16e45c40ad9a0ed956fdb1e, type: 3}
+  - grupoID: choqueArremesso2
+    clips:
+    - {fileID: 8300000, guid: 69eae635289fb274580ecda09c683381, type: 3}
 --- !u!114 &5523889294628712530
 MonoBehaviour:
   m_ObjectHideFlags: 0

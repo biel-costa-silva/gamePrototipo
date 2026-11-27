@@ -13,6 +13,12 @@ namespace Assets.Scripts.Geral
         [SerializeField] private FadeCanvas menuPausa;
 
         public static bool JogoPausado { get; private set; } = false;
+        public static GerenciadorPausa instancia;
+
+        private void Awake()
+        {
+            instancia = this;
+        }
 
         private IEnumerator Start()
         {
@@ -23,7 +29,7 @@ namespace Assets.Scripts.Geral
         private void Update()
         {
             if (GerenciadorPartida.jogoAcabou) return;
-
+            if (GerenciadorTutorial.aberto) return;   // ESC não abre o menu de pausa durante o tutorial
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {                
@@ -54,6 +60,25 @@ namespace Assets.Scripts.Geral
             controleGuerreiro.Ligar();
             JogoPausado = false;
             menuPausa.Esconder();
+            Time.timeScale = 1f;
+        }
+
+        // ---- Pausa usada pelo tutorial (congela tudo, mas sem abrir o menu de pausa) ----
+        public void PausarParaTutorial()
+        {
+            GerenciadorAudio.instancia.Abafar(true);
+            controleArqueiro.Desligar();
+            controleGuerreiro.Desligar();
+            JogoPausado = true;
+            Time.timeScale = 0f;
+        }
+
+        public void RetomarDoTutorial()
+        {
+            GerenciadorAudio.instancia.Abafar(false);
+            controleArqueiro.Ligar();
+            controleGuerreiro.Ligar();
+            JogoPausado = false;
             Time.timeScale = 1f;
         }
 
