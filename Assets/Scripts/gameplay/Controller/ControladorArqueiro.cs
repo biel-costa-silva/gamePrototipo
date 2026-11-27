@@ -12,10 +12,12 @@ namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorArqueiro : ControladorJogador
     {
+        // ===================================== COMPONENTES E ATRIBUTOS DE CONTROLE ======================================
         private Arqueiro arqueiro;
         private FisicaArqueiro fisicaArqueiro;
         private AnimArqueiro animArqueiro;
         private ControlesArqueiro controleArqueiro;
+
 
         //variaveis de controle
         [SerializeField] private float duracaoRolagem = 0.5f;
@@ -33,10 +35,13 @@ namespace Assets.Scripts.Gameplay.Controller
             animArqueiro = animacao as AnimArqueiro;
             controleArqueiro = controle as ControlesArqueiro;
         }
+
         protected override Jogador CriarJogador()
         {
             return new Arqueiro();
         }
+
+        // ======================================= MÉTODOS NATIVOS/CICLO DE VIDA ==========================================
 
         void Update()
         {
@@ -57,10 +62,14 @@ namespace Assets.Scripts.Gameplay.Controller
             }
         }
 
+        // ============================================= MÉTODOS DE CONTROLE ==============================================
+
         protected override void ProcessarDano(HitBox golpe)
         {
             base.ProcessarDano(golpe);
         }
+
+        // ================================================= ROTINAS ==================================================
 
         protected override IEnumerator RotinaAtacando()
         {
@@ -131,6 +140,7 @@ namespace Assets.Scripts.Gameplay.Controller
             }
         }
 
+
         private IEnumerator ExecutarAtaquePadrao()
         {
             bool comboRegistrado = false;
@@ -184,6 +194,7 @@ namespace Assets.Scripts.Gameplay.Controller
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
 
+
         IEnumerator RotinaRolando()
         {
             invulneravel = true;
@@ -207,6 +218,7 @@ namespace Assets.Scripts.Gameplay.Controller
             yield return StartCoroutine(animArqueiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
+
 
         private IEnumerator RotinaSaindoDosInimigos()
         {
