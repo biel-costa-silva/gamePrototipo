@@ -33,6 +33,8 @@ namespace Assets.Scripts.Gameplay.Controller
         private bool estaSendoAlertado = false;
         private bool estaSendoDesarmado = false;
         protected bool invulneravel = false;
+        public bool estaAtacando { get; private set; }
+
 
 
         [SerializeField] private SpriteRenderer spriteRenderer;
@@ -189,6 +191,7 @@ namespace Assets.Scripts.Gameplay.Controller
             invulneravel = false;
             estaSendoAlertado = false;
             estaSendoDesarmado = false;
+            estaAtacando = false;
         }
 
         public void AlertarEntrarEmModoAtaque()
@@ -232,7 +235,6 @@ namespace Assets.Scripts.Gameplay.Controller
 
 
 
-
             HitBox golpe = fisica.ConsumirGolpePendente();
             if (golpe != null && !golpe.Equals(null) && !golpe.consumida)
             {
@@ -249,6 +251,8 @@ namespace Assets.Scripts.Gameplay.Controller
 
             interagivelAtual = fisica.GetInteragivelPendente();
 
+
+
             if (estadoAtual == EstadoJogador.Ocupado || estadoAtual == EstadoJogador.Morto) return;
             
             if (GerenciadorInteracoes.menuAberto)
@@ -256,8 +260,6 @@ namespace Assets.Scripts.Gameplay.Controller
                 TravarPorMenu();
                 return;
             }
-
-
 
 
             // --- SENTADO ---
@@ -358,7 +360,7 @@ namespace Assets.Scripts.Gameplay.Controller
                 if (controle.ComandoAtaque() > 0)
                 {
                     DefinirEstado(EstadoJogador.Ocupado);
-                    StartCoroutine(RotinaAtacando());
+                    StartCoroutine(RotinaAtacandoSinalizada());
                     return;
                 }
                 if (controle.ComandoInteracao() && interagivelAtual != null && interagivelAtual.PodeSofrerInteracao())
@@ -403,11 +405,14 @@ namespace Assets.Scripts.Gameplay.Controller
                 if (controle.ComandoAtaque() > 0)
                 {
                     DefinirEstado(EstadoJogador.Ocupado);
-                    StartCoroutine(RotinaAtacando());
+                    StartCoroutine(RotinaAtacandoSinalizada());
                     return;
                 }
             }
         }
+
+
+
 
         // #------------------------------ Rotinas - Disparo de Animações Diretas sem Interrupção -----------------------------#
         private IEnumerator RotinaInvulneravel()
@@ -544,6 +549,13 @@ namespace Assets.Scripts.Gameplay.Controller
             }            
         }
         //
+        private IEnumerator RotinaAtacandoSinalizada()
+        {
+            estaAtacando = true;
+            yield return StartCoroutine(RotinaAtacando());
+            estaAtacando = false;
+        }
+
         protected virtual IEnumerator RotinaAtacando()
         {
             int forcaAtq = controle.ComandoAtaque();

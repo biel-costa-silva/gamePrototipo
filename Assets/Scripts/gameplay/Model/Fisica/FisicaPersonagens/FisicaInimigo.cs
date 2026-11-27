@@ -21,6 +21,10 @@ namespace Assets.Scripts.Gameplay.Model.Fisica.FisicaPersonagens
             float velocidade = Mathf.Min(golpe.dano * knockbackPorDano, knockbackMaximo);
             rb.linearVelocity = new Vector2(golpe.direcao * velocidade, rb.linearVelocity.y);
         }
+        public virtual void AplicarImpulsoRepulsao(float direcao)
+        {
+            rb.AddForce(new Vector2(direcao * 12, 0), ForceMode2D.Impulse);
+        }
 
         public void EnviarGolpeDeContato(ControladorInimigo dono, int dano, float direcao, FisicaPersonagem alvo)
         {

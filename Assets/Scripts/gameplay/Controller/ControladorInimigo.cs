@@ -15,13 +15,10 @@ namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorInimigo : MonoBehaviour
     {
-
+        // ===================================== COMPONENTES E ATRIBUTOS DE CONTROLE ======================================
         public Inimigo inimigo;
-        //fisica do model
         protected FisicaInimigo fisica;
-        //views      
         protected AnimInimigo animacao;
-        //controles
         protected IComportamento comportamento;
 
 
@@ -34,6 +31,10 @@ namespace Assets.Scripts.Gameplay.Controller
         [SerializeField] private float cooldownAtaque = 1.5f;
         [SerializeField] private int quantidadeAnimacoesDano = 2;
         private float proximoAtaquePermitido = 0f;
+        private float invulneravelAte = 0f;
+        protected bool Invulneravel => Time.time < invulneravelAte;
+        protected void IniciarInvulnerabilidade(float duracao) => invulneravelAte = Time.time + duracao;
+        protected void IniciarCooldownAtaque() => proximoAtaquePermitido = Time.time + cooldownAtaque;
 
         private EstadoInimigo _estadoAtual = EstadoInimigo.Parado;
         public EstadoInimigo estadoAtual
@@ -49,28 +50,20 @@ namespace Assets.Scripts.Gameplay.Controller
         public static readonly List<ControladorInimigo> Ativos = new List<ControladorInimigo>();
         protected virtual void OnEnable() => Ativos.Add(this);
         protected virtual void OnDisable() => Ativos.Remove(this);
+
+        //
         public event Action<ControladorInimigo, EstadoInimigo> OnEstadoAlterado;
         public event Action<ControladorInimigo> OnMorreu;
+        //
 
+        // ======================================= MÉTODOS NATIVOS/CICLO DE VIDA ==========================================
 
         private void OnCollisionStay2D(Collision2D col)
         {
             TentarDanoDeContato(col.collider.GetComponentInParent<ControladorJogador>());
         }
-
-        public void TentarDanoDeContato(ControladorJogador jogador)
-        {
-            if (estadoAtual == EstadoInimigo.Morto) return;
-            if (jogador == null || jogador.estadoAtual == EstadoJogador.Morto) return;
-
-            if (proximoToque.TryGetValue(jogador, out float liberaEm) && Time.time < liberaEm) return;
-            proximoToque[jogador] = Time.time + intervaloDanoContato;
-
-            float direcao = Mathf.Sign(jogador.transform.position.x - transform.position.x);
-            fisica.EnviarGolpeDeContato(this, danoContato, direcao, jogador.GetComponent<FisicaPersonagem>());
-        }
-
-        // --------------------------------------------------------------
+        //
+        
         protected virtual void Awake()
         {
             fisica = GetComponent<FisicaInimigo>();
@@ -78,29 +71,30 @@ namespace Assets.Scripts.Gameplay.Controller
             comportamento = GetComponent<IComportamento>();
             inimigo = CriarInimigo();
         }
+        //
+
         protected virtual Inimigo CriarInimigo()
         {
             return new Inimigo();
         }
+        //
 
-
-
-        // ----------------------------- Métodos de controle ---------------------------------
-        
-
-        // Update is called once per frame
         protected virtual void Update()
         {
             if (GerenciadorPausa.JogoPausado) return;
 
+
             HitBox golpe = fisica.ConsumirGolpePendente();
-            if (golpe != null && !golpe.Equals(null)){
+
+            if (golpe != null && !golpe.Equals(null))
+            {
                 ReceberGolpe(golpe);
             }
 
             if (estadoAtual == EstadoInimigo.Ocupado ||
                 estadoAtual == EstadoInimigo.Atacando ||
                 estadoAtual == EstadoInimigo.Morto) return;
+
 
             // --- PARADO ---
             if (estadoAtual == EstadoInimigo.Parado)
@@ -113,7 +107,6 @@ namespace Assets.Scripts.Gameplay.Controller
                     estadoAtual = EstadoInimigo.Andando;
                 }
                 return;
-
             }
 
             // --- ANDANDO ---
@@ -134,6 +127,22 @@ namespace Assets.Scripts.Gameplay.Controller
                 }
             }
         }
+
+        // ============================================= MÉTODOS DE CONTROLE ==============================================
+
+        public void TentarDanoDeContato(ControladorJogador jogador)
+        {
+            if (estadoAtual == EstadoInimigo.Morto) return;
+            if (jogador == null || jogador.estadoAtual == EstadoJogador.Morto) return;
+
+            if (proximoToque.TryGetValue(jogador, out float liberaEm) && Time.time < liberaEm) return;
+            proximoToque[jogador] = Time.time + intervaloDanoContato;
+
+            float direcao = Mathf.Sign(jogador.transform.position.x - transform.position.x);
+            fisica.EnviarGolpeDeContato(this, danoContato, direcao, jogador.GetComponent<FisicaPersonagem>());
+        }
+        //
+
         private bool TentarAtacar()
         {
             if (Time.time < proximoAtaquePermitido) return false;
@@ -144,19 +153,24 @@ namespace Assets.Scripts.Gameplay.Controller
             StartCoroutine(RotinaAtacando(ataque - 1));
             return true;
         }
+        //
 
         public void ReceberGolpe(HitBox golpe)
         {
             if (golpe == null || golpe.consumida) return;
             ProcessarDano(golpe);
         }
+        //
 
         protected virtual int EscolherVariacaoDano() => UnityEngine.Random.Range(0, quantidadeAnimacoesDano);
+        //
 
         protected virtual void ProcessarDano(HitBox golpe)
         {
             if (estadoAtual == EstadoInimigo.Morto) return;
+            if (Invulneravel) return;
             if (golpe.origemEhInimigo) return; // inimigos não se ferem entre si
+
 
             int variacao = EscolherVariacaoDano();
 
@@ -173,36 +187,44 @@ namespace Assets.Scripts.Gameplay.Controller
             if (inimigo.EstaMorto()) StartCoroutine(RotinaMorrendo());
             else StartCoroutine(RotinaSofrendoDano(variacao));
         }
+        //
+
         protected virtual void AoReceberGolpe(HitBox golpe, int variacao) { }
+        //
 
         public virtual void AplicarGolpe(int indice)
         {
             fisica.AplicarGolpe(this, inimigo.GetDano(), indice);
         }
+        //
 
-        // ----------- ROTINAS -----------
+
+        // ================================================= ROTINAS ==================================================
         protected virtual IEnumerator RotinaAtacando(int indice)
         {
             estadoAtual = EstadoInimigo.Atacando;
             fisica.Parar();
             fisica.VirarPara(comportamento.PosicaoAlvo().x - transform.position.x);
-
             animacao.AnimacaoAtacando(indice);
+
             yield return StartCoroutine(animacao.EsperarAnimacao());
 
-            proximoAtaquePermitido = Time.time + cooldownAtaque;
+            IniciarCooldownAtaque();
             estadoAtual = EstadoInimigo.Parado;
         }
+        //
 
         protected virtual IEnumerator RotinaSofrendoDano(int varicao)
         {
             estadoAtual = EstadoInimigo.Ocupado;
             animacao.AnimacaoSofrendoDano(varicao);
+
             yield return StartCoroutine(animacao.EsperarAnimacao());
 
             fisica.Parar();
             estadoAtual = EstadoInimigo.Parado;
         }
+        //
 
         protected virtual IEnumerator RotinaMorrendo()
         {
@@ -214,5 +236,6 @@ namespace Assets.Scripts.Gameplay.Controller
             OnMorreu?.Invoke(this);
             Destroy(gameObject);
         }
+        //
     }
 }

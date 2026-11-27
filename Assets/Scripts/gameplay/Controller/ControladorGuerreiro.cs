@@ -11,11 +11,14 @@ namespace Assets.Scripts.Gameplay.Controller
 {
     public class ControladorGuerreiro : ControladorJogador
     {
+        // ===================================== COMPONENTES E ATRIBUTOS DE CONTROLE ======================================
         private Guerreiro guerreiro;
         private FisicaGuerreiro fisicaGuerreiro;
         private AnimGuerreiro animGuerreiro;
         private ControlesGuerreiro controleGuerreiro;
 
+
+        // ======================================= MÉTODOS NATIVOS/CICLO DE VIDA ==========================================
         private void Awake()
         {
             base.Awake();
@@ -25,10 +28,13 @@ namespace Assets.Scripts.Gameplay.Controller
             animGuerreiro = animacao as AnimGuerreiro;
             controleGuerreiro = controle as ControlesGuerreiro;
         }
+        //
+
         protected override Jogador CriarJogador()
         {
             return new Guerreiro();
         }
+        //
 
         void Update()
         {
@@ -71,8 +77,10 @@ namespace Assets.Scripts.Gameplay.Controller
                     DefinirEstado(EstadoJogador.ModoAtaque);
                 }
             }
-        }        
+        }
+        //
 
+        // ============================================= MÉTODOS DE CONTROLE ==============================================
         protected override void ProcessarDano(HitBox golpe)
         {
             if (invulneravel || estadoAtual == EstadoJogador.Sentado)
@@ -103,6 +111,7 @@ namespace Assets.Scripts.Gameplay.Controller
 
             if (repelindo)
             {
+                (golpe.origem as Inimigo)?.MarcarRepelido();
                 guerreiro.SetSofreuAtaque();
                 fisicaGuerreiro.SpawnarVFX(0);
                 fisicaGuerreiro.AplicarImpulsoCustom(10f, golpe.direcao);
@@ -125,7 +134,9 @@ namespace Assets.Scripts.Gameplay.Controller
                 Debug.Log("Recebeu dano" + danoFinal);
             }
         }
+        //
 
+        // ================================================= ROTINAS ==================================================
         protected override IEnumerator RotinaAtacando()
         {
             bool comboRegistrado = false;
@@ -144,7 +155,7 @@ namespace Assets.Scripts.Gameplay.Controller
             {
                 if (animacao.novoAtaque)//janela aberta
                 {
-                    if (contadorCombo <= 2 && controle.ComandoAtaque() > 0)//dano igual 0 significa que não atacou
+                    if (contadorCombo <= 2 && controle.ComandoAtaque() > 0)// 0 significa que não atacou
                     {
                         comboRegistrado = true;
                     }
@@ -185,6 +196,7 @@ namespace Assets.Scripts.Gameplay.Controller
             yield return StartCoroutine(animacao.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
+        //
 
         IEnumerator RotinaDefendendo()
         {
@@ -221,6 +233,7 @@ namespace Assets.Scripts.Gameplay.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
+        //
 
         IEnumerator RotinaRepelindo()
         {
@@ -228,6 +241,7 @@ namespace Assets.Scripts.Gameplay.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
+        //
 
         IEnumerator RotinaSofrendoAtqDefendendo()
         {
@@ -235,12 +249,14 @@ namespace Assets.Scripts.Gameplay.Controller
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
+        //
+
         IEnumerator RotinaRecebeChoqueAtqs()
         {            
             animGuerreiro.AnimacaoRecebeChoqueAtqs();
             yield return StartCoroutine(animGuerreiro.EsperarAnimacao());
             DefinirEstado(EstadoJogador.ModoAtaque);
         }
-
+        //
     }
 }
